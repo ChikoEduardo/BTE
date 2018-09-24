@@ -1,0 +1,1588 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item
+    name="Energy Drink"
+	aliases="Soda"
+    category="Misc"
+    Tags="meditem,drink"
+    canuseonself="true"
+    description="A bottle of a soda called Corn-a-Cola..."
+	impacttolerance="2"
+	cargocontainername="Standard Shipping Box"
+    price="16">
+    
+    <Deconstruct time="10">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Stabilozine" mincondition="0.99"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="26,63,10,37" depth="0.6"/>
+
+    <Body width="8" height="35" radius="8" density="11"/>
+	
+	<ItemComponent>
+      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.16" oxygen="-0.04" disabledeltatime="true" delay="12" duration="50" checkconditionalalways="true">
+	    <Conditional oxygen="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Health="0.03" delay="12" duration="50">
+	    <sound file="Mods/BTE/Items/Medical/FoodDrink.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true"/>
+    </ItemComponent>
+
+    <Throwable slots="RightHand,LeftHand,Any" canBeCombined="true" throwforce="3" aimpos="35,-10">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Tools/PlasticHit.ogg"/>
+	  </StatusEffect>
+    </Throwable>
+  </Item>
+  
+  <Item
+    name="Beer"
+    category="Misc"
+    Tags="meditem,drink"
+    canuseonself="true"
+    description="A bottle of local beer. Don't let security find you with this."
+	impacttolerance="2"
+	cargocontainername="Standard Shipping Box"
+    price="18">
+    
+    <Deconstruct time="10">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Ethanol" mincondition="0.99"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="39,66,10,34" depth="0.6"/>
+
+    <Body width="8" height="32" radius="8" density="12"/>
+	
+	<ItemComponent>
+      <StatusEffect tags="drunk3" type="OnUse" target="Character" SpeedMultiplier="-0.04" oxygen="-0.012" disabledeltatime="true" delay="12" duration="60" checkconditionalalways="true">
+	    <Conditional oxygen="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect tags="drunk2" type="OnUse" target="Character" Health="0.04" duration="60">
+	    <sound file="Mods/BTE/Items/Medical/FoodDrink.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect tags="drunk1" type="OnUse" target="Character" Stun="0.3" delay="32" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk2" type="OnUse" target="Character" Stun="1" delay="42" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk3" type="OnUse" target="Character" Stun="2" delay="52" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true"/>
+    </ItemComponent>
+
+    <Throwable slots="RightHand,LeftHand,Any" canBeCombined="true" throwforce="3" aimpos="35,-10">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Tools/GlassHit.ogg"/>
+	  </StatusEffect>
+    </Throwable>
+  </Item>
+  
+  <Item
+    name="Red Wine"
+    category="Misc"
+    Tags="meditem,drink"
+    canuseonself="true"
+    description="A priced bottle of red wine. This probably came all the way from earth."
+	impacttolerance="2"
+	cargocontainername="Standard Shipping Box"
+    price="175">
+   
+    <Deconstruct time="10">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Ethanol" mincondition="0.5"/>
+	  <Item name="Ethanol" mincondition="0.99"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="13,60,10,40" depth="0.6"/>
+
+    <Body width="8" height="38" radius="8" density="13"/>
+	
+	<ItemComponent>
+	  <StatusEffect tags="drunk3" type="OnUse" target="Character" SpeedMultiplier="-0.08" oxygen="-0.018" disabledeltatime="true" delay="12" duration="80" checkconditionalalways="true">
+	    <Conditional oxygen="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect tags="drunk2" type="OnUse" target="Character" Health="0.04" duration="80">
+	    <sound file="Mods/BTE/Items/Medical/FoodDrink.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect tags="drunk1" type="OnUse" target="Character" Stun="0.4" delay="32" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk1" type="OnUse" target="Character" Stun="1" delay="44" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk2" type="OnUse" target="Character" Stun="4" delay="56" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk3" type="OnUse" target="Character" Stun="2" delay="77" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true"/>
+    </ItemComponent>
+
+    <Throwable slots="RightHand,LeftHand,Any" canBeCombined="true" throwforce="3" aimpos="35,-10">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Tools/GlassHit.ogg"/>
+	  </StatusEffect>
+    </Throwable>
+  </Item>
+  
+  <Item
+    name="Vodka"
+    category="Misc"
+    Tags="meditem,drink"
+    canuseonself="true"
+    description="A bottle of a strong distilled beverage. This probably came all the way from earth."
+	impacttolerance="2"
+	cargocontainername="Standard Shipping Box"
+    price="87">
+   
+    <Deconstruct time="10">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Ethanol" mincondition="0.3"/>
+	  <Item name="Ethanol" mincondition="0.6"/>
+	  <Item name="Ethanol" mincondition="0.99"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="0,60,10,40" depth="0.6"/>
+
+    <Body width="8" height="38" radius="8" density="11"/>
+	
+	<ItemComponent>
+	  <StatusEffect tags="drunk3" type="OnUse" target="Character" SpeedMultiplier="-0.1" oxygen="-0.03" disabledeltatime="true" delay="12" duration="110" checkconditionalalways="true">
+	    <Conditional oxygen="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect tags="drunk2" type="OnUse" target="Character" Health="0.02" duration="110">
+	    <sound file="Mods/BTE/Items/Medical/FoodDrink.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect tags="drunk1" type="OnUse" target="Character" Stun="0.4" delay="32" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk1" type="OnUse" target="Character" Stun="4" delay="42" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk1" type="OnUse" target="Character" Stun="0.6" delay="52" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk2" type="OnUse" target="Character" Stun="1" delay="62" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk2" type="OnUse" target="Character" Stun="6" delay="77" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk3" type="OnUse" target="Character" Stun="0.6" delay="92" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk3" type="OnUse" target="Character" Stun="8" delay="102" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-15" disabledeltatime="true"/>
+    </ItemComponent>
+
+    <Throwable slots="RightHand,LeftHand,Any" canBeCombined="true" throwforce="3" aimpos="35,-10">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Tools/GlassHit.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnFire" target="this" condition="-100">
+	    <sound file="Mods/BTE/Items/Tools/GlassBreak.ogg"/>
+		<sound file="Mods/BTE/Items/Weapons/ThermiteExplosion.ogg"/>
+	    <Fire size="40"/>
+	  </StatusEffect>
+    </Throwable>
+  </Item>
+  
+  <Item
+    name="Flour"
+    category="Misc"
+    Tags="meditem"
+    description="Wheat flour. A decent cook can do wonders with this."
+	cargocontainername="Standard Shipping Box"
+    price="10">
+	
+	<Deconstruct time="5">
+	  <Item name="Flour" mincondition="0.99"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="130,63,30,37" depth="0.6"/>
+
+    <Body height="26" radius="8" density="9.5"/>
+
+    <Holdable slots="Any,RightHand,LeftHand" canBeCombined="true">
+	  <StatusEffect type="InWater" target="This" condition="-2.0"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Sugar"
+    category="Misc"
+    Tags="smallitem"
+    description="A crystalline substance, typically sweet-tasting carbohydrates and exemplified by glucose and sucrose."
+	cargocontainername="Standard Shipping Box"
+    price="10">
+	
+	<Deconstruct time="5">
+	  <Item name="Sugar" mincondition="0.99"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="161,78,16,22" depth="0.6"/>
+
+    <Body height="18" radius="8" density="9.5"/>
+
+    <Holdable slots="Any,RightHand,LeftHand" canBeCombined="true">
+	  <StatusEffect type="InWater" target="This" condition="-2.0"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Salt"
+    category="Misc"
+    Tags="smallitem"
+    description="Salt is a strong-tasting substance, in the form of white powder that consists of sodium chloride."
+	cargocontainername="Standard Shipping Box"
+    price="10">
+	
+	<Deconstruct time="5">
+	  <Item name="Salt" mincondition="0.99"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="161,55,16,22" depth="0.6"/>
+
+    <Body height="18" radius="8" density="9.5"/>
+
+    <Holdable slots="Any,RightHand,LeftHand" canBeCombined="true">
+	  <StatusEffect type="InWater" target="This" condition="-2.0"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Chips"
+	aliases="Crisps"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="A bag containing thin slices of deep fried potatoes commonly served as a snack.">
+   
+   <Deconstruct time="5">
+	  <Item name="Aluminium Sliver" outcondition="0.25"/>
+	  <Item name="Salt" outcondition="0.3"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="181,69,23,31" depth="0.6"/>
+
+    <Body width="18" height="27" density="9.95"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.001" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-40" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand" canBeCombined="true"/>
+  </Item>
+  
+  <Item
+    name="Chocolate"
+	aliases="Choco"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="A delicious bar of real chocolate. Product imported from Earth.">
+   
+   <Deconstruct time="5">
+	  <Item name="Polycarbonate Sliver" outcondition="0.1"/>
+	  <Item name="Sugar" outcondition="0.5"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="185,34,25,10" depth="0.6"/>
+
+    <Body width="21" height="6" density="10.6"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.001" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand"/>
+  </Item>
+  
+  <Item
+    name="Protein Bar"
+	aliases="MRE,ewbar,Crapbar,Shitbar"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="A synthetic mixture of carbohydrates, vitamins, amino acids and minerals. Everything the body needs in a jelly block. It tastes like synthetic crap, though.">
+   
+   <Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.1"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="181,55,24,12" depth="0.6"/>
+
+    <Body width="22" height="10" density="9.9"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.001" disabledeltatime="true" delay="6" duration="200" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent> 
+
+    <Holdable slots="Any,RightHand,LeftHand"/>
+  </Item>
+  
+  <Item
+    name="Bread"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="One of humanity's staple food in Earth. It's not as common here in Europa."
+	cargocontainername="Plastic Bag"
+    price="8">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.6"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="102,83,27,17" depth="0.6"/>
+
+    <Body width="26" radius="8" density="9.5"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.008" Health="0.004" disabledeltatime="true" delay="12" duration="60" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.01"/>
+	  <StatusEffect type="InWater" target="This" condition="-1.5"/>
+	  <StatusEffect type="Always" target="This" Condition="0.01">
+        <RequiredItem name="Refrigerator" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Apple"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="An Earth fruit probably grown in hydroponic farms."
+	cargocontainername="Plastic Bag"
+    price="12">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.3"/>
+	  <Item name="Sugar" outcondition="0.1"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="63,83,17,17" depth="0.6"/>
+
+    <Body radius="8" density="9.8" friction="0.95"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.002" disabledeltatime="true" delay="12" duration="75" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.07"/>
+	  <StatusEffect type="Always" target="This" Condition="0.07">
+        <RequiredItem name="Food Can" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="Always" target="This" Condition="0.07">
+        <RequiredItem name="Refrigerator" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Cotton Candy"
+	aliases="Sugar Cloud"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="A treat associated with carnivals, fairs and clowns."
+	cargocontainername="Plastic Bag"
+    price="12">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.3"/>
+	  <Item name="Sugar" outcondition="0.2"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="188,0,17,27" depth="0.6"/>
+
+    <Body height="22" radius="2" density="9.9" friction="0.99"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.002" disabledeltatime="true" delay="12" duration="85" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand" handle1="-3,-12" handle2="-3,-12">
+	  <StatusEffect type="Always" target="This" Condition="-0.01"/>
+	  <StatusEffect type="Always" target="This" Condition="0.01">
+        <RequiredItem name="Refrigerator" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Candy Apple"
+	aliases="Toffee Apple"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="A treat associated with carnivals, fairs and clowns."
+	cargocontainername="Plastic Bag"
+    price="12">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.3"/>
+	  <Item name="Sugar" outcondition="0.2"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="77,43,17,27" depth="0.6"/>
+
+    <Body height="22" radius="2" density="9.9" friction="0.95"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.015" Health="0.003" disabledeltatime="true" delay="12" duration="85" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand" handle1="-3,-12" handle2="-3,-12">
+	  <StatusEffect type="Always" target="This" Condition="-0.01"/>
+	  <StatusEffect type="Always" target="This" Condition="0.01">
+        <RequiredItem name="Refrigerator" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Carrot"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="An Earth vegetable probably grown in hydroponic farms."
+	cargocontainername="Plastic Bag"
+    price="10">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.2"/>
+	  <Item name="Sugar" outcondition="0.1"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="86,0,30,10" depth="0.6"/>
+
+    <Body width="28" height="8" radius="8" density="9.9" friction="0.95"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.002" disabledeltatime="true" delay="12" duration="50" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.08"/>
+	  <StatusEffect type="Always" target="This" Condition="0.08">
+        <RequiredItem name="Food Can" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="Always" target="This" Condition="0.08">
+        <RequiredItem name="Refrigerator" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Potato"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="An Earth vegetable probably grown in hydroponic farms."
+	cargocontainername="Plastic Bag"
+    price="5">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.3"/>
+	  <Item name="Sugar" outcondition="0.15"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="96,13,20,10" depth="0.6"/>
+
+    <Body width="18" height="8" radius="8" density="12" friction="0.95"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.008" Health="0.001" disabledeltatime="true" delay="12" duration="40" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.09"/>
+	  <StatusEffect type="Always" target="This" Condition="0.09">
+        <RequiredItem name="Food Can" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="Always" target="This" Condition="0.09">
+        <RequiredItem name="Refrigerator" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Baked Potato"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="Usually cooked by someone either really hungry or with no actual cooking skills.">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.3"/>
+	  <Item name="Sugar" outcondition="0.1"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="96,26,20,10" depth="0.6"/>
+
+    <Body width="18" height="8" radius="8" density="10.7"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.004" disabledeltatime="true" delay="12" duration="60" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.08"/>
+	  <StatusEffect type="Always" target="This" Condition="0.04">
+        <RequiredItem name="Refrigerator" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Fries"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="Crispy and delicious deep-fried potatoes. Usually part of a dish or eaten as a snack by themselves.">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.5"/>
+	  <Item name="Salt" outcondition="0.1"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="21,40,20,20" depth="0.6"/>
+
+    <Body width="16" height="18" radius="8" density="11"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="50" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.04"/>
+	  <StatusEffect type="Always" target="This" Condition="0.02">
+        <RequiredItem name="Refrigerator" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Human Meat"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="A chunk of raw human meat. Only the strong survive.">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.6"/>
+	  <Item name="Salt" outcondition="0.2"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="0,0,19,18" depth="0.6"/>
+
+    <Body width="9" height="8" radius="8" density="15"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.05" Health="0.002" disabledeltatime="true" delay="12" duration="100" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.19"/>
+	  <StatusEffect type="Always" target="This" Condition="0.19">
+        <RequiredItem name="Food Can" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Crew Steak"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="A steak out of someone you worked with.">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.3"/>
+	  <Item name="Salt" outcondition="0.1"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="0,21,19,18" depth="0.6"/>
+
+    <Body width="9" height="8" radius="8" density="14"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.03" Health="0.004" disabledeltatime="true" delay="12" duration="100" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.16"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Thresher Meat"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="A chunk of raw tiger thresher meat. It's best not to eat it raw."
+	cargocontainername="Food Can"
+    price="15">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.8"/>
+	  <Item name="Salt" outcondition="0.4"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="22,0,19,18" depth="0.6"/>
+
+    <Body width="9" height="8" radius="8" density="15"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.002" delay="12" duration="100" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.18"/>
+	  <StatusEffect type="Always" target="This" Condition="0.18">
+        <RequiredItem name="Food Can" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Seared Thresher"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="Seared tiger thresher. A simple meal to make but delicious.">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.6"/>
+	  <Item name="Salt" outcondition="0.3"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="22,21,19,18" depth="0.6"/>
+
+    <Body width="9" height="8" radius="8" density="14"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.03" Health="0.004" delay="12" duration="100" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.15"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Fried Thresher"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="Battered and fried tiger thresher. Usually paired with fries for a superb meal.">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.7"/>
+	  <Item name="Salt" outcondition="0.3"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="0,41,19,18" depth="0.6"/>
+
+    <Body width="9" height="8" radius="8" density="14"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.05" Health="0.006" disabledeltatime="true" delay="12" duration="100" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.15"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Glazed Thresher"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="A baked loaf of caramelized tiger thresher meat. Red wine glazed meals are no ordinary rations.">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.6"/>
+	  <Item name="Sugar" outcondition="0.1"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="0,21,19,18" depth="0.6"/>
+
+    <Body width="9" height="8" radius="8" density="13"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.07" Health="0.004" disabledeltatime="true" delay="12" duration="120" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.14"/>
+	  <StatusEffect type="Always" target="This" Condition="0.14">
+        <RequiredItem name="Refrigerator" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Snailfish Meat"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="A chunk of raw snailfish meat. It's mildly toxic unless properly cooked."
+	cargocontainername="Food Can"
+    price="50">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.7"/>
+	  <Item name="Salt" outcondition="0.3"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="98,41,18,26" depth="0.6"/>
+
+    <Body height="8" radius="8" density="12"/>
+	
+	<ItemComponent>
+	  <StatusEffect tags="morbusine,poisonstrong" type="OnUse" target="Character" SpeedMultiplier="-0.1" oxygen="-0.08" Health="-0.008" delay="12" duration="100" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.1" delay="10" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.12" delay="20" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.11" delay="30" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.14" delay="40" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.12" delay="50" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.16" delay="60" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.19" delay="70" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.15" delay="80" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.12" delay="90" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.1" delay="100" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-50" setvalue="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.17"/>
+	  <StatusEffect type="Always" target="This" Condition="0.17">
+        <RequiredItem name="Food Can" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Seared Snailfish"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="Seared Snailfish. Delicious!">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.6"/>
+	  <Item name="Salt" outcondition="0.2"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="65,21,20,20" depth="0.6"/>
+
+    <Body width="9" height="8" radius="8" density="11"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.015" Health="0.004" disabledeltatime="true" delay="12" duration="60" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.14"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Crawler Meat"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="A chunk of raw crawler meat. It stinks like this so better find an oven."
+	cargocontainername="Food Can"
+    price="15">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.7"/>
+	  <Item name="Salt" outcondition="0.3"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="64,0,19,18" depth="0.6"/>
+
+    <Body width="9" height="8" radius="8" density="13"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.004" disabledeltatime="true" delay="12" duration="60" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.17"/>
+	  <StatusEffect type="Always" target="This" Condition="0.17">
+        <RequiredItem name="Food Can" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Seared Crawler"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="Seared Crawler. Delicious!">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.6"/>
+	  <Item name="Salt" outcondition="0.2"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="65,21,20,20" depth="0.6"/>
+
+    <Body width="9" height="8" radius="8" density="12"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="60" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.14"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Mantis Meat"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="A chunk of raw mantis meat. It stinks like this so better find an oven."
+	cargocontainername="Food Can"
+    price="20">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.7"/>
+	  <Item name="Salt" outcondition="0.3"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="44,0,19,18" depth="0.6"/>
+
+    <Body width="9" height="8" radius="8" density="14"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.004" disabledeltatime="true" delay="12" duration="75" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.17"/>
+	  <StatusEffect type="Always" target="This" Condition="0.17">
+        <RequiredItem name="Food Can" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Seared Mantis"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="Seared Mantis. It tastes like shrimp!">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.6"/>
+	  <Item name="Salt" outcondition="0.2"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="44,21,20,20" depth="0.6"/>
+
+    <Body width="9" height="8" radius="8" density="13"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="75" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.14"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Fried Mantis"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="Battered and fried Mantis pieces. It tastes like shrimp!">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" outcondition="0.65"/>
+	  <Item name="Salt" outcondition="0.2"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="45,42,20,20" depth="0.6"/>
+
+    <Body width="9" height="8" radius="8" density="13"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.04" Health="0.008" disabledeltatime="true" delay="12" duration="75" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.12"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Mantis Eggs"
+    category="Misc"
+    spritecolor="1.0,0.5,0.0,1.0"
+    Tags="smallitem,food"
+	canuseonself="true"
+    description="Mantis eggs are considered a delicacy often enjoyed only by the wealthy."
+	cargocontainername="Food Can"
+    price="80">
+	
+	<Deconstruct time="5">
+      <Item name="Biomass" mincondition="0.99"/>
+    </Deconstruct>
+	
+	<Sprite texture="Food.png" sourcerect="51,63,20,20" depth="0.6"/>
+
+    <Body width="8" radius="8" density="10.1"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.003" disabledeltatime="true" delay="12" duration="20"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-50" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+	
+	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
+              aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.003" disabledeltatime="true" delay="12" duration="20">
+        <Conditional stun="gt 0"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="This,Character" Condition="-50" disabledeltatime="true">
+        <Conditional stun="gt 0"/>
+      </StatusEffect>
+	  
+	  <StatusEffect type="Always" target="This" Condition="-0.17"/>
+	  <StatusEffect type="Always" target="This" Condition="0.17">
+        <RequiredItem name="Food Can" type="Container"/>
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  
+  <Item
+    name="Mantis Caviar"
+    category="Misc"
+	spritecolor="1.0,0.5,0.0,1.0"
+    Tags="meditem,food"
+    canuseonself="true"
+    description="Salt-cured Mantis eggs. A delicacy, if properly prepared.">
+   
+   <Deconstruct time="5">
+      <Item name="Food Can"/>
+	  <Item name="Biomass" mincondition="0.99"/>
+	  <Item name="Salt" outcondition="0.2"/>
+    </Deconstruct>
+
+    <Sprite texture="Medical.png" sourcerect="0,0,10,18" depth="0.6"/>
+	
+	<Body width="8" height="16" density="10.1"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.03" Health="0.003" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-50" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand" canBeCombined="true"/>
+  </Item>
+  
+  <Item
+    name="Apple Pie"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="Good food like this is hard to come by around these parts.">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" mincondition="0.99"/>
+	  <Item name="Biomass" outcondition="0.7"/>
+	  <Item name="Sugar" outcondition="0.3"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="118,0,32,24" depth="0.6"/>
+
+    <Body width="30" radius="8" density="11"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="100" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.02"/>
+	  <StatusEffect type="InWater" target="This" condition="-1.5"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Carrot Pie"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="Good food like this is hard to come by around these parts.">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" mincondition="0.99"/>
+	  <Item name="Biomass" outcondition="0.7"/>
+	  <Item name="Sugar" outcondition="0.2"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="153,26,30,27" depth="0.6"/>
+
+    <Body width="27" radius="8" density="11"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="80" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.02"/>
+	  <StatusEffect type="InWater" target="This" condition="-1.5"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Crawler Pie"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="Good food like this is hard to come by around these parts.">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" mincondition="0.99"/>
+	  <Item name="Biomass" outcondition="0.7"/>
+	  <Item name="Salt" outcondition="0.25"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="118,27,32,24" depth="0.6"/>
+
+    <Body width="30" radius="8" density="12"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.007" disabledeltatime="true" delay="12" duration="160" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.03"/>
+	  <StatusEffect type="InWater" target="This" condition="-1.5"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Thresher Pie"
+    category="Misc"
+    Tags="smallitem,food"
+    canuseonself="true"
+    description="Good food like this is hard to come by around these parts.">
+	
+	<Deconstruct time="5">
+	  <Item name="Biomass" mincondition="0.99"/>
+	  <Item name="Biomass" outcondition="0.7"/>
+	  <Item name="Salt" outcondition="0.3"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="153,0,32,24" depth="0.6"/>
+
+    <Body width="30" radius="8" density="12"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.03" Health="0.008" disabledeltatime="true" delay="12" duration="160" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand">
+	  <StatusEffect type="Always" target="This" Condition="-0.03"/>
+	  <StatusEffect type="InWater" target="This" condition="-1.5"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Mantcrawl Cocktail"
+    category="Misc"
+    Tags="meditem,food"
+    canuseonself="true"
+    description="Good food like this is hard to come by around these parts.">
+   
+   <Deconstruct time="5">
+      <Item name="Food Can"/>
+	  <Item name="Biomass" mincondition="0.99"/>
+	  <Item name="Biomass" outcondition="0.7"/>
+	  <Item name="Salt" outcondition="0.3"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="82,71,18,29" depth="0.6"/>
+
+    <Body width="16" height="27" density="16"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.06" Health="0.009" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand" canBeCombined="true">
+	  <StatusEffect type="Always" target="This" Condition="-0.13"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Seabed Soup"
+	aliases="Slop"
+    category="Misc"
+    Tags="meditem,food"
+    canuseonself="true"
+    description="Also called Slop. This is usually feed to prisoners or eaten by a very desperate crew.">
+   
+   <Deconstruct time="5">
+      <Item name="Food Can"/>
+	  <Item name="Biomass" outcondition="0.4"/>
+	  <Item name="Ethanol" outcondition="0.2"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="82,71,18,29" depth="0.6"/>
+
+    <Body width="16" height="27" density="18"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.02" Health="0.001" disabledeltatime="true" delay="12" duration="180" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand" canBeCombined="true">
+	  <StatusEffect type="Always" target="This" Condition="-0.01"/>
+	  <StatusEffect type="Always" target="This" Condition="0.01">
+        <RequiredItem name="Refrigerator" type="Container"/>
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Thresher Stew"
+    category="Misc"
+    Tags="meditem,food"
+    canuseonself="true"
+    description="Good food like this is hard to come by around these parts.">
+   
+   <Deconstruct time="5">
+      <Item name="Food Can"/>
+	  <Item name="Biomass" mincondition="0.99"/>
+	  <Item name="Biomass" outcondition="0.7"/>
+	  <Item name="Salt" outcondition="0.3"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="82,71,18,29" depth="0.6"/>
+
+    <Body width="16" height="27" density="18"/>
+	
+	<AiTarget sightrange="500"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.08" Health="0.006" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand" canBeCombined="true">
+	  <StatusEffect type="Always" target="This" Condition="-0.13"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Velonaceps Calyx Eggs"
+	aliases="Husk Eggs"
+    category="Misc"
+    spritecolor="0.2,0.1,0.1,1.0"
+    Tags="smallitem,food"
+	canuseonself="true"
+    description="Dormant eggs of the Europan lifeform colloquially referred to as 'husk parasite'."
+	cargocontainername="Biohazard Shipping Box"
+    price="2000">
+	
+	<Deconstruct time="5">
+      <Item name="Biomass" mincondition="0.99"/>
+    </Deconstruct>
+	
+	<Sprite texture="Food.png" sourcerect="51,63,20,20" depth="0.6"/>
+
+    <Body width="8" radius="8" density="10.1"/>
+	
+	<ItemComponent>
+      <StatusEffect type="OnUse" target="This,Character" Condition="-25" HuskInfectionState="0.01" disabledeltatime="true"/>
+    </ItemComponent>
+	
+	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
+              aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
+      <StatusEffect type="OnUse" target="Character" HuskInfectionState="0.01">
+        <Conditional stun="gt 0"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
+        <Conditional stun="gt 0"/>
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  
+  <Item
+    name="Husk Caviar"
+    category="Misc"
+	spritecolor="0.2,0.1,0.1,1.0"
+    Tags="meditem,food"
+    canuseonself="true"
+    description="Salt-cured eggs of the Velonaceps Calyx parasite. A delicacy, if properly prepared.">
+   
+   <Deconstruct time="5">
+      <Item name="Food Can"/>
+	  <Item name="Biomass" mincondition="0.99"/>
+	  <Item name="Salt" outcondition="0.2"/>
+    </Deconstruct>
+
+    <Sprite texture="Medical.png" sourcerect="0,0,10,18" depth="0.6"/>
+	
+	<Body width="8" height="16" density="10.1"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.04" Health="0.006" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-50" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand" canBeCombined="true"/>
+  </Item>
+  
+  <Item
+    name="Mantcrawl CocktaiI"
+    category="Misc"
+    Tags="meditem,food"
+    canuseonself="true"
+    description="Good food like this is hard to come by around these parts.">
+   
+   <Deconstruct time="5">
+      <Item name="Food Can"/>
+	  <Item name="Biomass" mincondition="0.99"/>
+	  <Item name="Biomass" outcondition="0.7"/>
+	  <Item name="Salt" outcondition="0.3"/>
+    </Deconstruct>
+
+    <Sprite texture="Food.png" sourcerect="82,71,18,29" depth="0.6"/>
+
+    <Body width="16" height="27" density="16"/>
+	
+	<ItemComponent>
+	  <StatusEffect tags="morbusine,poisonstrong" type="OnUse" target="Character" SpeedMultiplier="-0.1" oxygen="-0.1" Health="-0.01" delay="16" duration="200" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.1" delay="10" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.12" delay="20" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.11" delay="30" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.14" delay="40" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.12" delay="50" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.16" delay="60" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.19" delay="70" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.15" delay="80" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.12" delay="90" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.1" delay="100" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.12" delay="110" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.11" delay="120" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.14" delay="130" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.12" delay="140" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.16" delay="150" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.19" delay="160" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.15" delay="170" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.12" delay="180" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Character" Stun="0.1" delay="190" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand" canBeCombined="true">
+	  <StatusEffect type="Always" target="This" Condition="-0.13"/>
+    </Holdable>
+  </Item>
+  
+  <Item
+    name="Husk Cаviаг"
+    category="Misc"
+	spritecolor="0.2,0.1,0.1,1.0"
+    Tags="meditem,food"
+    canuseonself="true"
+    description="Salt-cured eggs of the Velonaceps Calyx parasite. A delicacy, if properly prepared.">
+   
+   <Deconstruct time="5">
+      <Item name="Food Can"/>
+	  <Item name="Biomass" mincondition="0.99"/>
+	  <Item name="Salt" outcondition="0.2"/>
+    </Deconstruct>
+
+    <Sprite texture="Medical.png" sourcerect="0,0,10,18" depth="0.6"/>
+	
+	<Body width="8" height="16" density="10.1"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.04" Health="0.006" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
+	    <Conditional Health="gt 0"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" HuskInfectionState="0.01" delay="22">
+        <Conditional HuskInfectionState="lt 0.01"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+    </ItemComponent>
+
+    <Holdable slots="Any,RightHand,LeftHand" canBeCombined="true"/>
+  </Item>
+</Items>

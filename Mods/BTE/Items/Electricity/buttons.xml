@@ -1,0 +1,85 @@
+﻿<Items>
+<Item
+  name="Utility Access"
+  category="Electrical"
+  tags="smallitem">
+
+  <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="0,64,16,32" depth="0.79"/>
+
+  <Controller direction="None" canbepicked="true" msg="Press [E]">
+    <RequiredItem name="Wrench" type="Equipped" msg="Wrench Needed"/>
+    <sound file="Mods/BTE/Items/Electricity/Lever.ogg" type="OnUse" range="500"/>
+  </Controller>
+
+  <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+    <RequiredItem name="Pliers,Screwdriver" type="Equipped"/>
+    <output name="signal_out"/>
+  </ConnectionPanel>
+</Item>
+
+<Item
+  name="Access Panel"
+  aliases="Button"
+  category="Electrical"
+  tags="smallitem"
+  cargocontainername="Electronics Shipping Box"
+  price="175">
+
+  <Sprite texture="Content/Items/Button/button.png" sourcerect="0,0,23,27" depth="0.79"/>
+
+  <Deconstruct time="10">
+    <Item name="Polycarbonate Bar"/>
+	<Item name="Aluminium Sliver"/>
+    <Item name="FPGA Circuit"/>
+  </Deconstruct>
+
+  <Body width="32" height="32" density="40"/>
+
+  <Controller direction="None" canbepicked="true" msg="Press [E]">
+    <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
+    <sound file="Content/Items/Button/beep.ogg" type="OnUse" range="500"/>
+  </Controller>
+
+  <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+    <RequiredItem name="Pliers,Screwdriver" type="Equipped"/>
+    <output name="signal_out"/>
+  </ConnectionPanel>
+
+  <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="Detach [Wrench]" PickingTime="10"
+            aimpos="35,-10" handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
+    <requireditem name="Wrench" type="Equipped"/>
+  </Holdable>
+</Item>
+
+<Item
+  name="Switch"
+  aliases="Basic Switch"
+  category="Electrical"
+  tags="smallitem"
+  cargocontainername="Electronics Shipping Box"
+  price="75">
+
+  <Sprite texture="Content/Items/Button/button.png" sourcerect="24,0,11,16" depth="0.79"/>
+
+  <Deconstruct time="5">
+    <Item name="Polycarbonate Sliver"/>
+	<Item name="Aluminium Sliver"/>
+  </Deconstruct>
+
+  <Body width="16" height="16" density="20"/>
+
+  <Controller direction="None" canbepicked="true" msg="Press [E]">
+    <sound file="Content/Items/Button/switch.ogg" type="OnUse" range="250"/>
+  </Controller>
+
+  <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+    <RequiredItem name="Pliers,Screwdriver" type="Equipped"/>
+    <output name="signal_out"/>
+  </ConnectionPanel>
+
+  <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="Detach [Wrench]" PickingTime="10"
+            aimpos="35,-10" handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
+    <requireditem name="Wrench" type="Equipped"/>
+  </Holdable>
+</Item>
+</Items>

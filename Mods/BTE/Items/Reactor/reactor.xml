@@ -1,0 +1,379 @@
+﻿<Items>
+  <Item
+    name="Fusion Reactor"
+    type="Reactor"
+    category="Machine">
+    
+    <trigger/>
+
+    <fixrequirement name="Mechanical repairs">
+      <skill name="Construction" level="50"/>
+      <item name="Welding Tool"/>
+      <item name="Wrench"/>
+    </fixrequirement>
+
+    <fixrequirement name="Electrical repairs">
+      <skill name="Electrical Engineering" level="50"/>
+      <item name="Wire"/>
+      <item name="Screwdriver"/>
+    </fixrequirement>
+
+    <Sprite texture="FusionReactor.png" sourcerect="0,0,169,169" depth="0.8"/>
+	<BrokenSprite texture="FusionReactorWorking.png" sourcerect="0,0,169,169" depth="0.8" maxcondition="99" fadein="true"/>
+	<BrokenSprite texture="FusionReactorDanger.png" sourcerect="0,0,169,169" depth="0.8" maxcondition="55" fadein="true"/>
+	<BrokenSprite texture="FusionReactorCritical.png" sourcerect="0,0,169,169" depth="0.8" maxcondition="20" fadein="true"/>
+    <BrokenSprite texture="FusionReactorBroken.png" sourcerect="0,0,169,169" depth="0.8" maxcondition="0"/>
+
+    <Reactor canbeselected="true" vulnerabletoemp="false" MeltdownDelay="10000">
+      <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
+	  <GuiFrame rect="0,0,760,460" alignment="Center" color="0.0,0.0,0.0,0.6"/>
+      <StatusEffect type="InWater" target="This" Temperature="-200" Condition="0.1"/>
+	  <StatusEffect type="OnFire" target="This" Temperature="250"/>
+      <StatusEffect type="OnActive" target="Contained" targetnames="Hydrogen Tank,Thermite Tank,Sulphurite Tank,Oxygen Tank,Oxygenite Tank" Condition="-0.05"/>
+	  <StatusEffect type="OnActive" target="This" condition="-8.4">
+        <Conditional temperature="eq 10000"/>
+      </StatusEffect>
+      <sound file="Content/Items/Reactor/reactor.ogg" type="OnActive" range="1500" volume="FissionRate" volumemultiplier="0.02" loop="true"/>
+
+      <StatusEffect type="OnBroken" target="This" FissionRate="0" disabledeltatime="true">
+	    <sound file="Content/Items/Reactor/explosion.ogg" range="4000"/>
+        <Explosion range="800" damage="25" structuredamage="100" stun="15" force="15" decal="explosion" decalsize="1.0"/>
+      </StatusEffect>
+    </Reactor>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <output name="power_out"/>
+      <output name="temperature_out"/>
+      <input name="shutdown"/>
+    </ConnectionPanel>
+
+    <ItemContainer capacity="5" canbeselected="true">
+      <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
+	  <Containable name="Hydrogen Tank">
+	    <StatusEffect type="OnContaining" target="This" AvailableFuel="20" disabledeltatime="true"/>
+		<StatusEffect type="OnContaining" target="This" Temperature="10" Condition="0.05"/>
+      </Containable>
+      <Containable name="Thermite Tank">
+		<StatusEffect type="OnContaining" target="This" Temperature="500" Condition="-0.8"/>
+      </Containable>
+	  <Containable name="Sulphurite Tank">
+		<StatusEffect type="OnContaining" target="This" Temperature="250" Condition="-0.4"/>
+      </Containable>
+	  <Containable name="Oxygen Tank">
+		<StatusEffect type="OnContaining" target="This" Temperature="5" Condition="-0.2"/>
+      </Containable>
+	  <Containable name="Oxygenite Tank">
+		<StatusEffect type="OnContaining" target="This" Temperature="-150" Condition="0.15"/>
+      </Containable>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Nuclear Reactor"
+    type="Reactor"
+    category="Machine">
+    
+    <trigger/>
+
+    <fixrequirement name="Mechanical repairs">
+      <skill name="Construction" level="40"/>
+      <item name="Welding Tool"/>
+      <item name="Wrench"/>
+    </fixrequirement>
+
+    <fixrequirement name="Electrical repairs">
+      <skill name="Electrical Engineering" level="50"/>
+      <item name="Wire"/>
+      <item name="Screwdriver"/>
+    </fixrequirement>
+
+    <Sprite texture="Reactor.png" sourcerect="0,0,318,180" depth="0.8"/>
+	<BrokenSprite texture="ReactorWorking.png" sourcerect="0,0,318,180" depth="0.8" maxcondition="99" fadein="true"/>
+	<BrokenSprite texture="ReactorDanger.png" sourcerect="0,0,318,180" depth="0.8" maxcondition="55" fadein="true"/>
+	<BrokenSprite texture="ReactorCritical.png" sourcerect="0,0,318,180" depth="0.8" maxcondition="20" fadein="true"/>
+    <BrokenSprite texture="ReactorBroken.png" sourcerect="0,0,318,180" depth="0.8" maxcondition="0"/>
+
+    <Reactor canbeselected="true" vulnerabletoemp="false" MeltdownDelay="10000">
+      <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
+	  <GuiFrame rect="0,0,760,460" alignment="Center" color="0.0,0.0,0.0,0.6"/>
+      <StatusEffect type="InWater" target="This" Temperature="-200" Condition="0.1"/>
+	  <StatusEffect type="OnFire" target="This" Temperature="100"/>
+	  <StatusEffect type="OnActive" target="This" CoolingRate="-100"/>
+	  <StatusEffect type="OnActive" target="This" CoolingRate="80">
+        <RequiredItem name="Sulphurite Coolant Can,Oxygenite Coolant Can" type="Contained"/>
+      </StatusEffect>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Sulphurite Coolant Can,Oxygenite Coolant Can,Diesel Can" Condition="-0.06"/>
+	  <StatusEffect type="OnActive" target="This" condition="-6.4">
+        <Conditional temperature="eq 10000"/>
+      </StatusEffect>
+      <sound file="Content/Items/Reactor/reactor.ogg" type="OnActive" range="2000" volume="FissionRate" volumemultiplier="0.02" loop="true"/>
+
+      <StatusEffect type="OnBroken" target="This" FissionRate="0" disabledeltatime="true">
+	    <sound file="Content/Items/Reactor/explosion.ogg" range="5000"/>
+        <Explosion range="1250" damage="500" structuredamage="500" stun="15" force="25" severlimbsprobability="1" decal="explosion" decalsize="1.0"/>
+      </StatusEffect>
+    </Reactor>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <output name="power_out"/>
+      <output name="temperature_out"/>
+      <input name="shutdown"/>
+    </ConnectionPanel>
+
+    <ItemContainer capacity="5" canbeselected="true">
+      <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
+	  <Containable name="Uranium Fuel Rod">
+	    <StatusEffect type="OnContaining" target="This" AvailableFuel="25" disabledeltatime="true"/>
+		<StatusEffect type="OnContaining" target="This" Temperature="70" Condition="-0.1"/>
+      </Containable>
+      <Containable name="Thermite Fuel Rod">
+	    <StatusEffect type="OnContaining" target="This" AvailableFuel="50" disabledeltatime="true"/>
+		<StatusEffect type="OnContaining" target="This" Temperature="170" Condition="-0.3"/>
+      </Containable>
+	  <Containable name="Fulgurium Fuel Rod">
+        <StatusEffect type="OnContaining" target="This" AvailableFuel="20" disabledeltatime="true"/>
+		<StatusEffect type="OnContaining" target="This" Temperature="20"/>
+      </Containable>
+	  <Containable name="Sulphurite Coolant Can">
+	    <StatusEffect type="OnContaining" target="This" Temperature="-30" Condition="0.2"/>
+      </Containable>
+      <Containable name="Oxygenite Coolant Can">
+	    <StatusEffect type="OnContaining" target="This" Temperature="-90" Condition="0.4"/>
+      </Containable>
+	  <Containable name="Diesel Can">
+	    <StatusEffect type="OnContaining" target="This" CoolingRate="-100"/>
+      </Containable>
+    </ItemContainer>
+  </Item>
+
+  <Item
+    name="Uranium Fuel Rod"
+	aliases="Fuel Rod"
+	category="Equipment"
+    Tags="meditem,reactorfuel"
+	description="This cylindrical rod is made of an Uranium alloy containing Aluminium and is powerful enough to power a medium sized submarine."
+	cargocontainername="Radiation Shipping Box"
+    price="200">
+
+    <Deconstruct time="10">
+      <Item name="Uranium Sliver"/>
+      <Item name="Uranium Sliver" mincondition="0.99"/>
+	  <Item name="Aluminium Sliver"/>
+      <Item name="Aluminium Sliver" mincondition="0.99"/>
+    </Deconstruct>
+
+    <Sprite texture="Content/Items/Reactor/fuelrod.png" depth="0.55" sourcerect="0,0,8,39"/>
+	
+	<LightComponent LightColor="0.0,1.0,0.0,1.0" Flicker="0.5" range="50" IsOn="false">
+      <StatusEffect type="Always" target="This" Condition="-0.004" IsOn="true"/>
+      <StatusEffect type="OnBroken" target="This" IsOn="false"/>
+    </LightComponent>
+
+    <Body radius="3" height="34" density="10.8"/>
+
+    <Holdable handle1="0,0" slots="RightHand,LeftHand,Any"/>
+  </Item>
+
+  <Item
+    name="Thermite Fuel Rod"
+	aliases="Incendium Fuel Rod"
+	category="Equipment"
+    Tags="meditem,reactorfuel"
+	description="This cylindrical rod contains the alien material referred to as thermite. It's unstable and degrades fast but generates fission at an alarming rate."
+    spritecolor="0.9,0.2,0.0,1.0">
+
+    <Deconstruct time="10">
+	  <Item name="Uranium Sliver"/>
+      <Item name="Uranium Sliver" mincondition="0.99"/>
+	  <Item name="Thermite Powder"/>
+      <Item name="Thermite Powder" mincondition="0.99"/>
+    </Deconstruct>
+
+    <Sprite texture="Content/Items/Reactor/fuelrod.png" depth="0.55" sourcerect="0,0,8,39"/>
+
+    <Body radius="3" height="34" density="10.6"/>
+	
+	<LightComponent LightColor="1.0,0.0,0.0,1.0" Flicker="0.5" range="50" IsOn="false">
+      <StatusEffect type="Always" target="This" Condition="-0.01" IsOn="true"/>
+
+      <!-- <StatusEffect type="InWater" target="This">
+        <ParticleEmitter particle="bubbles"/>
+      </StatusEffect> -->
+
+      <StatusEffect type="OnBroken" target="This" IsOn="false"/>
+    </LightComponent>
+
+    <Holdable handle1="0,0" slots="RightHand,LeftHand,Any"/>
+  </Item>
+  
+  <Item
+    name="Fulgurium Fuel Rod"
+	category="Equipment"
+    Tags="meditem,reactorfuel"
+	description="This cylindrical rod contains an alloy made of Uranium and the rare Fulgurium material. It generates fission at a slow rate but it also decays at a extremely slow pace."
+    spritecolor="1.0,0.7,0.05,1.0">
+
+    <Deconstruct time="10">
+	  <Item name="Fulgurium Bar"/>
+	  <Item name="Uranium Sliver"/>
+      <Item name="Uranium Sliver" mincondition="0.99"/>
+    </Deconstruct>
+
+    <Sprite texture="Content/Items/Reactor/fuelrod.png" depth="0.55" sourcerect="0,0,8,39"/>
+
+    <Body radius="3" height="34" density="10.2"/>
+	
+	<LightComponent LightColor="1.0,0.7,0.05,1.0" Flicker="0.5" range="50" IsOn="false">
+      <StatusEffect type="Always" target="This" IsOn="true"/>
+      <StatusEffect type="OnBroken" target="This" IsOn="false"/>
+    </LightComponent>
+
+    <Holdable handle1="0,0" slots="RightHand,LeftHand,Any">
+	  <StatusEffect type="Always" target="This" Condition="-0.001"/>
+	</Holdable>
+  </Item>
+  
+  <Item
+    name="Sulphurite Coolant Can"
+	aliases="Sulphurite Coolant Rod"
+	category="Equipment"
+    Tags="meditem"
+	description="A plastic container for Sulphurite Coolant. It absorbs heat but not the amount of fission generation, allowing the use of more fuel rods in a reactor."
+	spritecolor="255.0,250.0,0.0,1.0"
+	impacttolerance="3"
+    price="100">
+
+    <Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Sulphuric Acid" mincondition="0.99"/>
+	  <Item name="Sulphuric Acid" mincondition="0.66"/>
+	  <Item name="Sulphuric Acid" mincondition="0.33"/>
+    </Deconstruct>
+
+    <Sprite texture="DieselCan.png" depth="0.55" sourcerect="0,0,32,45"/>
+
+    <Body width="30" height="43" density="10.9"/>
+
+    <Throwable slots="RightHand,LeftHand" holdpos="0,0" handle1="-13,-2" handle2="-13,-2" throwforce="2.5" aimpos="35,-10">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Reactor/DieselCan.ogg"/>
+	  </StatusEffect>
+	</Throwable>
+  </Item>
+  
+  <Item
+    name="Oxygenite Coolant Can"
+	aliases="Oxygenite Coolant Rod"
+	category="Equipment"
+    Tags="meditem"
+	description="A plastic container for Oxygenite Coolant. Oxygenite Coolant is a liquid used to absorb a large excess of heat from reactors."
+	spritecolor="0.6,0.8,1.0,1.0"
+	impacttolerance="3"
+    price="200">
+
+    <Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+	  <Item name="Liquid Oxygenite" mincondition="0.99"/>
+	  <Item name="Liquid Oxygenite" mincondition="0.66"/>
+	  <Item name="Liquid Oxygenite" mincondition="0.33"/>
+    </Deconstruct>
+
+    <Sprite texture="DieselCan.png" depth="0.55" sourcerect="0,0,32,45"/>
+
+    <Body width="30" height="43" density="10.9"/>
+
+    <Throwable slots="RightHand,LeftHand" holdpos="0,0" handle1="-13,-2" handle2="-13,-2" throwforce="2.5" aimpos="35,-10">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Reactor/DieselCan.ogg"/>
+	  </StatusEffect>
+	</Throwable>
+  </Item>
+  
+  <Item
+    name="Diesel-Electric Generator"
+    type="Reactor"
+    category="Machine">
+    
+    <trigger/>
+
+    <fixrequirement name="Mechanical repairs">
+      <skill name="Construction" level="50"/>
+      <item name="Welding Tool"/>
+      <item name="Wrench"/>
+    </fixrequirement>
+
+    <Sprite texture="dieselGen.png" sourcerect="0,0,264,144" depth="0.8"/>
+    <BrokenSprite texture="dieselGenBroken.png" sourcerect="0,0,264,144" depth="0.8" maxcondition="0"/>
+
+    <Reactor vulnerabletoemp="false" FireTemp="4500" MeltDownTemp="4750" MeltdownDelay="10000">
+	  <GuiFrame rect="0,0,760,460" alignment="Center" color="0.0,0.0,0.0,0.6"/>
+      <StatusEffect type="InWater" target="This" Temperature="-2.5"/>
+	  <StatusEffect type="OnFire" target="this" condition="-8.5"/>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Diesel Can,Sulphurite Coolant Can,Oxygenite Coolant Can" Condition="-0.08"/>
+	  <StatusEffect type="Always" target="This" ShutDownTemp="10000" setvalue="true" AutoTemp="true"/>
+      <sound file="DieselGen.ogg" type="OnActive" range="3000" volume="Temperature" volumemultiplier="0.02" loop="true"/>
+
+      <StatusEffect type="OnBroken" target="This,Hull" FissionRate="0" oxygen="-60000" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Reactor/DieselGenGone.ogg"/>
+	    <Explosion range="250" stun="0.05" force="5" shockwave="false" flames="false" sparks="false"/>
+      </StatusEffect>
+    </Reactor>
+	
+	<PowerTransfer CanBeOverloaded="false" vulnerabletoemp="false" canbeselected="true">
+      <GuiFrame rect="0,0,350,160" alignment="Center" style="ItemUI"/>
+    </PowerTransfer>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <output name="power_out"/>
+      <output name="temperature_out"/>
+      <input name="shutdown"/>
+    </ConnectionPanel>
+
+    <ItemContainer capacity="5" canbeselected="true">
+      <Containable name="Diesel Can">
+        <StatusEffect type="OnContaining" target="This" Temperature="20"/>
+		<StatusEffect type="OnContaining" target="This" Condition="-0.1"/>
+      </Containable>
+	  <Containable name="Sulphurite Coolant Can">
+        <StatusEffect type="OnContaining" target="This" Temperature="-40"/>
+		<StatusEffect type="OnContaining" target="This" Condition="-0.2"/>
+      </Containable>
+	  <Containable name="Oxygenite Coolant Can">
+        <StatusEffect type="OnContaining" target="This" Temperature="-80"/>
+		<StatusEffect type="OnContaining" target="This" Condition="-0.4"/>
+      </Containable>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Diesel Can"
+	aliases="Diesel"
+	category="Equipment"
+    Tags="meditem"
+	description="A plastic container for Diesel. Diesel is a fuel used to power Diesel-Electric Generators, most of the time."
+	spritecolor="1.0,0.5,0.0,1.0"
+	impacttolerance="3"
+    price="60">
+
+    <Deconstruct time="10">
+      <Item name="Polycarbonate Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="DieselCan.png" depth="0.55" sourcerect="0,0,32,45"/>
+
+    <Body width="30" height="43" density="10.9"/>
+
+    <Throwable slots="RightHand,LeftHand" holdpos="0,0" handle1="-13,-2" handle2="-13,-2" throwforce="2.5" aimpos="35,-10">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Reactor/DieselCan.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnFire" target="this" condition="-100">
+	    <sound file="Mods/BTE/Items/Weapons/ThermiteExplosion.ogg"/>
+	    <Fire size="200"/>
+	  </StatusEffect>
+	</Throwable>
+  </Item>
+</Items>

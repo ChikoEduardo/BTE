@@ -1,0 +1,326 @@
+<prefabs>
+  <largehorizontalback description="A decorative structure with no collision detection"
+    width="128" height="64" resizehorizontal="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="0,0,896,64" depth="0.99"/>
+  </largehorizontalback>
+
+  <smallhorizontalback description="A decorative structure with no collision detection"
+    width="128" height="32" resizehorizontal="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="0,64,896,32" depth="0.99"/>
+  </smallhorizontalback>
+
+  <largeverticalback description="A decorative structure with no collision detection"
+    width="64" height="128" resizevertical="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="0,96,64,448" depth="0.99"/>
+  </largeverticalback>
+  
+  <largeverticalback2 description="A decorative structure with no collision detection"
+    width="64" height="128" resizevertical="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="64,96,64,448" depth="0.99"/>
+  </largeverticalback2>
+
+  <smallverticalback description="A decorative structure with no collision detection"
+    width="32" height="128" resizevertical="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="128,96,32,352" depth="0.99"/>
+  </smallverticalback>
+  <smallverticalback2 description="A decorative structure with no collision detection"
+    width="32" height="128" resizevertical="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="160,96,32,352" depth="0.99"/>
+  </smallverticalback2>
+
+  <engineeringLabel width="153" height="16">
+    <sprite texture="Content/Map/structures2.png" sourcerect="0,426,153,16" depth="0.97" canflipx="false"/>
+  </engineeringLabel>
+
+  <commandLabel width="128" height="16">
+    <sprite texture="Content/Map/structures2.png" sourcerect="0,443,128,16" depth="0.97" canflipx="false"/>
+  </commandLabel>
+
+  <airlockLabel width="99" height ="16">
+    <sprite texture="Content/Map/structures2.png" sourcerect="0,460,199,16" depth="0.97" canflipx="false"/>
+  </airlockLabel>
+
+  <cabinsLabel width="83" height="16">
+    <sprite texture="Content/Map/structures2.png" sourcerect="0,477,83,16" depth="0.97" canflipx="false"/>
+  </cabinsLabel>
+
+  <medicalLabel width="110" height="16">
+    <sprite texture="Content/Map/structures2.png" sourcerect="0,494,110,16" depth="0.97" canflipx="false"/>
+  </medicalLabel>
+
+  <arrowUp width="16" height="16">
+    <sprite texture="Content/Map/structures2.png" sourcerect="129,460,16,16" depth="0.7"/>
+  </arrowUp>
+
+  <arrowDown width="16" height="16">
+    <sprite texture="Content/Map/structures2.png" sourcerect="146,460,16,16" depth="0.7"/>
+  </arrowDown>
+
+  <arrowLeft width="16" height="16">
+    <sprite texture="Content/Map/structures2.png" sourcerect="129,477,16,16" depth="0.7"/>
+  </arrowLeft>
+
+  <arrowRight width="16" height="16">
+    <sprite texture="Content/Map/structures2.png" sourcerect="146,477,16,16" depth="0.7"/>
+  </arrowRight>
+  
+  <medicalSign width="19" height="19">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="523,1005,19,19" depth="0.7"/>
+  </medicalSign>
+  
+  <poisonSign width="19" height="19">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="483,985,19,19" depth="0.7"/>
+  </poisonSign>
+  
+  <electricSign width="19" height="19">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="503,1005,19,19" depth="0.7"/>
+  </electricSign>
+  
+  <fireSign width="19" height="19">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="523,985,19,19" depth="0.7"/>
+  </fireSign>
+  
+  <nuclearSign width="19" height="19">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="503,985,19,19" depth="0.7"/>
+  </nuclearSign>
+  
+  <torpSign width="19" height="19">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="503,965,19,19" depth="0.7"/>
+  </torpSign>
+  
+  <recycleSign width="19" height="19">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="523,965,19,19" depth="0.7"/>
+  </recycleSign>
+  
+  <HazardStripes width="32" height="32" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="521,244,215,111" depth="0.89"/>
+  </HazardStripes>
+
+  <platform width="64" height="26" resizehorizontal="true" body="true" platform="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="896,53,128,32" depth="0.9"/>
+  </platform>
+  
+  <largeplatform width="64" height="64" resizehorizontal="true" body="true" platform="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="896,0,128,64" depth="0.9"/>
+  </largeplatform>
+  
+  <scaffoldings description="A platform-like structure with collision detection"
+    width="32" height="32" resizehorizontal="true" resizevertical="true" body="true" health="250" maxhealth="250">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="960,264,64,64" depth="0.061"/>
+    <backgroundsprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="960,199,64,64" depth="0.85"/>
+  </scaffoldings>
+  
+  <topwall description="A horizontal wall with collision detection"
+    width="64" height="32" resizehorizontal="true" body="true" castshadow="true" health="500" maxhealth="500">
+    <sprite texture="Content/Map/testroom.png" sourcerect="0,989,576,32" depth="0.05"/>
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="0,953,576,32" depth="0.85"/>
+  </topwall>
+  
+  <leftwall description="A vertical wall with collision detection"    
+    width="32" height="64" resizevertical="true" body="true" castshadow="true" health="500" maxhealth="500">
+    <sprite texture="Content/Map/testroom.png" sourcerect="953,214,32,576" depth="0.05" fliphorizontal="true"/>
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="989,214,32,576" depth="0.85" fliphorizontal="true"/>    
+  </leftwall>
+
+  <rightwall description="A vertical wall with collision detection"
+    width="32" height="64" resizevertical="true" body="true" castshadow="true" health="500" maxhealth="500">
+    <sprite texture="Content/Map/testroom.png" sourcerect="953,214,32,576" depth="0.05" />
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="989,214,32,576" depth="0.85"/>    
+  </rightwall>
+
+  <TopWallHeavy description="A horizontal wall with collision detection"
+    width="96" height="96" resizehorizontal="true" body="true" castshadow="true" health="1000" maxhealth="1000">
+    <sprite texture="Content/Map/testroom.png" sourcerect="197,347,480,63" depth="0.055"/>
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="197,446,480,96" depth="0.85"/>    
+  </TopWallHeavy>
+
+  <LeftWallHeavy description="A vertical wall with collision detection"
+    width="96" height="96" resizevertical="true" body="true" castshadow="true" health="1000" maxhealth="1000">
+    <sprite texture="Content/Map/testroom.png" sourcerect="33,546,63,384" depth="0.055" fliphorizontal="true"/>
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="98,546,96,384" depth="0.85" fliphorizontal="true"/>
+  </LeftWallHeavy>
+
+  <RightWallHeavy description="A vertical wall with collision detection"
+    width="96" height="96" resizevertical="true" body="true" castshadow="true" health="1000" maxhealth="1000">
+    <sprite texture="Content/Map/testroom.png" sourcerect="33,546,63,384" depth="0.055"/>
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="98,546,96,384" depth="0.85"/>
+  </RightWallHeavy>
+  
+  <HorizontalWallBase description="A horizontal wall with collision detection"
+    width="128" height="128" resizehorizontal="true" body="true" castshadow="true" health="10000" maxhealth="10000">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="544,894,480,130" depth="0.055"/>
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="197,446,480,96" depth="0.85"/>    
+  </HorizontalWallBase>
+  
+  <VerticalWallBase description="A vertical wall with collision detection"
+    width="128" height="128" resizevertical="true" body="true" castshadow="true" health="10000" maxhealth="10000">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="895,509,130,384" depth="0.055"/>
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="98,546,96,384" depth ="0.85"/>
+  </VerticalWallBase>
+
+  <CableHolderHorizontal width="32" height="24" resizehorizontal="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="478,902,96,24" depth="0.85"/>
+  </CableHolderHorizontal>
+  
+  <CableHolderVertical width="24" height="32" resizevertical="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="550,804,24,96" depth="0.85"/>
+  </CableHolderVertical>
+  
+  <CeilingChains width="32" height="248" resizehorizontal="true">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="0,469,264,248" depth="0.95"/>
+  </CeilingChains>
+
+  <topwindow width="128" height="49" body="true" health="150" maxhealth="150" tags="glass">
+    <sprite texture="Content/Map/testroom.png" sourcerect="208,848,128,80" depth="0.065"/>
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="344,848,128,80" depth="0.85"/>    
+  </topwindow>
+
+  <verticalwindow width="128" height="224" body="true" health="150" maxhealth="150" tags="glass">
+    <sprite texture="Content/Map/testroom.png" sourcerect="368,544,128,224" depth ="0.065"/>
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="239,544,128,224" depth="0.85"/>    
+  </verticalwindow>
+
+  <horizontalresizablewindow width="128" height="64" body="true" health="100" tags="glass" resizehorizontal="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="207,771,128,64" depth="0.06"/>
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="337,771,128,64" depth="0.85"/>    
+  </horizontalresizablewindow>
+
+  <verticalresizablewindow width="64" height="128" body="true" health="100" tags="glass" resizevertical="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="896,80,64,128" depth="0.06"/>
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="961,80,64,128" depth="0.85"/>    
+  </verticalresizablewindow>
+  
+  <horizontalresizablewindow2 width="128" height="32" body="true" health="75" maxhealth="75" tags="glass" resizehorizontal="true">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="896,0,128,34" depth="0.06"/>
+    <backgroundsprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="896,35,128,34" depth="0.85"/>    
+  </horizontalresizablewindow2>
+  
+  <verticalresizablewindow2 width="32" height="128" body="true" health="75" maxhealth="75" tags="glass" resizevertical="true">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="955,70,34,128" depth="0.06"/>
+    <backgroundsprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="990,70,34,128" depth="0.85"/>    
+  </verticalresizablewindow2>
+
+  <roughbgwall width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="200,104,240,240" depth="1.0"/>
+  </roughbgwall>
+  
+  <steelpanelbgwall width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="0,243,518,223" depth="1.0"/>
+  </steelpanelbgwall>
+
+  <cleanbgwall width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="448,96,448,224" depth="1.0"/>
+  </cleanbgwall>
+  
+  <bgglasspanel width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="487,0,235,235" depth="1.05"/>
+  </bgglasspanel>
+
+  <bgpanels width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="720,336,224,224" depth="1.0"/>
+  </bgpanels>
+
+  <bgpanelswindow width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="724,560,224,224" depth="1.0"/>
+  </bgpanelswindow>
+
+  <bgorangepanels width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="576,798,446,224" depth="1.0"/>
+  </bgorangepanels>
+
+  <bgorangepanelwindow width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Content/Map/testroom.png" sourcerect="501,560,224,224" depth="1.0"/>
+  </bgorangepanelwindow>
+
+  <PipesBackground width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Content/Map/structures2.png" sourcerect="320,0,192,192" depth="1.0"/>
+  </PipesBackground>
+
+  <SlopeForward width="16" height="16" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Content/Map/structures2.png" sourcerect="0,0,224,64" depth="0.95"/>
+  </SlopeForward>
+
+  <SlopeBack width="16" height="16" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Content/Map/structures2.png" sourcerect="0,64,224,64" depth="0.95"/>
+  </SlopeBack>
+
+  <stairsright width="256" height="320" stairdirection="Right">
+    <sprite texture="Content/Map/structures2.png" sourcerect="256,193,256,319" depth="0.1"/>
+  </stairsright>
+
+  <stairsleft width="256" height="320" stairdirection="Left">
+    <sprite texture="Content/Map/structures2.png" sourcerect="256,193,256,319" fliphorizontal="true" depth="0.1"/>
+  </stairsleft>
+  
+  <Ductup width="32" height="32" stairdirection="Right">
+    <sprite texture="Content/Map/testroom.png" sourcerect="136,132,32,32" depth="0.89"/>
+  </Ductup>
+
+  <bunk width="173" height="129">
+    <sprite texture="Content/Map/structures2.png" sourcerect="0,129,173,129" depth="0.8"/>
+  </bunk>
+  
+  <bunkwall width="161" height="72">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="0,951,161,72" depth="0.81"/>
+  </bunkwall>
+
+  <RuinWallHorizontal category="Alien" castshadow="true"
+    width="128" height="128" resizehorizontal="true" body="true" health="750" maxhealth="750">
+    <sprite texture="Content/Map/ruins.png" sourcerect="0,896,832,128" depth="0.06"/>
+  </RuinWallHorizontal>
+
+  <RuinWallVertical category="Alien" castshadow="true"
+    width="128" height="128" resizevertical="true" body="true" health="750" maxhealth="750">
+    <sprite texture="Content/Map/ruins.png" sourcerect="896,192,128,832" depth="0.061"/>
+  </RuinWallVertical>
+
+  <RuinWallHeavyHorizontal category="Alien" castshadow="true"
+    width="128" height="128" resizehorizontal="true" body="true" health="100000" maxhealth="100000">
+    <sprite texture="Content/Map/ruins3.png" sourcerect="352,896,672,128" depth="0.06"/>
+  </RuinWallHeavyHorizontal>
+
+  <RuinWallHeavyVertical category="Alien" castshadow="true"
+    width="128" height="128" resizevertical="true" body="true" health="100000" maxhealth="100000">
+    <sprite texture="Content/Map/ruins3.png" sourcerect="896,0,128,672" depth="0.061"/>
+  </RuinWallHeavyVertical>
+
+  <RuinWallHorizontalSmall category="Alien" castshadow="true"
+    width="128" height="54" resizehorizontal="true" body="true" health="500" maxhealth="500">
+    <sprite texture="Content/Map/ruins.png" sourcerect="0,842,832,54" depth="0.062"/>
+  </RuinWallHorizontalSmall>
+
+  <RuinWallVerticalSmall category="Alien" castshadow="true"
+    width="54" height="128" resizevertical="true" body="true" health="500" maxhealth="500">
+    <sprite texture="Content/Map/ruins.png" sourcerect="842,192,54,832" depth="0.063"/>
+  </RuinWallVerticalSmall>
+
+  <RuinBack category="Alien"
+    width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Content/Map/ruins.png" sourcerect="0,0,512,512" depth="0.98"/>
+  </RuinBack>
+
+  <RuinBackCarvings category="Alien"
+    width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Content/Map/ruins.png" sourcerect="512,0,233,512" depth="0.981" />
+  </RuinBackCarvings>
+
+  <RuinBackFractal category="Alien"
+    width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Content/Map/ruins3.png" sourcerect="0,0,640,896" depth="0.98"/>
+  </RuinBackFractal>
+  
+  <RuinBlock category="Alien" 
+    width="514" height="296">
+    <sprite texture="Content/Map/ruins.png" sourcerect="0,513,514,296" depth="0.99" />
+  </RuinBlock>
+
+  <RuinFractalBall category="Alien"  
+    width="512" height="512">
+    <sprite texture="Content/Map/ruins2.png" sourcerect="0,0,512,512" depth="0.971" />
+  </RuinFractalBall>
+
+  <RuinClaw category="Alien" 
+    width="126" height="270">
+    <sprite texture="Content/Map/ruins2.png" sourcerect="512,517,126,270" depth="0.97"/>
+  </RuinClaw>
+</prefabs>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item
+    name="Control Monitor"
+    aliases="Monitor"
+    category="Machine"
+    type="Controller"
+    disableitemusagewhenselected="true">
+	
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,60,31,40"/>
+	
+    <Controller UserPos="-35.0, -50.0" direction="Right" canbeselected="true" requireaimtouse="true">
+      <limbposition limb="Head" position="-5,-62"/>
+      <limbposition limb="Torso" position="-5,-108"/>
+	  <limbposition limb="LeftHand" position="5,-28"/>
+      <limbposition limb="RightHand" position="20,-32"/>
+    </Controller>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="power_in"/>
+      <output name="position_out"/>
+      <output name="trigger_out"/>
+    </ConnectionPanel>
+  </Item>
+
+  <Item
+    name="Steering Terminal"
+    category="Machine"
+    type="Controller"
+    disableitemusagewhenselected="true">
+  
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,60,31,40"/>
+  
+    <Controller UserPos="-35.0, -50.0" direction="Right" canbeselected="true" requireaimtouse="true">
+      <limbposition limb="Head" position="-5,-62"/>
+      <limbposition limb="Torso" position="-5,-108"/>
+	  <limbposition limb="LeftHand" position="5,-28"/>
+      <limbposition limb="RightHand" position="20,-32"/>
+    </Controller>
+  
+    <Steering minvoltage="0.0" canbeselected="true" powerconsumption="0">
+      <GuiFrame rect="0,0,0.5,0.5" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+    </Steering>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="power_in"/>
+      <output name="position_out"/>
+      <output name="trigger_out"/>
+	  <output name="velocity_x_out"/>
+      <output name="velocity_y_out"/>
+    </ConnectionPanel>
+  </Item>
+</Items>

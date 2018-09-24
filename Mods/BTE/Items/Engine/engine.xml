@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item
+    name="Submarine Engine"
+	aliases="Engine"
+    category="Machine">
+
+    <Sprite texture="Engine.png" depth="0.8" sourcerect="0,0,373,113" canflipx="true"/>
+	<BrokenSprite texture="Engine.png" depth="0.8" sourcerect="0,210,373,113" maxcondition="0" canflipx="true"/>
+
+    <trigger x="20" y="0" width="333" height="113"/>
+
+    <fixrequirement name="Mechanical repairs">
+      <skill name="Construction" level="50"/>
+      <item name="Welding Tool"/>
+      <item name="Wrench"/>
+    </fixrequirement>
+	
+	<LightComponent lightcolor="1.0,1.0,1.0,0.1" range="1000" powerconsumption="1" IsOn="true">
+      <sprite texture="Mods/BTE/Items/Engine/Engine.png" sourcerect="420,0,373,113" alpha="1.0" canflipx="true"/>
+	  <StatusEffect type="OnBroken" target="This">
+        <Explosion range="300" stun="0.2" force="2.0" flames="false" smoke="false" shockwave="false" decal="explosion" decalsize="0.6"/>
+      </StatusEffect>
+    </LightComponent>
+
+    <Engine minvoltage="0.5" powerconsumption="2000" maxforce="2000" canbeselected="true">
+      <StatusEffect type="OnFire" target="This" condition="-2.0"/>
+      <GuiFrame rect="0,0,350,160" alignment="Center" style="ItemUI"/>
+      <sound file="Content/Items/Engine/engine.ogg" type="OnActive" range="3000" volume="CurrentVolume" loop="true"/>
+    </Engine>
+    
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="power_in"/>
+      <input name="set_force"/>
+    </ConnectionPanel>
+  </Item>
+
+  <Item
+    name="Shuttle Engine"
+    category="Machine">
+
+    <Sprite texture="Engine.png" depth="0.8" sourcerect="0,115,224,73" canflipx="true"/>
+	<BrokenSprite texture="Engine.png" depth="0.8" sourcerect="0,325,224,73" maxcondition="0" canflipx="true"/>
+
+    <trigger x="15" y="0" width="194" height="73"/>
+    
+    <fixrequirement name="Mechanical repairs">
+      <skill name="Construction" level="40"/>
+      <item name="Welding Tool"/>
+      <item name="Wrench"/>
+    </fixrequirement>
+	
+	<LightComponent lightcolor="1.0,1.0,1.0,0.1" range="750" powerconsumption="1" IsOn="true">
+      <sprite texture="Mods/BTE/Items/Engine/Engine.png" sourcerect="420,115,224,73" alpha="1.0" canflipx="true"/>
+	  <StatusEffect type="OnBroken" target="This">
+        <Explosion range="200" stun="0.2" force="1.0" flames="false" smoke="false" shockwave="false" decal="explosion" decalsize="0.5"/>
+      </StatusEffect>
+    </LightComponent>
+
+    <Engine minvoltage="0.5" powerconsumption="500.0" maxforce="300" canbeselected="true">
+      <StatusEffect type="OnFire" target="This" condition="-2.5"/>
+	  <GuiFrame rect="0,0,350,160" alignment="Center" style="ItemUI"/>
+      <sound file="Content/Items/Engine/engine.ogg" type="OnActive" range="3000" volume="CurrentVolume" loop="true"/>
+    </Engine>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="power_in"/>
+      <input name="set_force"/>
+    </ConnectionPanel>
+  </Item>
+  
+  <Item
+    name="Torpedo Engine"
+    category="Machine">
+
+    <Sprite texture="Engine.png" depth="0.8" sourcerect="225,121,158,60" canflipx="true"/>
+	<BrokenSprite texture="Engine.png" depth="0.8" sourcerect="225,331,158,60" maxcondition="0" canflipx="true"/>
+
+    <trigger x="15" y="0" width="124" height="60"/>
+    
+    <fixrequirement name="Mechanical repairs">
+      <skill name="Construction" level="40"/>
+      <item name="Welding Tool"/>
+      <item name="Wrench"/>
+    </fixrequirement>
+	
+	<LightComponent lightcolor="1.0,1.0,1.0,0.1" range="500" powerconsumption="1" IsOn="true">
+      <sprite texture="Mods/BTE/Items/Engine/Engine.png" sourcerect="645,121,158,60" alpha="1.0" canflipx="true"/>
+	  <StatusEffect type="OnBroken" target="This">
+        <Explosion range="150" stun="0.2" force="1.0" flames="false" smoke="false" shockwave="false" decal="explosion" decalsize="0.5"/>
+      </StatusEffect>
+    </LightComponent>
+
+    <Engine minvoltage="0.5" powerconsumption="250.0" maxforce="150" canbeselected="false">
+      <StatusEffect type="OnFire" target="This" condition="-4.5"/>
+	  <GuiFrame rect="0,0,350,160" alignment="Center" style="ItemUI"/>
+      <sound file="Content/Items/Engine/engine.ogg" type="OnActive" range="1500" volume="CurrentVolume" loop="true"/>
+    </Engine>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="power_in"/>
+      <input name="set_force"/>
+    </ConnectionPanel>
+  </Item>
+</Items>

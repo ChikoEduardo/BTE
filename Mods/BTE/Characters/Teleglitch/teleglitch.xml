@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Character name="teleglitch" humanoid="true" needsair="false" doesbleed="false" health="0.1">
+
+  <sound file="Mods/BTE/Sounds/Characters/Teleglitch/Teleglitch1.ogg" state="Attack" range="1000"/>
+  <sound file="Mods/BTE/Sounds/Characters/Teleglitch/Teleglitch2.ogg" state="Attack" range="1000"/>
+  <sound file="Mods/BTE/Sounds/Characters/Teleglitch/Teleglitch3.ogg" state="Attack" range="1000"/>
+  <sound file="Mods/BTE/Sounds/Characters/Teleglitch/Teleglitch4.ogg" state="Attack" range="1000"/>
+  <sound file="Mods/BTE/Sounds/Characters/Teleglitch/Teleglitch5.ogg" state="Attack" range="1000"/>
+  
+  <sound file="Mods/BTE/Sounds/Characters/Teleglitch/Teleglitch1.ogg" state="None" range="2000"/>
+  <sound file="Mods/BTE/Sounds/Characters/Teleglitch/Teleglitch2.ogg" state="None" range="2000"/>
+  <sound file="Mods/BTE/Sounds/Characters/Teleglitch/Teleglitch3.ogg" state="None" range="2000"/>
+  <sound file="Mods/BTE/Sounds/Characters/Teleglitch/Teleglitch4.ogg" state="None" range="2000"/>
+  <sound file="Mods/BTE/Sounds/Characters/Teleglitch/Teleglitch5.ogg" state="None" range="2000"/>
+  
+  <sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleglitchDie.ogg" state="Die" range="3000"/>
+  
+  <ai 
+    combatstrength="9000"
+    attackpriorityhumans="0.0"
+    attackpriorityrooms="500"
+	eatpriority="400"
+    sight="5.0"
+    hearing="5.0"
+    attackcooldown="3.0"/>
+  
+  <ragdoll headposition="134" torsoposition="108"
+           stepsize="42.0, 12.0"
+           walkanimspeed="4.58"
+           movementlerp="0.4"
+           legtorque="15.0"
+           thightorque="-5.0"
+		   impacttolerance="500"
+		   scale="0.4"
+           walkspeed="1.5" swimspeed="2.5"
+           runspeedmultiplier="3.0" swimspeedmultiplier="3.0">
+
+    <collider height="80" radius="15"/>
+
+    <!-- head -->
+    <limb id="0" radius="13" mass="1" type="Head" ignorecollisions="true">
+      <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchHead.png" sourcerect="1,1,37,38" depth="0.04" origin="0.5,0.5"/>
+    </limb>
+
+    <!-- body -->
+    <limb id="1" radius="14" height="21" mass="1" type="Torso" ignorecollisions="true">
+      <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchTorso.png" sourcerect="0,0,29,58" depth="0.045" origin="0.5,0.6"/>
+	  <lightsource range="100" color="0.8,0.8,1.0,0.9">
+        <lighttexture texture="Mods/BTE/Characters/Teleglitch/lightsprite.png" depth="0.025" origin="0.5,0.5"/>
+      </lightsource>
+	  <attack range="100" damagerange="100" duration="1" damage="0.1" structuredamage="0.1"
+			  targetforce="1" force="10" damagetype="burn" applyforceonlimbs="0,2,3,4,5" torque="-20">
+		<StatusEffect type="OnUse" target="This" Health="0.1" disabledeltatime="true">
+		  <Sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit1.ogg" type="OnUse" range="3000"/>
+		  <Sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit2.ogg" type="OnUse" range="3000"/>
+		  <Sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit3.ogg" type="OnUse" range="3000"/>
+		  <Explosion range="250" stun="5" empstrength="4" force="150" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="1"/>
+		</StatusEffect>
+      </attack>
+    </limb>
+    <limb id="12" radius="13" mass="1" type="Waist" ignorecollisions="true">
+      <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchLegs.png" sourcerect="0,0,32,29" depth="0.05" origin="0.5,0.5"/>
+    </limb>
+  
+    <!-- left arm -->
+    <limb id="2" radius="8" height="20" mass="1" type="LeftArm" ignorecollisions="true">
+      <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchTorso.png" sourcerect="30,2,17,39" depth="0.15" origin="0.5,0.5"/>
+    </limb>
+    <limb id="3" radius="6" height="26" mass="1" type="LeftHand" ignorecollisions="true" pullpos="0.0,-18.0">
+      <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchTorso.png" sourcerect="49,2,13,47" depth="0.16" origin="0.5,0.5"/>
+	  <lightsource range="25" color="0.8,0.8,1.0,0.9">
+        <lighttexture texture="Mods/BTE/Characters/Teleglitch/lightsprite.png" depth="0.025" origin="0.5,0.5"/>
+      </lightsource>
+    </limb>
+
+    <!-- right arm -->
+    <limb id="4" radius="8" height="20" mass="1" type="RightArm" ignorecollisions="true">
+      <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchTorso.png" sourcerect="30,2,17,39" depth="0.01" origin="0.5,0.5"/>
+    </limb>
+    <limb id="5" radius="6" height="26" mass="1" type="RightHand" ignorecollisions="true" pullpos="0.0,-18.0">
+      <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchTorso.png" sourcerect="49,2,13,47" origin="0.5,0.5"/>
+    </limb>
+
+    <!-- left leg -->
+    <limb id="6" radius="10" height="30" mass="1" type="LeftThigh" ignorecollisions="true">
+      <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchLegs.png" sourcerect="0,32,26,48" depth="0.15" origin="0.5,0.5"/>
+    </limb>
+    <limb id="7" radius="6" height="39" mass="1" type="LeftLeg" ignorecollisions="true">
+      <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchLegs.png" sourcerect="32,0,22,50" depth="0.16" origin="0.5,0.5"/>
+    </limb>
+    <limb id="8" radius="5" height="13" mass="1" type ="LeftFoot" ignorecollisions="true" flip="true" pullpos="-5.0,0.0">
+      <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchLegs.png" sourcerect="35,53,16,25" depth="0.17" origin="0.5,0.5"/>
+    </limb>
+  
+    <!-- right leg -->
+    <limb id="9" radius="10" height="30" mass="1" type="RightThigh" ignorecollisions="true">
+      <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchLegs.png" sourcerect="0,32,26,48" depth="0.11" origin="0.5,0.5"/>
+    </limb>
+    <limb id="10" radius="6" height="39" mass="1" type="RightLeg" ignorecollisions="true">
+      <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchLegs.png" sourcerect="32,0,22,50" depth="0.12" origin="0.5,0.5"/>
+    </limb>
+    <limb id="11" radius="5" height="13" mass="1" type="RightFoot" flip="true" ignorecollisions="true" pullpos="-5.0,0.0">
+      <sprite texture="Mods/BTE/Characters/Teleglitch/TeleglitchLegs.png" sourcerect="35,53,16,25" depth="0.13" origin="0.5,0.5"/>
+	  <lightsource range="50" color="0.8,0.8,1.0,0.9">
+        <lighttexture texture="Mods/BTE/Characters/Teleglitch/lightsprite.png" depth="0.025" origin="0.5,0.5"/>
+      </lightsource>
+    </limb> 
+
+    <!-- head to body -->
+    <joint limb1="0" limb1anchor="-10,-10" limb2="1" limb2anchor="-3,28" lowerlimit="0" upperlimit="10"/>
+    
+    <joint limb1="1" limb1anchor="0,-17" limb2="12" limb2anchor="0,15" lowerlimit="30" upperlimit="60"/>       
+    
+    <!-- body to left arm -->
+    <joint limb1="1" limb1anchor="-3,14" limb2="2" limb2anchor="0,12"/>
+    <joint limb1="2" limb1anchor="0,-16" limb2="3" limb2anchor="-2,19" lowerlimit="0" upperlimit="170"/>
+    <!-- body to right arm -->
+    <joint limb1="1" limb1anchor="-3,14" limb2="4" limb2anchor="0,12"/>
+    <joint limb1="4" limb1anchor="0,-16" limb2="5" limb2anchor="-2,19" lowerlimit="0" upperlimit="170"/>
+
+    <!-- body to left leg -->
+    <joint limb1="12" limb1anchor="0,-1" limb2="6" limb2anchor="0,14" lowerlimit="-30" upperlimit="120"/>
+    <joint limb1="6" limb1anchor="0,-15" limb2="7" limb2anchor="0,20" lowerlimit="-150" upperlimit="-10"/>
+    <joint limb1="7" limb1anchor="-3,-21" limb2="8" limb2anchor="5,7" lowerlimit="20" upperlimit="90"/>
+  
+    <!-- body to right leg -->
+    <joint limb1="12" limb1anchor="0,-1" limb2="9" limb2anchor="0,14" lowerlimit="-30" upperlimit="120"/>
+    <joint limb1="9" limb1anchor="0,-15" limb2="10" limb2anchor="0,20" lowerlimit="-150" upperlimit="-10"/>
+    <joint limb1="10" limb1anchor="-3,-21" limb2="11" limb2anchor="5,7" lowerlimit="20" upperlimit="90"/> 
+	
+  </ragdoll>
+</Character>

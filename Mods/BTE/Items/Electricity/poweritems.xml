@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item
+    name="Junction Box"
+    category="Electrical"
+    description="Serves as a hub for power distribution and relaying signals between devices."
+	>
+	
+	<Sprite texture="Content/Items/Electricity/junctionbox.png" sourcerect="0,0,70,84" depth="0.82" canflipx="false"/>
+    <BrokenSprite texture="Content/Items/Electricity/junctionbox.png" sourcerect="70,0,70,84" depth="0.82" maxcondition="50" fadein="true"/>
+    <BrokenSprite texture="Content/Items/Electricity/junctionbox.png" sourcerect="140,0,70,84" depth="0.82" maxcondition="0"/>
+
+    <fixrequirement name="Electrical repairs">
+      <skill name="Electrical Engineering" level="40"/>
+      <item name="Wire"/>
+      <item name="Screwdriver"/>
+    </fixrequirement>
+
+    <PowerTransfer canbeselected="true">
+      <StatusEffect type="InWater" target="This" condition="-0.5">
+        <Conditional currPowerConsumption="lt -10"/>
+      </StatusEffect>
+      <GuiFrame rect="0,0,350,160" alignment="Center" style="ItemUI"/>
+    </PowerTransfer>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+	  <RequiredSkill name="Electrical Engineering" level="40"/>
+      <StatusEffect type="OnFailure" target="Character" health="-8" stun="2.6">
+        <Explosion range="50" stun="0.2" force="2.0" flames="false" smoke="false" shockwave="false"/>
+      </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Explosion range="50" stun="0.2" force="2.0" flames="false" smoke="false" shockwave="false"/>
+      </StatusEffect>
+
+      <output name="power"/>
+	  <input name="power_in"/>
+	  <output name="power_out"/>
+      <output name="signal_0"/>
+      <output name="signal_1"/>
+      <output name="signal_2"/>
+      <output name="signal_3"/>
+    </ConnectionPanel>
+  </Item>
+  
+  <Item
+    name="Small Battery"
+    category="Electrical"
+	description="Generally used to power unmanned vessels."
+	>
+
+    <Sprite texture="Battery.png" sourcerect="0,0,78,57" depth="0.8"/>
+
+    <PowerContainer capacity="1000" maxrechargespeed="250" maxoutput="500" canbeselected="true">
+      <GuiFrame rect="0,-100,350,160" alignment="Center" style="ItemUI"/>
+    </PowerContainer>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <StatusEffect type="OnFailure" target="Character">
+        <Explosion range="75" damage="10" stun="6" force="2.0" flames="false" shockwave="false" sparks="true"/>
+      </StatusEffect>
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="power_out"/>
+      <input name="power_in"/>      
+    </ConnectionPanel>
+  </Item>
+
+  <Item
+    name="Battery"
+    category="Electrical"
+	description="Generally used for storing backup power in case of a reactor failure."
+	>
+
+    <Sprite texture="Content/Items/Electricity/battery.png" sourcerect="0,0,58,77" depth="0.8"/>
+
+    <PowerContainer capacity="2000" maxrechargespeed="500" maxoutput="1000" canbeselected="true">
+      <GuiFrame rect="0,-100,350,160" alignment="Center" style="ItemUI"/>
+      <StatusEffect type="OnActive" target="Contained" targetnames="Battery Cell" Condition="2.0"/>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Fulgurium Battery Cell" Condition="1.0"/>
+    </PowerContainer>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <StatusEffect type="OnFailure" target="Character">
+        <Explosion range="100" damage="15" stun="10" force="3.0" flames="false" shockwave="false" sparks="true"/>
+      </StatusEffect>
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="power_out"/>
+      <input name="power_in"/>      
+    </ConnectionPanel>
+
+    <ItemContainer capacity="3" canbeselected="true" hideitems="true">
+      <Containable name="loadable"/>
+    </ItemContainer>
+  </Item>
+
+  <Item
+    name="Supercapacitor"
+    category="Electrical"
+    description="Can deliver charge much faster than batteries."
+	>
+
+    <Sprite texture="Content/Items/Electricity/supercapacitor.png" depth="0.8" sourcerect="0,0,77,88"/>
+
+    <PowerContainer capacity="20" maxrechargespeed="20" maxoutput="2000000" canbeselected="true">
+      <GuiFrame rect="0,0,0.3,0.3" alignment="Center" style="ItemUI"/>
+    </PowerContainer>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <StatusEffect type="OnFailure" target="Character">
+        <Explosion range="100" damage="30" stun="20" force="5.0" shockwave="false" sparks="true"/>
+      </StatusEffect>
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="power_out"/>
+      <input name="power_in"/>
+    </ConnectionPanel>
+  </Item>
+
+  <Item
+    name="Charging Dock"
+    category="Electrical"
+    description="A wall-mounted battery cell charging dock."
+	>
+
+    <Sprite texture="Content/Items/Electricity/battery.png" sourcerect="0,80,58,16" depth="0.8"/>
+
+    <Powered powerconsumption="200" currpowerconsumption="200" isactive="true">
+      <GuiFrame rect="0,-100,350,160" alignment="Center" style="ItemUI"/>
+      <StatusEffect type="OnActive" target="Contained" targetnames="Battery Cell" Condition="2.0"/>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Fulgurium Battery Cell" Condition="1.0"/>
+    </Powered>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <StatusEffect type="OnFailure" target="Character">
+        <Explosion range="100" damage="15" stun="10" force="3.0" flames="false" shockwave="false" sparks="true"/>
+      </StatusEffect>
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="power_in"/>
+    </ConnectionPanel>
+
+    <ItemContainer capacity="4" canbeselected="true" hideitems="false" itempos="9,9" iteminterval="14,0" itemrotation="90">
+      <Containable name="loadable"/>
+    </ItemContainer>
+  </Item>
+</Items>

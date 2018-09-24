@@ -1,0 +1,159 @@
+﻿<Items>
+  <Item
+    name="Navigation Terminal"
+    linkable="true"
+    category="Machine">
+
+    <Sprite texture="Mods/BTE/Items/Terminals/NavTerminal.png" depth="0.8" sourcerect="0,0,64,128"/>
+	
+	<fixrequirement name="Electrical repairs">
+      <skill name="Electrical Engineering" level="40"/>
+      <item name="Wire"/>
+      <item name="Screwdriver"/>
+    </fixrequirement>
+	
+	<LightComponent lightcolor="1.0,1.0,1.0,0.1" range="750" powerconsumption="1" IsOn="true">
+      <sprite texture="Mods/BTE/Items/Terminals/NavTerminal.png" sourcerect="65,0,76,128" origin="0.48,0.5" alpha="1.0"/>
+	  <StatusEffect type="OnBroken" target="This">
+        <Explosion range="200" stun="0.2" force="2.0" flames="false" smoke="false" shockwave="false"/>
+      </StatusEffect>
+    </LightComponent>
+    
+    <Steering minvoltage="0.5" canbeselected="true" powerconsumption="10">
+	  <StatusEffect type="InWater" target="This" condition="-1.0"/>
+      <GuiFrame rect="0,0,0.5,0.5" alignment="Center" style="ItemUI"/>
+    </Steering>
+
+    <Radar canbeselected="true" powerconsumption="100" displaybordersize="0.2">
+	  <sound file="Content/Items/Engine/radarPing.ogg" type="OnUse" range="4000"/>
+      <GuiFrame rect="0,0,0.5,0.5" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Content/Items/Engine/radarOverlay.png" origin="0.5,0.5"/>
+      <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="power_in"/>
+      <input name="velocity_in"/>
+      <output name="velocity_x_out"/>
+      <output name="velocity_y_out"/>
+    </ConnectionPanel>
+  </Item>
+  
+  <Item
+    name="Command Terminal"
+    linkable="true"
+    category="Machine">
+
+    <Sprite texture="Mods/BTE/Items/Terminals/CommandTerminal.png" depth="0.8" sourcerect="0,0,130,206"/>
+	
+	<fixrequirement name="Electrical repairs">
+      <skill name="Electrical Engineering" level="50"/>
+      <item name="Wire"/>
+      <item name="Screwdriver"/>
+    </fixrequirement>
+	
+	<LightComponent lightcolor="1.0,1.0,1.0,0.1" range="1000" powerconsumption="1" IsOn="true">
+      <sprite texture="Mods/BTE/Items/Terminals/CommandTerminal.png" sourcerect="131,0,130,206" origin="0.54,0.5" alpha="1.0"/>
+	  <StatusEffect type="OnBroken" target="This">
+        <Explosion range="300" stun="0.2" force="2.0" flames="false" smoke="false" shockwave="false"/>
+      </StatusEffect>
+    </LightComponent>
+	
+	<Steering minvoltage="0.5" canbeselected="true" powerconsumption="10">
+	  <StatusEffect type="InWater" target="This" condition="-1.0"/>
+      <GuiFrame rect="-30,20,0.45,0.5" alignment="CenterRight" style="ItemUI"/>
+    </Steering>
+
+    <Radar canbeselected="true" powerconsumption="100" range="10000" displaybordersize="0.2">
+	  <sound file="Content/Items/Engine/radarPing.ogg" type="OnUse" range="4000"/>
+      <GuiFrame rect="-30,20,0.45,0.5" alignment="CenterRight" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Content/Items/Engine/radarOverlay.png" origin="0.5,0.5"/>
+      <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+	
+	<MiniMap MinVoltage="0.5" PowerConsumption="100" canbeselected="true">
+    <GuiFrame rect="155,20,0.4,0.5" alignment="CenterLeft" style="ItemUI"/>
+  </MiniMap>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="power_in"/>
+      <input name="water_data_in"/>
+      <input name="oxygen_data_in"/>
+	  <input name="velocity_in"/>
+      <output name="velocity_x_out"/>
+      <output name="velocity_y_out"/>
+    </ConnectionPanel>
+  </Item>
+
+  <Item
+    name="Sonar Monitor"
+    linkable="true"
+    category="Machine">
+    
+    <Sprite texture="Mods/BTE/Items/Terminals/StatusMonitor.png" depth="0.8" sourcerect="0,0,64,128"/>
+	
+	<fixrequirement name="Electrical repairs">
+      <skill name="Electrical Engineering" level="30"/>
+      <item name="Wire"/>
+      <item name="Screwdriver"/>
+    </fixrequirement>
+	
+	<LightComponent lightcolor="1.0,1.0,1.0,0.1" range="750" powerconsumption="1" IsOn="true">
+      <sprite texture="Mods/BTE/Items/Terminals/StatusMonitor.png" sourcerect="65,0,76,128" origin="0.48,0.5" alpha="1.0"/>
+	  <StatusEffect type="OnBroken" target="This">
+        <Explosion range="200" stun="0.2" force="2.0" flames="false" smoke="false" shockwave="false"/>
+      </StatusEffect>
+    </LightComponent>
+
+    <Radar canbeselected="true" powerconsumption="100" range="20000" displaybordersize="0.2">
+      <StatusEffect type="InWater" target="This" condition="-1.0"/>
+      <GuiFrame rect="0,0,0.5,0.5" alignment="Center" style="ItemUI"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Content/Items/Engine/radarOverlay.png" origin="0.5,0.5"/>
+      <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="power_in"/>
+    </ConnectionPanel>
+  </Item>
+
+  <Item
+    name="Status Monitor"
+    aliases="MiniMap"
+    category="Machine"
+    linkable="true">
+  
+    <Sprite texture="Mods/BTE/Items/Terminals/StatusMonitor.png" depth="0.8" sourcerect="0,0,64,128"/>
+	
+	<fixrequirement name="Electrical repairs">
+      <skill name="Electrical Engineering" level="30"/>
+      <item name="Wire"/>
+      <item name="Screwdriver"/>
+    </fixrequirement>
+	
+	<LightComponent lightcolor="1.0,1.0,1.0,0.1" range="750" powerconsumption="1" IsOn="true">
+      <sprite texture="Mods/BTE/Items/Terminals/StatusMonitor.png" sourcerect="65,0,76,128" origin="0.48,0.5" alpha="1.0"/>
+	  <StatusEffect type="OnBroken" target="This">
+        <Explosion range="200" stun="0.2" force="2.0" flames="false" smoke="false" shockwave="false"/>
+      </StatusEffect>
+    </LightComponent>
+
+    <MiniMap MinVoltage="0.5" PowerConsumption="100" canbeselected="true">
+      <StatusEffect type="InWater" target="This" condition="-1.0"/>
+	  <GuiFrame rect="0,0,0.5,0.5" alignment="Center" style="ItemUI"/>
+    </MiniMap>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="power_in"/>    
+      <input name="water_data_in"/>
+      <input name="oxygen_data_in"/>
+    </ConnectionPanel>
+  </Item>
+</Items>

@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item
+    name="Defibrillator"
+	aliases="Defib"
+    category="Equipment"
+    Tags="meditem,medical"
+	description="A defibrillator is a remarkable device which can help revive an incapacitated crew member by providing electric shocks."
+    canuseonself="true"
+	cargocontainername="Medical Shipping Box"
+	impacttolerance="3"
+    price="300">
+	
+	<Deconstruct time="10">
+      <Item name="Polycarbonate Sliver"/>
+	  <Item name="Steel Sliver"/>
+	  <Item name="FPGA Circuit"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Medical/Medical.png" sourcerect="0,28,25,20" depth="0.6"/>
+
+    <Body width="22" height="16" density="10.5"/>
+
+    <MeleeWeapon slots="Any,RightHand,LeftHand"
+              aimpos="5,0" handle1="-5,0" handle2="-5,0" holdangle="10" reload="1.0">
+	  <Attack damage="1" stun="0.1" damagetype="Blunt" targetforce="8" sound="Mods/BTE/Items/Tools/RubberHit.ogg"/>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="1" stun="-4" stackable="false" delay="2" duration="14">
+        <RequiredItem name="loadable" type="Contained"/>     
+      </StatusEffect>
+	  
+	  <StatusEffect type="OnUse" target="Character" stun="10" disabledeltatime="true">
+		<sound file="Content/Items/Weapons/stunbaton.ogg"/>
+        <RequiredItem name="Battery Cell" type="Contained"/>        
+        <Explosion range="100" force="6" shockwave="false" sparks="false" flames="false" smoke="false" camerashake="5.0"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character">
+		  <Conditional SpeciesName="watcher"/>
+		  <RequiredItem name="Battery Cell" type="Contained"/>
+		  <Explosion range="400" damage="50" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>
+		  <Sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit2.ogg" type="OnUse" range="3000"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character">
+		  <Conditional SpeciesName="scorpion"/>
+		  <RequiredItem name="Battery Cell" type="Contained"/>
+		  <Explosion range="250" damage="25" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>
+		  <Sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit1.ogg" type="OnUse" range="3000"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-20" disabledeltatime="true">
+	    <Conditional SpeciesName="robot"/>
+        <RequiredItem name="Battery Cell" type="Contained"/>        
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-10" disabledeltatime="true">
+	    <Conditional SpeciesName="synth"/>
+        <RequiredItem name="Battery Cell" type="Contained"/>        
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-10" disabledeltatime="true">
+	    <Conditional SpeciesName="fractalguardian"/>
+        <RequiredItem name="Battery Cell" type="Contained"/>        
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-10" disabledeltatime="true">
+	    <Conditional SpeciesName="walker"/>
+        <RequiredItem name="Battery Cell" type="Contained"/>        
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-10" disabledeltatime="true">
+	    <Conditional SpeciesName="carrier"/>
+        <RequiredItem name="Battery Cell" type="Contained"/>        
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Contained" Condition="-20" disabledeltatime="true">
+	    <RequiredItem name="Battery Cell" type="Contained" msg="Loaded Battery Cell required"/>        
+      </StatusEffect>
+	  
+	  <StatusEffect type="OnUse" target="Character" stun="10" disabledeltatime="true">
+		<sound file="Content/Items/Weapons/stunbaton.ogg"/>
+        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+        <Explosion range="100" force="8" shockwave="false" sparks="false" flames="false" smoke="false" camerashake="5.0"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character">
+		  <Conditional SpeciesName="watcher"/>
+		  <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>
+		  <Explosion range="400" damage="75" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>
+		  <Sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit3.ogg" type="OnUse" range="3000"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character">
+		  <Conditional SpeciesName="scorpion"/>
+		  <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>
+		  <Explosion range="250" damage="50" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>
+		  <Sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit2.ogg" type="OnUse" range="3000"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-15" disabledeltatime="true">
+	    <Conditional SpeciesName="synth"/>
+        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-15" disabledeltatime="true">
+	    <Conditional SpeciesName="fractalguardian"/>
+        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-15" disabledeltatime="true">
+	    <Conditional SpeciesName="walker"/>
+        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-15" disabledeltatime="true">
+	    <Conditional SpeciesName="carrier"/>
+        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Contained" Condition="-20" disabledeltatime="true">
+	    <RequiredItem name="Fulgurium Battery Cell" type="Contained" msg="Loaded Battery Cell required"/>        
+      </StatusEffect>
+	  
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Weapons/GunHit.ogg"/>
+	  </StatusEffect>
+    </MeleeWeapon>
+	  
+	  <ItemContainer capacity="1" hideitems="true">
+      <Containable name="loadable"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Medical Inhaler"
+	aliases="Inhaler,puffer"
+    category="Equipment"
+    Tags="smallitem,medical"
+	description="It allows the delivery of a drug via the lungs as an alternative to an injection."
+    price="45">
+	
+	<Deconstruct time="10">
+	  <Item name="Polycarbonate Sliver"/>
+	  <Item name="Aluminium Sliver" outcondition="0.75"/>
+    </Deconstruct>
+
+    <Sprite texture="Medical.png" sourcerect="20,0,9,18" depth="0.55"/>
+
+    <Body width="6" height="15" density="13"/>
+
+    <RepairTool structurefixamount="0" limbfixamount="0" range="0" barrelpos="0,0" particles="bubbles">
+      <ParticleEmitter particle="bubbles" particlespersecond="20"/>
+	  <sound file="Mods/BTE/Items/Medical/Inhaler.ogg" type="OnUse" range="300" loop="true"/>
+	  <StatusEffect type="InWater" target="This" Condition="-75"/>
+	  <StatusEffect type="OnBroken" target="This" Condition="1" delay="15"/>
+	  <StatusEffect type="Always" target="This" Condition="15"/>
+	  <StatusEffect type="OnUse" target="Contained,Character">
+        <RequiredItem name="chem" type="Contained"/>
+        <Use/>
+      </StatusEffect>
+    </RepairTool>
+	
+	<ItemContainer capacity="1" hideitems="true">
+      <Containable name="chem"/>
+    </ItemContainer>
+	
+	<Holdable slots="RightHand,LeftHand,Any" controlpose="true"
+              aimpos="30,18" handle1="2,0" handle2="2,0"/>
+  </Item>
+  
+  <Item
+    name="Medical Syringe"
+	aliases="Syringe"
+    category="Equipment"
+    Tags="smallitem,medical"
+	description="Injection is often a much more effective method of administering drugs than taking them orally."
+	usecontainedspritecolor="true"
+	canuseonself="true"
+	waterproof="true"
+	cargocontainername="Medical Shipping Box"
+    price="50">
+	
+	<Deconstruct time="5">
+      <Item name="Polycarbonate Sliver" outcondition="0.75"/>
+	  <Item name="Aluminium Sliver" outcondition="0.5"/>
+    </Deconstruct>
+
+    <Sprite texture="Medical.png" sourcerect="0,20,25,6" depth="0.6"/>
+
+    <Body width="25" height="5" density="9.5"/>
+
+    <MeleeWeapon slots="Any,RightHand,LeftHand"
+              aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
+      <StatusEffect type="OnUse" target="Contained,Character">
+	    <sound file="Content/Items/Medical/syringe.ogg" range="500"/>
+        <RequiredItem name="chem" type="Contained"/>
+        <Use/>
+      </StatusEffect>
+    </MeleeWeapon>
+
+    <ItemContainer capacity="1" hideitems="true">
+      <Containable name="chem"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Medical Dart"
+	aliases="Dart"
+    category="Equipment"
+	Tags="smallitem,medical,weapon"
+	description="A dart with a hypodermic needle."
+	usecontainedspritecolor="true"
+    interactthroughwalls="true"
+	waterproof="true"
+	cargocontainername="Weapons Shipping Box"
+    price="100">
+	
+	<Deconstruct time="5">
+      <Item name="Polycarbonate Sliver" outcondition="0.75"/>
+	  <Item name="Aluminium Sliver" outcondition="0.5"/>
+    </Deconstruct>
+
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="102,9,25,8" depth="0.55"/>
+
+    <Body width="23" height="6" density="10.1"/>
+
+    <Projectile launchimpulse="35" sticktocharacters="true">
+      <Attack damage="1" bleedingdamage="0.1" damagetype="Slash" stun="0.1" targetforce="5"/>
+      <StatusEffect type="OnImpact" target="Contained,Character">
+        <sound file="Content/Items/Medical/syringe.ogg" range="500"/>
+        <RequiredItem name="chem" type="Contained"/>
+        <Use/>
+      </StatusEffect>
+    </Projectile>
+	
+	<Pickable slots="Any"/>
+	
+	<ItemContainer capacity="1" hideitems="true">
+      <Containable name="chem"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Dart Gun"
+    category="Equipment"
+	tags="bigitem,weapon"
+	description="This is an scoped pneumatic rifle that can propel darts containing different drugs."
+	cargocontainername="Weapons Shipping Box"
+	impacttolerance="3"
+    price="1500">
+
+    <Deconstruct time="10">      
+      <Item name="Aluminium Bar"/>
+      <Item name="Spare Parts"/>
+    </Deconstruct>
+  
+    <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" sourcerect="0,0,98,33" depth="0.55"/>
+
+    <Body width="90" height="30" density="40"/>
+    
+    <RangedWeapon barrelpos="49,10" spread="0" unskilledspread="10">
+      <Sound file="Mods/BTE/Items/Weapons/DartGun1.ogg" type="OnUse"/>
+      <Sound file="Mods/BTE/Items/Weapons/DartGun2.ogg" type="OnUse"/>
+      <RequiredItems name="Medical Dart" type="Contained" msg="The loaded dart is too damaged"/>
+      <RequiredSkill name="Weapons" level="30"/>
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Weapons/GunHit.ogg"/>
+	  </StatusEffect>
+    </RangedWeapon>
+
+    <ItemContainer capacity="1" hideitems="true">
+      <Containable name="Medical Dart"/>
+    </ItemContainer>
+	
+	<Holdable slots="RightHand+LeftHand,Any" controlpose="true"
+              holdpos="35,-10" aimpos="60,5" handle1="-15,-6" handle2="26,7"/>
+  </Item>
+
+  <Item
+    name="Bandage"
+	aliases="Bandaid"
+    category="Equipment"
+    Tags="smallitem,medical"
+	description="Treated piece of fabric used to dress wounds and reduce or stop a bleeding."
+    canuseonself="true"
+	cargocontainername="Medical Shipping Box"
+    price="20">
+	
+	<Deconstruct time="5">
+      <Item name="Polycarbonate Sliver" outcondition="0.5"/>
+    </Deconstruct>
+
+    <Sprite texture="Medical.png" sourcerect="30,0,19,17" depth="0.6"/>
+
+    <Body width="13" height="14" density="9"/>
+
+    <MeleeWeapon slots="Any,RightHand,LeftHand"
+              aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
+      <StatusEffect type="OnUse" target="Character" bleeding="-0.2" duration="5.0"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
+	    <sound file="Content/Items/Medical/bandage.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  
+  <Item
+    name="Cigarette Pack"
+    category="Misc"
+    Tags="cntnr,smallitem"
+    description="A polycarbonate container designed with a flavor-protective foil, and sealed through a transparent airtight plastic film."
+    canbepicked="true">
+   
+    <Deconstruct time="5">
+      <Item name="Polycarbonate Sliver" outcondition="0.8"/>
+    </Deconstruct>
+
+    <Sprite texture="Other.png" sourcerect="39,1,10,20" depth="0.55"/>
+	<BrokenSprite texture="Other.png" sourcerect="50,1,10,20" depth="0.55" maxcondition="0" fadein="true"/>
+
+    <Body width="6" height="16" density="9.8"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" throwforce="2" aimpos="35,-10">
+	  <StatusEffect type="OnFire" target="This" Condition="-10"/>
+	  <StatusEffect type="OnFire" target="This">
+	    <Conditional Condition="lt 1"/>
+		<Remove/>
+	  </StatusEffect>
+	</Throwable>
+	
+	<ItemContainer capacity="10" canbeselected="true" hideitems="true">
+      <Containable name="Cigarette"/>
+	  <Containable name="Hand-rolled Cigarette"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Cigarette"
+	aliases="Cig,Ciggy"
+    category="Misc"
+    Tags="smallitem"
+	description="Quality tobacco in a thin polycarbonate film, ready for smoking."
+	cargocontainername="Cigarette Pack"
+    price="45">
+	
+	<Deconstruct time="10">
+	  <Item name="Polycarbonate Sliver" outcondition="0.1"/>
+    </Deconstruct>
+
+    <Sprite texture="Other.png" sourcerect="1,1,17,2" depth="0.55"/>
+	<BrokenSprite texture="Other.png" sourcerect="1,4,17,2" depth="0.55" maxcondition="99"/>
+	<BrokenSprite texture="Other.png" sourcerect="1,7,17,2" depth="0.55" maxcondition="40"/>
+    <BrokenSprite texture="Other.png" sourcerect="1,10,17,2" depth="0.55" maxcondition="0"/>
+
+    <Body width="14" height="1" density="9.9"/>
+
+    <RepairTool structurefixamount="0" limbfixamount="0" range="0" barrelpos="-5,0">
+      <ParticleEmitter particle="cigsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20"/>
+	  <sound file="Mods/BTE/Items/Medical/Cigarette.ogg" type="OnUse" range="300" loop="true"/>
+	  <StatusEffect type="OnUse" target="This,Hull" Condition="-2.0" oxygen="-950"/>
+    </RepairTool>
+	
+	<LightComponent LightColor="1.0,0.5,0.5,0.2" Flicker="0.4" range="50" IsOn="false">
+      <StatusEffect type="OnUse" target="Character" oxygen="-0.01" SpeedMultiplier="0.01" disabledeltatime="true" stackable="false" duration="100"/>
+      <StatusEffect type="OnUse" target="This" IsOn="true"/>
+	  <StatusEffect type="OnActive" target="This,Hull" Condition="-1.0" oxygen="-50">
+        <ParticleEmitter particle="cigsmoke" particlespersecond="1" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20"/>
+      </StatusEffect>
+	  <StatusEffect type="OnActive" target="This" IsOn="false">
+        <RequiredItem name="cntnr,clothing" type="Container"/>
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This" IsOn="false"/>
+	  <StatusEffect type="OnFire" target="This" Condition="-20" IsOn="true"/>
+	  <StatusEffect type="OnFire" target="This">
+	    <Conditional Condition="lt 1"/>
+		<Remove/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This" IsOn="false"/>
+    </LightComponent>
+	
+	<Holdable slots="RightHand,LeftHand,Any" controlpose="true"
+              aimpos="30,18" handle1="0,0" handle2="0,0"/>
+  </Item>
+  
+  <Item
+    name="Hand-rolled Cigarette"
+	aliases="Roll,Rollie"
+    category="Misc"
+    Tags="smallitem"
+	description="Loose tobacco from questionable sources, rolled into a thin polycarbonate film for smoking."
+	>
+	
+	<Deconstruct time="10">
+	  <Item name="Polycarbonate Sliver" outcondition="0.1"/>
+    </Deconstruct>
+
+    <Sprite texture="Other.png" sourcerect="1,13,17,2" depth="0.55"/>
+	<BrokenSprite texture="Other.png" sourcerect="1,16,17,2" depth="0.55" maxcondition="99"/>
+	<BrokenSprite texture="Other.png" sourcerect="1,19,17,2" depth="0.55" maxcondition="40"/>
+    <BrokenSprite texture="Other.png" sourcerect="1,22,17,2" depth="0.55" maxcondition="0"/>
+
+    <Body width="14" height="1" density="9.95"/>
+
+    <RepairTool structurefixamount="0" limbfixamount="0" range="0" barrelpos="-5,0">
+      <ParticleEmitter particle="cigsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20"/>
+	  <sound file="Mods/BTE/Items/Medical/Cigarette.ogg" type="OnUse" range="300" loop="true"/>
+	  <StatusEffect type="OnUse" target="This,Hull" Condition="-2.0" oxygen="-950"/>
+    </RepairTool>
+	
+	<LightComponent LightColor="1.0,0.5,0.5,0.2" Flicker="0.4" range="50" IsOn="false">
+      <StatusEffect type="OnUse" target="Character" oxygen="-0.02" SpeedMultiplier="0.01" disabledeltatime="true" stackable="false" duration="100"/>
+	  <StatusEffect type="OnUse" target="This" IsOn="true"/>
+      <StatusEffect type="OnActive" target="This,Hull" Condition="-2.0" oxygen="-50">
+        <ParticleEmitter particle="cigsmoke" particlespersecond="1" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20"/>
+      </StatusEffect>
+	  <StatusEffect type="OnActive" target="This" IsOn="false">
+        <RequiredItem name="cntnr,clothing" type="Container"/>
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This" IsOn="false"/>
+	  <StatusEffect type="OnFire" target="This" Condition="-20" IsOn="true"/>
+	  <StatusEffect type="OnFire" target="This">
+	    <Conditional Condition="lt 1"/>
+		<Remove/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This" IsOn="false"/>
+    </LightComponent>
+	
+	<Holdable slots="RightHand,LeftHand,Any" controlpose="true"
+              aimpos="30,18" handle1="-1,0" handle2="-1,0"/>
+  </Item>
+</Items>

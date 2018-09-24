@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Character name="scorpion" humanoid="false" health="5" doesbleed="true">
+
+  <sound file="Mods/BTE/Sounds/Characters/Scorpion/Attack.ogg" state="Attack"/>
+  <sound file="Mods/BTE/Sounds/Characters/Scorpion/Idle1.ogg" state="None"/>
+  <sound file="Mods/BTE/Sounds/Characters/Scorpion/Idle2.ogg" state="None"/>
+  
+  <ai combatstrength="200"
+	  attackhumans="20"
+	  attackrooms="50"
+	  attackweaker="40"
+	  attackstronger="30"
+	  sight="2"
+	  hearing="3"/>
+
+  <ragdoll torsoposition="30"
+		   waveamplitude="25" wavelength="2500"
+		   swimspeed="1.5" walkspeed="0"
+		   scale="0.2"
+		   flip="true">
+    
+    <collider width="30" height="60"/>
+    
+    <!-- head -->
+    <limb id="0" radius="47" height="81" type="Head" flip="true" steerforce="1.0">
+      <sprite texture="Mods/BTE/Characters/Scorpion/scorpion.png" sourcerect="13,12,73,154" depth="0.02"/>
+    </limb>
+
+    <!-- body -->
+    <limb id="1" radius="43" height="51" type="Torso" flip="true" steerforce="0.1">
+      <sprite texture="Mods/BTE/Characters/Scorpion/scorpion.png" sourcerect="94,32,65,116" depth="0.03" origin="0.5,0.5"/>
+    </limb>
+
+    <limb id="2" radius="40" height="60" type="Tail" flip="true" steerforce="0.1">
+      <sprite texture="Mods/BTE/Characters/Scorpion/scorpion.png" sourcerect="94,32,65,116" depth="0.03" origin="0.5,0.5"/>
+    </limb>
+    <limb id="3" radius="40" height="60" type="Tail" flip="true" steerforce="0.0">
+      <sprite texture="Mods/BTE/Characters/Scorpion/scorpion.png" sourcerect="94,32,65,116" depth="0.03" origin="0.5,0.5"/>
+    </limb>
+    <limb id="4" radius="40" height="60" type="Tail" flip="true" steerforce="0.0">
+      <sprite texture="Mods/BTE/Characters/Scorpion/scorpion.png" sourcerect="94,32,65,116" depth="0.03" origin="0.5,0.5"/>
+    </limb>
+
+    <limb id="5" width="46" height="98" type="Tail" flip="true">
+      <sprite texture="Mods/BTE/Characters/Scorpion/scorpion.png" sourcerect="190,30,49,98" depth="0.15" origin="0.3,0.5"/>
+      <attack type="PinchCW" range="120" damagerange="80" duration="0.5" damage="5" stun="7.5" structuredamage="3" damagetype="burn"
+			  targetforce="-30" force="1" applyforceonlimbs="4,5" torque="-20">
+		<StatusEffect type="OnUse" target="This">
+		  <Sound file="Content/Items/Electricity/zap1.ogg" type="OnUse"/>
+		  <Sound file="Content/Items/Electricity/zap2.ogg" type="OnUse"/>
+		  <Sound file="Content/Items/Electricity/zap3.ogg" type="OnUse"/>
+		  <Sound file="Content/Items/Electricity/zap4.ogg" type="OnUse"/>
+		  <Explosion range="160" structuredamage="22" force="5" shockwave="false" flames="false" smoke="false" camerashake="0.5"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character">
+		  <Conditional SpeciesName="endworm"/>
+		  <Explosion range="300" damage="5" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character" Health="5" stun="-7.5" disabledeltatime="true">
+		  <Conditional SpeciesName="endworm"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character" stun="-7.5" Health="-15">
+		  <Conditional SpeciesName="robot"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character" stun="-7.5" Health="-7.5">
+		  <Conditional SpeciesName="synth"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character" stun="-7.5" Health="-7.5">
+		  <Conditional SpeciesName="fractalguardian"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character" stun="-7.5" Health="-7.5">
+		  <Conditional SpeciesName="carrier"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character">
+		  <Conditional SpeciesName="watcher"/>
+		  <Explosion range="400" damage="50" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>
+		  <Sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit1.ogg" type="OnUse" range="3000"/>
+		</StatusEffect>
+      </attack>
+    </limb>
+
+    <!-- head to body -->
+    <joint limb1="0" limb1anchor="0,60" limb2="1" limb2anchor="0,-45" lowerlimit="-10" upperlimit="10"/>
+
+    <joint limb1="1" limb1anchor="0,45" limb2="2" limb2anchor="0,-45" lowerlimit="-10" upperlimit="30"/>
+    <joint limb1="2" limb1anchor="0,45" limb2="3" limb2anchor="0,-45" lowerlimit="-10" upperlimit="30"/>
+    <joint limb1="3" limb1anchor="0,45" limb2="4" limb2anchor="0,-45" lowerlimit="-30" upperlimit="30"/>
+
+    <joint limb1="4" limb1anchor="0,45" limb2="5" limb2anchor="0,-45" lowerlimit="-10" upperlimit="30"/>
+
+  </ragdoll>
+</Character>
