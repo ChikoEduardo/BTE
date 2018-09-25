@@ -18,7 +18,7 @@
 
     <Body width="12" height="12" density="9.5"/>
 
-    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" canBeCombined="true"/>
   </Item>
   
   <Item
@@ -83,7 +83,7 @@
 
     <Body width="12" height="12" density="30"/>
 
-    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" canBeCombined="true"/>
   </Item>
   
   <Item
@@ -148,7 +148,7 @@
 
     <Body width="12" height="12" density="40"/>
 
-    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" canBeCombined="true"/>
   </Item>
   
   <Item
@@ -213,7 +213,7 @@
 
     <Body width="12" height="12" density="35"/>
 
-    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" canBeCombined="true"/>
   </Item>
   
   <Item
@@ -278,7 +278,7 @@
 
     <Body width="12" height="12" density="50"/>
 
-    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" canBeCombined="true"/>
   </Item>
   
   <Item
@@ -343,7 +343,7 @@
 
     <Body width="12" height="12" density="60"/>
 
-    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" canBeCombined="true"/>
   </Item>
 
   <Item
@@ -406,7 +406,7 @@
 
     <Body width="12" height="12" density="10"/>
 
-    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" canBeCombined="true"/>
   </Item>
   
   <Item
