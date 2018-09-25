@@ -597,7 +597,7 @@
   
   <Item
     name="Ragged Scientist's Uniform"
-    category="Equipment"
+    category="Misc"
     tags="meditem,clothing">
 	
 	<Deconstruct time="15">
