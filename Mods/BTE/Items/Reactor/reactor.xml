@@ -307,7 +307,7 @@
     <Sprite texture="dieselGen.png" sourcerect="0,0,264,144" depth="0.8"/>
     <BrokenSprite texture="dieselGenBroken.png" sourcerect="0,0,264,144" depth="0.8" maxcondition="0"/>
 
-    <Reactor vulnerabletoemp="false" FireTemp="4500" MeltDownTemp="4750" MeltdownDelay="10000">
+    <Reactor vulnerabletoemp="false" FireTemp="4750" MeltDownTemp="4750" MeltdownDelay="10000">
 	  <GuiFrame rect="0,0,760,460" alignment="Center" color="0.0,0.0,0.0,0.6"/>
       <StatusEffect type="InWater" target="This" Temperature="-2.5"/>
 	  <StatusEffect type="OnFire" target="this" condition="-8.5"/>
