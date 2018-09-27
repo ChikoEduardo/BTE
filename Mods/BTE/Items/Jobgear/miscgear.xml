@@ -731,7 +731,7 @@
 
     <Body width="50" height="17" density="14"/>
 
-    <Wearable slots="Any,Torso+Legs" armorvalue="1.5">
+    <Wearable slots="Any,Torso+Legs">
       <sprite texture="prisonergearRagged.png" limb="Torso" sourcerect="0,0,32,51" origin="0.5,0.48" depthlimb="Head"/>
 	  
 	  <sprite texture="prisonergearRagged.png" limb="LeftHand" sourcerect="72,0,17,42" origin="0.45,0.6"/>
@@ -1015,7 +1015,7 @@
 
     <Body width="50" height="17" density="14"/>
 
-    <Wearable slots="Any,Torso+Legs" armorvalue="1.5">
+    <Wearable slots="Any,Torso+Legs">
       <sprite texture="securitygear.png" limb="Torso" sourcerect="0,0,38,58" depthlimb="Head" origin="0.52,0.48"/>
 	  
 	  <sprite texture="doctorgear.png" limb="RightHand" sourcerect="93,59,15,47" origin="0.45,0.55"/>
@@ -1108,7 +1108,7 @@
 
     <Body width="50" height="17" density="14"/>
 
-    <Wearable slots="Any,Torso+Legs" armorvalue="1.5">
+    <Wearable slots="Any,Torso+Legs">
       <sprite texture="securitygear.png" limb="Torso" sourcerect="0,0,38,58" depthlimb="Head" origin="0.52,0.48"/>
 
       <sprite texture="prisonergearRagged.png" limb="Waist" sourcerect="98,0,30,36" origin="0.5,0.3" hidelimb="true"/>
