@@ -526,6 +526,27 @@
   </Item>
   
   <Item
+    name="Switch Component"
+	category="Electrical"
+    Tags="smallitem">
+
+    <Sprite texture="signalcomp.png" sourcerect="32,17,16,16" depth="0.8"/>
+
+    <Door canbeselected="true">
+      <Sprite texture="signalcomp.png" sourcerect="0,0,0.1,0.1" depth="0.05" origin="0.5,0.0"/>
+      <WeldedSprite texture="signalcomp.png" sourcerect="0,0,1,1" depth="0.0" origin="0.5,0.5"/>
+      <BrokenSprite texture="signalcomp.png" sourcerect="0,0,1,1" depth="0.051" origin="0.5,0.0"/>
+    </Door>
+  
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="toggle"/>
+      <input name="set_state"/>
+      <output name="state_out"/>
+    </ConnectionPanel>
+  </Item>
+  
+  <Item
     name="Buzzer Component"
 	category="Electrical"
     Tags="smallitem">
