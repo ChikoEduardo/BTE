@@ -617,7 +617,7 @@
     name="Blueprints - Advanced Reactor Rods"
     category="Material"
     Tags="smallitem,docs"
-    description="Blueprints that allow the construction of different fuel and coolant rods."
+    description="Blueprints that allow the construction of different fuel rods."
     canbepicked="true">
    
     <Deconstruct time="15">
