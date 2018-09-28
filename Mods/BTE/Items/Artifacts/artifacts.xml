@@ -272,17 +272,6 @@
     </RepairTool>
     
     <Propulsion force="-20" usablein="both"/>
-	
-	<Projectile launchimpulse="80">
-      <Attack damage="1000" bleedingdamage="10" structuredamage="500" damagetype="Blunt"/>
-      <StatusEffect type="OnUse" Condition="-100" stun="10" disabledeltatime="true">
-	    <sound file="Content/Items/Artifacts/alienweapon.ogg"/>
-        <Explosion range="1000" structuredamage="5000" damage="1000" stun="10" force="50" camerashake="5.0"/>
-      </StatusEffect>
-      <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" velocitymax="50" scalemin="2" scalemax="5"/>
-      </StatusEffect>
-    </Projectile>
 
     <ItemContainer capacity="1" hideitems="true" itempos="9,-15">
       <Containable name="Oxygenite Shard"/>
