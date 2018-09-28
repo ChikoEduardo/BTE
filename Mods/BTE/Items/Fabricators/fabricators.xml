@@ -339,11 +339,11 @@
       </fabricableitem>
 	  
 	  <fabricableitem name="Sulphurite Coolant Can" requireditems="Polycarbonate Bar" requiredtime="20">
-		<Item name="Sulphuric Acid" count="3" mincondition="100" usecondition="true"/>
+		<Item name="Sulphuric Acid" count="3" usecondition="true"/>
 		<RequiredSkill name="Construction" level="30"/>
       </fabricableitem>
 	  <fabricableitem name="Oxygenite Coolant Can" requireditems="Polycarbonate Bar" requiredtime="40">
-		<Item name="Liquid Oxygenite" count="3" mincondition="100" usecondition="true"/>
+		<Item name="Liquid Oxygenite" count="3" usecondition="true"/>
 		<RequiredSkill name="Construction" level="40"/>
       </fabricableitem>
 	  
