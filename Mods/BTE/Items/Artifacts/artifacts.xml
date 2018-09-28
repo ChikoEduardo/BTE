@@ -37,7 +37,7 @@
       <Item name="Thermite Shard"/>
     </Deconstruct>
     
-    <Body radius="28" density="20" friction="0.95"/>
+    <Body radius="28" density="12" friction="0.95"/>
 
     <Holdable slots="RightHand+LeftHand" holdpos="30,-15" handle1="0,10" handle2="0,-10">
 	  <StatusEffect type="Always" target="This" Condition="-40"/>
@@ -64,7 +64,7 @@
       <Item name="Fulgurium Bar"/>
     </Deconstruct>
 
-    <Body radius="25" density="50" friction="0.95"/>
+    <Body radius="25" density="14" friction="0.95"/>
 
     <Holdable slots="RightHand+LeftHand" holdpos="30,-15" handle1="0,10" handle2="0,-10">
 	  <StatusEffect type="Always" target="This" Condition="-60"/>
@@ -89,7 +89,7 @@
       <Item name="Fulgurium Bar"/>
     </Deconstruct>
     
-    <Body width="55" height="55" density="30" friction="0.95"/>
+    <Body width="55" height="55" density="16" friction="0.95"/>
 	
 	<AiTarget sightrange="10000" soundrange="10000"/>
 
