@@ -318,6 +318,10 @@
   <ArtifactEvent name="Artifact" description=""
     mineventcount="0" maxeventcount="1"
     itemname="Grinder Artifact"/>
+	
+	<ArtifactEvent name="Artifact" description=""
+    mineventcount="0" maxeventcount="1"
+    itemname="Charger Artifact"/>
   
   <ArtifactEvent name="Artifact" description=""
     mineventcount="0" maxeventcount="1"
