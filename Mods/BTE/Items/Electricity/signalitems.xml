@@ -478,7 +478,7 @@
 
     <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="0,32,15,19"/>
 
-    <WifiComponent canbeselected="true"/>
+    <WifiComponent canbeselected="true" range="80000"/>
 
     <Body width="16" height="16" density="20"/>
 
