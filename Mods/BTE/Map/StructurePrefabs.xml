@@ -175,9 +175,9 @@
     <backgroundsprite texture="Content/Map/testroom.png" sourcerect="344,848,128,80" depth="0.85"/>    
   </topwindow>
 
-  <verticalwindow width="128" height="224" body="true" health="150" maxhealth="150" tags="glass">
-    <sprite texture="Content/Map/testroom.png" sourcerect="368,544,128,224" depth="0.065"/>
-    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="239,544,128,224" depth="0.85"/>    
+  <verticalwindow width="128" height="208" body="true" health="150" maxhealth="150" tags="glass">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="406,701,128,208" depth="0.065"/>
+    <backgroundsprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="277,701,128,208" depth="0.85"/>    
   </verticalwindow>
 
   <horizontalresizablewindow width="128" height="64" body="true" health="100" tags="glass" resizehorizontal="true">
