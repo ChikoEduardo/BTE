@@ -1,31 +1,31 @@
 <prefabs>
   <largehorizontalback description="A decorative structure with no collision detection"
     width="128" height="64" resizehorizontal="true">
-    <sprite texture="Content/Map/testroom.png" sourcerect="0,0,896,64" depth="0.99"/>
+    <sprite texture="Content/Map/testroom.png" sourcerect="0,0,896,64" depth="0.98"/>
   </largehorizontalback>
 
   <smallhorizontalback description="A decorative structure with no collision detection"
     width="128" height="32" resizehorizontal="true">
-    <sprite texture="Content/Map/testroom.png" sourcerect="0,64,896,32" depth="0.99"/>
+    <sprite texture="Content/Map/testroom.png" sourcerect="0,64,896,32" depth="0.98"/>
   </smallhorizontalback>
 
   <largeverticalback description="A decorative structure with no collision detection"
     width="64" height="128" resizevertical="true">
-    <sprite texture="Content/Map/testroom.png" sourcerect="0,96,64,448" depth="0.99"/>
+    <sprite texture="Content/Map/testroom.png" sourcerect="0,96,64,448" depth="0.98"/>
   </largeverticalback>
   
   <largeverticalback2 description="A decorative structure with no collision detection"
     width="64" height="128" resizevertical="true">
-    <sprite texture="Content/Map/testroom.png" sourcerect="64,96,64,448" depth="0.99"/>
+    <sprite texture="Content/Map/testroom.png" sourcerect="64,96,64,448" depth="0.98"/>
   </largeverticalback2>
 
   <smallverticalback description="A decorative structure with no collision detection"
     width="32" height="128" resizevertical="true">
-    <sprite texture="Content/Map/testroom.png" sourcerect="128,96,32,352" depth="0.99"/>
+    <sprite texture="Content/Map/testroom.png" sourcerect="128,96,32,352" depth="0.98"/>
   </smallverticalback>
   <smallverticalback2 description="A decorative structure with no collision detection"
     width="32" height="128" resizevertical="true">
-    <sprite texture="Content/Map/testroom.png" sourcerect="160,96,32,352" depth="0.99"/>
+    <sprite texture="Content/Map/testroom.png" sourcerect="160,96,32,352" depth="0.98"/>
   </smallverticalback2>
 
   <engineeringLabel width="153" height="16">
@@ -93,7 +93,7 @@
   </recycleSign>
   
   <HazardStripes width="32" height="32" resizehorizontal="true" resizevertical="true">
-    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="521,244,215,111" depth="0.89"/>
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="521,244,215,111" depth="0.99"/>
   </HazardStripes>
 
   <platform width="64" height="26" resizehorizontal="true" body="true" platform="true">
@@ -107,7 +107,7 @@
   <scaffoldings description="A platform-like structure with collision detection"
     width="32" height="32" resizehorizontal="true" resizevertical="true" body="true" health="250" maxhealth="250">
     <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="960,264,64,64" depth="0.061"/>
-    <backgroundsprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="960,199,64,64" depth="0.85"/>
+    <backgroundsprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="960,199,64,64" depth="0.86"/>
   </scaffoldings>
   
   <topwall description="A horizontal wall with collision detection"
@@ -155,7 +155,7 @@
   <VerticalWallBase description="A vertical wall with collision detection"
     width="128" height="128" resizevertical="true" body="true" castshadow="true" health="10000" maxhealth="10000">
     <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="895,509,130,384" depth="0.055"/>
-    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="98,546,96,384" depth ="0.85"/>
+    <backgroundsprite texture="Content/Map/testroom.png" sourcerect="98,546,96,384" depth="0.85"/>
   </VerticalWallBase>
 
   <CableHolderHorizontal width="32" height="24" resizehorizontal="true">
@@ -176,7 +176,7 @@
   </topwindow>
 
   <verticalwindow width="128" height="224" body="true" health="150" maxhealth="150" tags="glass">
-    <sprite texture="Content/Map/testroom.png" sourcerect="368,544,128,224" depth ="0.065"/>
+    <sprite texture="Content/Map/testroom.png" sourcerect="368,544,128,224" depth="0.065"/>
     <backgroundsprite texture="Content/Map/testroom.png" sourcerect="239,544,128,224" depth="0.85"/>    
   </verticalwindow>
 
