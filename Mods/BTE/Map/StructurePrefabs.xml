@@ -167,7 +167,7 @@
   </CableHolderVertical>
   
   <CeilingChains width="32" height="248" resizehorizontal="true">
-    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="0,469,264,248" depth="0.95"/>
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="0,702,264,248" depth="0.95"/>
   </CeilingChains>
 
   <topwindow width="128" height="49" body="true" health="150" maxhealth="150" tags="glass">
@@ -199,6 +199,22 @@
     <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="955,70,34,128" depth="0.06"/>
     <backgroundsprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="990,70,34,128" depth="0.85"/>    
   </verticalresizablewindow2>
+  
+  <plainmetalwall width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="0,468,334,224" depth="1.0"/>
+  </plainmetalwall>
+  
+  <plainmetalwallwindow1 width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="334,468,163,224" depth="1.0"/>
+  </plainmetalwallwindow1>
+  
+  <plainmetalwallwindow2 width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="497,468,163,224" depth="1.0"/>
+  </plainmetalwallwindow2>
+  
+  <plainmetalwallwindow3 width="64" height="64" resizehorizontal="true" resizevertical="true">
+    <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="660,468,163,224" depth="1.0"/>
+  </plainmetalwallwindow3>
 
   <roughbgwall width="64" height="64" resizehorizontal="true" resizevertical="true">
     <sprite texture="Content/Map/testroom.png" sourcerect="200,104,240,240" depth="1.0"/>
