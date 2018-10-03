@@ -480,7 +480,7 @@
       <ParticleEmitterHitStructure particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20"/>
       <ParticleEmitterHitItem particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
       <ParticleEmitterHitCharacter particle="blood" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
-	  <sound file="SawLoop.ogg" type="OnUse" range="500" loop="true"/>
+	  <sound file="Mods/BTE/Items/Tools/SawLoop.ogg" type="OnUse" range="500" loop="true"/>
 	  <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained" msg="Battery cell depleted"/>
 	  <StatusEffect type="OnUse" target="This" Condition="-0.8"/>
       <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-2"/>
