@@ -276,7 +276,7 @@
       <Item name="Polycarbonate Bar"/>
     </Deconstruct>
 
-	<Sprite texture= "Sweater.png" sourcerect="0,50,50,13" depth="0.6"/>
+	<Sprite texture="Sweater.png" sourcerect="0,50,50,13" depth="0.6"/>
 
     <Body width="50" height="17" density="11"/>
 
@@ -303,7 +303,7 @@
 	  <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
-	<Sprite texture= "Sweater.png" sourcerect="0,50,51,13" depth="0.6"/>
+	<Sprite texture="Sweater.png" sourcerect="0,50,51,13" depth="0.6"/>
 
     <Body width="50" height="17" density="11"/>
 
@@ -334,7 +334,7 @@
 	  <Item name="Polycarbonate Sliver"/>
     </Deconstruct>
 
-	<Sprite texture= "Sweater.png" sourcerect="0,50,51,13" depth="0.6"/>
+	<Sprite texture="Sweater.png" sourcerect="0,50,51,13" depth="0.6"/>
 
     <Body width="50" height="17" density="11"/>
 
