@@ -687,6 +687,8 @@
     category="Equipment"
     Tags="smallitem,tool"
 	description="A portable hand-held electric light source."
+	canuseonself="true"
+	indestructible="true"
 	cargocontainername="Electronics Shipping Box"
     price="150">
 
@@ -700,18 +702,33 @@
 
     <Body width="27" height="8" density="10.1"/>
 
-    <LightComponent LightColor="1.0,1.0,1.0,1.0" Flicker="0.1" range="800" powerconsumption="10" IsOn="true">
+    <LightComponent LightColor="1.0,1.0,1.0,1.0" Flicker="0.1" range="800" powerconsumption="10" IsOn="false">
       <LightTexture texture="Content/Lights/lightcone.png" origin="0.05,0.5" size="2.0,1.0"/>
     </LightComponent>
+	
+	<ItemComponent>
+      <StatusEffect type="OnUse" target="This" setvalue="true" IsOn="false" delay="0.1" checkconditionalalways="true">
+        <Conditional IsOn="true"/>
+        <Sound file="Content/Items/Button/switch.ogg"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="This" setvalue="true" IsOn="true" delay="0.1" checkconditionalalways="true">
+        <Conditional IsOn="false"/>
+        <Sound file="Content/Items/Button/switch.ogg"/>
+      </StatusEffect>
+    </ItemComponent>
     
     <ItemContainer capacity="1" hideitems="true">
-      <Containable name="Battery Cell, Fulgurium Battery Cell">
-        <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true"/>
+      <Containable name="Battery Cell,Fulgurium Battery Cell">
+        <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" checkconditionalalways="true">
+          <Conditional IsOn="true"/>
+        </StatusEffect>
       </Containable>
     </ItemContainer>
 	
 	<Holdable slots="RightHand,LeftHand,Any" holdpos="30,-15" aimpos="100,0" handle1="-6,0" handle2="-6,0">
-      <StatusEffect type="OnActive" target="Contained" Condition="-0.1"/>
+	  <StatusEffect type="OnActive" target="This,Contained" Condition="-0.1">
+        <Conditional IsOn="true"/>
+      </StatusEffect>
     </Holdable>
   </Item>
 
