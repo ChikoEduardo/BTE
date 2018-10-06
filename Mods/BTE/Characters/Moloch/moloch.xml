@@ -14,7 +14,7 @@
     attackprioritystronger="-500"
     attackcooldown="15"
 	fleehealththreshold="300"
-    sight="0.5" hearing="1.0"/>
+    sight="0.4" hearing="1.2"/>
 
   <ragdoll waveamplitude="0.0" swimspeed="2.0" mirror="true" rotatetowardsmovement="false" headangle="-90" impacttolerance="8.5" canentersubmarine="false">
 

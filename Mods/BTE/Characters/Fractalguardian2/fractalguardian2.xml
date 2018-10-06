@@ -10,8 +10,8 @@
     combatstrength="1000"
     attackpriorityrooms="0.0"
     attackpriorityhumans="100"
-    sight="1.0"
-    hearing="2.0"
+    sight="2.0"
+    hearing="0.5"
     attackcooldown="1"/>
   
   <ragdoll waveamplitude="0.0" swimspeed="1.0" walkspeed="0.3" flip="false" canentersubmarine="false" rotatetowardsmovement="false">

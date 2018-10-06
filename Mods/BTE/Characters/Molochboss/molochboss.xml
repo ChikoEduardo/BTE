@@ -13,7 +13,7 @@
 	attackpriorityweaker="30"
     attackprioritystronger="60"
     attackcooldown="15.0"
-    sight="0.5" hearing="1.0"/>
+    sight="0.4" hearing="1.2"/>
 
   <ragdoll waveamplitude="0.0" swimspeed="2.0" mirror="true" rotatetowardsmovement="false" headangle="-90" scale="1.1" canentersubmarine="false">
 

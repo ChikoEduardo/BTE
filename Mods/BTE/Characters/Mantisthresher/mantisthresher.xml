@@ -16,7 +16,7 @@
     attackprioritystronger="200"
     eatpriority="55"
     attackcooldown="1.0"
-    sight="0.5"
+    sight="0.6"
     hearing="1.0"
     attachtowalls="true"
 	scale="1.1"/>

@@ -11,8 +11,8 @@
     attackpriorityrooms="100"
     attackpriorityweaker="60"
     attackprioritystronger="0"
-    sight="0.5" 
-    hearing="1.0"
+    sight="0.8"
+    hearing="0.8"
 	attachtowalls="true"
     attackcooldown="3.0"/>
 

@@ -8,8 +8,8 @@
 	  attackrooms="5.0"
 	  attackweaker="50"
 	  attackstronger="0"
-      sight="0.5"
-	  hearing="1.0"
+      sight="0.8"
+      hearing="0.8"
       attackcooldown="5.0"/>
   
     <ragdoll headposition="134" torsoposition="108"

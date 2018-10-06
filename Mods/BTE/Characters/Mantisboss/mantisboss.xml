@@ -16,8 +16,8 @@
     attackprioritystronger="90"
     eatpriority="85"
     attackcooldown="1.5"
-    sight="0.5"
-    hearing="1.0"
+    sight="0.6"
+    hearing="0.9"
     attachtowalls="true"/>
   
   <ragdoll headposition="150" headangle="-90" 

@@ -11,8 +11,8 @@
     attackpriorityrooms="0.0"
     attackpriorityweaker="50"
     attackprioritystronger="0"
-    sight="0.5"
-    hearing="1.0"
+    sight="0.8"
+    hearing="0.8"
     attackcooldown="1.0"/>
   
   <ragdoll headposition="134" torsoposition="108" 

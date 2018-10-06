@@ -16,8 +16,8 @@
     attackprioritystronger="-400"
     eatpriority="30"
     attackcooldown="1.0"
-    sight="0.5"
-    hearing="1.0"
+    sight="0.6"
+    hearing="0.9"
     attachtowalls="true"
     fleehealththreshold="30"/>
   

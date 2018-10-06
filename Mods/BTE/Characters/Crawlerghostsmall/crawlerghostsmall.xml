@@ -13,8 +13,8 @@
     attackpriorityweaker="-500"
     attackprioritystronger="-500"
     eatpriority="75"
-    sight="1.0" 
-    hearing="2.5"
+    sight="0.6" 
+    hearing="1.2"
     fleehealththreshold="10"
     attachtowalls="true"
     attackcooldown="2.0"/>

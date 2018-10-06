@@ -12,7 +12,7 @@
     attackpriorityweaker="0.0"
     attackstronger="50"
     sight="0.1"
-    hearing="2.0"/>
+    hearing="3.0"/>
   
   <ragdoll waveamplitude="100" wavelength="1000" speed="2.0" scale="2.0" flip="false" canentersubmarine="false">
 

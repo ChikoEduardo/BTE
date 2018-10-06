@@ -10,7 +10,7 @@
 	  attackrooms="50"
 	  attackweaker="40"
 	  attackstronger="30"
-	  sight="2"
+	  sight="1.5"
 	  hearing="3"/>
 
   <ragdoll torsoposition="30"

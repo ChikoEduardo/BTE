@@ -19,7 +19,7 @@
 	attackweaker="0.0"
 	attackstronger="0.0"
     attackwhenprovoked="true"
-    sight="1.0"
+    sight="3.0"
     hearing="0.0" />
 
   <ragdoll waveamplitude="0.0" swimspeed="0.5" walkspeed="0.3" mirror="true" rotatetowardsmovement="false" headangle="-90">

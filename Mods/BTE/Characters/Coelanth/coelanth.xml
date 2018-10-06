@@ -13,7 +13,7 @@
     attackprioritystronger="-100"
     eatpriority="40"
     sight="0.1"
-    hearing="1.0"/>
+    hearing="2.0"/>
 
   <ragdoll 
     waveamplitude="50" 

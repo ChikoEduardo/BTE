@@ -10,8 +10,8 @@
     combatstrength="1000"
 	attackpriorityrooms="50"
     attackpriorityhumans="100"
-    sight="1.0"
-    hearing="2.0"
+    sight="2.0"
+    hearing="0.5"
     attackcooldown="1.5"/>
   
   <ragdoll headposition="144" torsoposition="118" 
