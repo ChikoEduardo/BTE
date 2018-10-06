@@ -298,6 +298,11 @@
 		<RequiredSkill name="Electrical Engineering" level="50"/>
       </fabricableitem>
 	  
+	  <fabricableitem name="Sonar Charge" requireditems="Aluminium Sliver,Copper Coil,FPGA Circuit" requiredtime="30">
+	    <Item name="Blueprints - Soundwave Weapons" mincondition="0.0" usecondition="true"/>
+		<RequiredSkill name="Electrical Engineering" level="40"/>
+      </fabricableitem>
+	  
 	  <fabricableitem name="Shockwave Charge" requireditems="Aluminium Sliver,Copper Coil,FPGA Circuit" requiredtime="30">
 	    <Item name="Blueprints - Soundwave Weapons" mincondition="0.0" usecondition="true"/>
 		<RequiredSkill name="Electrical Engineering" level="50"/>
@@ -508,7 +513,8 @@
 		<Item name="Phosphorus" mincondition="0.15" usecondition="true"/>
 		<Item name="Sugar" mincondition="0.15" usecondition="true"/>
 		<Item name="Stabilozine" mincondition="0.15" usecondition="true"/>
-		<RequiredSkill name="Science" level="60"/>
+		<RequiredSkill name="Science" level="50"/>
+		<RequiredSkill name="Medical" level="35"/>
       </fabricableitem>
 	  <fabricableitem name="Pill Bottle of Hyperzine" requireditems="Hyperzine" requiredtime="10">
         <RequiredSkill name="Science" level="40"/>
