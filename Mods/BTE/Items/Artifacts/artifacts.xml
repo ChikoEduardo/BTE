@@ -80,7 +80,8 @@
   <Item
     name="Nasonov Artifact"
     category="Alien"
-    Tags="alien,rtfct">
+    Tags="alien,rtfct"
+	indestructible="true">
 
     <Sprite texture="Content/Items/Artifacts/artifact.png" depth="0.7" sourcerect="60,61,66,67"/>
 
