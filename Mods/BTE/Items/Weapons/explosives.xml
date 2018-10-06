@@ -373,6 +373,7 @@
     category="Equipment"
     Tags="smallitem,explosive"
 	description="An electronic device designed to release an EMP field that causes a lot of damage to electronic devices."
+	cargocontainername="Explosives Shipping Box"
 	price="500">
 	
 	<Deconstruct time="5"> 
@@ -395,6 +396,48 @@
 
     <Pickable slots="Any">
 	  <StatusEffect type="OnFire" target="This" Condition="-25"/>
+    </Pickable>
+  </Item>
+  
+  <Item
+    name="Sonar Charge"
+    category="Equipment"
+    Tags="smallitem,explosive,tool"
+	description="An electronic device designed to release powerful sonar pings. This is used to lure certain creatures towards it."
+	cargocontainername="Explosives Shipping Box"
+	price="500">
+	
+	<Deconstruct time="5"> 
+	  <Item name="Aluminium Sliver" maxcondition="0.0" outcondition="0.25"/>
+	  <Item name="Aluminium Sliver" mincondition="0.99"/>
+	  <Item name="Fulgurium Powder"/>
+	  <Item name="FPGA Circuit" mincondition="0.99"/>
+    </Deconstruct>
+
+   <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" depth="0.8" sourcerect="109,160,19,9"/>
+
+    <Body width="16" height="7"/>
+	
+	<ItemComponent characterusable="false">
+      <StatusEffect type="OnUse" target="This" isActive="true"/>
+    </ItemComponent>
+	
+	<Radar canbeselected="false" range="20000" powerconsumption="10" displaybordersize="0.2">
+      <StatusEffect type="OnUse" target="This" Condition="-1.2" disabledeltatime="true"/>
+	  <sound file="Mods/BTE/Items/Terminals/SonarSweep1.ogg" type="OnUse" range="5000"/>
+	  <sound file="Mods/BTE/Items/Terminals/SonarSweep2.ogg" type="OnUse" range="5000"/>
+	  <sound file="Mods/BTE/Items/Terminals/SonarSweep3.ogg" type="OnUse" range="5000"/>
+	  <sound file="Mods/BTE/Items/Terminals/SonarSweep4.ogg" type="OnUse" range="5000"/>
+	  <sound file="Mods/BTE/Items/Terminals/SonarSweep5.ogg" type="OnUse" range="5000"/>
+	  <GuiFrame rect="0,0,0.5,0.5" alignment="Center" style="ItemUI"/>
+      <PingCircle texture="Content/Items/Engine/pingCircle.png" origin="0.5,0.5"/>
+      <ScreenOverlay texture="Content/Items/Engine/radarOverlay.png" origin="0.5,0.5"/>
+	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
+    </Radar>
+
+    <Pickable slots="Any">
+	  <StatusEffect type="OnFire" target="This" Condition="-25"/>
+	  <StatusEffect type="Always" target="This" Voltage="1.0"/>
     </Pickable>
   </Item>
   
