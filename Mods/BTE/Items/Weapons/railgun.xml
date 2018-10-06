@@ -478,6 +478,10 @@
 	    <RequiredItem name="explosive" type="Contained"/>
 		<Use/>
 	  </StatusEffect>
+	  <StatusEffect type="OnActive" target="Contained">
+	    <RequiredItem name="tool" type="Contained"/>
+		<Use/>
+	  </StatusEffect>
     </Projectile>
 
     <ItemContainer hideitems="true" capacity="1" canbeselected="true">

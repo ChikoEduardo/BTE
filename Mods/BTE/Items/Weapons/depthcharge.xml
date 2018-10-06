@@ -132,6 +132,10 @@
 	    <RequiredItem name="explosive" type="Contained"/>
 		<Use/>
 	  </StatusEffect>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Handheld Sonar,Sonar Charge">
+	    <RequiredItem name="tool" type="Contained"/>
+		<Use/>
+	  </StatusEffect>
     </Projectile>
 
     <ItemContainer hideitems="true" capacity="2" canbeselected="true">
@@ -161,6 +165,10 @@
       <Attack damage="1" stun="1" structuredamage="1" damagetype="Blunt"/>
       <StatusEffect type="OnImpact" target="Contained">
 	    <RequiredItem name="explosive" type="Contained"/>
+		<Use/>
+	  </StatusEffect>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Handheld Sonar,Sonar Charge">
+	    <RequiredItem name="tool" type="Contained"/>
 		<Use/>
 	  </StatusEffect>
     </Projectile>
@@ -194,6 +202,10 @@
       <Attack damage="1" stun="1" structuredamage="1" damagetype="Blunt"/>
       <StatusEffect type="OnImpact" target="Contained">
 	    <RequiredItem name="explosive" type="Contained"/>
+		<Use/>
+	  </StatusEffect>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Handheld Sonar,Sonar Charge">
+	    <RequiredItem name="tool" type="Contained"/>
 		<Use/>
 	  </StatusEffect>
     </Projectile>
