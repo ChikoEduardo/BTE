@@ -37,13 +37,13 @@
     <limb id="0" radius="30" height="86" mass="6" type="Head" flip="true" steerforce="1.0" mouthpos="30,65">
       <sprite texture="Mods/BTE/Characters/Mantisthresher/mantisthresher.png" sourcerect="0,0,101,168" depth="0.02" origin="0.4,0.53"/>
 	  <damagemodifier damagetype="Blunt,Slash" armorsector="0.0,180.0" damagemultiplier="0.5" bleedingmultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true"/>
-	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.1"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
     </limb>
 	
 	<!-- lower yaw -->
     <limb id="11" width="16" height="71" flip="true">
       <sprite texture="Mods/BTE/Characters/Mantisthresher/mantisthresher.png" sourcerect="193,176,21,80" depth="0.025" origin="0.5,0.5"/>
-      <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.1"/>
+      <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
       <attack range="200" damagerange="100" duration="0.5" damage="100" bleedingdamage="4" stun="3.2" structuredamage="75" damagetype="slash"
 	  force="20" applyforceonlimbs="0" torque="80" targetforce="4000" severlimbsprobability="0.8">
 	    <StatusEffect type="OnUse" target="This">
@@ -71,57 +71,57 @@
     <limb id="1" width="42" height="61" mass="6" flip="true">
       <sprite texture="Mods/BTE/Characters/Mantisthresher/mantisthresher.png" sourcerect="3,168,59,64" depth="0.021" origin="0.3,0.65"/>
 	  <damagemodifier damagetype="Blunt,Slash" armorsector="0.0,180.0" damagemultiplier="0.2" bleedingmultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true"/>
-	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.1"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
     </limb>
 
     <!-- middle part -->
     <limb id="2" width="35" height="52"  mass="6" flip="true">
       <sprite texture="Mods/BTE/Characters/Mantisthresher/mantisthresher.png" sourcerect="66,180,65,70" depth="0.022" origin="0.3,0.65"/>
 	  <damagemodifier damagetype="Blunt,Slash" armorsector="0.0,180.0" damagemultiplier="0.5" bleedingmultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true"/>
-	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.1"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
     </limb>
 
     <!-- tail -->
     <limb id="3" radius="20" mass="6" type="Tail" flip="true">
       <sprite texture="Mods/BTE/Characters/Mantisthresher/mantisthresher.png" sourcerect="133,158,46,93" depth="0.023" origin="0.37,0.3"/>
 	  <damagemodifier damagetype="Blunt,Slash" armorsector="0.0,180.0" damagemultiplier="0.5" bleedingmultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true"/>
-	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.1"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
     </limb>
       
     <limb id="4" width="15" height="63" mass="4" refjoint="3" flip="true">
       <sprite texture="Mods/BTE/Characters/Mantisthresher/mantisthresher.png" sourcerect="232,153,20,63" depth="0.012" origin="0.5,0.5"/>
-	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.1"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
     </limb>
     <limb id="5" width="15" height="63" mass="4" refjoint="3" flip="true">
       <sprite texture="Mods/BTE/Characters/Mantisthresher/mantisthresher.png" sourcerect="231,80,23,67" depth="0.011" origin="0.5,0.5"/>
-	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.1"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
       <sound tag="footstep_armor"/>
     </limb>
 	
     <!-- "claw" -->
     <limb id="6" width="15" height="63" mass="4" flip="true" pullpos="0.0,30.0" refjoint="0">
       <sprite texture="Mods/BTE/Characters/Mantisthresher/mantisthresher.png" sourcerect="228,1,28,76" depth="0.01" origin="0.5,0.5"/>
-	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.1"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
       <sound tag="footstep_armor"/>
     </limb>
 
     <limb id="7" width="15" height="63" mass="4" type="LeftLeg" flip="true">
       <sprite texture="Mods/BTE/Characters/Mantisthresher/mantisthresher.png" sourcerect="205,91,20,63" depth="0.013" origin="0.5,0.5"/>
-	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.1"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
     </limb>
     <limb id="8" width="15" height="63" mass="4" type="LeftFoot" flip="true" pullpos="0.0,30.0" refjoint="0" stepoffset="100.0,0.0">
       <sprite texture="Mods/BTE/Characters/Mantisthresher/mantisthresher.png" sourcerect="206,3,20,85" depth="0.014" origin="0.5,0.5"/>
-	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.1"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
       <sound tag="footstep_armor"/>
     </limb>
 
     <limb id="9" width="15" height="63" mass="4" type="RightLeg" flip="true">
       <sprite texture="Mods/BTE/Characters/Mantisthresher/mantisthresher.png" sourcerect="159,3,38,66" depth="0.015" origin="0.5,0.5"/>
-	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.1"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
     </limb>
     <limb id="10" width="15" height="102" mass="4" type="RightFoot" flip="true" pullpos="0.0,50.0" refjoint="5" stepoffset="-150.0,0.0">
       <sprite texture="Mods/BTE/Characters/Mantisthresher/mantisthresher.png" sourcerect="103,0,32,112" depth="0.016" origin="0.5,0.5"/>
-	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.1"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
       <sound tag="footstep_armor"/>
     </limb>
     
