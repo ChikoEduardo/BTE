@@ -26,6 +26,7 @@
     <!-- body -->
     <limb id="0" radius="100" height="470" type="Torso" steerforce="1.0" mouthpos="0,260">
       <sprite texture="Content/Characters/Charybdis/charybdis.png" sourcerect="160,0,242,688" depth="0.015" origin="0.5,0.5"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
     </limb>
     
     <!-- lower yaw -->
@@ -48,24 +49,28 @@
 		  <Conditional SpeciesName="endworm"/>
 		</StatusEffect>
 	  </attack>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
     </limb>
 
     <!-- front fins -->    
     <limb id="2" radius="60" height="430">
       <sprite texture="Content/Characters/Charybdis/charybdis.png" sourcerect="432,272,128,560" depth="0.008" origin="0.5,0.5"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
     </limb>
 
     <!-- tail -->
     <limb id="3" radius="60" height="250" type="Tail">
       <sprite texture="Content/Characters/Charybdis/charybdis.png" sourcerect="0,0,160,379" depth="0.02" origin="0.5,0.5"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
     </limb>
     <limb id="4" radius="30" height="168" type="Tail">
       <sprite texture="Content/Characters/Charybdis/charybdis.png" sourcerect="24,402,83,228" depth="0.02" origin="0.5,0.5"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
     </limb>
     <limb id="5" radius="20" height="200" type="Tail">
       <sprite texture="Content/Characters/Charybdis/charybdis.png" sourcerect="33,645,77,244" depth="0.02" origin="0.5,0.5"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360" damagemultiplier="0.6"/>
     </limb>
-    
     
     <!-- body to lower yaw -->
     <joint limb1="0" limb1anchor="48,128" limb2="1" limb2anchor="-30,-90" lowerlimit="-10" upperlimit="30"/>  
