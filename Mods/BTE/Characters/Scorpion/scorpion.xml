@@ -59,6 +59,24 @@
 		<StatusEffect type="OnUse" target="Character" Health="5" stun="-7.5" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
 		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character" stun="-7.5" Health="-2.5">
+		  <Conditional SpeciesName="mantisboss"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character" stun="-7.5" Health="-2.5">
+		  <Conditional SpeciesName="tigerboss"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character" stun="-7.5" Health="-2.5">
+		  <Conditional SpeciesName="mantisthresher"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character" stun="-3.5">
+		  <Conditional SpeciesName="moloch"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character" stun="-7.5" Health="-2.5">
+		  <Conditional SpeciesName="molochboss"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character" stun="-3.5">
+		  <Conditional SpeciesName="charybdis"/>
+		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" stun="-7.5" Health="-15">
 		  <Conditional SpeciesName="robot"/>
 		</StatusEffect>
