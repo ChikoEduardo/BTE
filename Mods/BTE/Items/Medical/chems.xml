@@ -1495,6 +1495,78 @@
       <StatusEffect tags="sufforin,poisonstrong" type="OnUse" target="Character" Oxygen="-5.0" OxygenAvailable="-10000" delay="20" duration="60"> 
         <RequiredItem name="Medical Syringe" type="Container"/>
       </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="endworm"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="husk"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="huskcrawler"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="crawler"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="crawlerghost"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="mantis"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="mantisboss"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="tigerthresher"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="tigerboss"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="mantisthresher"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="coelanth"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="moloch"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="molochboss"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="charybdis"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="robot"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="fractalguardian"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="carrier"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="10" delay="20" duration="60"> 
+        <Conditional SpeciesName="watcher"/>
+		<RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
         <RequiredItem name="Medical Syringe" type="Container"/>
       </StatusEffect>
@@ -1504,6 +1576,78 @@
       </StatusEffect>
       <StatusEffect tags="sufforin,poisonstrong" type="OnUse" target="Character" Oxygen="-15" OxygenAvailable="-30000" delay="20" duration="60"> 
         <RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="endworm"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="husk"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="huskcrawler"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="crawler"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="crawlerghost"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="mantis"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="mantisboss"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="tigerthresher"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="tigerboss"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="mantisthresher"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="coelanth"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="moloch"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="molochboss"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="charybdis"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="robot"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="fractalguardian"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="carrier"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" Oxygen="30" delay="20" duration="60"> 
+        <Conditional SpeciesName="watcher"/>
+		<RequiredItem name="Medical Dart" type="Container"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true">
         <RequiredItem name="Medical Dart" type="Container"/>
@@ -1579,9 +1723,6 @@
 	  <StatusEffect tags="calyxanide,poison" type="OnUse" target="Character" Health="-2.5" delay="12" duration="10">
         <Conditional SpeciesName="husk"/>
       </StatusEffect>
-	  <StatusEffect tags="calyxanide,poison" type="OnUse" target="Character" Health="-5.0" delay="12" duration="10">
-        <Conditional SpeciesName="huskweak"/>
-      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true"/>
     </ItemComponent>
 	
@@ -1597,10 +1738,6 @@
       </StatusEffect>
       <StatusEffect tags="calyxanide,poison" type="OnUse" target="Character" Health="-5.0" duration="10">
         <Conditional SpeciesName="husk"/>
-        <RequiredItem name="Medical Syringe" type="Container"/>
-      </StatusEffect>
-	  <StatusEffect tags="calyxanide,poison" type="OnUse" target="Character" Health="-7.5" duration="10">
-        <Conditional SpeciesName="huskweak"/>
         <RequiredItem name="Medical Syringe" type="Container"/>
       </StatusEffect>
 	  <StatusEffect tags="calyxanide,poison" type="OnUse" target="Character" Health="-5.0" duration="10">
@@ -1623,10 +1760,6 @@
         <Conditional SpeciesName="husk"/>
         <RequiredItem name="Medical Dart" type="Container"/>
       </StatusEffect>
-	  <StatusEffect tags="poison,calyxanide" type="OnUse" target="Character" Health="-25" duration="10">
-        <Conditional SpeciesName="huskweak"/>
-        <RequiredItem name="Medical Dart" type="Container"/>
-      </StatusEffect>
 	  <StatusEffect tags="calyxanide,poison" type="OnUse" target="Character" Health="-15" duration="10">
         <Conditional SpeciesName="huskcrawler"/>
         <RequiredItem name="Medical Dart" type="Container"/>
@@ -1645,10 +1778,6 @@
       </StatusEffect>
       <StatusEffect tags="calyxanide,poison" type="OnUse" target="Character" Health="-0.015" duration="10">
         <Conditional SpeciesName="husk"/>
-        <RequiredItem name="Medical Inhaler" type="Container"/>
-      </StatusEffect>
-	  <StatusEffect tags="calyxanide,poison" type="OnUse" target="Character" Health="-0.025" duration="10">
-        <Conditional SpeciesName="huskweak"/>
         <RequiredItem name="Medical Inhaler" type="Container"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-15">
