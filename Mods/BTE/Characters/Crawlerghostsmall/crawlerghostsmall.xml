@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Character name="crawlerghostsmall" humanoid="false" health="30" doesbleed="false" usebloodparticles="false">
+<Character name="crawlerghost" humanoid="false" health="30" doesbleed="false" usebloodparticles="false">
   <sound file="Content/Characters/Crawler/attack1.ogg" state="Attack" range="50"/>
   <sound file="Content/Characters/Crawler/attack2.ogg" state="Attack" range="50"/>
 

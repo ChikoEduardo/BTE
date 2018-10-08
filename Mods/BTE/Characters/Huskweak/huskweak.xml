@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Character name="huskweak" humanoid="true" needsair="false" doesbleed="false" health="75">
+<Character name="husk" humanoid="true" needsair="false" doesbleed="false" health="75">
 
   <sound file="Content/Characters/Husk/Husk1.ogg" state="Attack" range="1000"/>
   <sound file="Content/Characters/Husk/Husk2.ogg" state="Attack" range="1000"/>

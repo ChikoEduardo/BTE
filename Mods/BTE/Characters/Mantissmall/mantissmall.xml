@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Character name ="mantissmall" humanoid="false" health="100" doesbleed="false">
+<Character name="mantis" humanoid="false" health="100" doesbleed="false">
 
   <sound file="Content/Characters/Mantis/attack1.ogg" state="Attack" range="250"/>
   <sound file="Content/Characters/Mantis/attack2.ogg" state="Attack" range="250"/>
