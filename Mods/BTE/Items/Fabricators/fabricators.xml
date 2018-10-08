@@ -558,8 +558,9 @@
 	  <fabricableitem name="Sufforin" requiredtime="30">
 		<Item name="Erythrozine" mincondition="0.15" usecondition="true"/>
 		<Item name="Flash Powder" mincondition="0.15" usecondition="true"/>
+		<Item name="Bronze Powder" mincondition="0.15" usecondition="true"/>
 		<Item name="Sulphuric Acid" mincondition="0.15" usecondition="true"/>
-		<RequiredSkill name="Science" level="60"/>
+		<RequiredSkill name="Science" level="50"/>
       </fabricableitem>
 	  <fabricableitem name="Pill Bottle of Sufforin" requireditems="Sufforin" requiredtime="10">
         <RequiredSkill name="Science" level="40"/>
