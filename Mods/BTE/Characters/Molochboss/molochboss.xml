@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Character name="molochboss" humanoid="false" health="2000" doesbleed="false">
 
-  <sound file="Content/Characters/Moloch/attack1.ogg" state="Attack" range="3000"/>
-  <sound file="Content/Characters/Moloch/attack2.ogg" state="Attack" range="3000"/>
-  <sound file="Content/Characters/Moloch/idle1.ogg" state="None" range="3000"/>
-  <sound file="Content/Characters/Moloch/idle2.ogg" state="None" range="3000"/>
+  <sound file="Content/Characters/Moloch/attack1.ogg" state="Attack" range="6000"/>
+  <sound file="Content/Characters/Moloch/attack2.ogg" state="Attack" range="6000"/>
+  <sound file="Content/Characters/Moloch/idle1.ogg" state="None" range="9000"/>
+  <sound file="Content/Characters/Moloch/idle2.ogg" state="None" range="9000"/>
 
   <ai
     combatstrength="1200"
@@ -22,7 +22,7 @@
     <!-- head -->
     <limb id="0" radius="230" height="500" type="Head" steerforce="1.0" flip="true">
       <sprite texture="Content/Characters/Moloch/moloch.png" sourcerect="0,0,628,1024" depth="0.02" origin ="0.4,0.5"/>
-      <attack range="700" damagerange="350" duration="0.05" damage="200" stun="5" force="20" damagetype="blunt" targetforce="100">
+      <attack range="700" damagerange="350" duration="0.05" damage="200" stun="5" force="20" damagetype="blunt" targetforce="120">
 	    <StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="watcher"/>
 		  <Explosion range="300" damage="25" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>

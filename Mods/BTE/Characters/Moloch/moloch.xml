@@ -3,8 +3,8 @@
 
   <sound file="Content/Characters/Moloch/attack1.ogg" state="Attack" range="3000"/>
   <sound file="Content/Characters/Moloch/attack2.ogg" state="Attack" range="3000"/>
-  <sound file="Content/Characters/Moloch/idle1.ogg" state="None" range="3000"/>
-  <sound file="Content/Characters/Moloch/idle2.ogg" state="None" range="3000"/>
+  <sound file="Content/Characters/Moloch/idle1.ogg" state="None" range="6000"/>
+  <sound file="Content/Characters/Moloch/idle2.ogg" state="None" range="6000"/>
 
   <ai
     combatstrength="1200"
