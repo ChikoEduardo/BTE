@@ -485,7 +485,7 @@
     Tags="meditem"
 	description="A battery-powered underwater propulsion device."
 	cargocontainername="Electronics Shipping Box"
-    price="50">
+    price="750">
 
     <Deconstruct time="20">
       <Item name="Polycarbonate Bar"/>
