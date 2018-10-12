@@ -366,7 +366,7 @@
 	  <Item name="Ration Stamp A"/>
 	  <Item name="Ration Stamp A"/>
 	  <Item name="Ration Stamp A"/>
-	  <!-- <Item name="Handcuffs" equip="true"/> -->
+	  <Item name="Tempcuffs" equip="true"/>
     </Items>
   </Job>
 </Jobs>
