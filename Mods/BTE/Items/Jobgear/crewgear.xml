@@ -17,7 +17,7 @@
     <Body width="9" height="30" density="10.3"/>
 
     <WifiComponent range="60000" LinkToChat="true">
-      <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained"/>      
+      <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained"/>
     </WifiComponent>
 
       <ItemContainer capacity="1" hideitems="true">
