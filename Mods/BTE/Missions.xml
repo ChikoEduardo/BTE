@@ -153,6 +153,18 @@
   </MonsterMission>
   
   <MonsterMission
+    name="Killing a Watcher"
+    description="A seafood processing plant in [location2] is offering a reward of 1500 credits to anyone who can slay a Watcher spotted between [location1] and [location2], no questions asked. They will handle the transport once the creature is dead."
+    commonness="8"
+    reward="1500"
+    radarlabel="Target"
+	failuremessage="Failed to kill the Watcher."
+    successmessage="Upon receiving the news, some researchers from [location1] have agreed to pay you the reward instead and also asked for the coordinates so they can send a research team to examine the creature."
+    monsterfile="Mods/BTE/Characters/Watcheremp/watcheremp.xml">
+    <message header="Target terminated" text="This Watcher was different. You should report this incident and claim the reward."/>
+  </MonsterMission>
+  
+  <MonsterMission
     name="Killing a Charybdis"
     description="A Charybdis has left the Abyss and has been terrorizing vessels traveling between [location1] and [location2]. A reward of 2,750 credits has been promised to those who kill the creature."
     commonness="5"
