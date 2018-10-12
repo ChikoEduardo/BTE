@@ -157,7 +157,7 @@
   <Item
     name="Handcuffs"
     category="Equipment"
-    tags="smallitem" >
+    tags="smallitem">
 	
 	<Deconstruct time="5">
       <Item name="Steel Bar"/>
@@ -171,7 +171,32 @@
       <sprite texture="securitygear.png" limb="RightHand" sourcerect="32,62,16,16" origin="0.5,-0.5"/>
       <sprite texture="securitygear.png" limb="LeftHand" sourcerect="32,62,16,16" origin="0.5,-0.5"/>
       
-      <StatusEffect type="OnWearing" target="Character" lockhands="true" SpeedMultiplier="-0.24" disabledeltatime="true"/>
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.24" lockhands="true" disabledeltatime="true"/>
+    </Wearable>
+  </Item>
+  
+  <Item
+    name="Tempcuffs"
+	aliases="Tourcuffs,Timecuffs,Pawncuffs"
+    category="Equipment"
+    tags="smallitem">
+	
+	<Deconstruct time="5">
+      <Item name="Steel Bar"/>
+	  <Item name="Spare Electronics"/>
+    </Deconstruct>
+
+    <Sprite texture="securitygear.png" sourcerect="0,63,32,14" depth="0.6"/>
+
+    <Body width="30" height="12" density="25"/>
+
+    <Wearable slots="Any,RightHand+LeftHand">
+      <sprite texture="securitygear.png" limb="RightHand" sourcerect="32,62,16,16" origin="0.5,-0.5"/>
+      <sprite texture="securitygear.png" limb="LeftHand" sourcerect="32,62,16,16" origin="0.5,-0.5"/>
+      
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.14" lockhands="true" disabledeltatime="true"/>
+	  <StatusEffect type="OnWearing" target="This" Condition="-0.35"/>
+	  <StatusEffect type="OnBroken" target="This" Condition="100" delay="15" setvalue="true"/>
     </Wearable>
   </Item>
   
