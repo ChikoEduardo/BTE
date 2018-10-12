@@ -76,6 +76,15 @@
     musictype="monster">
     <OverrideEventCount leveltype="Open" min="-5" max="1"/>
   </MonsterEvent>
+  
+  <MonsterEvent name="Under attack" description=""
+    characterfile="Mods/BTE/Characters/Molochsmall/molochsmall.xml"
+    mineventcount="-1" maxeventcount="1"
+    spawntype="mainpath"
+    musictype="monster">
+    <OverrideEventCount leveltype="Ridge" min="-5" max="1"/>
+    <OverrideEventCount leveltype="Open" min="1" max="2"/>
+  </MonsterEvent>
 
   <MonsterEvent name="Under attack" description=""
     characterfile="Mods/BTE/Characters/Moloch/moloch.xml"
@@ -83,7 +92,7 @@
     spawntype="mainpath"
     musictype="monster">
     <OverrideEventCount leveltype="Ridge" min="-5" max="1"/>
-    <OverrideEventCount leveltype="Open" min="1" max="5"/>
+    <OverrideEventCount leveltype="Open" min="1" max="4"/>
   </MonsterEvent>
 
   <MonsterEvent name="Under attack" description=""
