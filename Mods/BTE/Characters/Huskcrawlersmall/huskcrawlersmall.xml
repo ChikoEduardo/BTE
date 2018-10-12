@@ -37,7 +37,7 @@
 	<!-- spike/tentacle thingy -->
     <limb id="10" width="10" height="30" mass="6" attackpriority="2" flip="true" pullpos="0.0,25.0">
       <sprite texture="Mods/BTE/Characters/Huskcrawler/HuskCrawler.png" sourcerect="211,35,16,55" depth="0.05" origin="0.15,0.5"/>
-      <attack type="PinchCW" range="120" damagerange="60" duration="0.5" bleedingdamage="0.5" damage="2" stun="4" structuredamage="5" damagetype="slash"
+      <attack type="PinchCW" range="120" damagerange="60" duration="0.1" bleedingdamage="0.5" damage="5" stun="4" structuredamage="5" damagetype="slash"
 			  targetforce="-10" force="15" applyforceonlimbs="0,10" torque="-20">
         <StatusEffect type="OnUse" target="Character" HuskInfectionState="0.01" disabledeltatime="true"/>
         <StatusEffect type="OnUse" target="This" Health="5.0" stun="2" disabledeltatime="true">
