@@ -38,7 +38,8 @@
     <limb id="1" width="16" height="103">
       <sprite texture="Content/Characters/Tigerthresher/tigerthresher.png" sourcerect="391,169,28,110" depth="0.025" origin="0.5,0.5"/>
       <damagedsprite texture="Content/Characters/Tigerthresher/damagedtigerthresher.png" sourcerect="391,169,28,110" origin="0.5,0.5"/>
-      <attack range="300" damagerange="150" duration="0.5" damage="200" bleedingdamage="9" structuredamage="300" damagetype="slash" force="80" torque="80" targetforce="-50" severlimbsprobability="0.9">
+      <attack range="300" damagerange="150" duration="0.5" damage="200" bleedingdamage="9" structuredamage="300" damagetype="slash"
+	    force="80" torque="80" targetforce="-100" severlimbsprobability="0.9">
 	    <StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="watcher"/>
 		  <Explosion range="300" damage="25" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>

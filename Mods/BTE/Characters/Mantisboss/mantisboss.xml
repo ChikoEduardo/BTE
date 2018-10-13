@@ -74,8 +74,8 @@
     <!-- "claw" -->
     <limb id="6" width="15" height="63" mass="6" flip="true" pullpos="0.0,30.0" refjoint="0">
       <sprite texture="Content/Characters/Mantis/mantis.png" sourcerect="228,1,28,76" depth="0.01" origin="0.5,0.5"/>
-      <attack range="250" damagerange="150" duration="0.25" damage="100" stun="0.1" bleedingdamage="6" structuredamage="60" damagetype="slash" targetforce="-100" severlimbsprobability="0.9"
-              torque="-20" force="10" applyforceonlimbs="0,1,6">
+      <attack range="250" damagerange="150" duration="0.25" damage="100" stun="0.1" bleedingdamage="6" structuredamage="60" damagetype="slash" severlimbsprobability="0.9"
+              torque="-20" force="10" targetforce="-100" applyforceonlimbs="0,1,6">
 		<StatusEffect type="OnUse" target="This">
 		  <Explosion range="350" structuredamage="60" force="10" flash="false" sparks="false" shockwave="false" flames="false" smoke="false" camerashake="0.5"/>
 		</StatusEffect>
