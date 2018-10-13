@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="BTE 7.6" path="Data/ContentPackages/BTE">
+<contentpackage name="BTE 7.7" path="Data/ContentPackages/BTE">
   <!-- <Item file="Content/Items/idcard.xml"/> -->
   <!-- <Item file="Content/Items/itemlabel.xml"/> -->
   <!-- <Item file="Content/Items/Artifacts/artifacts.xml"/> -->
@@ -121,12 +121,14 @@
   <Character file="Mods/BTE/Characters/Mantisboss/mantisboss.xml"/>
   <Character file="Mods/BTE/Characters/Mantisthresher/mantisthresher.xml"/>
   <Character file="Mods/BTE/Characters/Moloch/moloch.xml"/>
+  <Character file="Mods/BTE/Characters/Molochsmall/molochsmall.xml"/>
   <Character file="Mods/BTE/Characters/Molochboss/molochboss.xml"/>
   <Character file="Mods/BTE/Characters/Scorpion/scorpion.xml"/>
   <Character file="Mods/BTE/Characters/Tigersmall/tigersmall.xml"/>
   <Character file="Mods/BTE/Characters/Tigerthresher/tigerthresher.xml"/>
   <Character file="Mods/BTE/Characters/Tigerboss/tigerboss.xml"/>
   <Character file="Mods/BTE/Characters/Watcher/watcher.xml"/>
+  <Character file="Mods/BTE/Characters/Watcheremp/watcheremp.xml"/>
   <Structure file="Mods/BTE/Map/StructurePrefabs.xml"/>
   <RuinConfig file="Mods/BTE/Map/RuinConfig.xml"/>
   <Particles file="Mods/BTE/Particles/ParticlePrefabs.xml"/>
