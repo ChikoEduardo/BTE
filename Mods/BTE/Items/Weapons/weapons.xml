@@ -862,7 +862,7 @@
 	  </StatusEffect>
     </ItemComponent>
 	
-	<LightComponent LightColor="1.0,0.0,0.0,1.0" Flicker="0.5" range="100" IsOn="false">
+	<LightComponent LightColor="1.0,0.9,0.7,1.0" Flicker="0.5" range="100" IsOn="false">
       <StatusEffect type="OnActive" target="This,Contained" Condition="-1.0">
         <ParticleEmitter particle="bubbles" particlespersecond="30"/>
       </StatusEffect>

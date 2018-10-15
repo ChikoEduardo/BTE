@@ -730,6 +730,22 @@
     </Items>
   </CargoMission>
   
+  <!-- Apple Shipment -->
+  <CargoMission
+   name="Special Delivery"
+   description="A crate has been sitting in a warehouse for days. Anyone interested in delivering the shipment to [location2] will receive 400 credits."
+   commonness="3"
+   reward="400"
+   failuremessage="Cargo delivery failed."
+   successmessage="The shipment has been successfully delivered."
+   requireddeliveryamount="14">
+    <Items >
+      <Item name="Standard Shipping Box">
+		<Item name="Apple" amount="20"/>
+      </Item>
+    </Items>
+  </CargoMission>
+  
   <!-- Creature Hunter Stuff -->
   <CargoMission
    name="Special Delivery"
