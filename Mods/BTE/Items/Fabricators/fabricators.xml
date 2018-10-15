@@ -82,6 +82,9 @@
 	  <fabricableitem name="Food Can" requireditems="Aluminium Bar" requiredtime="5"/>
 	  
 	  <fabricableitem name="Oxygen Tank" requireditems="Aluminium Bar" outcondition="0.0" requiredtime="15"/>
+	  <fabricableitem name="Oxygenite Tank" requireditems="Aluminium Bar" outcondition="0.0" requiredtime="15"/>
+	  <fabricableitem name="Sulphurite Tank" requireditems="Aluminium Bar" outcondition="0.0" requiredtime="15"/>
+	  <fabricableitem name="Thermite Tank" requireditems="Aluminium Bar" outcondition="0.0" requiredtime="15"/>
 	  <fabricableitem name="Hydrogen Tank" requireditems="Aluminium Bar" outcondition="0.0" requiredtime="15"/>
 
       <fabricableitem name="Copper Coil" requireditems="Copper Sliver" requiredtime="5"/>
@@ -564,6 +567,14 @@
       </fabricableitem>
 	  <fabricableitem name="Pill Bottle of Sufforin" requireditems="Sufforin" requiredtime="10">
         <RequiredSkill name="Science" level="40"/>
+      </fabricableitem>
+	  
+	  <fabricableitem name="Cyanide" outcondition="25" requiredtime="40">
+		<Item name="Apple" mincondition="0.0" count="5" usecondition="false"/>
+		<RequiredSkill name="Science" level="50"/>
+      </fabricableitem>
+	  <fabricableitem name="Pill Bottle of Cyanide" requireditems="Cyanide" requiredtime="10">
+        <RequiredSkill name="Science" level="50"/>
       </fabricableitem>
 	  
 	  <fabricableitem name="Calyxanide" requiredtime="30">
