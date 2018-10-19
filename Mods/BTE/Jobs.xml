@@ -125,7 +125,7 @@
       <Item name="Crewmember Beret" equip="true"/>
 	  <Item name="Crewmember Sweater B" equip="true"/>
 	  <Item name="Ballistic Trousers" equip="true"/>
-	  <Item name="Handcuffs"/>
+	  <Item name="Tempcuffs"/>
 	  <Item name="Stun Baton"/> 
       <Item name="Headset" equip="true">
         <Item name="Battery Cell"/>
