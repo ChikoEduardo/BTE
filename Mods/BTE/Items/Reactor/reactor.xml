@@ -27,8 +27,8 @@
     <Reactor canbeselected="true" vulnerabletoemp="false" MeltdownDelay="10000">
       <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
 	  <GuiFrame rect="0,0,760,460" alignment="Center" color="0.0,0.0,0.0,0.6"/>
-      <StatusEffect type="InWater" target="This" Temperature="-200" Condition="0.1"/>
-	  <StatusEffect type="OnFire" target="This" Temperature="250"/>
+      <StatusEffect type="InWater" target="This" Temperature="-200" Condition="0.15"/>
+	  <StatusEffect type="OnFire" target="This" Temperature="200"/>
       <StatusEffect type="OnActive" target="Contained" targetnames="Hydrogen Tank,Thermite Tank,Sulphurite Tank,Oxygen Tank,Oxygenite Tank" Condition="-0.05"/>
 	  <StatusEffect type="OnActive" target="This" condition="-8.4">
         <Conditional temperature="eq 10000"/>
@@ -97,7 +97,7 @@
     <Reactor canbeselected="true" vulnerabletoemp="false" MeltdownDelay="10000">
       <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
 	  <GuiFrame rect="0,0,760,460" alignment="Center" color="0.0,0.0,0.0,0.6"/>
-      <StatusEffect type="InWater" target="This" Temperature="-200" Condition="0.1"/>
+      <StatusEffect type="InWater" target="This" Temperature="-100" Condition="0.15"/>
 	  <StatusEffect type="OnFire" target="This" Temperature="100"/>
 	  <StatusEffect type="OnActive" target="This" CoolingRate="-100"/>
 	  <StatusEffect type="OnActive" target="This" CoolingRate="80">
