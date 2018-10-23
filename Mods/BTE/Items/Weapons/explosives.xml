@@ -23,7 +23,7 @@
     <Body width="16" height="7"/>
 	
 	<ItemComponent characterusable="false">
-      <StatusEffect type="OnUse" target="This" Condition="-100"/>
+      <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
     <Pickable slots="Any">
@@ -57,7 +57,7 @@
     <Body width="16" height="7"/>
 	
 	<ItemComponent characterusable="false">
-      <StatusEffect type="OnUse" target="This" Condition="-100"/>
+      <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
     <Pickable slots="Any">
@@ -91,7 +91,7 @@
     <Body width="16" height="7"/>
 	
 	<ItemComponent characterusable="false">
-      <StatusEffect type="OnUse" target="This" Condition="-100"/>
+      <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
     <Pickable slots="Any">
@@ -127,7 +127,7 @@
     <Body width="16" height="7"/>
 	
 	<ItemComponent characterusable="false">
-      <StatusEffect type="OnUse" target="This" Condition="-100"/>
+      <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
     <Pickable slots="Any">
@@ -164,7 +164,7 @@
     <Body width="16" height="7"/>
 	
 	<ItemComponent characterusable="false">
-      <StatusEffect type="OnUse" target="This" Condition="-100"/>
+      <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
     <Pickable slots="Any">
@@ -202,7 +202,7 @@
     <Body width="16" height="7"/>
 	
 	<ItemComponent characterusable="false">
-      <StatusEffect type="OnUse" target="This" Condition="-100"/>
+      <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
     <Pickable slots="Any">
@@ -239,7 +239,7 @@
     <Body width="16" height="7"/>
 	
 	<ItemComponent characterusable="false">
-      <StatusEffect type="OnUse" target="This" Condition="-100"/>
+      <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
     <Pickable slots="Any">
@@ -275,7 +275,7 @@
     <Body width="16" height="7"/>
 	
 	<ItemComponent characterusable="false">
-      <StatusEffect type="OnUse" target="This" Condition="-100"/>
+      <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
     <Pickable slots="Any">
@@ -312,7 +312,7 @@
     <Body width="16" height="7"/>
 	
 	<ItemComponent characterusable="false">
-      <StatusEffect type="OnUse" target="This" Condition="-100"/>
+      <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
     <Pickable slots="Any">
@@ -357,7 +357,7 @@
     <Body width="16" height="7"/>
 	
 	<ItemComponent characterusable="false">
-      <StatusEffect type="OnUse" target="This" Condition="-100">
+      <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true">
 	    <sound file="Mods/BTE/Items/Weapons/SonicExplosion.ogg" range="3000"/>
         <Explosion range="750" structuredamage="60" damage="490" bleedingdamage="25" stun="12" force="1" flames="false" smoke="false" sparks="false" camerashake="8.0"/>
       </StatusEffect>
@@ -388,7 +388,7 @@
     <Body width="16" height="7"/>
 	
 	<ItemComponent characterusable="false">
-      <StatusEffect type="OnUse" target="This" Condition="-100">
+      <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true">
 	    <sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit2.ogg"/>
         <Explosion range="600" stun="0.1" empstrength="10" force="0.1" flames="false" smoke="false" camerashake="2.5"/>
       </StatusEffect>
@@ -462,7 +462,7 @@
     <Body width="16" height="7" density="11"/>
 	
 	<ItemComponent characterusable="false">
-      <StatusEffect type="OnUse" target="This" Condition="-100"/>
+      <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
     <Pickable slots="Any">
@@ -498,7 +498,7 @@
     <Body width="16" height="7"/>
 	
 	<ItemComponent characterusable="false">
-      <StatusEffect type="OnUse" target="This" Condition="-100"/>
+      <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
     <Pickable slots="Any">

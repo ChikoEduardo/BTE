@@ -453,7 +453,7 @@
 		<RequiredItem name="explosive" type="Contained"/>
 		<Use/>
       </StatusEffect>
-	  <StatusEffect type="OnActive" target="This" Condition="-100" setvalue="true">
+	  <StatusEffect type="OnActive" target="This" Condition="-100">
 		<RequiredItem name="explosive" type="Contained"/>
       </StatusEffect>
     </LightComponent>

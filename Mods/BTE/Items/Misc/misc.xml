@@ -1388,7 +1388,7 @@
     <Body width="30" height="10" density="9.9"/>
 	
 	<ItemComponent characterusable="false">
-      <StatusEffect type="OnUse" target="This">
+      <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true">
 		<Sound file="Content/Items/Weapons/honk.ogg" type="OnUse"/>
 	  </StatusEffect>
 	  <StatusEffect type="OnUse" target="This">
@@ -1401,6 +1401,7 @@
 
     <RangedWeapon reload="2">
       <Sound file="Content/Items/Weapons/honk.ogg" type="OnUse"/>
+	  <StatusEffect type="OnBroken" target="This" Condition="100" setvalue="true" delay="5"/>
     </RangedWeapon>
   </Item>
   
