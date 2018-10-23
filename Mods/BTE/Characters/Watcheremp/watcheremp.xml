@@ -19,7 +19,7 @@
 	attackweaker="0.0"
 	attackstronger="0.0"
     attackwhenprovoked="true"
-	attackcooldown="5.0"
+	attackcooldown="15"
     sight="3.0"
     hearing="0.0"/>
 
