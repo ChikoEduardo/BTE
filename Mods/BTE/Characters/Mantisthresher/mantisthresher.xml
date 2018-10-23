@@ -59,7 +59,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="100" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="300" damage="100" force="5" flames="false" smoke="false" sparks="false" flash="false" shockwave="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="100" stun="-0.1" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
