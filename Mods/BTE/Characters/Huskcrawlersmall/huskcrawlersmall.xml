@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Character name="huskcrawler" humanoid="false" health="40">
+<Character name="huskcrawler" humanoid="false" health="40" doesbleed="false">
 
   <sound file="Content/Characters/Husk/Husk1.ogg" state="Attack" range="50"/>
   <sound file="Content/Characters/Husk/Husk2.ogg" state="Attack" range="50"/>
@@ -30,14 +30,14 @@
 
     <!-- head -->
     <limb id="0" radius="22" height="45" type="Head" flip="true" steerforce="1.0" mouthpos="17,35">
-      <damagemodifier damagetype="Blunt,Slash" armorsector="0.0,180.0" damagemultiplier="0.2" bleedingmultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Blunt,Slash" armorsector="0.0,180.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true"/>
 	  <sprite texture="Mods/BTE/Characters/Huskcrawler/HuskCrawler.png" sourcerect="0,0,51,121" depth="0.02" origin="0.45,0.63"/>
     </limb>
 	
 	<!-- spike/tentacle thingy -->
     <limb id="10" width="10" height="30" mass="6" attackpriority="2" flip="true" pullpos="0.0,25.0">
       <sprite texture="Mods/BTE/Characters/Huskcrawler/HuskCrawler.png" sourcerect="211,35,16,55" depth="0.05" origin="0.15,0.5"/>
-      <attack type="PinchCW" range="120" damagerange="60" duration="0.1" bleedingdamage="0.5" damage="5" stun="4" structuredamage="5" damagetype="slash"
+      <attack type="PinchCW" range="120" damagerange="60" duration="0.1" bleedingdamage="0.2" damage="5" stun="4" structuredamage="2.5" damagetype="slash"
 			  targetforce="-10" force="15" applyforceonlimbs="0,10" torque="-20">
         <StatusEffect type="OnUse" target="Character" HuskInfectionState="0.01" disabledeltatime="true"/>
         <StatusEffect type="OnUse" target="This" Health="5.0" stun="2" disabledeltatime="true">
@@ -53,7 +53,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="15" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="300" damage="15" force="5" flames="false" smoke="false" sparks="false" flash="false" shockwave="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="15" stun="-0.5" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -71,13 +71,13 @@
 
     <!-- middle part -->
     <limb id="1" radius="22" height="40" flip="true">
-      <damagemodifier damagetype="Blunt,Slash" armorsector="0.0,180.0" damagemultiplier="0.2" bleedingmultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Blunt,Slash" armorsector="0.0,180.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true"/>
 	  <sprite texture="Mods/BTE/Characters/Huskcrawler/HuskCrawler.png" sourcerect="57,7,59,57" depth="0.021" origin="0.3,0.65"/>
     </limb>
 
     <!-- tail -->
     <limb id="2" radius="22" height="45" type="Tail" flip="true">
-      <damagemodifier damagetype="Blunt,Slash" armorsector="0.0,180.0" damagemultiplier="0.2" bleedingmultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Blunt,Slash" armorsector="0.0,180.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true"/>
 	  <sprite texture="Mods/BTE/Characters/Huskcrawler/HuskCrawler.png" sourcerect="6,141,60,95" depth="0.022" origin="0.37,0.43"/>
     </limb>
 

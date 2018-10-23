@@ -8,7 +8,7 @@
   <ai 
     combatstrength="100"
     attackpriorityhumans="500"
-	attackpriorityrooms="0.0"
+	attackpriorityrooms="150"
     attackpriorityweaker="50"
     attackprioritystronger="0"
     sight="0.8"
@@ -36,7 +36,7 @@
     <!-- spike/tentacle thingy -->
     <limb id="13" width="10" height="30" mass="1" attackpriority="2" flip="true" pullpos="0.0,25.0">
       <sprite texture="Content/Characters/Husk/DivingSuit.png" sourcerect="110,76,18,52" depth="0.05" origin="0.5,0.5"/>
-      <attack range="70" damagerange="35" duration="0.1" bleedingdamage="0.5" damage="6" stun="0.8" damagetype="slash"
+      <attack range="70" damagerange="35" duration="0.1" bleedingdamage="0.4" damage="6" stun="0.8" structuredamage="1" damagetype="slash"
 			  targetforce="10" force="5" applyforceonlimbs="1" torque="-10">
         <StatusEffect type="OnUse" target="Character" HuskInfectionState="0.02" disabledeltatime="true"/>
         <StatusEffect type="OnUse" target="This" Health="20" disabledeltatime="true"/>
@@ -50,7 +50,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="8" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="300" damage="8" force="5" flames="false" smoke="false" sparks="false" flash="false" shockwave="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="8" stun="-0.5" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
