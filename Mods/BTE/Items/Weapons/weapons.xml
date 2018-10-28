@@ -992,7 +992,7 @@
 
     <Body width="40" height="20" density="35"/>
     
-    <RangedWeapon barrelpos="37,3" spread="0" unskilledspread="2" reload="0.3">
+    <RangedWeapon barrelpos="37,3" spread="0" unskilledspread="2" reload="0.9">
       <Sound file="Mods/BTE/Items/Weapons/Revolver.ogg" type="OnUse"/>
 	  <StatusEffect type="InWater" target="This" Condition="-75"/>
 	  <StatusEffect type="OnBroken" target="This" Condition="1" delay="15"/>
@@ -1034,7 +1034,7 @@
 
     <Body width="40" height="20" density="25"/>
     
-    <RangedWeapon barrelpos="37,3" spread="0" unskilledspread="2" reload="0.3">
+    <RangedWeapon barrelpos="37,3" spread="0" unskilledspread="2" reload="0.6">
       <Sound file="Mods/BTE/Items/Weapons/Revolver.ogg" type="OnUse"/>
       <RequiredItems name="Revolver Round,Revolver HL Round,Revolver Flare Round" type="Contained" msg="The loaded ammunition is too damaged"/>
       <RequiredSkill name="Weapons" level="40"/>
@@ -1197,7 +1197,7 @@
     <Holdable slots="RightHand+LeftHand,Any" controlpose="true"
               holdpos="35,-10" aimpos="50,-3" handle1="-15,-6" handle2="26,1"/>
     
-    <RangedWeapon barrelpos="49,10" spread="1" unskilledspread="3">
+    <RangedWeapon barrelpos="49,10" spread="1" unskilledspread="3" reload="1.4">
       <Sound file="Mods/BTE/Items/Weapons/Shotgun.ogg" type="OnUse"/>
       <RequiredItems name="Shotgun Slug Round,Shotgun Beanbag Round,Shotgun Taser Round" type="Contained" msg="The loaded ammunition is too damaged"/>
       <RequiredSkill name="Weapons" level="50"/>
@@ -1865,7 +1865,7 @@
 
     <Body width="76" height="16" density="40"/>
 
-    <RepairTool structurefixamount="-0.1" limbfixamount="-2.2" range="350" barrelpos="17,8" particles="largeplasma">
+    <RepairTool structurefixamount="-0.1" limbfixamount="-2.1" range="350" barrelpos="17,8" particles="largeplasma">
       <ParticleEmitter particle="largeplasma" particlespersecond="50"/>
       <ParticleEmitterHitStructure particle="plasmasmoke" particlespersecond="25" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
       <ParticleEmitterHitItem particle="plasmasmoke" particlespersecond="25" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>

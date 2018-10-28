@@ -473,7 +473,7 @@
 
     <Body width="76" height="48" density="40"/>
 
-    <RepairTool structurefixamount="-1.0" limbfixamount="-4.2" range="50" barrelpos="20,10" particles="bubbles">
+    <RepairTool structurefixamount="-1.0" limbfixamount="-4.1" range="50" barrelpos="20,10" particles="bubbles">
 	  <ParticleEmitter particle="bubbles" particlespersecond="50"/>
       <ParticleEmitterHitStructure particle="plasmaspark" particlespersecond="100" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800"/>
       <ParticleEmitterHitItem particle="plasmaspark" particlespersecond="100" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800"/>
