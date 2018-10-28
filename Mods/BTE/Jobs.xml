@@ -238,6 +238,7 @@
 		<Item name="Basic Emergency Protocol"/>
 		<Item name="Document about Nuclear Reactors"/>
 		<Item name="Document about Fusion Reactors"/>
+		<Item name="Document about Power Grids"/>
       </Item> 
       <Item name="Utility Vest" equip="true"/>
 	  <Item name="Crewmember Cargo Trousers A" equip="true"/>   
