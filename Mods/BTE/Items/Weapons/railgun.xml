@@ -101,7 +101,7 @@
 
     <Sprite texture="Content/Items/Weapons/railgunetc2.png" depth="0.8" sourcerect="188,0,57,96"/>
     
-    <Controller UserPos="35, -50.0" direction="Left" canbeselected="true">
+    <Controller UserPos="35, -50.0" direction="Left" canbeselected="true" requireaimtouse="true">
       <limbposition limb="Head" position="-5,-62"/>
       <limbposition limb="Torso" position="-5,-108"/>
       <limbposition limb="LeftHand" position="43,-85"/>
