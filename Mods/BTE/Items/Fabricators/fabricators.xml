@@ -200,7 +200,7 @@
       </fabricableitem>
 	  
 	  <fabricableitem name="Hollowhead Spear" requireditems="Plastic Spear,Aluminium Sliver" requiredtime="25">
-	  <RequiredSkill name="Construction" level="35"/>
+	  <RequiredSkill name="Construction" level="30"/>
 	  </fabricableitem>
 	  
 	  <fabricableitem name="Gauss Pistol" requireditems="Spare Parts,Fulgurium Sliver,FPGA Circuit" requiredtime="40">
