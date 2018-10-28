@@ -380,7 +380,7 @@
     name="Breaker Component"
     category="Electrical"
     Tags="smallitem"
-    description="It works like a relay component but it will shut itself down if there's no power. It will also shut itself down if overloaded or if recieving excess current.">
+    description="Designed shut itself down if overloaded or if recieving excess current to protect power grids.">
 
     <Deconstruct time="10">
       <Item name="Polycarbonate Sliver"/>
@@ -430,7 +430,8 @@
 	  <input name="toggle"/>
       <input name="set_state"/>
 	  
-      <output name="power_out"/> 
+      <output name="power"/>
+	  <output name="power_out"/> 
 	  <output name="state_out"/>
     </ConnectionPanel>
   </Item>
