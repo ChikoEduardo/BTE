@@ -230,15 +230,15 @@
         <RequiredSkill name="Construction" level="60"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Welding Tool" requireditems="Spare Parts,Spare Electronics" requiredtime="20">
+	  <fabricableitem name="Welding Tool" requireditems="Spare Parts" requiredtime="20">
         <RequiredSkill name="Construction" level="40"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Saw Cutter" requireditems="Steel Bar,Spare Parts,Spare Electronics,Steel Saw" requiredtime="25">
+	  <fabricableitem name="Saw Cutter" requireditems="Steel Bar,Spare Parts,Steel Saw" requiredtime="25">
         <RequiredSkill name="Construction" level="30"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Plasma Cutter" requireditems="Spare Parts,Spare Electronics" requiredtime="30">
+	  <fabricableitem name="Plasma Cutter" requireditems="Spare Parts" requiredtime="30">
         <RequiredSkill name="Construction" level="50"/>
       </fabricableitem>
 	  
@@ -608,29 +608,33 @@
 	  </fabricableitem>
 	
 	  <fabricableitem name="Flash Charge" requireditems="Polycarbonate Sliver" requiredtime="20">
-        <RequiredSkill name="Science" level="25"/>
+        <RequiredSkill name="Science" level="35"/>
 		<Item name="Aluminium Powder" mincondition="0.25" usecondition="true"/>
 		<Item name="Chloral Hydrate" mincondition="0.25" usecondition="true"/>
 		<Item name="Potassium" mincondition="0.5" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="Propellant Charge" requireditems="Polycarbonate Sliver" requiredtime="20">
-        <RequiredSkill name="Science" level="30"/>
-		<Item name="Nitroglycerin" mincondition="0.25" usecondition="true"/>
+        <RequiredSkill name="Science" level="40"/>
+		<Item name="Nitroglycerin" mincondition="0.2" usecondition="true"/>
 		<Item name="Sulphuric Acid" mincondition="0.25" usecondition="true"/>
 		<Item name="Aluminium Powder" mincondition="0.5" usecondition="true"/>
       </fabricableitem>
+	  <fabricableitem name="Propellant Charge" requireditems="Polycarbonate Sliver,Propellant Powder,Stabilozine" requiredtime="20">
+        <RequiredSkill name="Science" level="50"/>
+		<Item name="Thermite Powder" count="2"/>
+      </fabricableitem>
 	  <fabricableitem name="Concussion Charge" requireditems="Polycarbonate Sliver,Propellant Powder,Propellant Powder,Phosphorus" requiredtime="20">
-        <RequiredSkill name="Science" level="35"/>
+        <RequiredSkill name="Science" level="42"/>
       </fabricableitem>
 	  <fabricableitem name="Blast Charge" requireditems="Concussion Charge,Propellant Powder,Chlorine" requiredtime="20">
-        <RequiredSkill name="Science" level="40"/>
+        <RequiredSkill name="Science" level="44"/>
       </fabricableitem>
 	  <fabricableitem name="Destroyer Charge" requireditems="Blast Charge,Aluminium Powder,Sulphuric Acid" requiredtime="20">
-        <RequiredSkill name="Science" level="45"/>
+        <RequiredSkill name="Science" level="46"/>
       </fabricableitem>
 	  <fabricableitem name="Demolition Charge" requireditems="Destroyer Charge" requiredtime="20">
-        <RequiredSkill name="Science" level="50"/>
-		<Item name="Nitroglycerin" mincondition="0.5" usecondition="true"/>
+        <RequiredSkill name="Science" level="48"/>
+		<Item name="Nitroglycerin" mincondition="0.4" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="Breach Charge" requireditems="Demolition Charge" requiredtime="20">
         <RequiredSkill name="Science" level="50"/>
