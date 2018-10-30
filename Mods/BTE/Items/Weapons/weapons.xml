@@ -419,8 +419,9 @@
 	price="500">
 
     <Deconstruct time="10">      
-      <Item name="Steel Bar"/>
-	  <Item name="Spare Parts"/>
+      <Item name="Steel Block"/>
+      <Item name="Aluminium Bar"/>
+      <Item name="Polycarbonate Bar"/>
     </Deconstruct>
   
     <Sprite texture="Content/Items/Weapons/weapons.png" sourcerect="0,25,98,25" depth="0.55"/>
@@ -460,8 +461,9 @@
 
     <Deconstruct time="10">      
       <Item name="Steel bar"/>
-	  <Item name="Spare Parts"/>
-	  <Item name="Spare Parts"/>
+	  <Item name="Steel Block"/>
+      <Item name="Aluminium Block"/>
+      <Item name="Polycarbonate Block"/>
     </Deconstruct>
   
     <Sprite texture="SpearGun.png" sourcerect="0,0,98,25" depth="0.55"/>
@@ -508,7 +510,7 @@
     <Projectile launchimpulse="15">
       <Attack damage="1" stun="1" damagetype="Blunt"/>
 	  <StatusEffect type="OnImpact" target="This">
-	  <Explosion range="10" damage="3" stun="1" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+	  <Explosion range="15" damage="6" stun="2" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
       </StatusEffect>
     </Projectile>
 	
@@ -534,7 +536,7 @@
     <Projectile launchimpulse="21" sticktocharacters="true">
       <Attack structuredamage="5" damagetype="Slash" severlimbsprobability="0.8"/>
 	  <StatusEffect type="OnImpact" target="This">
-	    <Explosion range="10" damage="10" bleedingdamage="2" stun="0.2" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+	    <Explosion range="15" damage="15" bleedingdamage="4" stun="0.4" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
       </StatusEffect>
     </Projectile>
 	
@@ -559,7 +561,7 @@
     <Projectile launchimpulse="23" sticktocharacters="true">
       <Attack structuredamage="10" damagetype="Slash" severlimbsprobability="0.9"/>
 	  <StatusEffect type="OnImpact" target="This" damage="10">
-	    <Explosion range="10" damage="20" bleedingdamage="3" stun="0.4" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+	    <Explosion range="15" damage="25" bleedingdamage="6" stun="0.8" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
       </StatusEffect>
     </Projectile>
 	
@@ -585,7 +587,7 @@
     <Projectile launchimpulse="21" sticktocharacters="true">
       <Attack structuredamage="12" damagetype="Slash" severlimbsprobability="0.9"/>
 	  <StatusEffect type="OnImpact" target="This" damage="10">
-	    <Explosion range="10" damage="30" bleedingdamage="3.5" stun="0.8" force="12" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+	    <Explosion range="15" damage="35" bleedingdamage="7" stun="1.6" force="12" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
       </StatusEffect>
     </Projectile>
 	
@@ -612,7 +614,7 @@
     <Projectile launchimpulse="19" sticktocharacters="true">
       <Attack structuredamage="15" damagetype="Slash" severlimbsprobability="1"/>
 	  <StatusEffect type="OnImpact" target="This" damage="20">
-	    <Explosion range="10" damage="40" bleedingdamage="4" stun="1" force="15" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+	    <Explosion range="15" damage="45" bleedingdamage="9" stun="2" force="15" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
       </StatusEffect>
     </Projectile>
 	
@@ -637,7 +639,7 @@
     <Projectile launchimpulse="17" sticktocharacters="true">
       <Attack structuredamage="20" damagetype="Blunt" severlimbsprobability="0.9"/>
 	  <StatusEffect type="OnImpact" target="This" damage="20">
-	    <Explosion range="10" damage="35" bleedingdamage="3.5" stun="2" force="20" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+	    <Explosion range="15" damage="40" bleedingdamage="7" stun="4" force="20" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
       </StatusEffect>
     </Projectile>
 	
@@ -662,7 +664,7 @@
     <Projectile launchimpulse="25" sticktocharacters="true">
       <Attack structuredamage="2.5" damagetype="Slash" severlimbsprobability="0.7"/>
 	  <StatusEffect type="OnImpact" target="This" damage="10">
-	    <Explosion range="10" damage="17" bleedingdamage="1.3" stun="0.25" force="8" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+	    <Explosion range="15" damage="22" bleedingdamage="2.6" stun="0.5" force="8" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
       </StatusEffect>
     </Projectile>
 	
@@ -678,8 +680,9 @@
 	tags="bigitem,weapon">
 
     <Deconstruct time="10">
-      <Item name="Spare Parts"/>
-	  <Item name="Spare Parts"/>
+      <Item name="Steel Block"/>
+      <Item name="Aluminium Block"/>
+      <Item name="Polycarbonate Block"/>
     </Deconstruct>
   
     <Sprite texture="SawGun.png" sourcerect="0,0,66,41" depth="0.55"/>
@@ -1027,7 +1030,9 @@
     price="2000">
 
     <Deconstruct time="10">
-	  <Item name="Spare Parts"/>
+	  <Item name="Steel Bar"/>
+      <Item name="Aluminium Bar"/>
+      <Item name="Polycarbonate Bar"/>
     </Deconstruct>
   
     <Sprite texture="Mods/BTE/Items/Weapons/BallisticGuns.png" sourcerect="50,24,40,20" depth="0.55"/>
@@ -1186,8 +1191,9 @@
     price="3750">
 
     <Deconstruct time="10">      
-      <Item name="Spare Parts"/>
-	  <Item name="Spare Parts"/>
+      <Item name="Steel Block"/>
+      <Item name="Aluminium Block"/>
+      <Item name="Polycarbonate Block"/>
     </Deconstruct>
   
     <Sprite texture="BallisticGuns.png" sourcerect="0,0,93,19" depth="0.55"/>
@@ -1466,10 +1472,11 @@
     impacttolerance="3">
 
     <Deconstruct time="20">      
-      <Item name="Spare Parts"/>
+      <Item name="Steel Bar"/>
+      <Item name="Aluminium Bar"/>
+      <Item name="Polycarbonate Bar"/>
 	  <Item name="Fulgurium Sliver"/>
 	  <Item name="FPGA Circuit"/>
-	  <Item name="Copper Sliver"/>
     </Deconstruct>
   
     <Sprite texture="weapons.png" sourcerect="0,160,48,24" depth="0.55"/>
@@ -1654,7 +1661,9 @@
 	price="100">
 
     <Deconstruct time="20">
-      <Item name="Spare Parts"/>
+      <Item name="Steel Bar"/>
+      <Item name="Aluminium Bar"/>
+      <Item name="Polycarbonate Bar"/>
 	  <Item name="Bronze Sliver"/>
 	  <Item name="FPGA Circuit"/>
     </Deconstruct>

@@ -406,8 +406,9 @@
     price="250">
 	
 	<Deconstruct time="10">
-	  <Item name="Spare Parts"/>
-	  <Item name="Spare Electronics"/>
+	  <Item name="Steel Bar"/>
+      <Item name="Aluminium Bar"/>
+      <Item name="Polycarbonate Bar"/>
     </Deconstruct>
 
     <Sprite texture="Tools.png" sourcerect="0,104,49,19" depth="0.55"/>
@@ -462,9 +463,9 @@
     price="200">
 
     <Deconstruct time="10">
-	  <Item name="Steel Bar"/>
-      <Item name="Spare Parts"/>
-	  <Item name="Spare Electronics"/>
+	  <Item name="Steel Block"/>
+      <Item name="Aluminium Bar"/>
+      <Item name="Polycarbonate Bar"/>
 	  <Item name="Steel Sliver"/>
 	  <Item name="Steel Sliver" mincondition="0.99"/>
     </Deconstruct>
@@ -516,8 +517,9 @@
     price="350">
 
     <Deconstruct time="10">
-	  <Item name="Spare Parts"/>
-	  <Item name="Spare Electronics"/>
+	  <Item name="Steel Bar"/>
+      <Item name="Aluminium Bar"/>
+      <Item name="Polycarbonate Bar"/>
     </Deconstruct>
     
     <Sprite texture="Content/Items/Tools/tools.png" sourcerect="0,0,41,16" depth="0.55"/>
