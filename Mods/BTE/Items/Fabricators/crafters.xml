@@ -611,7 +611,7 @@
 		<RequiredSkill name="Weapons" level="25"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Shock Rod" requireditems="Hollowhead Spear,Spare Electronics,FPGA Circuit" requiredtime="30">
+	  <fabricableitem name="Shock Rod" requireditems="Polycarbonate Spear,Copper Coil,Aluminium Sliver,Spare Electronics" requiredtime="30">
 	    <RequiredSkill name="Electrical Engineering" level="50"/>
       </fabricableitem>
 	  
@@ -688,7 +688,7 @@
         <RequiredSkill name="Weapons" level="40"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Plasma Torcher" requireditems="Plasma Cutter,Spare Parts" requiredtime="50">
+	  <fabricableitem name="Plasma Torcher" requireditems="Plasma Cutter,Spare Parts,Bronze Bar" requiredtime="50">
 	    <RequiredSkill name="Construction" level="50"/>
       </fabricableitem>
 	  
@@ -737,16 +737,6 @@
       </fabricableitem>
 	  <fabricableitem name="Fulgurium Fuel Rod" requireditems="Sulphuric Acid, Sulphuric Acid" requiredtime="20">
 		<Item name="Fulgurium Fuel Rod" mincondition="0.0" usecondition="false"/>
-      </fabricableitem>
-	  
-	 <fabricableitem name="Spare Parts" requireditems="Welding Tool" requiredtime="25">
-	    <RequiredSkill name="Construction" level="55"/>
-      </fabricableitem>
-	 <fabricableitem name="Spare Parts" requireditems="Plasma Cutter" requiredtime="25">
-	    <RequiredSkill name="Construction" level="55"/>
-      </fabricableitem>
-	  <fabricableitem name="Spare Parts" requireditems="Harpoon Gun" requiredtime="30">
-	    <RequiredSkill name="Construction" level="60"/>
       </fabricableitem>
 
 	 <fabricableitem name="Wire" requireditems="Copper Coil,Polycarbonate Sliver" requiredtime="15"/>
