@@ -82,8 +82,7 @@
 	<Deconstruct time="5">      
 	  <Item name="Polycarbonate Sliver" mincondition="0.99"/>
 	  <Item name="Propellant Powder" mincondition="0.99"/>
-	  <Item name="Propellant Powder" mincondition="0.99"/>
-	  <Item name="Propellant Powder" mincondition="0.99"/>
+	  <Item name="Phosphorus" mincondition="0.99"/>
     </Deconstruct>
 
     <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" depth="0.8" sourcerect="112,174,16,8"/>
@@ -116,8 +115,6 @@
 	
 	<Deconstruct time="5">
 	  <Item name="Polycarbonate Sliver" mincondition="0.99"/>
-	  <Item name="Propellant Powder" mincondition="0.99"/>
-	  <Item name="Propellant Powder" mincondition="0.99"/>
 	  <Item name="Propellant Powder" mincondition="0.99"/>
 	  <Item name="Propellant Powder" mincondition="0.99"/>
     </Deconstruct>
@@ -153,7 +150,6 @@
 	
 	<Deconstruct time="5">
 	  <Item name="Polycarbonate Sliver" mincondition="0.99"/>
-	  <Item name="Propellant Powder" mincondition="0.99"/>
 	  <Item name="Propellant Powder" mincondition="0.99"/>
 	  <Item name="Propellant Powder" mincondition="0.99"/>
 	  <Item name="Propellant Powder" mincondition="0.99"/>
@@ -265,8 +261,7 @@
 	
 	<Deconstruct time="5">
 	  <Item name="Steel Sliver" mincondition="0.99"/>
-	  <Item name="Propellant Powder" mincondition="0.99"/>
-	  <Item name="Propellant Powder" mincondition="0.99"/>
+	  <Item name="Aluminium Powder" mincondition="0.99"/>
 	  <Item name="Propellant Powder" mincondition="0.99"/>
     </Deconstruct>
 
@@ -301,8 +296,8 @@
 	
 	<Deconstruct time="5">
 	  <Item name="Steel Sliver" mincondition="0.99"/>
-	  <Item name="Propellant Powder" mincondition="0.99"/>
-	  <Item name="Propellant Powder" mincondition="0.99"/>
+	  <Item name="Aluminium Powder" mincondition="0.99"/>
+	  <Item name="Aluminium Powder" mincondition="0.99"/>
 	  <Item name="Propellant Powder" mincondition="0.99"/>
 	  <Item name="Propellant Powder" mincondition="0.99"/>
     </Deconstruct>
@@ -453,8 +448,7 @@
 	  <Item name="Polycarbonate Sliver" mincondition="0.99"/>
 	  <Item name="Propellant Powder" mincondition="0.99"/>
 	  <Item name="Propellant Powder" mincondition="0.99"/>
-	  <Item name="Propellant Powder" mincondition="0.99"/>
-	  <Item name="Propellant Powder" mincondition="0.99"/>
+	  <Item name="Potassium" mincondition="0.99"/>
     </Deconstruct>
 
     <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" depth="0.8" sourcerect="112,174,16,8"/>
@@ -488,9 +482,7 @@
 	<Deconstruct time="5">
 	  <Item name="Polycarbonate Sliver" mincondition="0.99"/>
 	  <Item name="Propellant Powder" mincondition="0.99"/>
-	  <Item name="Propellant Powder" mincondition="0.99"/>
-	  <Item name="Propellant Powder" mincondition="0.99"/>
-	  <Item name="Propellant Powder" mincondition="0.99"/>
+	  <Item name="Thermite Powder" mincondition="0.99"/>
     </Deconstruct>
 
     <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" depth="0.8" sourcerect="112,174,16,8"/>
@@ -563,7 +555,7 @@
 	<Deconstruct time="5">
 	  <Item name="Polycarbonate Sliver" mincondition="0.99"/>
       <Item name="Potassium" mincondition="0.99"/>
-	  <Item name="Chloral Hydrate" mincondition="0.99"/>
+	  <Item name="Phosphorus" mincondition="0.99"/>
     </Deconstruct>
 
     <Sprite texture="Mods/BTE/Items/Weapons/weapons.png" depth="0.8" sourcerect="112,174,16,8"/>
