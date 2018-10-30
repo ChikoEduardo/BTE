@@ -422,7 +422,7 @@
         <Explosion range="50" stun="0.2" force="2.0" flames="false" smoke="false" shockwave="false"/>
       </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This" IsOn="false">
-        <sound file="Content/Items/Button/switch.ogg" type="OnBroken" range="300"/>
+        <sound file="Mods/BTE/Items/Electricity/BreakerSwitch.ogg" type="OnBroken" range="900"/>
 		<Explosion range="10" stun="0.1" force="1.0" flames="false" smoke="false" shockwave="false"/>
       </StatusEffect>
 	  
