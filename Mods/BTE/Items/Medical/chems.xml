@@ -2315,11 +2315,11 @@
 	  
 	  <StatusEffect type="OnImpact" target="This" Condition="-100" setvalue="true">
         <sound file="Content/Items/Reactor/explosion.ogg" range="3000"/>
-        <Explosion range="600" structuredamage="300" damage="225" stun="14" force="25" severlimbsprobability="0.3" camerashake="6.5" decal="explosion" decalsize="0.6"/>
+        <Explosion range="600" structuredamage="250" damage="225" stun="14" force="25" severlimbsprobability="0.3" camerashake="6.5" decal="explosion" decalsize="0.6"/>
       </StatusEffect>
       <StatusEffect type="OnFire" target="This" Condition="-100" setvalue="true">
         <sound file="Content/Items/Reactor/explosion.ogg" range="3000"/>
-        <Explosion range="600" structuredamage="300" damage="225" stun="14" force="25" severlimbsprobability="0.3" camerashake="6.5" decal="explosion" decalsize="0.6"/>
+        <Explosion range="600" structuredamage="250" damage="225" stun="14" force="25" severlimbsprobability="0.3" camerashake="6.5" decal="explosion" decalsize="0.6"/>
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
 		<Remove/>
