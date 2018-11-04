@@ -646,7 +646,7 @@
 
     <Body width="9" height="8" radius="8" density="15"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.05" Health="0.002" disabledeltatime="true" delay="12" duration="100" checkconditionalalways="true">
@@ -684,7 +684,7 @@
 
     <Body width="9" height="8" radius="8" density="14"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.03" Health="0.004" disabledeltatime="true" delay="12" duration="100" checkconditionalalways="true">
@@ -721,7 +721,7 @@
 
     <Body width="9" height="8" radius="8" density="15"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.002" delay="12" duration="100" checkconditionalalways="true">
@@ -759,7 +759,7 @@
 
     <Body width="9" height="8" radius="8" density="14"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.03" Health="0.004" delay="12" duration="100" checkconditionalalways="true">
@@ -794,7 +794,7 @@
 
     <Body width="9" height="8" radius="8" density="14"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.05" Health="0.006" disabledeltatime="true" delay="12" duration="100" checkconditionalalways="true">
@@ -829,7 +829,7 @@
 
     <Body width="9" height="8" radius="8" density="13"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.07" Health="0.004" disabledeltatime="true" delay="12" duration="120" checkconditionalalways="true">
@@ -913,7 +913,7 @@
 
     <Body width="9" height="8" radius="8" density="11"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.015" Health="0.004" disabledeltatime="true" delay="12" duration="60" checkconditionalalways="true">
@@ -950,7 +950,7 @@
 
     <Body width="9" height="8" radius="8" density="13"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.004" disabledeltatime="true" delay="12" duration="60" checkconditionalalways="true">
@@ -988,7 +988,7 @@
 
     <Body width="9" height="8" radius="8" density="12"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="60" checkconditionalalways="true">
@@ -1025,7 +1025,7 @@
 
     <Body width="9" height="8" radius="8" density="14"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.004" disabledeltatime="true" delay="12" duration="75" checkconditionalalways="true">
@@ -1063,7 +1063,7 @@
 
     <Body width="9" height="8" radius="8" density="13"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="75" checkconditionalalways="true">
@@ -1098,7 +1098,7 @@
 
     <Body width="9" height="8" radius="8" density="13"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.04" Health="0.008" disabledeltatime="true" delay="12" duration="75" checkconditionalalways="true">
@@ -1135,7 +1135,7 @@
 
     <Body width="8" radius="8" density="10.1"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.003" disabledeltatime="true" delay="12" duration="20"/>
@@ -1149,7 +1149,7 @@
 	
 	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.003" disabledeltatime="true" delay="12" duration="20">
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.003" disabledeltatime="true" duration="20">
         <Conditional stun="gt 0"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This,Character" Condition="-50" disabledeltatime="true">
@@ -1280,7 +1280,7 @@
 
     <Body width="30" radius="8" density="12"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.007" disabledeltatime="true" delay="12" duration="160" checkconditionalalways="true">
@@ -1317,7 +1317,7 @@
 
     <Body width="30" radius="8" density="12"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.03" Health="0.008" disabledeltatime="true" delay="12" duration="160" checkconditionalalways="true">
@@ -1355,7 +1355,7 @@
 
     <Body width="16" height="27" density="16"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.06" Health="0.009" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
@@ -1424,7 +1424,7 @@
 
     <Body width="16" height="27" density="18"/>
 	
-	<AiTarget sightrange="500"/>
+	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
 	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.08" Health="0.006" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
