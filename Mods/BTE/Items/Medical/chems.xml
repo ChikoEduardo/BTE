@@ -63,7 +63,7 @@
 	
 	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect tags="stabilozine,medical" type="OnUse" target="Character" Health="0.1" delay="12" duration="30">
+      <StatusEffect tags="stabilozine,medical" type="OnUse" target="Character" Health="0.1" duration="30">
         <Conditional stun="gt 0"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
@@ -135,7 +135,7 @@
 	
 	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect tags="corrigodone,medical" type="OnUse" target="Character" Health="1.0" delay="12" duration="15">
+      <StatusEffect tags="corrigodone,medical" type="OnUse" target="Character" Health="1.0" duration="15">
         <Conditional stun="gt 0"/>
       </StatusEffect>    
 	  <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
@@ -214,10 +214,10 @@
 	
 	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect tags="fibrinozine,medical" type="OnUse" target="Character" Bleeding="-0.05" delay="12" duration="20">
+      <StatusEffect tags="fibrinozine,medical" type="OnUse" target="Character" Bleeding="-0.05" duration="20">
         <Conditional stun="gt 0"/>
       </StatusEffect>
-	  <StatusEffect tags="fibrinozine,medical" type="OnUse" target="Character" oxygen="-0.15" delay="12" duration="20" disabledeltatime="true" checkconditionalalways="true">
+	  <StatusEffect tags="fibrinozine,medical" type="OnUse" target="Character" oxygen="-0.15" duration="20" disabledeltatime="true" checkconditionalalways="true">
 	    <Conditional oxygen="gt 0"/>
 	  </StatusEffect>
       <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
@@ -289,7 +289,7 @@
 	
 	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect tags="erythrozine,medical" type="OnUse" target="Character" delay="12" duration="20">
+      <StatusEffect tags="erythrozine,medical" type="OnUse" target="Character" duration="20">
         <Conditional stun="gt 0"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
@@ -361,7 +361,7 @@
 	
 	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect tags="auxiliorizine,medical" type="OnUse" target="Character" Health="0.1" Oxygen="0.25" Bleeding="-0.005" delay="12" duration="90">
+      <StatusEffect tags="auxiliorizine,medical" type="OnUse" target="Character" Health="0.1" Oxygen="0.25" Bleeding="-0.005" duration="90">
         <Conditional stun="gt 0"/>
       </StatusEffect>     
 	  <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
@@ -439,7 +439,7 @@
     
     <MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect tags="chloromydride,medical" type="OnUse" target="Character" delay="12" duration="30">
+      <StatusEffect tags="chloromydride,medical" type="OnUse" target="Character" duration="30">
         <Conditional stun="gt 0"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
@@ -474,7 +474,7 @@
 	
 	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect type="OnUse" target="Character" Health="0.01" delay="12" duration="20">
+      <StatusEffect type="OnUse" target="Character" Health="0.01" duration="20">
         <Conditional stun="gt 0"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
@@ -799,7 +799,7 @@
 	
 	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect tags="chloralhydrate,poisonweak" type="OnUse" target="Character" oxygen="-0.04" SpeedMultiplier="-0.1" disabledeltatime="true" delay="9" duration="12">
+      <StatusEffect tags="chloralhydrate,poisonweak" type="OnUse" target="Character" oxygen="-0.04" SpeedMultiplier="-0.1" disabledeltatime="true" duration="12">
         <Conditional stun="gt 0"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
@@ -881,10 +881,10 @@
 	
 	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect tags="midazolam,poison" type="OnUse" target="Character" oxygen="-0.02" SpeedMultiplier="-0.1" disabledeltatime="true" delay="15" duration="15">
+      <StatusEffect tags="midazolam,poison" type="OnUse" target="Character" oxygen="-0.02" SpeedMultiplier="-0.1" disabledeltatime="true" duration="15">
         <Conditional stun="gt 0"/>
       </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Stun="25" delay="22">
+	  <StatusEffect type="OnUse" target="Character" Stun="25">
         <Conditional stun="gt 0"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
@@ -970,7 +970,7 @@
 	
 	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect tags="hyperzine,medical" type="OnUse" target="Character" SpeedMultiplier="0.1" oxygen="0.01" stun="-0.5" Health="-0.005" delay="12" duration="30" disabledeltatime="true">
+      <StatusEffect tags="hyperzine,medical" type="OnUse" target="Character" SpeedMultiplier="0.1" oxygen="0.01" stun="-0.5" Health="-0.005" duration="30" disabledeltatime="true">
         <Conditional stun="gt 0"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
@@ -1134,7 +1134,7 @@
 	
 	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect tags="neurozinide,poison" type="OnUse" target="Character" SpeedMultiplier="-1.5" ObstructVision="true" delay="12" duration="25" stackable="false" disabledeltatime="true">
+      <StatusEffect tags="neurozinide,poison" type="OnUse" target="Character" SpeedMultiplier="-1.5" ObstructVision="true" duration="25" stackable="false" disabledeltatime="true">
         <Conditional stun="gt 0"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
@@ -1308,37 +1308,7 @@
 	
 	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect tags="morbusine,poisonstrong" type="OnUse" target="Character" SpeedMultiplier="-0.04" Health="-0.01" oxygen="-0.06" delay="12" duration="100" disabledeltatime="true">
-        <Conditional stun="gt 0"/>
-      </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Stun="0.1" delay="22" disabledeltatime="true">
-        <Conditional stun="gt 0"/>
-      </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Stun="0.12" delay="32" disabledeltatime="true">
-        <Conditional stun="gt 0"/>
-      </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Stun="0.11" delay="42" disabledeltatime="true">
-        <Conditional stun="gt 0"/>
-      </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Stun="0.14" delay="52" disabledeltatime="true">
-        <Conditional stun="gt 0"/>
-      </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Stun="0.12" delay="62" disabledeltatime="true">
-        <Conditional stun="gt 0"/>
-      </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Stun="0.16" delay="72" disabledeltatime="true">
-        <Conditional stun="gt 0"/>
-      </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Stun="0.19" delay="82" disabledeltatime="true">
-        <Conditional stun="gt 0"/>
-      </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Stun="0.15" delay="92" disabledeltatime="true">
-        <Conditional stun="gt 0"/>
-      </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Stun="0.12" delay="102" disabledeltatime="true">
-        <Conditional stun="gt 0"/>
-      </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Stun="0.1" delay="112" disabledeltatime="true">
+      <StatusEffect tags="morbusine,poisonstrong" type="OnUse" target="Character" SpeedMultiplier="-0.04" Health="-0.01" oxygen="-0.06" duration="100" disabledeltatime="true">
         <Conditional stun="gt 0"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
@@ -1466,7 +1436,7 @@
 	
 	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect tags="hematosine,poisonstrong" type="OnUse" target="Character" bleeding="0.025" delay="16" duration="50">
+      <StatusEffect tags="hematosine,poisonstrong" type="OnUse" target="Character" bleeding="0.025" duration="50">
         <Conditional stun="gt 0"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
@@ -1538,7 +1508,7 @@
 
     <MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect tags="sufforin,poisonstrong" type="OnUse" target="Character" OxygenAvailable="-10000" delay="32" duration="60">
+      <StatusEffect tags="sufforin,poisonstrong" type="OnUse" target="Character" OxygenAvailable="-10000" duration="60">
         <Conditional stun="gt 0"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
@@ -1610,7 +1580,7 @@
 
     <MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect tags="cyanide,poisonstrong" type="OnUse" target="Character" Oxygen="-0.02" OxygenAvailable="-10000" SpeedMultiplier="-0.1" disabledeltatime="true" delay="12" duration="30">
+      <StatusEffect tags="cyanide,poisonstrong" type="OnUse" target="Character" Oxygen="-0.02" OxygenAvailable="-10000" SpeedMultiplier="-0.1" disabledeltatime="true" duration="30">
         <Conditional stun="gt 0"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
@@ -1772,7 +1742,7 @@
 	
 	<MeleeWeapon characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand"
               aimpos="5,0" handle1="-5,0" holdangle="10" reload="1.0">
-      <StatusEffect tags="oxygenite,medical" type="OnUse" target="Character" Oxygen="1" delay="12" duration="15">
+      <StatusEffect tags="oxygenite,medical" type="OnUse" target="Character" Oxygen="1" duration="15">
         <Conditional stun="gt 0"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This,Character" Condition="-25" disabledeltatime="true">
