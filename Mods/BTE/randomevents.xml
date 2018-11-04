@@ -250,17 +250,9 @@
   
   <MonsterEvent name="Under attack" description=""
     characterfile="Mods/BTE/Characters/FractalWalker/fractalwalker.xml"
-    mineventcount="0" maxeventcount="1"
-    minamount="1" maxamount="2"
-    spawntype="ruin"
-    musictype="monster">
-  </MonsterEvent>
-  
-  <MonsterEvent name="Under attack" description=""
-    characterfile="Mods/BTE/Characters/FractalWalker/fractalwalker.xml"
-    mineventcount="0" maxeventcount="1"
+    mineventcount="1" maxeventcount="1"
     minamount="1" maxamount="1"
-    spawntype="mainpath"
+    spawntype="ruin"
     musictype="monster">
   </MonsterEvent>
 
