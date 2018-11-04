@@ -10,6 +10,8 @@
     combatstrength="1000"
     attackpriorityrooms="0.0" 
     attackpriorityhumans="100"
+	attackpriorityweaker="5"
+    attackprioritystronger="5"
     sight="2.0"
     hearing="0.5"
     attackcooldown="3"/>
