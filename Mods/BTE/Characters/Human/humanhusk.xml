@@ -5,7 +5,7 @@
 
     <ai combatstrength="100"
 	  attackhumans="500"
-	  attackrooms="100"
+	  attackrooms="50"
 	  attackweaker="50"
 	  attackstronger="0"
       sight="0.8"
