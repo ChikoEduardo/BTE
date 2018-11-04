@@ -1,8 +1,7 @@
 ﻿<Items>
   <Item
     name="Hydrogen Generator"
-    category="Machine"
-    linkable="true">
+    category="Machine">
 
     <Sprite texture="HydrogenGenerator.png" depth="0.8" sourcerect="0,0,118,123"/>
 	<BrokenSprite texture="HydrogenGeneratorBroken.png" depth="0.8" sourcerect="0,0,118,123" maxcondition="0"/>
