@@ -390,7 +390,7 @@
 	  <fabricableitem name="Mantis Caviar" requiredtime="35">
 		<Item name="Mantis Eggs" mincondition="0.2" usecondition="false"/>
 		<Item name="Salt" mincondition="0.4" usecondition="true"/>
-		<RequiredSkill name="Cooking" level="40"/>
+		<RequiredSkill name="Cooking" level="50"/>
       </fabricableitem>
 	  
 	  <fabricableitem name="Seared Thresher" requiredtime="20">
@@ -445,14 +445,14 @@
 		<Item name="Potato" mincondition="0.1" usecondition="false"/>
 		<Item name="Carrot" mincondition="0.1" usecondition="false"/>
 		<Item name="Beer" mincondition="0.75" usecondition="true"/>
-		<RequiredSkill name="Cooking" level="60"/>
+		<RequiredSkill name="Cooking" level="55"/>
       </fabricableitem>
 	  
 	  <fabricableitem name="Seabed Soup" requireditems="Food Can, Kelp" requiredtime="10"/>
 	  
 	  <fabricableitem name="Husk Caviar" requireditems="Velonaceps Calyx Eggs" requiredtime="35">
 		<Item name="Salt" mincondition="0.4" usecondition="true"/>
-		<RequiredSkill name="Cooking" level="40"/>
+		<RequiredSkill name="Cooking" level="50"/>
       </fabricableitem>
 	  
 	  <fabricableitem name="Mantcrawl CocktaiI" requireditems="Food Can" requiredtime="40">
