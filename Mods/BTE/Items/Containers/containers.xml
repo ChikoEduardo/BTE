@@ -9,7 +9,7 @@
 	  <sound file="Mods/BTE/Items/Containers/Cabinet.ogg" type="OnUse" range="500"/>
     </Controller>
 
-    <ItemContainer capacity="20" canbeselected="true" hideitems="true">
+    <ItemContainer capacity="25" canbeselected="true" hideitems="true">
 	  <Containable name="smallitem,meditem,sawammo"/>
     </ItemContainer>
   </Item>
@@ -24,7 +24,7 @@
       <sound file="Mods/BTE/Items/Containers/Locker.ogg" type="OnUse" range="750"/>
     </Controller>
 	
-	<ItemContainer capacity="10" canbeselected="true" hideitems="true">
+	<ItemContainer capacity="15" canbeselected="true" hideitems="true">
       <Containable name="smallitem,meditem,bigitem"/>
     </ItemContainer>
   </Item>
@@ -41,7 +41,7 @@
       <sound file="Mods/BTE/Items/Containers/Locker.ogg" type="OnUse" range="750"/>
     </Controller>
 	
-	<ItemContainer capacity="10" canbeselected="true" hideitems="true">
+	<ItemContainer capacity="15" canbeselected="true" hideitems="true">
       <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
 	  <Containable name="smallitem,meditem,bigitem"/>
     </ItemContainer>
@@ -181,7 +181,7 @@
       <output name="power_in"/>
     </ConnectionPanel>
 	
-	<ItemContainer capacity="15" canbeselected="true" hideitems="true">
+	<ItemContainer capacity="20" canbeselected="true" hideitems="true">
       <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
 	  <Containable name="smallitem,food,drink"/>
     </ItemContainer>
@@ -304,7 +304,7 @@
       </StatusEffect>
 	</Holdable>
 	
-	<ItemContainer capacity="4" canbeselected="true" hideitems="true">
+	<ItemContainer capacity="5" canbeselected="true" hideitems="true">
       <Containable name="smallitem"/>
     </ItemContainer>
   </Item>
@@ -602,7 +602,7 @@
 
     <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
 	
-	<ItemContainer capacity="10" canbeselected="true" hideitems="true">
+	<ItemContainer capacity="15" canbeselected="true" hideitems="true">
       <Containable name="Revolver Round,Revolver HL Round,Revolver Flare Round"/>
     </ItemContainer>
   </Item>
@@ -626,7 +626,7 @@
 
     <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
 	
-	<ItemContainer capacity="10" canbeselected="true" hideitems="true">
+	<ItemContainer capacity="15" canbeselected="true" hideitems="true">
       <Containable name="Shotgun Slug Round,Shotgun Beanbag Round,Shotgun Taser Round"/>
     </ItemContainer>
   </Item>
