@@ -147,7 +147,7 @@
     reward="1500"
     radarlabel="Target"
 	failuremessage="Failed to kill the Watcher."
-    successmessage="As soon as you got to [location2] and leave your vessel, a man aproaches and hands you the credits as he walks past you."
+    successmessage="As soon as you got to [location2] and leave your vessel, a man approaches and hands you the credits as he walks past you."
     monsterfile="Mods/BTE/Characters/Watcher/watcher.xml">
     <message header="Target terminated" text="The Watcher is dead. Navigate the submarine out of the cavern to claim the reward."/>
   </MonsterMission>
