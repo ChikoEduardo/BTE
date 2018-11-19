@@ -510,7 +510,7 @@
     <Projectile launchimpulse="15">
       <Attack damage="1" stun="1" damagetype="Blunt"/>
 	  <StatusEffect type="OnImpact" target="This">
-	  <Explosion range="15" damage="6" stun="2" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+	  <Explosion range="15" damage="6" stun="3" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
       </StatusEffect>
     </Projectile>
 	
@@ -534,9 +534,9 @@
     <Body radius="12" density="16" friction="0.95"/>
 
     <Projectile launchimpulse="21" sticktocharacters="true">
-      <Attack structuredamage="5" damagetype="Slash" severlimbsprobability="0.8"/>
+      <Attack damage="1" structuredamage="5" damagetype="Slash" severlimbsprobability="0.8"/>
 	  <StatusEffect type="OnImpact" target="This">
-	    <Explosion range="15" damage="15" bleedingdamage="4" stun="0.4" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+	    <Explosion range="15" damage="15" bleedingdamage="5" stun="0.4" force="5" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
       </StatusEffect>
     </Projectile>
 	
@@ -559,9 +559,9 @@
     <Body radius="12" density="17" friction="0.95"/>
 
     <Projectile launchimpulse="23" sticktocharacters="true">
-      <Attack structuredamage="10" damagetype="Slash" severlimbsprobability="0.9"/>
+      <Attack damage="1" structuredamage="10" damagetype="Slash" severlimbsprobability="0.9"/>
 	  <StatusEffect type="OnImpact" target="This" damage="10">
-	    <Explosion range="15" damage="25" bleedingdamage="6" stun="0.8" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+	    <Explosion range="15" damage="25" bleedingdamage="7" stun="0.8" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
       </StatusEffect>
     </Projectile>
 	
@@ -585,9 +585,9 @@
     <Body radius="12" density="17" friction="0.95"/>
 
     <Projectile launchimpulse="21" sticktocharacters="true">
-      <Attack structuredamage="12" damagetype="Slash" severlimbsprobability="0.9"/>
+      <Attack damage="1" structuredamage="12" damagetype="Slash" severlimbsprobability="0.9"/>
 	  <StatusEffect type="OnImpact" target="This" damage="10">
-	    <Explosion range="15" damage="35" bleedingdamage="7" stun="1.6" force="12" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+	    <Explosion range="15" damage="35" bleedingdamage="8" stun="1.6" force="12" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
       </StatusEffect>
     </Projectile>
 	
@@ -612,9 +612,9 @@
     <Body radius="12" density="18" friction="0.95"/>
 
     <Projectile launchimpulse="19" sticktocharacters="true">
-      <Attack structuredamage="15" damagetype="Slash" severlimbsprobability="1"/>
+      <Attack damage="1" structuredamage="15" damagetype="Slash" severlimbsprobability="1"/>
 	  <StatusEffect type="OnImpact" target="This" damage="20">
-	    <Explosion range="15" damage="45" bleedingdamage="9" stun="2" force="15" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+	    <Explosion range="15" damage="45" bleedingdamage="10" stun="2" force="15" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
       </StatusEffect>
     </Projectile>
 	
@@ -637,9 +637,9 @@
     <Body radius="12" density="20" friction="0.95"/>
 
     <Projectile launchimpulse="17" sticktocharacters="true">
-      <Attack structuredamage="20" damagetype="Blunt" severlimbsprobability="0.9"/>
+      <Attack damage="1" stun="1" structuredamage="20" damagetype="Blunt" severlimbsprobability="0.9"/>
 	  <StatusEffect type="OnImpact" target="This" damage="20">
-	    <Explosion range="15" damage="40" bleedingdamage="7" stun="4" force="20" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+	    <Explosion range="15" damage="40" bleedingdamage="8" stun="4" force="20" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
       </StatusEffect>
     </Projectile>
 	
@@ -662,9 +662,9 @@
     <Body radius="12" density="10" friction="0.1"/>
 
     <Projectile launchimpulse="25" sticktocharacters="true">
-      <Attack structuredamage="2.5" damagetype="Slash" severlimbsprobability="0.7"/>
+      <Attack damage="1" structuredamage="2.5" damagetype="Slash" severlimbsprobability="0.7"/>
 	  <StatusEffect type="OnImpact" target="This" damage="10">
-	    <Explosion range="15" damage="22" bleedingdamage="2.6" stun="0.5" force="8" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+	    <Explosion range="15" damage="22" bleedingdamage="2.7" stun="0.5" force="8" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
       </StatusEffect>
     </Projectile>
 	
@@ -954,7 +954,7 @@
 
     <Body width="6" height="2" density="10.5"/>
 	
-	<LightComponent LightColor="1.0,0.0,0.0,1.0" Flicker="0.5" range="500" IsOn="false">
+	<LightComponent LightColor="1.0,0.0,0.0,1.0" Flicker="0.5" range="600" IsOn="false">
       <StatusEffect type="OnUse" target="This" IsOn="true"/>
 	  <StatusEffect type="OnActive" target="This" Condition="-1.5">
 	    <ParticleEmitter particle="flare" particlespersecond="30"/>
