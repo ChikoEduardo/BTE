@@ -48,11 +48,44 @@
   </Item>
   
   <Item
+    name="Small Locker"
+	Tags="cntnr">
+    
+    <Sprite texture="staticContainers.png" sourcerect="92,186,45,64" depth="0.78"/>
+	
+	<Controller direction="None" canbepicked="true">
+      <sound file="Mods/BTE/Items/Containers/Locker.ogg" type="OnUse" range="650"/>
+    </Controller>
+	
+	<ItemContainer capacity="10" canbeselected="true" hideitems="true">
+      <Containable name="smallitem,meditem"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Steel Safe"
+	Tags="cntnr"
+	waterproof="true"
+	fireproof="true">
+    
+    <Sprite texture="staticContainers.png" sourcerect="92,251,45,64" depth="0.78"/>
+	
+	<Controller direction="None" canbepicked="true">
+      <sound file="Mods/BTE/Items/Containers/Locker.ogg" type="OnUse" range="650"/>
+    </Controller>
+	
+	<ItemContainer capacity="10" canbeselected="true" hideitems="true">
+      <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
+	  <Containable name="smallitem,meditem"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
     name="Top Cabinet"
 	aliases="Medicine Cabinet,Toxic Cabinet"
 	Tags="cntnr">
 
-    <Sprite texture="staticContainers.png" sourcerect="92,186,48,64" depth="0.78"/>
+    <Sprite texture="staticContainers.png" sourcerect="286,315,48,64" depth="0.78"/>
 	
 	<Controller direction="None" canbepicked="true">
       <sound file="Mods/BTE/Items/Containers/Cabinet.ogg" type="OnUse" range="500"/>
@@ -69,7 +102,7 @@
 	waterproof="true"
 	fireproof="true">
 
-    <Sprite texture="staticContainers.png" sourcerect="92,251,48,64" depth="0.78"/>
+    <Sprite texture="staticContainers.png" sourcerect="335,315,48,64" depth="0.78"/>
 	
 	<Controller direction="None" canbepicked="true">
       <sound file="Mods/BTE/Items/Containers/Cabinet.ogg" type="OnUse" range="500"/>
@@ -151,7 +184,7 @@
 	Tags="cntnr"
 	waterproof="true">
     
-    <Sprite texture="staticContainers.png" sourcerect="141,186,71,135" depth="0.78"/>
+    <Sprite texture="staticContainers.png" sourcerect="140,186,71,135" depth="0.78" canflipx="false"/>
 	
 	<LightComponent lightcolor="1.0,1.0,1.0,0.1" range="1000" powerconsumption="1" IsOn="true">
       <sprite texture="Mods/BTE/Items/Containers/FridgeLights.png" sourcerect="0,0,71,135" alpha="1.0"/>
@@ -320,7 +353,7 @@
 	  <Item name="Steel Bar"/>
     </Deconstruct>
 
-    <Sprite texture="dynamicContainers.png" sourcerect="237,86,53,98" depth="0.54"/>
+    <Sprite texture="dynamicContainers.png" sourcerect="237,86,53,98" depth="0.54" canflipx="false"/>
 	
 	<Body width="52" height="97" density="14"/>
 	
@@ -345,7 +378,7 @@
 	  <Item name="Steel Bar"/>
     </Deconstruct>
 
-    <Sprite texture="dynamicContainers.png" sourcerect="183,86,53,98" depth="0.54"/>
+    <Sprite texture="dynamicContainers.png" sourcerect="183,86,53,98" depth="0.54" canflipx="false"/>
 	
 	<Body width="52" height="97" density="14"/>
 	
