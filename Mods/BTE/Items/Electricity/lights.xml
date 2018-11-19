@@ -15,7 +15,8 @@
       <requireditem name="Pliers,Screwdriver" type="Equipped"/>
       <input name="power"/>
       <input name="toggle"/>
-      <input name="set_state"/>      
+      <input name="set_state"/>
+	  <input name="set_color"/>
     </ConnectionPanel>
   </Item>
 
@@ -33,6 +34,7 @@
       <requireditem name="Pliers,Screwdriver" type="Equipped"/>
       <input name="toggle"/>
       <input name="set_state"/>
+	  <input name="set_color"/>
     </ConnectionPanel>
   </Item>
 </Items>
