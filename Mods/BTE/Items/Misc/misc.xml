@@ -16,8 +16,7 @@
     name="Clipboard"
     category="Equipment"
     tags="smallitem"
-    description="A thin, rigid board with a clip at the top for holding documents in place."
-	>
+    description="A thin, rigid board with a clip at the top for holding documents in place.">
 	
 	<Deconstruct time="10">
       <Item name="Polycarbonate Sliver"/>
@@ -39,8 +38,7 @@
     name="Coalition Captain"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a job description for the captain position."
-	>
+    description="This is a job description for the captain position.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -66,8 +64,7 @@
     name="Coalition Officer"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a job description for the officer position."
-	>
+    description="This is a job description for the officer position.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -93,8 +90,7 @@
     name="Coalition Enforcer"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a job description for the enforcer position."
-	>
+    description="This is a job description for the enforcer position.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -120,8 +116,7 @@
     name="Coalition Scientist"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a job description for the scientist position."
-	>
+    description="This is a job description for the scientist position.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -147,8 +142,7 @@
     name="Coalition Doctor"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a job description for the medical doctor position."
-	>
+    description="This is a job description for the medical doctor position.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -174,8 +168,7 @@
     name="Coalition Engineer"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a job description for the engineer position."
-	>
+    description="This is a job description for the engineer position.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -201,8 +194,7 @@
     name="Coalition Mechanic"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a job description for the mechanic position."
-	>
+    description="This is a job description for the mechanic position.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -228,8 +220,7 @@
     name="Coalition Cook"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a job description for the culinary specialist position."
-	>
+    description="This is a job description for the culinary specialist position.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -255,8 +246,7 @@
     name="Coalition Seamen"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a job description for the seaman position."
-	>
+    description="This is a job description for the seaman position.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -282,8 +272,7 @@
     name="Basic Emergency Protocol"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a In-Case-Of-Emergency document issued to every crew member."
-	>
+    description="This is a In-Case-Of-Emergency document issued to every crew member.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -309,8 +298,7 @@
     name="Document about Prisoners"
     category="Misc"
     tags="smallitem,docs"
-    description="A document describing prisoners and how to properly handle them."
-	>
+    description="A document describing prisoners and how to properly handle them.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -336,8 +324,7 @@
     name="Husk Treatment Information"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a document issued to every medical doctor."
-	>
+    description="This is a document issued to every medical doctor.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -363,8 +350,7 @@
     name="Outbreak Protocol"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a classified executive order mandate document."
-	>
+    description="This is a classified executive order mandate document.">
 	
 	<Deconstruct time="10">
       <Item name="Outbreak Protocol"/>
@@ -390,8 +376,7 @@
     name="Classified Protocol A"
     category="Misc"
     tags="smallitem,docs"
-    description="This document is missing letters and words. It seems important."
-	>
+    description="This document is missing letters and words. It seems important.">
 	
 	<Deconstruct time="10">
       <Item name="Classified Protocol A"/>
@@ -417,8 +402,7 @@
     name="Classified Protocol B"
     category="Misc"
     tags="smallitem,docs"
-    description="This transparent sheet has some letters and loose words in it. It seems important."
-	>
+    description="This transparent sheet has some letters and loose words in it. It seems important.">
 	
 	<Deconstruct time="10">
       <Item name="Classified Protocol B"/>
@@ -444,8 +428,7 @@
     name="Document about Nuclear Reactors"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a document issued to every engineer."
-	>
+    description="This is a document issued to every engineer.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -471,8 +454,7 @@
     name="Document about Fusion Reactors"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a document issued to every engineer."
-	>
+    description="This is a document issued to every engineer.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -498,8 +480,7 @@
     name="Document about Power Grids"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a document issued to every engineer."
-	>
+    description="This is a document issued to every engineer.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -525,8 +506,7 @@
     name="Document about the Aegir"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a document about the Aegir and it shuttle."
-	>
+    description="This is a document about the Aegir and its shuttle.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -552,8 +532,7 @@
     name="Document about Threshers"
     category="Misc"
     tags="smallitem,docs"
-    description="A document describing tiger threshers."
-	>
+    description="A document describing tiger threshers.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -579,8 +558,7 @@
     name="Document about Crawlers"
     category="Misc"
     tags="smallitem,docs"
-    description="A document describing crawlers."
-	>
+    description="A document describing crawlers.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -606,8 +584,7 @@
     name="Document about Ghost Crawlers"
     category="Misc"
     tags="smallitem,docs"
-    description="A document describing the elusive ghost crawlers."
-	>
+    description="A document describing the elusive ghost crawlers.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -633,8 +610,7 @@
     name="Document about Mantises"
     category="Misc"
     tags="smallitem,docs"
-    description="A document describing mantises."
-	>
+    description="A document describing mantises.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -660,8 +636,7 @@
     name="Document about Scorpions"
     category="Misc"
     tags="smallitem,docs"
-    description="A document describing scorpions."
-	>
+    description="A document describing scorpions.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -687,8 +662,7 @@
     name="Document about Molochs"
     category="Misc"
     tags="smallitem,docs"
-    description="A document describing molochs."
-	>
+    description="A document describing molochs.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -714,8 +688,7 @@
     name="Document about Endworms"
     category="Misc"
     tags="smallitem,docs"
-    description="A document describing endworms."
-	>
+    description="A document describing endworms.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -741,8 +714,7 @@
     name="Husk Incident Report"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a page of a husk incident report."
-	>
+    description="This is a page of a husk incident report.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -768,8 +740,7 @@
     name="Husk Incident Photos"
     category="Misc"
     tags="smallitem,docs"
-    description="This is the second page of a husk incident report."
-	>
+    description="This is the second page of a husk incident report.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -795,8 +766,7 @@
     name="Incident Report 37"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a page of an incident report."
-	>
+    description="This is a page of an incident report.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -822,8 +792,7 @@
     name="Top Secret Cover"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a cover sheet for classified information."
-	>
+    description="This is a cover sheet for classified information.">
 	
 	<Deconstruct time="10">
       <Item name="Top Secret Cover"/>
@@ -849,8 +818,7 @@
     name="Toр Sесrеt Covеr"
     category="Misc"
     tags="smallitem,docs"
-    description="This is a cover sheet for classified information."
-	>
+    description="This is a cover sheet for classified information.">
 	
 	<Deconstruct time="10">
       <Item name="Toр Sесrеt Covеr"/>
@@ -876,8 +844,7 @@
     name="A drawing of the Nehalennia"
     category="Misc"
     tags="smallitem,docs"
-    description="A piece of paper from a notebook containing a poorly drawn layout of the Nehalennia."
-	>
+    description="A piece of paper from a notebook containing a poorly drawn layout of the Nehalennia.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -903,8 +870,7 @@
     name="A drawing of a Moloch"
     category="Misc"
     tags="smallitem,docs"
-    description="A piece of paper from a notebook containing a poorly drawn strategy against Molochs."
-	>
+    description="A piece of paper from a notebook containing a poorly drawn strategy against Molochs.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -930,8 +896,7 @@
     name="A drawing of a Husk"
     category="Misc"
     tags="smallitem,docs"
-    description="A piece of paper from a notebook containing a drawing of a Husk in a diving suit."
-	>
+    description="A piece of paper from a notebook containing a drawing of a Husk in a diving suit.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -957,8 +922,7 @@
     name="A drawing of a Crawler"
     category="Misc"
     tags="smallitem,docs"
-    description="A piece of paper from a notebook containing a drawing of a Crawler."
-	>
+    description="A piece of paper from a notebook containing a drawing of a Crawler.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -984,8 +948,7 @@
     name="A drawing of a Mantis"
     category="Misc"
     tags="smallitem,docs"
-    description="A piece of paper from a notebook containing a drawing of particularly big Mantis."
-	>
+    description="A piece of paper from a notebook containing a drawing of particularly big Mantis.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -1011,8 +974,7 @@
     name="A drawing of a Tiger Thresher"
     category="Misc"
     tags="smallitem,docs"
-    description="A piece of paper from a notebook containing a drawing of what appears to be a smiling Tiger Thresher."
-	>
+    description="A piece of paper from a notebook containing a drawing of what appears to be a smiling Tiger Thresher.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -1038,8 +1000,7 @@
     name="A drawing of an Scorpion"
     category="Misc"
     tags="smallitem,docs"
-    description="A piece of paper from a notebook containing a drawing of an Scorpion."
-	>
+    description="A piece of paper from a notebook containing a drawing of an Scorpion.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -1065,8 +1026,7 @@
     name="A weird Drawing"
     category="Misc"
     tags="smallitem,docs"
-    description="A piece of paper from a notebook with a drawing of some sort of hieroglyphics."
-	>
+    description="A piece of paper from a notebook with a drawing of some sort of hieroglyphics.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -1092,8 +1052,7 @@
     name="A note for the Captain"
     category="Misc"
     tags="smallitem,docs"
-    description="A piece of paper from a notebook containing a message from the dry docks personnel."
-	>
+    description="A piece of paper from a notebook containing a message from the dry docks personnel.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -1119,8 +1078,7 @@
     name="A note for Engineering"
     category="Misc"
     tags="smallitem,docs"
-    description="A piece of paper from a notebook containing a message from the dry docks personnel."
-	>
+    description="A piece of paper from a notebook containing a message from the dry docks personnel.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -1146,8 +1104,7 @@
     name="A note for Engineeгing"
     category="Misc"
     tags="smallitem,docs"
-    description="A piece of paper from a notebook containing a message from the dry docks personnel."
-	>
+    description="A piece of paper from a notebook containing a message from the dry docks personnel.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -1173,8 +1130,7 @@
     name="A note for Engiиeeяing"
     category="Misc"
     tags="smallitem,docs"
-    description="A piece of paper from a notebook containing a message from the dry docks personnel."
-	>
+    description="A piece of paper from a notebook containing a message from the dry docks personnel.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -1200,8 +1156,7 @@
     name="Labor Union Propaganda"
     category="Misc"
     tags="smallitem,docs"
-    description="A propaganda poster about the lack of labor unions in Europa."
-	>
+    description="A propaganda poster about the lack of labor unions in Europa.">
 	
 	<Deconstruct time="10">
       <Item name="Paper Boat"/>
@@ -1227,8 +1182,7 @@
     name="Wallet"
     category="Equipment"
     tags="smallitem"
-    description="A soft polycarbonate case used to carry personal items such as food stamps, pictures and identification documents."
-	>
+    description="A soft polycarbonate case used to carry personal items such as food stamps, pictures and identification documents.">
 	
 	<Deconstruct time="10">
       <Item name="Polycarbonate Sliver"/>
