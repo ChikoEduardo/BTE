@@ -508,7 +508,7 @@
    
     <Deconstruct time="10">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
     <Sprite texture="materials.png" sourcerect="50,38,16,16" depth="0.82"/>
@@ -527,7 +527,7 @@
    
     <Deconstruct time="10">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
     <Sprite texture="materials.png" sourcerect="50,38,16,16" depth="0.82"/>
@@ -546,7 +546,7 @@
    
     <Deconstruct time="10">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
     <Sprite texture="materials.png" sourcerect="50,38,16,16" depth="0.82"/>
@@ -565,7 +565,7 @@
    
     <Deconstruct time="10">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
     <Sprite texture="materials.png" sourcerect="50,38,16,16" depth="0.82"/>
@@ -584,7 +584,7 @@
    
     <Deconstruct time="10">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
     <Sprite texture="materials.png" sourcerect="50,38,16,16" depth="0.82"/>
@@ -603,7 +603,7 @@
    
     <Deconstruct time="10">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
     <Sprite texture="materials.png" sourcerect="50,38,16,16" depth="0.82"/>
@@ -621,7 +621,7 @@
     canbepicked="true">
    
     <Deconstruct time="15">
-	  <Item name="Polycarbonate Sliver" outcondition="0.25"/>
+	  <Item name="Polycarbonate Sliver" outcondition="0.75"/>
     </Deconstruct>
 
     <Sprite texture="materials.png" sourcerect="50,0,25,40" depth="0.81"/>
@@ -641,7 +641,7 @@
     canbepicked="true">
    
     <Deconstruct time="15">
-	  <Item name="Polycarbonate Sliver" outcondition="0.25"/>
+	  <Item name="Polycarbonate Sliver" outcondition="0.75"/>
     </Deconstruct>
 
     <Sprite texture="materials.png" sourcerect="50,0,25,40" depth="0.81"/>
@@ -661,7 +661,7 @@
     canbepicked="true">
    
     <Deconstruct time="15">
-	  <Item name="Polycarbonate Sliver" outcondition="0.25"/>
+	  <Item name="Polycarbonate Sliver" outcondition="0.75"/>
     </Deconstruct>
 
     <Sprite texture="materials.png" sourcerect="50,0,25,40" depth="0.81"/>
@@ -681,7 +681,7 @@
     canbepicked="true">
    
     <Deconstruct time="15">
-	  <Item name="Polycarbonate Sliver" outcondition="0.25"/>
+	  <Item name="Polycarbonate Sliver" outcondition="0.75"/>
     </Deconstruct>
 
     <Sprite texture="materials.png" sourcerect="50,0,25,40" depth="0.81"/>
@@ -701,7 +701,7 @@
     canbepicked="true">
    
     <Deconstruct time="15">
-	  <Item name="Polycarbonate Sliver" outcondition="0.25"/>
+	  <Item name="Polycarbonate Sliver" outcondition="0.75"/>
     </Deconstruct>
 
     <Sprite texture="materials.png" sourcerect="50,0,25,40" depth="0.81"/>
@@ -721,7 +721,7 @@
     canbepicked="true">
    
     <Deconstruct time="15">
-	  <Item name="Polycarbonate Sliver" outcondition="0.25"/>
+	  <Item name="Polycarbonate Sliver" outcondition="0.75"/>
     </Deconstruct>
 
     <Sprite texture="materials.png" sourcerect="50,0,25,40" depth="0.81"/>
@@ -741,7 +741,7 @@
     canbepicked="true">
    
     <Deconstruct time="15">
-	  <Item name="Polycarbonate Sliver" outcondition="0.25"/>
+	  <Item name="Polycarbonate Sliver" outcondition="0.75"/>
     </Deconstruct>
 
     <Sprite texture="materials.png" sourcerect="50,0,25,40" depth="0.81"/>

@@ -8,7 +8,7 @@
 	
 	<Deconstruct time="10">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
 	<Sprite texture="Mods/BTE/Items/Jobgear/idcard.png" sourcerect="64,14,16,16" depth="0.82"/>
@@ -26,7 +26,7 @@
 	
 	<Deconstruct time="100">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
 	<Sprite texture="Mods/BTE/Items/Jobgear/idcard.png" sourcerect="0,0,16,16" depth="0.82"/>
@@ -44,7 +44,7 @@
 	
 	<Deconstruct time="90">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
 	<Sprite texture="Mods/BTE/Items/Jobgear/idcard.png" sourcerect="16,0,16,16" depth="0.82"/>
@@ -62,7 +62,7 @@
 	
 	<Deconstruct time="80">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
 	<Sprite texture="Mods/BTE/Items/Jobgear/idcard.png" sourcerect="32,0,16,16" depth="0.82"/>
@@ -80,7 +80,7 @@
 	
 	<Deconstruct time="70">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
 	<Sprite texture="Mods/BTE/Items/Jobgear/idcard.png" sourcerect="48,0,16,16" depth="0.82"/>
@@ -98,7 +98,7 @@
 	
 	<Deconstruct time="70">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
 	<Sprite texture="Mods/BTE/Items/Jobgear/idcard.png" sourcerect="64,0,16,16" depth="0.82"/>
@@ -116,7 +116,7 @@
 	
 	<Deconstruct time="60">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
 	<Sprite texture="Mods/BTE/Items/Jobgear/idcard.png" sourcerect="80,0,16,16" depth="0.82"/>
@@ -134,7 +134,7 @@
 	
 	<Deconstruct time="50">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
 	<Sprite texture="Mods/BTE/Items/Jobgear/idcard.png" sourcerect="0,14,16,16" depth="0.82"/>
@@ -152,7 +152,7 @@
 	
 	<Deconstruct time="40">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
 	<Sprite texture="Mods/BTE/Items/Jobgear/idcard.png" sourcerect="16,14,16,16" depth="0.82"/>
@@ -170,7 +170,7 @@
 	
 	<Deconstruct time="30">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
 	<Sprite texture="Mods/BTE/Items/Jobgear/idcard.png" sourcerect="32,14,16,16" depth="0.82"/>
@@ -188,7 +188,7 @@
 	
 	<Deconstruct time="20">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.25"/>
+	  <Item name="Steel Sliver" mincondition="0.1"/>
     </Deconstruct>
 
 	<Sprite texture="Mods/BTE/Items/Jobgear/idcard.png" sourcerect="48,14,16,16" depth="0.82"/>
@@ -206,7 +206,7 @@
 	
 	<Deconstruct time="15">
       <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Iron Powder" outcondition="0.5"/>
+	  <Item name="Fulgurium Sliver" outcondition="0.1"/>
     </Deconstruct>
 
 	<Sprite texture="Mods/BTE/Items/Jobgear/idcard.png" sourcerect="80,14,16,16" depth="0.82"/>

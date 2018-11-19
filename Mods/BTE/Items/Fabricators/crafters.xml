@@ -6,7 +6,7 @@
 	  category="Machine"
 	  Tags="cntnr">
     
-      <Sprite texture="Fabricators.png" depth="0.8" sourcerect="65,70,65,49"/>
+      <Sprite texture="Fabricators.png" depth="0.8" sourcerect="65,70,65,49" canflipx="false"/>
 	
 	  <LightComponent lightcolor="1.0,1.0,1.0,0.1" range="1000" powerconsumption="1" IsOn="true">
         <sprite texture="Mods/BTE/Items/Fabricators/FabricatorLights.png" sourcerect="65,70,65,49" alpha="1.0"/>
@@ -19,72 +19,72 @@
 	  
 	  <fabricableitem name="Access Card" requiredtime="10">
 	    <Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Bronze Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="Prisoner ID Card" requiredtime="20">
 	    <Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Bronze Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="Seaman ID Card" requiredtime="30">
 	    <Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Bronze Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="Cook ID Card" requiredtime="40">
 	    <Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Bronze Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="Mechanic ID Card" requiredtime="50">
 	    <Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Bronze Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="Engineer ID Card" requiredtime="50">
 	    <Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Bronze Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="Doctor ID Card" requiredtime="60">
 	    <Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Bronze Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="Scientist ID Card" requiredtime="70">
 	    <Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Bronze Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="Enforcer ID Card" requiredtime="80">
 	    <Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Bronze Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="Officer ID Card" requiredtime="90">
 	    <Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Bronze Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="Captain ID Card" requiredtime="100">
 	    <Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Bronze Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  
 	  <fabricableitem name="ByPass - Handcuffs" requiredtime="15">
 		<Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Steel Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="ByPass - Stun Baton" requiredtime="20">
 		<Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Steel Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="ByPass - Diving Knife" requiredtime="15">
 		<Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Steel Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="ByPass - Spear Gun" requiredtime="30">
 		<Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Steel Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="ByPass - Dart Gun" requiredtime="40">
 	    <Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Steel Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="ByPass - Tactical Grenade" requiredtime="20">
 		<Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Iron Powder" mincondition="0.25" usecondition="true"/>
+		<Item name="Steel Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
     </Fabricator>
 		
@@ -108,7 +108,7 @@
 	  category="Machine"
 	  Tags="cntnr">
     
-      <Sprite texture="Fabricators.png" depth="0.8" sourcerect="131,50,65,69"/>
+      <Sprite texture="Fabricators.png" depth="0.8" sourcerect="131,50,65,69" canflipx="false"/>
 	
 	  <LightComponent lightcolor="1.0,1.0,1.0,0.1" range="1000" powerconsumption="1" IsOn="true">
         <sprite texture="Mods/BTE/Items/Fabricators/FabricatorLights.png" sourcerect="131,50,65,69" alpha="1.0"/>
@@ -123,7 +123,7 @@
 	    <RequiredSkill name="Electrical Engineering" level="20"/>
 		<RequiredSkill name="Construction" level="15"/>
 		<RequiredSkill name="Science" level="30"/>
-		<Item name="Polycarbonate Sliver" mincondition="0.25" usecondition="true"/>
+		<Item name="Polycarbonate Sliver" mincondition="0.75" usecondition="true"/>
 		<Item name="Uranium Fuel Rod" mincondition="0.0" usecondition="true"/>
       </fabricableitem>
 	  
@@ -131,7 +131,7 @@
 	    <RequiredSkill name="Electrical Engineering" level="20"/>
 		<RequiredSkill name="Construction" level="15"/>
 		<RequiredSkill name="Science" level="50"/>
-		<Item name="Polycarbonate Sliver" mincondition="0.25" usecondition="true"/>
+		<Item name="Polycarbonate Sliver" mincondition="0.75" usecondition="true"/>
 		<Item name="Fulgurium Powder" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  
@@ -140,7 +140,7 @@
 		<RequiredSkill name="Weapons" level="10"/>
 		<RequiredSkill name="Science" level="40"/>
 		<Item name="Blueprints - Fulgurium Energy" mincondition="0.0" usecondition="true"/>
-		<Item name="Polycarbonate Sliver" mincondition="0.25" usecondition="true"/>
+		<Item name="Polycarbonate Sliver" mincondition="0.75" usecondition="true"/>
 		<Item name="Tactical Grenade" mincondition="0.0" usecondition="true"/>
       </fabricableitem>
 	  
@@ -148,7 +148,7 @@
 	    <RequiredSkill name="Electrical Engineering" level="20"/>
 		<RequiredSkill name="Weapons" level="10"/>
 		<RequiredSkill name="Science" level="40"/>
-		<Item name="Polycarbonate Sliver" mincondition="0.25" usecondition="true"/>
+		<Item name="Polycarbonate Sliver" mincondition="0.75" usecondition="true"/>
 		<Item name="Spare Electronics" mincondition="0.0" usecondition="true"/>
       </fabricableitem>
 	  
@@ -156,7 +156,7 @@
 	    <RequiredSkill name="Electrical Engineering" level="20"/>
 		<RequiredSkill name="Weapons" level="10"/>
 		<RequiredSkill name="Science" level="45"/>
-		<Item name="Polycarbonate Sliver" mincondition="0.25" usecondition="true"/>
+		<Item name="Polycarbonate Sliver" mincondition="0.75" usecondition="true"/>
 		<Item name="FPGA Circuit" mincondition="0.0" usecondition="true"/>
       </fabricableitem>
 	  
@@ -165,7 +165,7 @@
 		<RequiredSkill name="Weapons" level="10"/>
 		<RequiredSkill name="Science" level="60"/>
 		<Item name="Blueprints - Fulgurium Energy" mincondition="0.0" usecondition="true"/>
-		<Item name="Polycarbonate Sliver" mincondition="0.25" usecondition="true"/>
+		<Item name="Polycarbonate Sliver" mincondition="0.75" usecondition="true"/>
 		<Item name="FPGA Circuit" mincondition="0.0" usecondition="true"/>
       </fabricableitem>
 	  
@@ -173,7 +173,7 @@
 	    <RequiredSkill name="Construction" level="15"/>
 		<RequiredSkill name="Weapons" level="10"/>
 		<RequiredSkill name="Science" level="60"/>
-		<Item name="Polycarbonate Sliver" mincondition="0.25" usecondition="true"/>
+		<Item name="Polycarbonate Sliver" mincondition="0.75" usecondition="true"/>
 		<Item name="Uranium Powder" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
     </Fabricator>
@@ -196,7 +196,7 @@
 	  description="Basic tools for clothing repair or modification."
 	  Tags="cntnr">
 
-      <Sprite texture="Mods/BTE/Items/Tools/Tools.png" depth="0.8" sourcerect="81,1,29,20"/>
+      <Sprite texture="Mods/BTE/Items/Tools/Tools.png" depth="0.8" sourcerect="81,1,29,20" canflipx="false"/>
     
       <Fabricator canbeselected="true" minvoltage="0" powerconsumption="0">
       <GuiFrame rect="0,0,600,400" alignment="Center" style="ItemUI"/>
@@ -320,7 +320,7 @@
 	category="Machine"
 	Tags="cntnr">
 
-    <Sprite texture="Mods/BTE/Items/Fabricators/Fabricators.png" depth="0.8" sourcerect="197,0,61,121"/>
+    <Sprite texture="Mods/BTE/Items/Fabricators/Fabricators.png" depth="0.8" sourcerect="197,0,61,121" canflipx="false"/>
 	
 	<LightComponent lightcolor="1.0,1.0,1.0,0.1" range="1000" powerconsumption="1" IsOn="true">
       <sprite texture="Mods/BTE/Items/Fabricators/FabricatorLights.png" sourcerect="197,0,61,121" alpha="1.0"/>
@@ -488,7 +488,7 @@
 	category="Machine"
 	Tags="cntnr">
     
-      <Sprite texture="Fabricators.png" depth="0.8" sourcerect="130,129,73,95"/>
+      <Sprite texture="Fabricators.png" depth="0.8" sourcerect="130,129,73,95" canflipx="false"/>
 	  
 	  <LightComponent lightcolor="1.0,1.0,1.0,0.1" range="1000" powerconsumption="1" IsOn="true">
       <sprite texture="Mods/BTE/Items/Fabricators/FabricatorLights.png" sourcerect="130,129,73,95" alpha="1.0"/>
@@ -766,7 +766,7 @@
 	category="Machine"
 	Tags="cntnr">
 
-    <Sprite texture="Fabricators.png" depth="0.8" sourcerect="0,129,64,128"/>
+    <Sprite texture="Fabricators.png" depth="0.8" sourcerect="0,129,64,128" canflipx="false"/>
 	
 	<LightComponent lightcolor="1.0,1.0,1.0,0.1" range="1000" powerconsumption="1" IsOn="true">
       <sprite texture="Mods/BTE/Items/Fabricators/FabricatorLights.png" sourcerect="0,129,64,128" alpha="1.0"/>
