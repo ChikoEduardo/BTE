@@ -3,7 +3,7 @@
     name="Hydrogen Generator"
     category="Machine">
 
-    <Sprite texture="HydrogenGenerator.png" depth="0.8" sourcerect="0,0,118,123"/>
+    <Sprite texture="HydrogenGenerator.png" depth="0.8" sourcerect="0,0,118,123" canflipx="false"/>
 	<BrokenSprite texture="HydrogenGeneratorBroken.png" depth="0.8" sourcerect="0,0,118,123" maxcondition="0"/>
 	
 	<fixrequirement name="Mechanical repairs">
@@ -48,7 +48,7 @@
     category="Machine"
     linkable="true">
 
-    <Sprite texture="OxygenGenerator.png" depth="0.8" sourcerect="0,0,128,128"/>
+    <Sprite texture="OxygenGenerator.png" depth="0.8" sourcerect="0,0,128,128" canflipx="false"/>
 	<BrokenSprite texture="OxygenGeneratorBroken.png" depth="0.8" sourcerect="0,0,128,128" maxcondition="0"/>
 	
 	<fixrequirement name="Mechanical repairs">
@@ -94,7 +94,7 @@
     category="Machine"
     linkable="true">
 
-    <Sprite texture="OxygenModule.png" depth="0.79" sourcerect="0,0,107,100"/>
+    <Sprite texture="OxygenModule.png" depth="0.79" sourcerect="0,0,107,100" canflipx="false"/>
 	<BrokenSprite texture="OxygenModuleBroken.png" depth="0.79" sourcerect="0,0,107,100" maxcondition="0"/>
 	
 	<fixrequirement name="Mechanical repairs">
@@ -133,7 +133,7 @@
     name="Refill Dock"
     category="Machine">
 
-    <Sprite texture="Mods/BTE/Items/OxygenGenerator/RefillDock.png" depth="0.8" sourcerect="0,0,74,44"/>
+    <Sprite texture="Mods/BTE/Items/OxygenGenerator/RefillDock.png" depth="0.8" sourcerect="0,0,74,44" canflipx="false"/>
 	
 	<Powered powerconsumption="200" currpowerconsumption="200" isactive="true">
       <GuiFrame rect="0,-100,350,160" alignment="Center" style="ItemUI"/>

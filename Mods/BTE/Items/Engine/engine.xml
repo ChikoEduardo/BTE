@@ -5,8 +5,8 @@
 	aliases="Engine"
     category="Machine">
 
-    <Sprite texture="Engine.png" depth="0.8" sourcerect="0,0,373,113" canflipx="true"/>
-	<BrokenSprite texture="Engine.png" depth="0.8" sourcerect="0,210,373,113" maxcondition="0" canflipx="true"/>
+    <Sprite texture="Engine.png" depth="0.8" sourcerect="0,0,373,113"/>
+	<BrokenSprite texture="Engine.png" depth="0.8" sourcerect="0,210,373,113" maxcondition="0"/>
 
     <trigger x="20" y="0" width="333" height="113"/>
 
@@ -40,8 +40,8 @@
     name="Shuttle Engine"
     category="Machine">
 
-    <Sprite texture="Engine.png" depth="0.8" sourcerect="0,115,224,73" canflipx="true"/>
-	<BrokenSprite texture="Engine.png" depth="0.8" sourcerect="0,325,224,73" maxcondition="0" canflipx="true"/>
+    <Sprite texture="Engine.png" depth="0.8" sourcerect="0,115,224,73"/>
+	<BrokenSprite texture="Engine.png" depth="0.8" sourcerect="0,325,224,73" maxcondition="0"/>
 
     <trigger x="15" y="0" width="194" height="73"/>
     
@@ -75,8 +75,8 @@
     name="Torpedo Engine"
     category="Machine">
 
-    <Sprite texture="Engine.png" depth="0.8" sourcerect="225,121,158,60" canflipx="true"/>
-	<BrokenSprite texture="Engine.png" depth="0.8" sourcerect="225,331,158,60" maxcondition="0" canflipx="true"/>
+    <Sprite texture="Engine.png" depth="0.8" sourcerect="225,121,158,60"/>
+	<BrokenSprite texture="Engine.png" depth="0.8" sourcerect="225,331,158,60" maxcondition="0"/>
 
     <trigger x="15" y="0" width="124" height="60"/>
     

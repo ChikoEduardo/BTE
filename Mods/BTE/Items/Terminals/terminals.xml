@@ -4,7 +4,7 @@
     linkable="true"
     category="Machine">
 
-    <Sprite texture="Mods/BTE/Items/Terminals/NavTerminal.png" depth="0.8" sourcerect="0,0,64,128"/>
+    <Sprite texture="Mods/BTE/Items/Terminals/NavTerminal.png" depth="0.8" sourcerect="0,0,64,128" canflipx="false"/>
 	
 	<fixrequirement name="Electrical repairs">
       <skill name="Electrical Engineering" level="40"/>
@@ -50,7 +50,7 @@
     linkable="true"
     category="Machine">
 
-    <Sprite texture="Mods/BTE/Items/Terminals/CommandTerminal.png" depth="0.8" sourcerect="0,0,130,206"/>
+    <Sprite texture="Mods/BTE/Items/Terminals/CommandTerminal.png" depth="0.8" sourcerect="0,0,130,206" canflipx="false"/>
 	
 	<fixrequirement name="Electrical repairs">
       <skill name="Electrical Engineering" level="50"/>
@@ -103,7 +103,7 @@
     linkable="true"
     category="Machine">
     
-    <Sprite texture="Mods/BTE/Items/Terminals/StatusMonitor.png" depth="0.8" sourcerect="0,0,64,128"/>
+    <Sprite texture="Mods/BTE/Items/Terminals/StatusMonitor.png" depth="0.8" sourcerect="0,0,64,128" canflipx="false"/>
 	
 	<fixrequirement name="Electrical repairs">
       <skill name="Electrical Engineering" level="30"/>
@@ -145,7 +145,7 @@
     category="Machine"
     linkable="true">
   
-    <Sprite texture="Mods/BTE/Items/Terminals/StatusMonitor.png" depth="0.8" sourcerect="0,0,64,128"/>
+    <Sprite texture="Mods/BTE/Items/Terminals/StatusMonitor.png" depth="0.8" sourcerect="0,0,64,128" canflipx="false"/>
 	
 	<fixrequirement name="Electrical repairs">
       <skill name="Electrical Engineering" level="30"/>

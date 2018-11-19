@@ -121,7 +121,7 @@
     category="Machine"
     linkable="true">
 
-    <Sprite texture="railgunetc.png" depth="0.84" sourcerect="178,97,61,83"/>
+    <Sprite texture="railgunetc.png" depth="0.84" sourcerect="178,97,61,83" canflipx="false"/>
 
     <ItemContainer hideitems="true" drawinventory="true" capacity="12" canbeselected="true">
       <Containable name="Medical Dart"/>

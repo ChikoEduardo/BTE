@@ -6,7 +6,7 @@
 		category="Machine"
 		Tags="cntnr">
     
-      <Sprite texture="Fabricators.png" depth="0.8" sourcerect="0,0,64,128"/>
+      <Sprite texture="Fabricators.png" depth="0.8" sourcerect="0,0,64,128" canflipx="false"/>
 	  
 	  <LightComponent lightcolor="1.0,1.0,1.0,0.1" range="1000" powerconsumption="1" IsOn="true">
         <sprite texture="Mods/BTE/Items/Fabricators/FabricatorLights.png" sourcerect="0,0,64,128" alpha="1.0"/>
@@ -153,7 +153,7 @@
 		category="Machine"
 		Tags="cntnr">
     
-      <Sprite texture="Fabricators.png" depth="0.79" sourcerect="65,0,64,69"/>
+      <Sprite texture="Fabricators.png" depth="0.79" sourcerect="65,0,64,69" canflipx="false"/>
 
 	  <Fabricator canbeselected="true" powerconsumption="250">
 	  <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
@@ -380,7 +380,7 @@
 	  category="Machine"
 	  Tags="cntnr">
 
-      <Sprite texture="Mods/BTE/Items/Fabricators/Fabricators.png" depth="0.8" sourcerect="65,129,64,128"/>
+      <Sprite texture="Mods/BTE/Items/Fabricators/Fabricators.png" depth="0.8" sourcerect="65,129,64,128" canflipx="false"/>
 	
 	  <LightComponent lightcolor="1.0,1.0,1.0,0.1" range="1000" powerconsumption="1" IsOn="true">
         <sprite texture="Mods/BTE/Items/Fabricators/FabricatorLights.png" sourcerect="65,129,64,128" alpha="1.0"/>

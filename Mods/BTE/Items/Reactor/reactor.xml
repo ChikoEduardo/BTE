@@ -18,7 +18,7 @@
       <item name="Screwdriver"/>
     </fixrequirement>
 
-    <Sprite texture="FusionReactor.png" sourcerect="0,0,169,169" depth="0.8"/>
+    <Sprite texture="FusionReactor.png" sourcerect="0,0,169,169" depth="0.8" canflipx="false"/>
 	<BrokenSprite texture="FusionReactorWorking.png" sourcerect="0,0,169,169" depth="0.8" maxcondition="99" fadein="true"/>
 	<BrokenSprite texture="FusionReactorDanger.png" sourcerect="0,0,169,169" depth="0.8" maxcondition="55" fadein="true"/>
 	<BrokenSprite texture="FusionReactorCritical.png" sourcerect="0,0,169,169" depth="0.8" maxcondition="20" fadein="true"/>
@@ -88,7 +88,7 @@
       <item name="Screwdriver"/>
     </fixrequirement>
 
-    <Sprite texture="Reactor.png" sourcerect="0,0,318,180" depth="0.8"/>
+    <Sprite texture="Reactor.png" sourcerect="0,0,318,180" depth="0.8" canflipx="false"/>
 	<BrokenSprite texture="ReactorWorking.png" sourcerect="0,0,318,180" depth="0.8" maxcondition="99" fadein="true"/>
 	<BrokenSprite texture="ReactorDanger.png" sourcerect="0,0,318,180" depth="0.8" maxcondition="55" fadein="true"/>
 	<BrokenSprite texture="ReactorCritical.png" sourcerect="0,0,318,180" depth="0.8" maxcondition="20" fadein="true"/>

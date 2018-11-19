@@ -212,7 +212,7 @@
       <Item name="FPGA Circuit"/> 
     </Deconstruct>
 
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="0,0,16,16"/>
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="0,0,16,16" canflipx="false"/>
 
     <AndComponent canbeselected="true"/>
 
@@ -243,7 +243,7 @@
       <Item name="FPGA Circuit"/> 
     </Deconstruct>
 
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="17,80,16,16"/>
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="17,80,16,16" canflipx="false"/>
 
     <AdderComponent canbeselected="true"/>
 
@@ -273,7 +273,7 @@
       <Item name="FPGA Circuit"/>
     </Deconstruct>
 
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="16,0,16,16"/>
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="16,0,16,16" canflipx="false"/>
 
     <OrComponent canbeselected="true"/>
 
@@ -304,7 +304,7 @@
       <Item name="FPGA Circuit"/>
     </Deconstruct>
 
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="32,0,16,16"/>
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="32,0,16,16" canflipx="false"/>
 
     <NotComponent canbeselected="true"/>
 
@@ -476,7 +476,7 @@
       <Item name="FPGA Circuit"/>
     </Deconstruct>
 
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="0,16,16,16"/>
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="0,16,16,16" canflipx="false"/>
 
     <SignalCheckComponent canbeselected="true"/>
 
@@ -507,7 +507,7 @@
       <Item name="FPGA Circuit"/>
     </Deconstruct>
 
-    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="16,16,16,16"/>
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.55" sourcerect="16,16,16,16" canflipx="false"/>
 
     <RegExFindComponent canbeselected="true"/>
 
