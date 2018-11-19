@@ -480,19 +480,18 @@
       <ParticleEmitterHitItem particle="plasmaspark" particlespersecond="100" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800"/>
       <ParticleEmitterHitStructure particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20"/>
       <ParticleEmitterHitItem particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
-      <ParticleEmitterHitCharacter particle="blood" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
+      <ParticleEmitterHitCharacter particle="plasmaspark" particlespersecond="100" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800"/>
 	  <sound file="Mods/BTE/Items/Tools/SawLoop.ogg" type="OnUse" range="500" loop="true"/>
 	  <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained" msg="Battery cell depleted"/>
-	  <StatusEffect type="OnUse" target="This" Condition="-0.8"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-0.8">
+	    <Explosion range="30" force="0.1" severlimbsprobability="0.01" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="1.5"/>
+	  </StatusEffect>
       <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-2"/>
 	  <StatusEffect type="OnUse" target="Contained" targetnames="Fulgurium Battery Cell" Condition="-1"/>
       <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Blast Door,Windowed Door,Glass Door,Hatch,Blast Hatch,Duct Block,Alien Door,Alien Hatch" Stuck="-20" Condition="-2.5"/>
       <Fixable name="structure"/>
       <RequiredSkill name="Construction" level="40"/>
       <StatusEffect type="OnFailure" target="Contained" targetnames="Battery Cell,Fulgurium Battery Cell" Condition="-2.0"/>
-      <LightComponent LightColor="0.8,0.7,1.0,0.3" Flicker="0.5">
-        <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5"/>
-      </LightComponent>
 	  <StatusEffect type="OnImpact" target="This">
 	    <sound file="Mods/BTE/Items/Weapons/GunHit.ogg"/>
 	  </StatusEffect>
@@ -762,7 +761,7 @@
 
     <Body width="21" height="7" density="12"/>
 	
-	<LightComponent LightColor="1.0,0.0,0.0,1.0" Flicker="0.5" range="600" IsOn="false">
+	<LightComponent LightColor="1.0,0.0,0.0,1.0" Flicker="0.5" range="900" IsOn="false">
       <StatusEffect type="OnActive" target="This" Condition="-1">
         <ParticleEmitter particle="flare" particlespersecond="30"/>
         <ParticleEmitter particle="bubbles" particlespersecond="30"/>
