@@ -167,15 +167,16 @@
     <Sprite texture="Content/Items/Weapons/railgunetc2.png" sourcerect="57,97,72,110" depth="0.84"/>
 
     <ItemContainer hideitems="false" drawinventory="true" capacity="3" slotsperrow="3" itempos="17,-49.5" iteminterval="19,0" itemrotation="90" canbeselected="true">
-      <Containable name="Railgun Polycarbonate Spear"/>
-	  <Containable name="Railgun Aluminium Spear"/>
-	  <Containable name="Railgun Copper Spear"/>
-	  <Containable name="Railgun Bronze Spear"/>
-	  <Containable name="Railgun Steel Spear"/>
-	  <Containable name="Railgun Uranium Spear"/>
-	  <Containable name="Railgun Fulgurium Spear"/>
-	  <Containable name="Railgun Shell"/>
-      <Containable name="Railgun Fusion Shell"/>
+	<Containable name="Railgun Polycarbonate Spear"/>
+	<Containable name="Railgun Aluminium Spear"/>
+	<Containable name="Railgun Copper Spear"/>
+	<Containable name="Railgun Bronze Spear"/>
+	<Containable name="Railgun Steel Spear"/>
+	<Containable name="Railgun Uranium Spear"/>
+	<Containable name="Railgun Fulgurium Spear"/>
+	<Containable name="Railgun Shell"/>
+	<Containable name="Railgun Fusion Shell"/>
+	<Containable name="Railgun EMP Shell"/>
     </ItemContainer>
   </Item>
   
