@@ -500,10 +500,10 @@
   </Item>
   
   <Item
-    name="ByPass - Handcuffs"
+    name="ByPass - Non-Lethal Options"
     category="Material"
     Tags="smallitem,wllt,docs"
-    description="A security bypass card that unlocks the construction of handcuffs."
+    description="A security bypass card that unlocks the construction of items used for law enforcers."
     canbepicked="true">
    
     <Deconstruct time="10">
@@ -519,48 +519,10 @@
   </Item>
   
   <Item
-    name="ByPass - Stun Baton"
+    name="ByPass - Standard-Issue Weapons"
     category="Material"
     Tags="smallitem,wllt,docs"
-    description="A security bypass card that unlocks the construction of stun batons."
-    canbepicked="true">
-   
-    <Deconstruct time="10">
-      <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Steel Sliver" mincondition="0.1"/>
-    </Deconstruct>
-
-    <Sprite texture="materials.png" sourcerect="50,38,16,16" depth="0.82"/>
-
-    <Body width="16" height="16" density="10.1"/>
-
-    <Pickable slots="Any"/>
-  </Item>
-  
-  <Item
-    name="ByPass - Diving Knife"
-    category="Material"
-    Tags="smallitem,wllt,docs"
-    description="A security bypass card that unlocks the construction of diving knieves."
-    canbepicked="true">
-   
-    <Deconstruct time="10">
-      <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Steel Sliver" mincondition="0.1"/>
-    </Deconstruct>
-
-    <Sprite texture="materials.png" sourcerect="50,38,16,16" depth="0.82"/>
-
-    <Body width="16" height="16" density="10.1"/>
-
-    <Pickable slots="Any"/>
-  </Item>
-  
-  <Item
-    name="ByPass - Spear Gun"
-    category="Material"
-    Tags="smallitem,wllt,docs"
-    description="A security bypass card used to allow harpoon guns to be upgraded to spear guns."
+    description="A security bypass card used to allow the crafting or upgrading of deadly weapons."
     canbepicked="true">
    
     <Deconstruct time="10">
@@ -580,25 +542,6 @@
     category="Material"
     Tags="smallitem,docs"
     description="A security bypass card that unlocks the construction of dart guns."
-    canbepicked="true">
-   
-    <Deconstruct time="10">
-      <Item name="Polycarbonate Sliver" outcondition="0.5"/>
-	  <Item name="Steel Sliver" mincondition="0.1"/>
-    </Deconstruct>
-
-    <Sprite texture="materials.png" sourcerect="50,38,16,16" depth="0.82"/>
-
-    <Body width="16" height="16" density="10.1"/>
-
-    <Pickable slots="Any"/>
-  </Item>
-  
-  <Item
-    name="ByPass - Tactical Grenade"
-    category="Material"
-    Tags="smallitem,docs"
-    description="A security bypass card that unlocks the construction of tactical grenades."
     canbepicked="true">
    
     <Deconstruct time="10">

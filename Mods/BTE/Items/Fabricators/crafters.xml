@@ -62,28 +62,16 @@
 		<Item name="Bronze Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="ByPass - Handcuffs" requiredtime="15">
+	  <fabricableitem name="ByPass - Non-Lethal Options" requiredtime="15">
 		<Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
 		<Item name="Steel Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
-	  <fabricableitem name="ByPass - Stun Baton" requiredtime="20">
-		<Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Steel Sliver" mincondition="0.1" usecondition="true"/>
-      </fabricableitem>
-	  <fabricableitem name="ByPass - Diving Knife" requiredtime="15">
-		<Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Steel Sliver" mincondition="0.1" usecondition="true"/>
-      </fabricableitem>
-	  <fabricableitem name="ByPass - Spear Gun" requiredtime="30">
+	  <fabricableitem name="ByPass - Standard-Issue Weapons" requiredtime="15">
 		<Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
 		<Item name="Steel Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
 	  <fabricableitem name="ByPass - Dart Gun" requiredtime="40">
 	    <Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
-		<Item name="Steel Sliver" mincondition="0.1" usecondition="true"/>
-      </fabricableitem>
-	  <fabricableitem name="ByPass - Tactical Grenade" requiredtime="20">
-		<Item name="Polycarbonate Sliver" mincondition="0.5" usecondition="true"/>
 		<Item name="Steel Sliver" mincondition="0.1" usecondition="true"/>
       </fabricableitem>
     </Fabricator>
@@ -102,9 +90,9 @@
 	</Item>
 	
 	<Item
-	  name="Research Terminal"
-	  aliases="Blueprinter"
-	  description="A machine used to easily design and print various blueprints."
+	  name="R+D Terminal"
+	  aliases="Blueprinter,Research Terminal,Upgrade Terminal"
+	  description="A machine used to develop new tech and upgrade existing equipment."
 	  category="Machine"
 	  Tags="cntnr">
     
@@ -119,10 +107,53 @@
       <GuiFrame rect="0,0,600,400" alignment="Center" style="ItemUI"/>
       <sound file="Content/Items/Fabricators/fabricator.ogg" type="OnActive" range="1000" loop="true"/>
 	  
+	  <fabricableitem name="Sonar Blaster" requireditems="Handheld Sonar,FPGA Circuit" requiredtime="40">
+	    <Item name="Blueprints - Soundwave Weapons" mincondition="0.0" usecondition="true"/>
+		<RequiredSkill name="Science" level="40"/>
+		<RequiredSkill name="Electrical Engineering" level="20"/>
+      </fabricableitem>
+	  <fabricableitem name="EMP Blaster" requireditems="Handheld Sonar,FPGA Circuit" requiredtime="40">
+	    <Item name="Blueprints - EMP Weapons" mincondition="0.0" usecondition="true"/>
+		<RequiredSkill name="Science" level="50"/>
+		<RequiredSkill name="Electrical Engineering" level="20"/>
+      </fabricableitem>
+	  
+	  <fabricableitem name="Underwater Scooter II" requireditems="Underwater Scooter,FPGA Circuit" requiredtime="60">
+		<RequiredSkill name="Science" level="40"/>
+		<RequiredSkill name="Electrical Engineering" level="20"/>
+		<RequiredSkill name="Construction" level="15"/>
+      </fabricableitem>
+	  <fabricableitem name="Underwater Scooter III" requireditems="Underwater Scooter II,Bronze Bar" requiredtime="60">
+		<RequiredSkill name="Science" level="50"/>
+		<RequiredSkill name="Electrical Engineering" level="20"/>
+		<RequiredSkill name="Construction" level="15"/>
+      </fabricableitem>
+	  
+	  <fabricableitem name="Thermoblade" requireditems="Diving Knife,Fulgurium Sliver,FPGA Circuit" requiredtime="30">
+        <Item name="ByPass - Standard-Issue Weapons" mincondition="0.0" usecondition="true"/>
+		<RequiredSkill name="Science" level="40"/>
+		<RequiredSkill name="Weapons" level="10"/>
+		<RequiredSkill name="Construction" level="15"/>
+      </fabricableitem>
+	  
+	  <fabricableitem name="Spear Gun" requireditems="Harpoon Gun,Spare Parts" requiredtime="40">
+        <Item name="ByPass - Standard-Issue Weapons" mincondition="0.0" usecondition="true"/>
+		<RequiredSkill name="Science" level="40"/>
+		<RequiredSkill name="Weapons" level="10"/>
+		<RequiredSkill name="Construction" level="15"/>
+      </fabricableitem>
+	  
+	  <fabricableitem name="Diving Revolver" requireditems="Revolver,Spare Parts" requiredtime="50">
+        <Item name="ByPass - Standard-Issue Weapons" mincondition="0.0" usecondition="true"/>
+		<RequiredSkill name="Science" level="50"/>
+		<RequiredSkill name="Weapons" level="10"/>
+		<RequiredSkill name="Construction" level="15"/>
+      </fabricableitem>
+	  
 	  <fabricableitem name="Blueprints - Advanced Reactor Rods" requiredtime="25">
 	    <RequiredSkill name="Electrical Engineering" level="20"/>
 		<RequiredSkill name="Construction" level="15"/>
-		<RequiredSkill name="Science" level="30"/>
+		<RequiredSkill name="Science" level="50"/>
 		<Item name="Polycarbonate Sliver" mincondition="0.75" usecondition="true"/>
 		<Item name="Uranium Fuel Rod" mincondition="0.0" usecondition="true"/>
       </fabricableitem>
@@ -138,7 +169,7 @@
 	  <fabricableitem name="Blueprints - HTM" requiredtime="30">
 	    <RequiredSkill name="Electrical Engineering" level="20"/>
 		<RequiredSkill name="Weapons" level="10"/>
-		<RequiredSkill name="Science" level="40"/>
+		<RequiredSkill name="Science" level="50"/>
 		<Item name="Blueprints - Fulgurium Energy" mincondition="0.0" usecondition="true"/>
 		<Item name="Polycarbonate Sliver" mincondition="0.75" usecondition="true"/>
 		<Item name="Tactical Grenade" mincondition="0.0" usecondition="true"/>
@@ -147,7 +178,7 @@
 	  <fabricableitem name="Blueprints - Soundwave Weapons" requiredtime="50">
 	    <RequiredSkill name="Electrical Engineering" level="20"/>
 		<RequiredSkill name="Weapons" level="10"/>
-		<RequiredSkill name="Science" level="40"/>
+		<RequiredSkill name="Science" level="50"/>
 		<Item name="Polycarbonate Sliver" mincondition="0.75" usecondition="true"/>
 		<Item name="Spare Electronics" mincondition="0.0" usecondition="true"/>
       </fabricableitem>
@@ -155,7 +186,7 @@
 	  <fabricableitem name="Blueprints - EMP Weapons" requiredtime="60">
 	    <RequiredSkill name="Electrical Engineering" level="20"/>
 		<RequiredSkill name="Weapons" level="10"/>
-		<RequiredSkill name="Science" level="45"/>
+		<RequiredSkill name="Science" level="50"/>
 		<Item name="Polycarbonate Sliver" mincondition="0.75" usecondition="true"/>
 		<Item name="FPGA Circuit" mincondition="0.0" usecondition="true"/>
       </fabricableitem>
@@ -572,10 +603,7 @@
 	  <fabricableitem name="Medical Syringe" requireditems="Medical Dart" requiredtime="15">
         <RequiredSkill name="Science" level="30"/>
       </fabricableitem>
-	  
-	  <fabricableitem name="Diving Revolver" requireditems="Revolver,Spare Parts" requiredtime="40">
-        <RequiredSkill name="Weapons" level="50"/>
-      </fabricableitem>
+
 	  <fabricableitem name="Revolver Round" requiredtime="20">
         <Item name="Steel Sliver" mincondition="0.25" usecondition="true"/>
 		<Item name="Propellant Powder" mincondition="0.5" usecondition="true"/>
@@ -613,16 +641,6 @@
 	  
 	  <fabricableitem name="Shock Rod" requireditems="Polycarbonate Spear,Copper Coil,Aluminium Sliver,Spare Electronics" requiredtime="30">
 	    <RequiredSkill name="Electrical Engineering" level="50"/>
-      </fabricableitem>
-	  
-	  <fabricableitem name="Sonar Blaster" requireditems="Handheld Sonar,FPGA Circuit" requiredtime="40">
-	    <Item name="Blueprints - Soundwave Weapons" mincondition="0.0" usecondition="true"/>
-		<RequiredSkill name="Electrical Engineering" level="50"/>
-      </fabricableitem>
-	  
-	  <fabricableitem name="EMP Blaster" requireditems="Handheld Sonar,FPGA Circuit" requiredtime="40">
-	    <Item name="Blueprints - EMP Weapons" mincondition="0.0" usecondition="true"/>
-		<RequiredSkill name="Electrical Engineering" level="60"/>
       </fabricableitem>
 	  
 	  <fabricableitem name="Flare" requiredtime="15">

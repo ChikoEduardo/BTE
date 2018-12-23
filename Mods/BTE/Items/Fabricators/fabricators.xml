@@ -63,7 +63,7 @@
       </fabricableitem>
 	  
 	  <fabricableitem name="Diving Knife" requireditems="Polycarbonate Sliver,Steel Sliver" requiredtime="15">
-	    <Item name="ByPass - Diving Knife" mincondition="0.0" usecondition="true"/>
+	    <Item name="ByPass - Standard-Issue Weapons" mincondition="0.0" usecondition="true"/>
 		<RequiredSkill name="Construction" level="30"/>
       </fabricableitem>
 	  <fabricableitem name="Utility Knife" requiredtime="10">
@@ -194,10 +194,6 @@
       <fabricableitem name="Harpoon Gun" requireditems="Steel Bar,Spare Parts" requiredtime="20">
         <RequiredSkill name="Construction" level="30"/>
       </fabricableitem>
-	  <fabricableitem name="Spear Gun" requireditems="Harpoon Gun,Spare Parts" requiredtime="40">
-		<Item name="ByPass - Spear Gun" mincondition="0.0" usecondition="true"/>
-        <RequiredSkill name="Construction" level="40"/>
-      </fabricableitem>
 	  
 	  <fabricableitem name="Hollowhead Spear" requireditems="Plastic Spear,Aluminium Sliver" requiredtime="25">
 	  <RequiredSkill name="Construction" level="30"/>
@@ -292,12 +288,12 @@
       </fabricableitem>
 	  
 	  <fabricableitem name="Handcuffs" requireditems="Steel Bar" requiredtime="20">
-		<Item name="ByPass - Handcuffs" mincondition="0.0" usecondition="true"/>
+		<Item name="ByPass - Non-Lethal Options" mincondition="0.0" usecondition="true"/>
 		<RequiredSkill name="Construction" level="30"/>
       </fabricableitem>
 	  
 	  <fabricableitem name="Stun Baton" requireditems="Spare Parts,Bronze Sliver,FPGA Circuit" requiredtime="40">
-		<Item name="ByPass - Stun Baton" mincondition="0.0" usecondition="true"/>
+		<Item name="ByPass - Non-Lethal Options" mincondition="0.0" usecondition="true"/>
 		<RequiredSkill name="Electrical Engineering" level="50"/>
       </fabricableitem>
 	  
@@ -317,8 +313,8 @@
       </fabricableitem>
 	  
 	  <fabricableitem name="Tactical Grenade" requireditems="Steel Bar,Aluminium Sliver" requiredtime="20">
-		<Item name="ByPass - Tactical Grenade" mincondition="0.0" usecondition="true"/>
-		<RequiredSkill name="Construction" level="50"/>
+		<Item name="ByPass - Standard-Issue Weapons" mincondition="0.0" usecondition="true"/>
+		<RequiredSkill name="Construction" level="40"/>
       </fabricableitem>
 	  <fabricableitem name="HTM" requireditems="Steel Sliver,Fulgurium Sliver,FPGA Circuit" requiredtime="25">
 		<Item name="Blueprints - HTM" mincondition="0.0" usecondition="true"/>
