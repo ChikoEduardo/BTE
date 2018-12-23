@@ -176,6 +176,7 @@
 	  <Containable name="Railgun Fulgurium Spear"/>
 	  <Containable name="Railgun Shell"/>
       <Containable name="Railgun Fusion Shell"/>
+	  <Containable name="Railgun EMP Shell"/>
     </ItemContainer>
   </Item>
   

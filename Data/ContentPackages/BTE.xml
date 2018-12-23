@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="BTE 8.0" path="Data/ContentPackages/BTE">
+<contentpackage name="BTE 8.1" path="Data/ContentPackages/BTE">
   <!-- <Item file="Content/Items/idcard.xml"/> -->
   <!-- <Item file="Content/Items/itemlabel.xml"/> -->
   <!-- <Item file="Content/Items/Artifacts/artifacts.xml"/> -->
@@ -24,7 +24,7 @@
   <!-- <Item file="Content/Items/MiniMap/item.xml"/> -->
   <!-- <Item file="Content/Items/OxygenGenerator/oxygengenerator.xml"/> -->
   <!-- <Item file="Content/Items/Pump/pump.xml"/> -->
-  <Item file="Content/Items/SearchLight/searchlight.xml"/>
+  <!-- <Item file="Content/Items/SearchLight/searchlight.xml"/> -->
   <!-- <Item file="Content/Items/Reactor/reactor.xml"/> -->
   <!-- <Item file="Content/Items/Tools/tools.xml"/> -->
   <!-- <Item file="Content/Items/Weapons/depthcharge.xml"/> -->
