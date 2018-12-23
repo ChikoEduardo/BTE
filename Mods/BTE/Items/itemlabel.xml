@@ -3,7 +3,8 @@
 <Item
 	name="Label"
 	resizehorizontal="true"
-    resizevertical="true">
+    resizevertical="true"
+	interactdistance="0">
 
   <Sprite texture="Content/Items/blank.png" depth="0.89" sourcerect="0,0,16,16"/>
 
