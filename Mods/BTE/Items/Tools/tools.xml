@@ -95,7 +95,7 @@
 	    <sound file="Mods/BTE/Items/Weapons/Screwdriver.ogg"/>
 		<Use/>
 	  </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" bleeding="0.8" duration="5">
+	  <StatusEffect type="OnUse" target="Character" bleeding="2.4">
 		<Use/>
 	  </StatusEffect>
     </ItemComponent>

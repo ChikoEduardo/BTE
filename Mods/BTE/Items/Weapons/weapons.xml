@@ -24,7 +24,7 @@
 	    <sound file="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
 		<Use/>
 	  </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" bleeding="1.2" duration="5">
+	  <StatusEffect type="OnUse" target="Character" bleeding="3.2">
 		<Use/>
 	  </StatusEffect>
     </ItemComponent>
@@ -51,6 +51,97 @@
   </Item>
   
   <Item
+    name="Thermoblade"
+    category="Equipment"
+    Tags="meditem,weapon"
+	description="A battery-powered knife that uses extreme heat to deal extra damage."
+    canuseonself="true">
+
+    <Deconstruct time="5">
+	  <Item name="Polycarbonate Bar"/>
+      <Item name="Steel Sliver"/>
+	  <Item name="Bronze Sliver"/>
+	  <Item name="Fulgurium Sliver"/>
+    </Deconstruct>
+
+    <Sprite texture="weapons.png" sourcerect="0,141,52,10" depth="0.55"/>
+    
+    <Body width="42" height="8" density="15"/>
+	
+	<LightComponent LightColor="1.0,0.5,0.5,0.4" Flicker="0.4" range="50" powerconsumption="10" IsOn="true"/>
+	
+	<ItemComponent>
+	  <StatusEffect type="OnUse" target="Character" Health="-8.4">
+	    <sound file="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
+		<Use/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" bleeding="3.2">
+		<Use/>
+	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" bleeding="-3.3">
+        <RequiredItem name="loadable" type="Contained"/>        
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character">
+	    <sound file="Mods/BTE/Items/Weapons/Burn.ogg"/>
+        <RequiredItem name="loadable" type="Contained"/>        
+        <Explosion range="10" force="0.25" shockwave="false" sparks="false" flames="false" camerashake="5.0"/>
+      </StatusEffect>
+    </ItemComponent>
+	
+	<MeleeWeapon slots="RightHand,LeftHand,Any"
+          aimpos="50,0" handle1="-12,3" handle2="-9,4" holdangle="-80" reload="0.8">
+      <Attack damage="8" bleedingdamage="2" stun="0.2" targetforce="10" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
+	  <Attack damage="8" bleedingdamage="-2.1" damagetype="Burn">
+	    <RequiredItem name="loadable" type="Contained" msg="Loaded Battery Cell required"/> 
+	  </Attack>
+	  <StatusEffect type="OnUse" target="Character">
+		  <Conditional SpeciesName="watcher"/>
+		  <Explosion range="300" damage="25" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character" Health="25" stun="-4.0" disabledeltatime="true">
+		  <Conditional SpeciesName="watcher"/>
+		  <Sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit2.ogg" type="OnUse" range="3000"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character">
+		  <Conditional SpeciesName="endworm"/>
+		  <Explosion range="300" damage="8" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character" Health="8" stun="-0.2" disabledeltatime="true">
+		  <Conditional SpeciesName="endworm"/>
+		</StatusEffect>
+
+	  <StatusEffect type="OnUse" target="Character" Health="-6" stun="0.5" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Weapons/Burn.ogg"/>
+        <RequiredItem name="Battery Cell" type="Contained"/>        
+        <Explosion range="10" force="0.25" shockwave="false" sparks="false" flames="false" camerashake="5.0"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Contained" Condition="-5" disabledeltatime="true">
+	    <RequiredItem name="Battery Cell" type="Contained"/>        
+      </StatusEffect>
+
+      <StatusEffect type="OnUse" target="Character" Health="-10" stun="1" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Weapons/Burn.ogg"/>
+        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+        <Explosion range="10" force="0.5" shockwave="false" sparks="false" flames="false" camerashake="5.0"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Contained" Condition="-5" disabledeltatime="true">
+	    <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+      </StatusEffect>
+	  
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Weapons/GunHit.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnActive" target="Contained" Condition="-0.02"/>
+    </MeleeWeapon>
+
+    <ItemContainer capacity="1" hideitems="true">
+      <Containable name="Battery Cell,Fulgurium Battery Cell">
+        <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true"/>
+      </Containable>      
+    </ItemContainer>
+  </Item>
+  
+  <Item
     name="Shiv"
     category="Equipment"
     Tags="smallitem,weapon"
@@ -61,7 +152,7 @@
       <Item name="Aluminium Sliver"/>
     </Deconstruct>
 
-    <Sprite texture="weapons.png" sourcerect="0,143,40,8" depth="0.55"/>
+    <Sprite texture="weapons.png" sourcerect="0,152,40,8" depth="0.55"/>
     
     <Body width="38" height="6" density="15"/>
 	
@@ -70,7 +161,7 @@
 	    <sound file="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
 		<Use/>
 	  </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" bleeding="0.9" duration="5">
+	  <StatusEffect type="OnUse" target="Character" bleeding="2.8">
 		<Use/>
 	  </StatusEffect>
     </ItemComponent>
