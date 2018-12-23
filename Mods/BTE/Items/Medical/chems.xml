@@ -257,7 +257,7 @@
 	  <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true">
         <RequiredItem name="Medical Dart" type="Container"/>
       </StatusEffect>
-	  <StatusEffect tags="erythrozine,medical" type="OnUse" target="Character" Oxygen="0.06" duration="20">
+	  <StatusEffect tags="erythrozine,medical" type="OnUse" target="Character" Oxygen="0.03" duration="20">
         <RequiredItem name="Medical Inhaler" type="Container"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-15">
@@ -1710,7 +1710,7 @@
 	  <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true">
         <RequiredItem name="Medical Dart" type="Container"/>
       </StatusEffect>
-	  <StatusEffect tags="oxygenite,medical" type="OnUse" target="Character" Oxygen="0.03" duration="30">
+	  <StatusEffect tags="oxygenite,medical" type="OnUse" target="Character" Oxygen="0.06" duration="30">
         <RequiredItem name="Medical Inhaler" type="Container"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-15">
