@@ -278,7 +278,7 @@
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.1" disabledeltatime="true">
         <RequiredItem type="Contained" name="Oxygenite Tank"/>
       </StatusEffect>
-	  <StatusEffect type="OnWearing" target="Contained" targetnames="Battery Cell,Fulgurium Battery Cell" Condition="-0.1">
+	  <StatusEffect type="OnWearing" target="Contained" targetnames="Battery Cell,Fulgurium Battery Cell" Condition="-0.2">
         <RequiredItem type="Contained" name="loadable"/>
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100"/>
@@ -396,7 +396,7 @@
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.1" disabledeltatime="true">
         <RequiredItem type="Contained" name="Oxygenite Tank"/>
       </StatusEffect>
-	  <StatusEffect type="OnWearing" target="Contained" targetnames="Battery Cell,Fulgurium Battery Cell" Condition="-0.1">
+	  <StatusEffect type="OnWearing" target="Contained" targetnames="Battery Cell,Fulgurium Battery Cell" Condition="-0.3">
         <RequiredItem type="Contained" name="loadable"/>
       </StatusEffect>
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.4" disabledeltatime="true">
@@ -488,10 +488,11 @@
     price="750">
 
     <Deconstruct time="20">
-      <Item name="Polycarbonate Bar"/>
-      <Item name="Spare Parts"/>
+      <Item name="Steel Bar"/>
+      <Item name="Aluminium Bar"/>
+      <Item name="Polycarbonate Block"/>
+	  <Item name="Bronze Sliver"/>
 	  <Item name="Copper Coil"/>
-	  <Item name="FPGA Circuit"/>
     </Deconstruct>
     
     <Sprite texture="Content/Items/Diving/Scooter.png" depth="0.55" sourcerect="0,0,64,64"/>
@@ -504,7 +505,79 @@
       <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained" msg="Battery cell depleted"/>
       <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-1.0"/>
 	  <StatusEffect type="OnUse" target="Contained" targetnames="Fulgurium Battery Cell" Condition="-0.5"/>
-      <sound file="Content/Items/Diving/scooter.ogg" type="OnUse" range="500.0" loop="true"/>
+      <sound file="Content/Items/Diving/scooter.ogg" type="OnUse" range="500" loop="true"/>
+      <LightComponent LightColor="1.0,1.0,1.0,1.0" Flicker="0.2" range="800">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.05, 0.5" size="2.0,1.0"/>
+      </LightComponent>
+    </Propulsion>
+
+    <ItemContainer capacity="1" hideitems="true">
+      <Containable name="Battery Cell"/>
+      <Containable name="Fulgurium Battery Cell"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Underwater Scooter II"
+    category="Equipment"
+    Tags="meditem"
+	description="This underwater scooter has been upgraded with better energy usage efficiency.">
+
+    <Deconstruct time="25">
+      <Item name="Steel Bar"/>
+	  <Item name="Aluminium Bar"/>
+      <Item name="Polycarbonate Block"/>
+	  <Item name="Bronze Bar"/>
+	  <Item name="Copper Coil"/>
+    </Deconstruct>
+    
+    <Sprite texture="Content/Items/Diving/Scooter.png" depth="0.55" sourcerect="0,0,64,64"/>
+
+    <Body width="55" height="30" density="10.01"/>
+
+    <Holdable slots="RightHand+LeftHand,Any" aimpos="100,0" handle1="4,10" handle2="6,10"/>
+
+    <Propulsion force="80" usablein="water" particles="bubbles">
+      <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained" msg="Battery cell depleted"/>
+      <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-0.5"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Fulgurium Battery Cell" Condition="-0.25"/>
+      <sound file="Content/Items/Diving/scooter.ogg" type="OnUse" range="500" loop="true"/>
+      <LightComponent LightColor="1.0,1.0,1.0,1.0" Flicker="0.2" range="800">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.05, 0.5" size="2.0,1.0"/>
+      </LightComponent>
+    </Propulsion>
+
+    <ItemContainer capacity="1" hideitems="true">
+      <Containable name="Battery Cell"/>
+      <Containable name="Fulgurium Battery Cell"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Underwater Scooter III"
+    category="Equipment"
+    Tags="meditem"
+	description="This underwater scooter has been upgraded with a better energy usage efficiency and propulsion system.">
+
+    <Deconstruct time="25">
+      <Item name="Steel Bar"/>
+	  <Item name="Aluminium Bar"/>
+      <Item name="Polycarbonate Block"/>
+	  <Item name="Bronze Block"/>
+	  <Item name="Copper Coil"/>
+    </Deconstruct>
+    
+    <Sprite texture="Content/Items/Diving/Scooter.png" depth="0.55" sourcerect="0,0,64,64"/>
+
+    <Body width="55" height="30" density="10.01"/>
+
+    <Holdable slots="RightHand+LeftHand,Any" aimpos="100,0" handle1="4,10" handle2="6,10"/>
+
+    <Propulsion force="160" usablein="water" particles="bubbles">
+      <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained" msg="Battery cell depleted"/>
+      <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-0.5"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Fulgurium Battery Cell" Condition="-0.25"/>
+      <sound file="Content/Items/Diving/scooter.ogg" type="OnUse" range="500" loop="true"/>
       <LightComponent LightColor="1.0,1.0,1.0,1.0" Flicker="0.2" range="800">
         <LightTexture texture="Content/Lights/lightcone.png" origin="0.05, 0.5" size="2.0,1.0"/>
       </LightComponent>
