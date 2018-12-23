@@ -155,7 +155,7 @@
     Tags="meditem,reactorfuel"
 	description="This cylindrical rod is made of an Uranium alloy containing Aluminium and is powerful enough to power a medium sized submarine."
 	cargocontainername="Radiation Shipping Box"
-    price="200">
+    price="2500">
 
     <Deconstruct time="10">
       <Item name="Uranium Sliver"/>
