@@ -92,6 +92,34 @@
     <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="523,965,19,19" depth="0.7"/>
   </recycleSign>
   
+  <nehaLogo width="89" height="99">
+    <sprite texture="Mods/BTE/Map/logos.png" sourcerect="0,0,89,99" depth="0.96"/>
+  </nehaLogo>
+  
+  <vellaLogo width="80" height="105">
+    <sprite texture="Mods/BTE/Map/logos.png" sourcerect="95,0,80,105" depth="0.96"/>
+  </vellaLogo>
+  
+  <aegirLogo width="113" height="97">
+    <sprite texture="Mods/BTE/Map/logos.png" sourcerect="180,0,113,97" depth="0.96"/>
+  </aegirLogo>
+  
+  <ullrLogo width="83" height="96">
+    <sprite texture="Mods/BTE/Map/logos.png" sourcerect="300,0,83,96" depth="0.96"/>
+  </ullrLogo>
+  
+  <themisLogo width="118" height="96">
+    <sprite texture="Mods/BTE/Map/logos.png" sourcerect="389,0,118,96" depth="0.96"/>
+  </themisLogo>
+  
+  <njordLogo width="122" height="96">
+    <sprite texture="Mods/BTE/Map/logos.png" sourcerect="509,0,122,96" depth="0.96"/>
+  </njordLogo>
+  
+  <enkiLogo width="142" height="84">
+    <sprite texture="Mods/BTE/Map/logos.png" sourcerect="633,0,142,84" depth="0.96"/>
+  </enkiLogo>
+  
   <HazardStripes width="32" height="32" resizehorizontal="true" resizevertical="true">
     <sprite texture="Mods/BTE/Map/roomstuff.png" sourcerect="521,244,215,111" depth="0.99"/>
   </HazardStripes>
