@@ -256,7 +256,7 @@
     name="Depth Charge EMP Shell"
     category="Equipment"
 	description="An ammunition shell fitted with an EMP warhead. It's used to disable enemy vessels in boarding operations."
-    price="3000">
+    price="4250">
 
     <Deconstruct time="20">
       <Item name="Steel Bar"/>

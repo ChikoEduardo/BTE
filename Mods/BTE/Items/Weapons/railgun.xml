@@ -1,5 +1,38 @@
 ﻿<Items>
   <Item
+    name="Searchlight"
+    category="Machine"
+    focusonselected="true"
+    offsetonselected="515"
+    linkable="false">
+
+    <Sprite texture="Content/Items/SearchLight/SearchLightBase.png" depth="0.01" sourcerect="0,0,128,128"/>
+	
+	<StaticBody width="20" radius="20"/>
+
+    <Turret barrelsprite="Content/Items/SearchLight/SearchLight.png" canbeselected="true" linkable="false" origin="0.5,0.55"
+	  barrelpos="64,64"
+      rotationlimits="180,360"
+      powerconsumption="25"
+	  reload="999999999"
+      showchargeindicator="false"
+      showprojectileindicator="false"
+      hudtint="0.4,0.6,0.7,0.05">
+
+      <LightComponent LightColor="1.0,1.0,1.0,1.0" range="2500" powerconsumption="25" IsOn="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0,0.5" size="2.0,1.0"/>
+      </LightComponent>
+    </Turret>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="toggle"/>
+      <input name="power_in"/>
+      <input name="position_in"/>
+    </ConnectionPanel>
+  </Item>
+  
+  <Item
     name="Railgun"
     category="Machine"
 	interactthroughwalls="true"
@@ -8,14 +41,53 @@
     offsetonselected="700"
     linkable="true">
 
-    <Sprite texture="Content/Items/Weapons/railgunbase.png" depth="0.01" sourcerect="0,0,256,256"/>
+    <Sprite texture="railgunbase.png" depth="0.01" sourcerect="0,0,256,256"/>
+	
+	<StaticBody width="80" radius="80"/>
 
-    <Turret barrelsprite="Content/Items/Weapons/railgunbarrel.png" canbeselected="false" linkable="true" characterusable="false" origin="0.5,0.85"
+    <Turret barrelsprite="railgunbarrel.png" canbeselected="false" linkable="true" characterusable="false" origin="0.5,0.85"
 			barrelpos="128,128" 
             rotationlimits="180,360"
             powerconsumption="20000"
 			showchargeindicator="true"
             showprojectileindicator="true"
+            hudtint="0.4,0.6,0.7,0.05">
+      <StatusEffect type="OnUse" target="This">
+	    <sound file="Content/Items/Weapons/railgun.ogg" range="5000"/>
+        <Explosion range="1000" structuredamage="0" force="0.01" camerashake="10" flames="false" smoke="false"/>
+      </StatusEffect>
+	  <Crosshair texture="Content/Items/Weapons/crosshair.png"/>
+      <DisabledCrosshair texture="Content/Items/Weapons/disabledCrosshair.png"/>
+    </Turret>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+	  <input name="power_in"/>
+      <input name="position_in"/>
+      <input name="trigger_in"/>
+    </ConnectionPanel>
+  </Item>
+  
+  <Item
+    name="Rаilgun"
+    category="Machine"
+	interactthroughwalls="true"
+    interactdistance="10"
+    focusonselected="true"
+    offsetonselected="700"
+    linkable="true">
+
+    <Sprite texture="Content/Items/Weapons/railgunbase.png" depth="0.01" sourcerect="0,0,256,256"/>
+	
+	<StaticBody width="80" radius="80"/>
+
+    <Turret barrelsprite="Content/Items/Weapons/railgunbarrel.png" canbeselected="false" linkable="true" characterusable="false" origin="0.5,0.85"
+			barrelpos="128,128" 
+            rotationlimits="180,360"
+            powerconsumption="15000"
+			reload="7.0"
+			showchargeindicator="false"
+            showprojectileindicator="false"
             hudtint="0.4,0.6,0.7,0.05">
       <StatusEffect type="OnUse" target="This">
 	    <sound file="Content/Items/Weapons/railgun.ogg" range="5000"/>
@@ -42,15 +114,54 @@
     offsetonselected="350"
     linkable="true">
 
-    <Sprite texture="railgunbase.png" depth="0.01" sourcerect="0,0,128,128"/>
+    <Sprite texture="railgunbasesmall.png" depth="0.01" sourcerect="0,0,128,128"/>
+	
+	<StaticBody width="40" radius="40"/>
 
-    <Turret barrelsprite="railgunbarrel.png" canbeselected="false" linkable="true" characterusable="false" origin="0.5, 0.85"
+    <Turret barrelsprite="railgunbarrelsmall.png" canbeselected="false" linkable="true" characterusable="false" origin="0.5,0.85"
 			barrelpos="64,64" 
             rotationlimits="180,360"
             powerconsumption="10000"
 			reload="2.5"
 			showchargeindicator="true"
             showprojectileindicator="true"
+            hudtint="0.4,0.6,0.7,0.05">
+      <StatusEffect type="OnUse" target="This">
+	    <sound file="Content/Items/Weapons/railgun.ogg" range="2500"/>
+        <Explosion range="500" structuredamage="0" force="0.01" camerashake="8" flames="false" smoke="false"/>
+      </StatusEffect>
+	  <Crosshair texture="crosshair.png"/>
+      <DisabledCrosshair texture="Content/Items/Weapons/disabledCrosshair.png"/>
+    </Turret>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+	  <input name="power_in"/>
+      <input name="position_in"/>
+      <input name="trigger_in"/>
+    </ConnectionPanel>
+  </Item>
+  
+  <Item
+    name="Shuttlе Rаilgun"
+    category="Machine"
+	interactthroughwalls="true"
+    interactdistance="10"
+    focusonselected="true"
+    offsetonselected="350"
+    linkable="true">
+
+    <Sprite texture="railgunbasesmall2.png" depth="0.01" sourcerect="0,0,128,128"/>
+	
+	<StaticBody width="40" radius="40"/>
+
+    <Turret barrelsprite="railgunbarrelsmall2.png" canbeselected="false" linkable="true" characterusable="false" origin="0.5, 0.85"
+			barrelpos="64,64" 
+            rotationlimits="180,360"
+            powerconsumption="5000"
+			reload="4.5"
+			showchargeindicator="false"
+            showprojectileindicator="false"
             hudtint="0.4,0.6,0.7,0.05">
       <StatusEffect type="OnUse" target="This">
 	    <sound file="Content/Items/Weapons/railgun.ogg" range="2500"/>
@@ -494,7 +605,7 @@
 	aliases="Nuclear Shell"
     category="Equipment"
 	description="An ammunition shell fitted with a fusion warhead. It's the most destructive ammunition type for Railguns."
-    price="3000">
+    price="4000">
 
     <Deconstruct time="10">
       <Item name="Steel Sliver" maxcondition="0.0"/>
