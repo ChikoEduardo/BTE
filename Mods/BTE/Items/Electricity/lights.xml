@@ -19,6 +19,25 @@
 	  <input name="set_color"/>
     </ConnectionPanel>
   </Item>
+  
+  <Item
+    name="Small Lamp"
+    category="Electrical">
+
+    <Sprite texture="lamp.png" sourcerect="0,0,16,16" depth="0.8"/>
+
+    <LightComponent lightcolor="1.0,1.0,1.0,1.0" range="400" powerconsumption="2" IsOn="true">
+      <sprite texture="Mods/BTE/Items/Electricity/lamp.png" sourcerect="28,0,28,28" alpha="1.0"/>
+    </LightComponent>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <input name="power"/>
+      <input name="toggle"/>
+      <input name="set_state"/>
+	  <input name="set_color"/>
+    </ConnectionPanel>
+  </Item>
 
   <Item
     name="Emergency Light"
