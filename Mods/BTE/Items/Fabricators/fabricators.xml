@@ -321,6 +321,10 @@
 		<RequiredSkill name="Electrical Engineering" level="50"/>
       </fabricableitem>
 	  
+	  <fabricableitem name="Diving Mask" requireditems="Polycarbonate Bar,Aluminium Sliver" requiredtime="20">
+	    <RequiredSkill name="Construction" level="20"/>
+      </fabricableitem>
+	  
 	  <fabricableitem name="Flare" requireditems="Polycarbonate Sliver" requiredtime="10">
         <Item name="Aluminium Powder" mincondition="0.25" usecondition="true"/>
 		<Item name="Potassium" mincondition="0.5" usecondition="true"/>

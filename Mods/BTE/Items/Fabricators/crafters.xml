@@ -107,6 +107,11 @@
       <GuiFrame rect="0,0,600,400" alignment="Center" style="ItemUI"/>
       <sound file="Content/Items/Fabricators/fabricator.ogg" type="OnActive" range="1000" loop="true"/>
 	  
+	  <fabricableitem name="Rebreather" requireditems="Diving Mask,Bronze Sliver" requiredtime="20">
+	    <RequiredSkill name="Science" level="40"/>
+		<RequiredSkill name="Construction" level="15"/>
+      </fabricableitem>
+	  
 	  <fabricableitem name="Sonar Blaster" requireditems="Handheld Sonar,FPGA Circuit" requiredtime="40">
 	    <Item name="Blueprints - Soundwave Weapons" mincondition="0.0" usecondition="true"/>
 		<RequiredSkill name="Science" level="40"/>
@@ -129,9 +134,16 @@
 		<RequiredSkill name="Construction" level="15"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Thermoblade" requireditems="Diving Knife,Fulgurium Sliver,FPGA Circuit" requiredtime="30">
+	  <fabricableitem name="Vibroblade" requireditems="Diving Knife,Steel Sliver,Spare Electronics" requiredtime="30">
         <Item name="ByPass - Standard-Issue Weapons" mincondition="0.0" usecondition="true"/>
 		<RequiredSkill name="Science" level="40"/>
+		<RequiredSkill name="Weapons" level="10"/>
+		<RequiredSkill name="Construction" level="15"/>
+      </fabricableitem>
+	  
+	  <fabricableitem name="Thermoblade" requireditems="Diving Knife,Fulgurium Sliver,FPGA Circuit" requiredtime="40">
+        <Item name="ByPass - Standard-Issue Weapons" mincondition="0.0" usecondition="true"/>
+		<RequiredSkill name="Science" level="50"/>
 		<RequiredSkill name="Weapons" level="10"/>
 		<RequiredSkill name="Construction" level="15"/>
       </fabricableitem>

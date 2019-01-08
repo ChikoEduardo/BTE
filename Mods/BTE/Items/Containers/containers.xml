@@ -2,9 +2,9 @@
   <Item
     name="Steel Cabinet"
 	Tags="cntnr">
-
+    
     <Sprite texture="Content/Items/Containers/locker.png" sourcerect="0,0,128,128" depth="0.79"/>
-
+	
 	<Controller direction="None" canbepicked="true">
 	  <sound file="Mods/BTE/Items/Containers/Cabinet.ogg" type="OnUse" range="500"/>
     </Controller>
@@ -13,80 +13,80 @@
 	  <Containable name="smallitem,meditem,sawammo"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Steel Locker"
 	Tags="cntnr">
-
+    
     <Sprite texture="staticContainers.png" sourcerect="0,188,45,128" depth="0.78"/>
-
+	
 	<Controller direction="None" canbepicked="true">
       <sound file="Mods/BTE/Items/Containers/Locker.ogg" type="OnUse" range="750"/>
     </Controller>
-
+	
 	<ItemContainer capacity="15" canbeselected="true" hideitems="true">
       <Containable name="smallitem,meditem,bigitem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Secure Locker"
 	Tags="cntnr"
 	waterproof="true"
 	fireproof="true">
-
+    
     <Sprite texture="staticContainers.png" sourcerect="46,188,45,128" depth="0.78"/>
-
+	
 	<Controller direction="None" canbepicked="true">
       <sound file="Mods/BTE/Items/Containers/Locker.ogg" type="OnUse" range="750"/>
     </Controller>
-
+	
 	<ItemContainer capacity="15" canbeselected="true" hideitems="true">
       <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
 	  <Containable name="smallitem,meditem,bigitem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Small Locker"
 	Tags="cntnr">
-
+    
     <Sprite texture="staticContainers.png" sourcerect="92,186,45,64" depth="0.78"/>
-
+	
 	<Controller direction="None" canbepicked="true">
       <sound file="Mods/BTE/Items/Containers/Locker.ogg" type="OnUse" range="650"/>
     </Controller>
-
+	
 	<ItemContainer capacity="10" canbeselected="true" hideitems="true">
       <Containable name="smallitem,meditem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Steel Safe"
 	Tags="cntnr"
 	waterproof="true"
 	fireproof="true">
-
+    
     <Sprite texture="staticContainers.png" sourcerect="92,251,45,64" depth="0.78"/>
-
+	
 	<Controller direction="None" canbepicked="true">
       <sound file="Mods/BTE/Items/Containers/Locker.ogg" type="OnUse" range="650"/>
     </Controller>
-
+	
 	<ItemContainer capacity="10" canbeselected="true" hideitems="true">
       <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
 	  <Containable name="smallitem,meditem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Top Cabinet"
 	aliases="Medicine Cabinet,Toxic Cabinet"
 	Tags="cntnr">
 
     <Sprite texture="staticContainers.png" sourcerect="286,315,48,64" depth="0.78"/>
-
+	
 	<Controller direction="None" canbepicked="true">
       <sound file="Mods/BTE/Items/Containers/Cabinet.ogg" type="OnUse" range="500"/>
     </Controller>
@@ -95,7 +95,7 @@
       <Containable name="smallitem,medical,chem,Flour,Food Can,Frying Pan"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Secure Top Cabinet"
 	Tags="cntnr"
@@ -103,7 +103,7 @@
 	fireproof="true">
 
     <Sprite texture="staticContainers.png" sourcerect="335,315,48,64" depth="0.78"/>
-
+	
 	<Controller direction="None" canbepicked="true">
       <sound file="Mods/BTE/Items/Containers/Cabinet.ogg" type="OnUse" range="500"/>
     </Controller>
@@ -113,7 +113,7 @@
 	  <Containable name="smallitem,medical,chem,Flour,Food Can,Frying Pan"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Trash Bin"
 	aliases="Trash Can"
@@ -125,40 +125,40 @@
       <Containable name="smallitem,meditem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Exosuit Locker"
 	Tags="cntnr">
-
+    
     <Sprite texture="staticContainers.png" sourcerect="213,186,72,166" depth="0.85"/>
-
+	
 	<ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="35,-94">
       <Containable name="Exosuit,Assault Exosuit,Derelict Exosuit"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Artifact Container"
 	aliases="Artefact Container"
 	Tags="cntnr">
-
+    
     <Sprite texture="staticContainers.png" sourcerect="286,186,100,128" depth="0.85"/>
-
+	
 	<Powered powerconsumption="1500" currpowerconsumption="1500" minvoltage="0.5" isactive="true">
 	  <StatusEffect type="OnActive" target="Contained" targetnames="rtfct" Condition="100"/>
     </Powered>
-
+	
 	<ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
       <requireditem name="Pliers,Screwdriver" type="Equipped"/>
       <output name="power_in"/>
     </ConnectionPanel>
-
+	
 	<ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="50,-80">
       <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
 	  <Containable name="rtfct"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Railgun Ammo Rack"
 	aliases="Railgun Shell Rack"
@@ -167,34 +167,34 @@
     <Sprite texture="Content/Items/Weapons/railgunetc2.png" sourcerect="57,97,72,110" depth="0.84"/>
 
     <ItemContainer hideitems="false" drawinventory="true" capacity="3" slotsperrow="3" itempos="17,-49.5" iteminterval="19,0" itemrotation="90" canbeselected="true">
-	<Containable name="Railgun Polycarbonate Spear"/>
-	<Containable name="Railgun Aluminium Spear"/>
-	<Containable name="Railgun Copper Spear"/>
-	<Containable name="Railgun Bronze Spear"/>
-	<Containable name="Railgun Steel Spear"/>
-	<Containable name="Railgun Uranium Spear"/>
-	<Containable name="Railgun Fulgurium Spear"/>
-	<Containable name="Railgun Shell"/>
-	<Containable name="Railgun Fusion Shell"/>
-	<Containable name="Railgun EMP Shell"/>
+      <Containable name="Railgun Polycarbonate Spear"/>
+	  <Containable name="Railgun Aluminium Spear"/>
+	  <Containable name="Railgun Copper Spear"/>
+	  <Containable name="Railgun Bronze Spear"/>
+	  <Containable name="Railgun Steel Spear"/>
+	  <Containable name="Railgun Uranium Spear"/>
+	  <Containable name="Railgun Fulgurium Spear"/>
+	  <Containable name="Railgun Shell"/>
+      <Containable name="Railgun Fusion Shell"/>
+	  <Containable name="Railgun EMP Shell"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Refrigerator"
 	Tags="cntnr"
 	waterproof="true">
-
+    
     <Sprite texture="staticContainers.png" sourcerect="140,186,71,135" depth="0.78" canflipx="false"/>
-
+	
 	<LightComponent lightcolor="1.0,1.0,1.0,0.1" range="1000" powerconsumption="1" IsOn="true">
       <sprite texture="Mods/BTE/Items/Containers/FridgeLights.png" sourcerect="0,0,71,135" alpha="1.0"/>
     </LightComponent>
-
+	
 	<Controller direction="None" canbepicked="true">
       <sound file="Mods/BTE/Items/Containers/Fridge.ogg" type="OnUse" range="750"/>
     </Controller>
-
+	
 	<Powered powerconsumption="50" currpowerconsumption="50" minvoltage="0.5" isactive="true">
 	  <StatusEffect type="OnActive" target="Contained" targetnames="Fries,Apple Pie,Carrot Pie" Condition="0.02"/>
 	  <StatusEffect type="OnActive" target="Contained" targetnames="Crawler Pie,Thresher Pie" Condition="0.03"/>
@@ -209,12 +209,12 @@
 	  <StatusEffect type="OnActive" target="Contained" targetnames="Human Meat" Condition="0.19"/>
       <sound file="Mods/BTE/Items/Containers/FridgeHum.ogg" type="OnActive" range="500" loop="true"/>
     </Powered>
-
+	
 	<ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
       <requireditem name="Pliers,Screwdriver" type="Equipped"/>
       <output name="power_in"/>
     </ConnectionPanel>
-
+	
 	<ItemContainer capacity="20" canbeselected="true" hideitems="true">
       <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
 	  <Containable name="smallitem,food,drink"/>
@@ -227,7 +227,7 @@
 	waterproof="true"
 	fireproof="true"
 	price="250">
-
+	
 	<Deconstruct time="10">
       <Item name="Steel Block"/>
       <Item name="Steel Block"/>
@@ -243,14 +243,14 @@
       <Containable name="smallitem,meditem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Metal Footlocker"
 	Tags="cntnr"
 	waterproof="true"
 	fireproof="true"
 	price="250">
-
+	
 	<Deconstruct time="10">
       <Item name="Steel Block"/>
       <Item name="Steel Block"/>
@@ -266,31 +266,31 @@
       <Containable name="smallitem,meditem,bigitem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Cargo Container"
 	Tags="cntnr"
 	waterproof="true"
 	fireproof="true">
-
+    
     <Sprite texture="staticContainers.png" sourcerect="0,0,413,185" depth="0.79"/>
-
+	
 	<Controller direction="None" canbepicked="true">
       <sound file="Mods/BTE/Items/Containers/CargoContainer.ogg" type="OnUse" range="1250"/>
     </Controller>
 
     <ItemContainer capacity="60" canbeselected="true" hideitems="true"/>
   </Item>
-
+  
   <Item
     name="Weapon Rack"
 	aliases="Wall Rack"
 	Tags="cntnr">
-
+    
     <Sprite texture="staticContainers.png" sourcerect="0,316,103,95" depth="0.78"/>
 
     <ItemContainer capacity="3" canbeselected="true" hideitems="false" itempos="52,-16" iteminterval="0,-31">
-
+      
 	  <Containable name="Gauss Pistol"/>
 	  <Containable name="Gauss Carbine"/>
 	  <Containable name="Gauss Rifle"/>
@@ -302,25 +302,25 @@
 	  <Containable name="Dart Gun"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Fire Extinguisher Bracket"
 	Tags="cntnr">
-
+    
     <Sprite texture="staticContainers.png" sourcerect="387,186,25,61" depth="0.78"/>
 
     <ItemContainer capacity="1" canbeselected="true" hideitems="false" itempos="13,-25">
       <Containable name="Fire Extinguisher"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Steel Table"
 	Tags="cntnr"
     description="A sturdy steel table with a drawer."
 	impacttolerance="4"
 	price="230">
-
+	
 	<Deconstruct time="10">
       <Item name="Steel Bar"/>
       <Item name="Steel Bar"/>
@@ -328,38 +328,38 @@
     </Deconstruct>
 
     <Sprite texture="dynamicContainers.png" sourcerect="183,0,131,85" depth="0.53"/>
-
+	
 	<Body width="130" height="84" density="18"/>
-
+	
 	<Holdable slots="RightHand+LeftHand" holdpos="0,-80" aimpos="40,-20" handle1="-40,14" handle2="40,14" aimable="false" controlpose="false">
 	  <StatusEffect type="OnImpact" target="This">
 	    <sound file="Mods/BTE/Items/Weapons/BatHit.ogg"/>
         <Explosion range="75" damage="2" stun="3.8" force="12" flash="false" shockwave="false" flames="false" smoke="false" sparks="false"/>
       </StatusEffect>
 	</Holdable>
-
+	
 	<ItemContainer capacity="5" canbeselected="true" hideitems="true">
       <Containable name="smallitem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Steel Chair"
     description="A sturdy but uncomfortable steel chair."
 	impacttolerance="4"
 	price="150">
-
+	
 	<Deconstruct time="10">
       <Item name="Steel Bar"/>
 	  <Item name="Steel Bar"/>
     </Deconstruct>
 
     <Sprite texture="dynamicContainers.png" sourcerect="237,86,53,98" depth="0.54" canflipx="false"/>
-
+	
 	<Body width="52" height="97" density="14"/>
-
+	
 	<Holdable slots="RightHand+LeftHand" holdpos="40,-30" aimpos="45,-20" handle1="-30,14" handle2="30,-7"/>
-
+	
 	<Throwable slots="RightHand+LeftHand" throwforce="3.0">
 	  <StatusEffect type="OnImpact" target="This">
 	    <sound file="Mods/BTE/Items/Weapons/BatHit.ogg"/>
@@ -367,24 +367,24 @@
       </StatusEffect>
     </Throwable>
   </Item>
-
+  
   <Item
     name="Steel Сhair"
     description="A sturdy but uncomfortable steel chair."
 	impacttolerance="4"
 	price="150">
-
+	
 	<Deconstruct time="10">
       <Item name="Steel Bar"/>
 	  <Item name="Steel Bar"/>
     </Deconstruct>
 
     <Sprite texture="dynamicContainers.png" sourcerect="183,86,53,98" depth="0.54" canflipx="false"/>
-
+	
 	<Body width="52" height="97" density="14"/>
-
+	
 	<Holdable slots="RightHand+LeftHand" holdpos="40,-30" aimpos="45,-20" handle1="-30,14" handle2="30,-7"/>
-
+	
 	<Throwable slots="RightHand+LeftHand" throwforce="3.0">
 	  <StatusEffect type="OnImpact" target="This">
 	    <sound file="Mods/BTE/Items/Weapons/BatHit.ogg"/>
@@ -392,7 +392,7 @@
       </StatusEffect>
     </Throwable>
   </Item>
-
+  
   <Item
     name="Diving Chest"
 	category="Equipment"
@@ -401,7 +401,7 @@
 	waterproof="true"
 	fireproof="true"
 	price="500">
-
+	
 	<Deconstruct time="10">
       <Item name="Steel Bar"/>
 	  <Item name="Aluminium Bar"/>
@@ -419,11 +419,11 @@
       <Containable name="smallitem,meditem,bigitem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Standard Shipping Box"
 	Tags="cntnr">
-
+	
 	<Deconstruct time="10">
       <Item name="Polycarbonate Bar"/>
     </Deconstruct>
@@ -438,11 +438,11 @@
       <Containable name="smallitem,meditem,bigitem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Workshop Shipping Box"
 	Tags="cntnr">
-
+	
 	<Deconstruct time="10">
       <Item name="Polycarbonate Bar"/>
     </Deconstruct>
@@ -457,11 +457,11 @@
       <Containable name="smallitem,meditem,bigitem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Electronics Shipping Box"
 	Tags="cntnr">
-
+	
 	<Deconstruct time="10">
       <Item name="Polycarbonate Bar"/>
     </Deconstruct>
@@ -476,11 +476,11 @@
       <Containable name="smallitem,meditem,bigitem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Weapons Shipping Box"
 	Tags="cntnr">
-
+	
 	<Deconstruct time="10">
       <Item name="Polycarbonate Bar"/>
     </Deconstruct>
@@ -495,12 +495,12 @@
       <Containable name="smallitem,meditem,bigitem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Explosives Shipping Box"
 	aliases="Explosive Crate"
 	Tags="cntnr">
-
+	
 	<Deconstruct time="10">
       <Item name="Polycarbonate Bar"/>
     </Deconstruct>
@@ -515,11 +515,11 @@
       <Containable name="smallitem,meditem,bigitem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Medical Shipping Box"
 	Tags="cntnr">
-
+	
 	<Deconstruct time="10">
       <Item name="Polycarbonate Bar"/>
     </Deconstruct>
@@ -534,11 +534,11 @@
       <Containable name="smallitem,meditem,bigitem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Biohazard Shipping Box"
 	Tags="cntnr">
-
+	
 	<Deconstruct time="10">
       <Item name="Polycarbonate Bar"/>
     </Deconstruct>
@@ -553,12 +553,12 @@
       <Containable name="smallitem,meditem,bigitem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Chemical Shipping Box"
 	aliases="Chemical Crate"
 	Tags="cntnr">
-
+	
 	<Deconstruct time="10">
       <Item name="Polycarbonate Bar"/>
     </Deconstruct>
@@ -573,11 +573,11 @@
       <Containable name="smallitem,meditem,bigitem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Radiation Shipping Box"
 	Tags="cntnr">
-
+	
 	<Deconstruct time="10">
       <Item name="Polycarbonate Bar"/>
     </Deconstruct>
@@ -592,7 +592,7 @@
       <Containable name="smallitem,meditem,bigitem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="MedKit"
     category="Equipment"
@@ -600,7 +600,7 @@
     description="A small kit used to carry meds and chems."
     canbepicked="true"
     price="175">
-
+   
     <Deconstruct time="5">
       <Item name="Aluminium Sliver"/>
       <Item name="Polycarbonate Bar"/>
@@ -611,12 +611,12 @@
     <Body width="27" height="28" density="12.5"/>
 
     <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
-
+	
 	<ItemContainer capacity="5" canbeselected="true" hideitems="true">
       <Containable name="medical,chem"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Handgun Ammo Box"
     category="Equipment"
@@ -624,7 +624,7 @@
     description="A small box used to carry handgun ammunition."
     canbepicked="true"
     price="175">
-
+   
     <Deconstruct time="5">
       <Item name="Aluminium Sliver"/>
       <Item name="Polycarbonate Bar"/>
@@ -635,12 +635,12 @@
     <Body width="27" height="28" density="12.5"/>
 
     <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
-
+	
 	<ItemContainer capacity="15" canbeselected="true" hideitems="true">
       <Containable name="Revolver Round,Revolver HL Round,Revolver Flare Round"/>
     </ItemContainer>
   </Item>
-
+  
   <Item
     name="Shotgun Ammo Box"
     category="Equipment"
@@ -648,7 +648,7 @@
     description="A small box used to carry shotgun ammunition."
     canbepicked="true"
     price="175">
-
+   
     <Deconstruct time="5">
       <Item name="Aluminium Sliver"/>
       <Item name="Polycarbonate Bar"/>
@@ -659,7 +659,7 @@
     <Body width="27" height="28" density="12.5"/>
 
     <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
-
+	
 	<ItemContainer capacity="15" canbeselected="true" hideitems="true">
       <Containable name="Shotgun Slug Round,Shotgun Beanbag Round,Shotgun Taser Round"/>
     </ItemContainer>
