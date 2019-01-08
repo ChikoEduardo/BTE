@@ -21,10 +21,8 @@
     <Body width="8" height="35" radius="8" density="11"/>
 	
 	<ItemComponent>
-      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.16" oxygen="-0.04" disabledeltatime="true" delay="12" duration="50" checkconditionalalways="true">
-	    <Conditional oxygen="gt 0"/>
-	  </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Health="0.03" delay="12" duration="50">
+      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.16" OxygenAvailable="-0.03" disabledeltatime="true" delay="12" duration="50"/>
+	  <StatusEffect type="OnUse" target="Character" Health="0.02" delay="12" duration="50">
 	    <sound file="Mods/BTE/Items/Medical/FoodDrink.ogg"/>
 	  </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true"/>
@@ -57,9 +55,7 @@
     <Body width="8" height="32" radius="8" density="12"/>
 	
 	<ItemComponent>
-      <StatusEffect tags="drunk3" type="OnUse" target="Character" SpeedMultiplier="-0.04" oxygen="-0.012" disabledeltatime="true" delay="12" duration="60" checkconditionalalways="true">
-	    <Conditional oxygen="gt 0"/>
-	  </StatusEffect>
+      <StatusEffect tags="drunk3" type="OnUse" target="Character" SpeedMultiplier="-0.04" OxygenAvailable="-0.025" disabledeltatime="true" delay="12" duration="60"/>
 	  <StatusEffect tags="drunk2" type="OnUse" target="Character" Health="0.04" duration="60">
 	    <sound file="Mods/BTE/Items/Medical/FoodDrink.ogg"/>
 	  </StatusEffect>
@@ -97,9 +93,7 @@
     <Body width="8" height="38" radius="8" density="13"/>
 	
 	<ItemComponent>
-	  <StatusEffect tags="drunk3" type="OnUse" target="Character" SpeedMultiplier="-0.08" oxygen="-0.018" disabledeltatime="true" delay="12" duration="80" checkconditionalalways="true">
-	    <Conditional oxygen="gt 0"/>
-	  </StatusEffect>
+	  <StatusEffect tags="drunk3" type="OnUse" target="Character" SpeedMultiplier="-0.08" OxygenAvailable="-0.1" disabledeltatime="true" delay="12" duration="80"/>
 	  <StatusEffect tags="drunk2" type="OnUse" target="Character" Health="0.04" duration="80">
 	    <sound file="Mods/BTE/Items/Medical/FoodDrink.ogg"/>
 	  </StatusEffect>
@@ -139,9 +133,7 @@
     <Body width="8" height="38" radius="8" density="11"/>
 	
 	<ItemComponent>
-	  <StatusEffect tags="drunk3" type="OnUse" target="Character" SpeedMultiplier="-0.1" oxygen="-0.03" disabledeltatime="true" delay="12" duration="110" checkconditionalalways="true">
-	    <Conditional oxygen="gt 0"/>
-	  </StatusEffect>
+	  <StatusEffect tags="drunk3" type="OnUse" target="Character" SpeedMultiplier="-0.1" OxygenAvailable="-0.2" disabledeltatime="true" delay="12" duration="110"/>
 	  <StatusEffect tags="drunk2" type="OnUse" target="Character" Health="0.02" duration="110">
 	    <sound file="Mods/BTE/Items/Medical/FoodDrink.ogg"/>
 	  </StatusEffect>
@@ -248,11 +240,16 @@
     <Body width="18" height="27" density="9.95"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.001" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.001" disabledeltatime="true" delay="12" duration="200" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-40" disabledeltatime="true">
-	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	    <sound file="Mods/BTE/Items/Medical/ChipsEat.ogg"/>
 	  </StatusEffect>
     </ItemComponent>
 
@@ -277,9 +274,14 @@
     <Body width="21" height="6" density="10.6"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.001" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.001" disabledeltatime="true" delay="12" duration="200" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -305,9 +307,14 @@
     <Body width="22" height="10" density="9.9"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.001" disabledeltatime="true" delay="6" duration="200" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.001" disabledeltatime="true" delay="6" duration="200" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="5">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -337,9 +344,14 @@
     <Body width="26" radius="8" density="9.5"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.008" Health="0.004" disabledeltatime="true" delay="12" duration="60" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.008" Health="0.004" disabledeltatime="true" delay="12" duration="60" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -376,9 +388,14 @@
     <Body radius="8" density="9.8" friction="0.95"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.002" disabledeltatime="true" delay="12" duration="75" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.002" disabledeltatime="true" delay="12" duration="75" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -418,9 +435,14 @@
     <Body height="22" radius="2" density="9.9" friction="0.99"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.002" disabledeltatime="true" delay="12" duration="85" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.002" disabledeltatime="true" delay="12" duration="85" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -457,9 +479,14 @@
     <Body height="22" radius="2" density="9.9" friction="0.95"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.015" Health="0.003" disabledeltatime="true" delay="12" duration="85" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.015" Health="0.003" disabledeltatime="true" delay="12" duration="85" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -495,9 +522,14 @@
     <Body width="28" height="8" radius="8" density="9.9" friction="0.95"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.002" disabledeltatime="true" delay="12" duration="50" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.002" disabledeltatime="true" delay="12" duration="50" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -536,9 +568,14 @@
     <Body width="18" height="8" radius="8" density="12" friction="0.95"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.008" Health="0.001" disabledeltatime="true" delay="12" duration="40" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.008" Health="0.001" disabledeltatime="true" delay="12" duration="40" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -575,9 +612,14 @@
     <Body width="18" height="8" radius="8" density="10.7"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.004" disabledeltatime="true" delay="12" duration="60" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.004" disabledeltatime="true" delay="12" duration="60" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -611,9 +653,14 @@
     <Body width="16" height="18" radius="8" density="11"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="50" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="50" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -649,9 +696,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.05" Health="0.002" disabledeltatime="true" delay="12" duration="100" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="-0.05" Health="0.002" disabledeltatime="true" delay="12" duration="100" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -687,9 +739,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.03" Health="0.004" disabledeltatime="true" delay="12" duration="100" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="-0.03" Health="0.004" disabledeltatime="true" delay="12" duration="100" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -724,9 +781,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.002" delay="12" duration="100" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.002" delay="12" duration="100" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -762,9 +824,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.03" Health="0.004" delay="12" duration="100" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.03" Health="0.004" delay="12" duration="100" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -797,9 +864,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.05" Health="0.006" disabledeltatime="true" delay="12" duration="100" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.05" Health="0.006" disabledeltatime="true" delay="12" duration="100" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -832,9 +904,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.07" Health="0.004" disabledeltatime="true" delay="12" duration="120" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.07" Health="0.004" disabledeltatime="true" delay="12" duration="120" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -916,9 +993,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.015" Health="0.004" disabledeltatime="true" delay="12" duration="60" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.015" Health="0.004" disabledeltatime="true" delay="12" duration="60" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -953,9 +1035,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.004" disabledeltatime="true" delay="12" duration="60" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.004" disabledeltatime="true" delay="12" duration="60" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -991,9 +1078,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="60" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="60" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -1028,9 +1120,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.004" disabledeltatime="true" delay="12" duration="75" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.004" disabledeltatime="true" delay="12" duration="75" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -1066,9 +1163,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="75" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="75" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -1101,9 +1203,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.04" Health="0.008" disabledeltatime="true" delay="12" duration="75" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.04" Health="0.008" disabledeltatime="true" delay="12" duration="75" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -1138,7 +1245,12 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.003" disabledeltatime="true" delay="12" duration="20"/>
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.01" Health="0.003" disabledeltatime="true" delay="12" stackable="false" duration="20"/>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-50" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -1182,9 +1294,14 @@
 	<Body width="8" height="16" density="10.1"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.03" Health="0.003" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.03" Health="0.003" disabledeltatime="true" delay="12" duration="200" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-50" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -1211,9 +1328,14 @@
     <Body width="30" radius="8" density="11"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="100" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="100" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -1246,9 +1368,14 @@
     <Body width="27" radius="8" density="11"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="80" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.006" disabledeltatime="true" delay="12" duration="80" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -1283,9 +1410,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.007" disabledeltatime="true" delay="12" duration="160" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.02" Health="0.007" disabledeltatime="true" delay="12" duration="160" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -1320,9 +1452,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.03" Health="0.008" disabledeltatime="true" delay="12" duration="160" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.03" Health="0.008" disabledeltatime="true" delay="12" duration="160" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -1358,9 +1495,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.06" Health="0.009" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.06" Health="0.009" disabledeltatime="true" delay="12" duration="200" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -1390,9 +1532,14 @@
     <Body width="16" height="27" density="18"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.02" Health="0.001" disabledeltatime="true" delay="12" duration="180" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="-0.02" Health="0.001" disabledeltatime="true" delay="12" duration="180" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -1427,9 +1574,14 @@
 	<AiTarget sightrange="50" soundrange="500"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.08" Health="0.006" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.08" Health="0.006" disabledeltatime="true" delay="12" duration="200" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -1493,9 +1645,14 @@
 	<Body width="8" height="16" density="10.1"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.04" Health="0.006" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.04" Health="0.006" disabledeltatime="true" delay="12" duration="200" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-50" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
 	  </StatusEffect>
@@ -1572,9 +1729,14 @@
 	<Body width="8" height="16" density="10.1"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.04" Health="0.006" disabledeltatime="true" delay="12" duration="200" checkconditionalalways="true">
+	  <StatusEffect tags="food" type="OnUse" target="Character" SpeedMultiplier="0.04" Health="0.006" disabledeltatime="true" delay="12" duration="200" stackable="false" checkconditionalalways="true">
 	    <Conditional Health="gt 0"/>
 	  </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" delay="11">
+        <Conditional hasstatustag="food">
+          <CancelStatusEffect/>
+        </Conditional>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character" HuskInfectionState="0.01" delay="22">
         <Conditional HuskInfectionState="lt 0.01"/>
       </StatusEffect>
