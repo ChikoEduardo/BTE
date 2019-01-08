@@ -21,8 +21,9 @@
   <item prefab="RuinClaw" alignment="Bottom" type="Prop" commonness="5"/>
 
   <item prefab="Oxygenite Shard" alignment="Center,Right,Top,Bottom,Left" type="Prop" commonness="5"/>
-  <item prefab="Sulphurite Shard" alignment="Center,Right,Top,Bottom,Left" type="Prop" commonness="5"/>
-  <item prefab="Thermite Shard" alignment="Center,Right,Top,Bottom,Left" type="Prop" commonness="5"/>
+  <item prefab="Sulphurite Shard" alignment="Center,Right,Top,Bottom,Left" type="Prop" commonness="4"/>
+  <item prefab="Uraninite Shard" alignment="Center,Right,Top,Bottom,Left" type="Prop" commonness="3"/>
+  <item prefab="Thermite Shard" alignment="Center,Right,Top,Bottom,Left" type="Prop" commonness="2"/>
   
   <item prefab="Ancient Weapon" alignment="Center,Right,Top,Bottom,Left" type="Prop" commonness="1"/>
 
