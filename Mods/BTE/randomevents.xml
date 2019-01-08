@@ -261,6 +261,10 @@
     itemname="Iron Ore"/>
 	
   <ArtifactEvent name="Artifact" description=""
+    mineventcount="2" maxeventcount="4"
+    itemname="Copper Ore"/>
+	
+  <ArtifactEvent name="Artifact" description=""
     mineventcount="1" maxeventcount="3"
     itemname="Fulgurium Ore"/>
 	
@@ -269,11 +273,11 @@
     itemname="Human Skull"/>
 	
   <ArtifactEvent name="Artifact" description=""
-    mineventcount="2" maxeventcount="5"
+    mineventcount="2" maxeventcount="4"
     itemname="Tactical Boot"/>
 	
   <ArtifactEvent name="Artifact" description=""
-    mineventcount="6" maxeventcount="9"
+    mineventcount="4" maxeventcount="8"
     itemname="Plastic Bag"/>
 	
   <ArtifactEvent name="Artifact" description=""
@@ -285,16 +289,32 @@
     itemname="Kelp"/>
 	
   <ArtifactEvent name="Artifact" description=""
+    mineventcount="5" maxeventcount="20"
+    itemname="Mushroom"/>
+	
+  <ArtifactEvent name="Artifact" description=""
+    mineventcount="5" maxeventcount="20"
+    itemname="Мushrоom"/>
+	
+  <ArtifactEvent name="Artifact" description=""
+    mineventcount="5" maxeventcount="20"
+    itemname="Мushгoom"/>
+	
+  <ArtifactEvent name="Artifact" description=""
     mineventcount="0" maxeventcount="2"
     itemname="Velonaceps Calyx Egg Sac"/>
 	
   <ArtifactEvent name="Artifact" description=""
-    mineventcount="3" maxeventcount="6"
+    mineventcount="3" maxeventcount="5"
     itemname="Oxygenite Shard"/>
 	
   <ArtifactEvent name="Artifact" description=""
     mineventcount="2" maxeventcount="4"
     itemname="Sulphurite Shard"/>
+	
+  <ArtifactEvent name="Artifact" description=""
+    mineventcount="1" maxeventcount="3"
+    itemname="Uraninite Shard"/>
   
   <ArtifactEvent name="Artifact" description=""
     mineventcount="1" maxeventcount="2"

@@ -1470,16 +1470,41 @@
     <Deconstruct time="5">
       <Item name="Steel Block"/>
 	  <Item name="Steel Bar"/>
-	  <Item name="Steel Sliver"/>
     </Deconstruct>
 
-    <Sprite texture="LootStuff.png" depth="0.55" sourcerect="0,0,87,43"/>
+    <Sprite texture="LootStuff.png" depth="0.55" sourcerect="0,0,59,29"/>
 
-    <Body width="87" height="43" density="12.5"/>
+    <Body width="53" height="23" density="32.5" friction="0.95"/>
 
 	<Holdable slots="RightHand+LeftHand" holdpos="30,-15" handle1="0,10" handle2="0,-10" aimpos="35,-10"/>
 	
 	<Throwable slots="RightHand+LeftHand,Any" holdpos="30,-15" handle1="0,10" handle2="0,-10" throwforce="1" aimpos="35,-10">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Tools/RockHit.ogg"/>
+		<Explosion range="70" damage="2" stun="3.4" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false"/>
+	  </StatusEffect>
+    </Throwable>
+  </Item>
+  
+  <Item
+    name="Copper Ore"
+    category="Misc"
+    Tags="bigitem"
+    description="A huge ore rock containing copper."
+	impacttolerance="3"
+    canbepicked="true">
+   
+    <Deconstruct time="5">
+      <Item name="Copper Block"/>
+    </Deconstruct>
+
+    <Sprite texture="LootStuff.png" depth="0.55" sourcerect="61,0,36,39"/>
+
+    <Body width="32" height="34" density="12.5" friction="0.95"/>
+
+	<Holdable slots="RightHand+LeftHand" holdpos="30,-15" handle1="0,10" handle2="0,-10" aimpos="35,-10"/>
+	
+	<Throwable slots="RightHand+LeftHand,Any" holdpos="30,-15" handle1="0,10" handle2="0,-10" throwforce="1.5" aimpos="35,-10">
 	  <StatusEffect type="OnImpact" target="This">
 	    <sound file="Mods/BTE/Items/Tools/RockHit.ogg"/>
 		<Explosion range="70" damage="2" stun="3.4" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false"/>
@@ -1500,13 +1525,13 @@
 	  <Item name="Fulgurium Sliver"/>
     </Deconstruct>
 
-    <Sprite texture="LootStuff.png" depth="0.55" sourcerect="24,65,35,35"/>
+    <Sprite texture="LootStuff.png" depth="0.55" sourcerect="24,56,37,44"/>
 
-    <Body radius="15" density="10.9"/>
+    <Body radius="15" density="10.9" friction="0.95"/>
 
 	<Holdable slots="RightHand+LeftHand" holdpos="30,-15" handle1="0,10" handle2="0,-10" aimpos="35,-10"/>
 	
-	<Throwable slots="RightHand+LeftHand,Any" holdpos="30,-15" handle1="0,10" handle2="0,-10" throwforce="1.5" aimpos="35,-10">
+	<Throwable slots="RightHand+LeftHand,Any" holdpos="30,-15" handle1="0,10" handle2="0,-10" throwforce="2" aimpos="35,-10">
 	  <StatusEffect type="OnImpact" target="This">
 	    <sound file="Mods/BTE/Items/Tools/RockHit.ogg"/>
 		<Explosion range="35" damage="2" stun="1.4" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false"/>
@@ -1582,6 +1607,123 @@
 	  <StatusEffect type="OnImpact" target="This">
 	    <sound file="Mods/BTE/Items/Tools/FleshHit.ogg"/>
 	  </StatusEffect>
+    </Throwable>
+  </Item>
+  
+  <Item
+    name="Mushroom"
+	aliases="Drunk Shroom"
+    category="Misc"
+    Tags="smallitem"
+    description="Europan underwater mushrooms posses a variety of effects and are almost identical to each other, making them an unknown source of materials."
+	canuseonself="true"
+	impacttolerance="2"
+    canbepicked="true">
+   
+    <Deconstruct time="5">
+	  <Item name="Ethanol"/>
+	  <Item name="Ethanol"/>
+    </Deconstruct>
+
+    <Sprite texture="LootStuff.png" depth="0.55" sourcerect="99,0,20,20"/>
+
+    <Body height="14" radius="6" density="10.1" friction="0.75"/>
+	
+	<ItemComponent>
+      <StatusEffect tags="drunk3" type="OnUse" target="Character" SpeedMultiplier="-0.12" OxygenAvailable="-0.15" delay="2" duration="100" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk2" type="OnUse" target="Character" Stun="0.3" delay="22" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk1" type="OnUse" target="Character" Stun="0.6" delay="34" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk1" type="OnUse" target="Character" Stun="1" delay="44" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk2" type="OnUse" target="Character" Stun="0.4" delay="56" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk3" type="OnUse" target="Character" Stun="2" delay="67" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk3" type="OnUse" target="Character" Stun="2" delay="76" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk3" type="OnUse" target="Character" Stun="1.4" delay="88" disabledeltatime="true"/>
+	  <StatusEffect tags="drunk3" type="OnUse" target="Character" Stun="0.6" delay="94" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+    </ItemComponent>
+
+	<Throwable slots="RightHand,LeftHand,Any" throwforce="2.5" aimpos="35,-10">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Tools/FleshHit.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </Throwable>
+  </Item>
+  
+  <Item
+    name="Мushrоom"
+	aliases="Acid Shroom"
+    category="Misc"
+    Tags="smallitem"
+    description="Europan underwater mushrooms posses a variety of effects and are almost identical to each other, making them an unknown source of materials."
+	canuseonself="true"
+	impacttolerance="2"
+    canbepicked="true">
+   
+    <Deconstruct time="5">
+	  <Item name="Biomass"/>
+	  <Item name="Sulphuric Acid"/>
+    </Deconstruct>
+
+    <Sprite texture="LootStuff.png" depth="0.55" sourcerect="99,0,20,20"/>
+
+    <Body height="14" radius="6" density="10.3" friction="0.5"/>
+	
+	<ItemComponent>
+      <StatusEffect tags="acid,poisonstrong" type="OnUse" target="Character" Health="-0.3" delay="2" duration="100"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+    </ItemComponent>
+
+	<Throwable slots="RightHand,LeftHand,Any" throwforce="2.25" aimpos="35,-10">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Tools/FleshHit.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+    </Throwable>
+  </Item>
+  
+  <Item
+    name="Мushгoom"
+	aliases="Sugar Shroom"
+    category="Misc"
+    Tags="smallitem"
+    description="Europan underwater mushrooms posses a variety of effects and are almost identical to each other, making them an unknown source of materials."
+	canuseonself="true"
+	impacttolerance="2"
+    canbepicked="true">
+   
+    <Deconstruct time="5">
+	  <Item name="Sugar"/>
+	  <Item name="Sugar"/>
+    </Deconstruct>
+
+    <Sprite texture="LootStuff.png" depth="0.55" sourcerect="99,0,20,20"/>
+
+    <Body height="14" radius="6" density="10.2" friction="0.95"/>
+	
+	<ItemComponent>
+      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.06" OxygenAvailable="-0.02" disabledeltatime="true" delay="2" duration="100"/>
+	  <StatusEffect type="OnUse" target="Character" Health="0.03" delay="2" duration="100"/>
+	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
+	    <sound file="Mods/BTE/Items/Medical/FoodEat.ogg"/>
+	  </StatusEffect>
+    </ItemComponent>
+
+	<Throwable slots="RightHand,LeftHand,Any" throwforce="2.25" aimpos="35,-10">
+	  <StatusEffect type="OnImpact" target="This">
+	    <sound file="Mods/BTE/Items/Tools/FleshHit.ogg"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
     </Throwable>
   </Item>
   
