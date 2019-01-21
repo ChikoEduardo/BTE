@@ -39,9 +39,9 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="8" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="10" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
-		<StatusEffect type="OnUse" target="Character" Health="8" stun="-0.2" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="Character" Health="18" stun="-0.2" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
 		</StatusEffect>
     </MeleeWeapon>
@@ -51,7 +51,7 @@
     name="Vibroblade"
     category="Equipment"
     Tags="meditem,weapon"
-	description="A battery-powered knife similar to a chainsaw that deals extra damage and bleeding."
+	description="A power cell powered knife similar to a chainsaw that deals extra damage and bleeding."
     canuseonself="true">
 
     <Deconstruct time="5">
@@ -92,13 +92,13 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="8" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="14" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
-		<StatusEffect type="OnUse" target="Character" Health="8" stun="-0.2" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="Character" Health="14" stun="-0.4" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
 		</StatusEffect>
 
-	  <StatusEffect type="OnUse" target="Character" Health="-4" bleeding="1.5" stun="0.2" disabledeltatime="true">
+	  <StatusEffect type="OnUse" target="Character" Health="-4" bleeding="1.5" stun="0.1" disabledeltatime="true">
         <RequiredItem name="Battery Cell" type="Contained"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This">
@@ -106,12 +106,12 @@
         <RequiredItem name="Battery Cell" type="Contained"/>        
         <Explosion range="10" force="0.25" shockwave="false" flash="false" sparks="false" flames="false" smoke="false" severlimbsprobability="0.7" camerashake="5.0"/>
       </StatusEffect>
-	  <StatusEffect type="OnUse" target="Contained" Condition="-5" disabledeltatime="true">
+	  <StatusEffect type="OnUse" target="Contained" Condition="-10" disabledeltatime="true">
 	    <RequiredItem name="Battery Cell" type="Contained"/>        
       </StatusEffect>
 
-      <StatusEffect type="OnUse" target="Character" Health="-8" bleeding="1.5" stun="0.4" disabledeltatime="true">
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>
+      <StatusEffect type="OnUse" target="Character" Health="-8" bleeding="1.5" stun="0.2" disabledeltatime="true">
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This">
 		<Sound file="Mods/BTE/Items/Weapons/Vibroblade3.ogg"/>
@@ -119,14 +119,15 @@
         <Explosion range="10" force="0.5" shockwave="false" flash="false" sparks="false" flames="false" smoke="false" severlimbsprobability="0.7" camerashake="5.0"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Contained" Condition="-5" disabledeltatime="true">
-	    <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+	    <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>        
       </StatusEffect>
 
-	  <StatusEffect type="OnActive" target="Contained" Condition="-0.01"/>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Battery Cell" Condition="-0.03"/>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Power Cell,Fulgurium Power Cell" Condition="-0.01"/>
     </MeleeWeapon>
 
     <ItemContainer capacity="1" hideitems="true">
-      <Containable name="Battery Cell,Fulgurium Battery Cell">
+      <Containable name="loadable">
         <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true"/>
       </Containable>      
     </ItemContainer>
@@ -183,35 +184,36 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="8" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="26" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
-		<StatusEffect type="OnUse" target="Character" Health="8" stun="-0.2" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="Character" Health="26" stun="-0.4" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
 		</StatusEffect>
 
-	  <StatusEffect type="OnUse" target="Character" Health="-12" bleeding="-2.1" stun="0.2" disabledeltatime="true">
+	  <StatusEffect type="OnUse" target="Character" Health="-12" bleeding="-2.1" stun="0.1" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Weapons/Burn.ogg"/>
         <RequiredItem name="Battery Cell" type="Contained"/>        
         <Explosion range="10" force="0.25" shockwave="false" sparks="false" flames="false" camerashake="5.0"/>
       </StatusEffect>
-	  <StatusEffect type="OnUse" target="Contained" Condition="-5" disabledeltatime="true">
+	  <StatusEffect type="OnUse" target="Contained" Condition="-10" disabledeltatime="true">
 	    <RequiredItem name="Battery Cell" type="Contained"/>        
       </StatusEffect>
 
-      <StatusEffect type="OnUse" target="Character" Health="-18" bleeding="-2.1" stun="0.4" disabledeltatime="true">
+      <StatusEffect type="OnUse" target="Character" Health="-18" bleeding="-2.1" stun="0.2" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Weapons/Burn.ogg"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>        
         <Explosion range="10" force="0.5" shockwave="false" sparks="false" flames="false" camerashake="5.0"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Contained" Condition="-5" disabledeltatime="true">
-	    <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+	    <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>        
       </StatusEffect>
 
-	  <StatusEffect type="OnActive" target="Contained" Condition="-0.02"/>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Battery Cell" Condition="-0.05"/>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Power Cell,Fulgurium Power Cell" Condition="-0.02"/>
     </MeleeWeapon>
 
     <ItemContainer capacity="1" hideitems="true">
-      <Containable name="Battery Cell,Fulgurium Battery Cell">
+      <Containable name="loadable">
         <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true"/>
       </Containable>      
     </ItemContainer>
@@ -255,7 +257,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="4.5" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="4.5" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="4.5" stun="-0.15" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -282,7 +284,7 @@
     <Body width="64" height="5" density="9.8"/>
 
     <Projectile launchimpulse="16">
-      <Attack damage="3" stun="4" targetforce="16" damagetype="Blunt"/>
+      <Attack damage="3" stun="3" targetforce="16" damagetype="Blunt"/>
     </Projectile>
 	
 	<MeleeWeapon slots="RightHand+LeftHand,Any"
@@ -298,7 +300,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="2" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="2" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="2" stun="-1" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -340,7 +342,7 @@
 		
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="8" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="8" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="8" stun="-0.2" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -380,7 +382,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="10" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="10" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="10" stun="-0.2" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -421,9 +423,50 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="15" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="15" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="15" stun="-0.25" disabledeltatime="true">
+		  <Conditional SpeciesName="endworm"/>
+		</StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  
+  <Item
+    name="Lead Spear"
+    category="Equipment"
+	spritecolor="0.7,0.7,0.8,1.0"
+	tags="bigitem,weapon,spearammo"
+	description="A lead spear for Harpoon Guns or Spear Guns. They are heavier but still useful as ammo or melee weapons."
+    interactthroughwalls="true">
+
+    <Deconstruct time="10">
+      <Item name="Lead Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="SpearGun.png" sourcerect="0,50,65,7" depth="0.55"/>
+
+    <Body width="64" height="5" density="24"/>
+
+    <Projectile launchimpulse="18" sticktocharacters="false">
+      <Attack damage="34" bleedingdamage="2.2" stun="3.4" structuredamage="40" targetforce="60" damagetype="Blunt"/>
+    </Projectile>
+	
+	<MeleeWeapon slots="RightHand+LeftHand,Any"
+          aimpos="50,0" handle1="-12,3" handle2="-1,4" holdangle="-80" reload="2.8">
+      <Attack damage="15" bleedingdamage="1" stun="0.4" targetforce="30" damagetype="Blunt" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
+	  <StatusEffect type="OnUse" target="Character">
+		  <Conditional SpeciesName="watcher"/>
+		  <Explosion range="300" damage="10" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character" Health="25" stun="-4.0" disabledeltatime="true">
+		  <Conditional SpeciesName="watcher"/>
+		  <Sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit2.ogg" type="OnUse" range="3000"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character">
+		  <Conditional SpeciesName="endworm"/>
+		  <Explosion range="500" damage="10" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
+		</StatusEffect>
+		<StatusEffect type="OnUse" target="Character" Health="15" stun="-0.4" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
 		</StatusEffect>
     </MeleeWeapon>
@@ -448,7 +491,7 @@
     <Body width="64" height="5" density="20"/>
 
     <Projectile launchimpulse="20" sticktocharacters="true">
-      <Attack damage="40" bleedingdamage="3" stun="3" structuredamage="30" targetforce="50" damagetype="Slash"/>
+      <Attack damage="40" bleedingdamage="3" stun="2.5" structuredamage="30" targetforce="50" damagetype="Slash"/>
     </Projectile>
 	
 	<MeleeWeapon slots="RightHand+LeftHand,Any"
@@ -464,7 +507,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="20" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="20" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="20" stun="-5.0" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -488,7 +531,7 @@
     <Body width="64" height="5" density="28"/>
 
     <Projectile launchimpulse="18" sticktocharacters="true">
-      <Attack damage="35" bleedingdamage="2.5" stun="4" structuredamage="40" targetforce="60" damagetype="Blunt"/>
+      <Attack damage="36" bleedingdamage="2.6" stun="3.6" structuredamage="50" targetforce="70" damagetype="Blunt"/>
     </Projectile>
 	
 	<MeleeWeapon slots="RightHand+LeftHand,Any"
@@ -504,7 +547,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="15" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="15" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="15" stun="-0.4" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -536,7 +579,7 @@
       <Attack damage="7" bleedingdamage="0.8" stun="0.15" targetforce="20" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
 	  <StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="7" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="250" damage="7" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="7" stun="-0.1" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -762,6 +805,32 @@
   </Item>
   
   <Item
+    name="Lead Saw"
+    category="Equipment"
+	spritecolor="0.7,0.7,0.8,1.0"
+	tags="bigitem,weapon,sawammo"
+	description="A Lead Saw. This is a custom made blade."
+    interactthroughwalls="true">
+
+    <Deconstruct time="10">
+      <Item name="Lead Bar"/>
+    </Deconstruct>
+
+    <Sprite texture="SawGun.png" sourcerect="34,78,33,34" depth="0.55"/>
+
+    <Body radius="12" density="20" friction="0.95"/>
+
+    <Projectile launchimpulse="15" sticktocharacters="false">
+      <Attack damage="1" stun="1" structuredamage="10" damagetype="Blunt" severlimbsprobability="0.7"/>
+	  <StatusEffect type="OnImpact" target="This" damage="20">
+	    <Explosion range="15" damage="37" bleedingdamage="6" stun="4" force="18" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
+      </StatusEffect>
+    </Projectile>
+	
+	<Pickable slots="Any"/>
+  </Item>
+  
+  <Item
     name="Steel Saw"
     category="Equipment"
 	tags="bigitem,weapon,sawammo"
@@ -801,7 +870,7 @@
 
     <Sprite texture="SawGun.png" sourcerect="34,112,33,34" depth="0.55"/>
 
-    <Body radius="12" density="20" friction="0.95"/>
+    <Body radius="12" density="24" friction="0.95"/>
 
     <Projectile launchimpulse="17" sticktocharacters="true">
       <Attack damage="1" stun="1" structuredamage="20" damagetype="Blunt" severlimbsprobability="0.9"/>
@@ -1072,7 +1141,7 @@
 
 	<Pickable slots="Any"/>
     <Projectile hitscan="true" removeonhit="true">
-      <Attack damage="30" bleedingdamage="6" stun="1.0" structuredamage="50" targetforce="25" damagetype="Blunt"/>
+      <Attack damage="30" bleedingdamage="3" stun="1.0" structuredamage="50" targetforce="50" damagetype="Slash"/>
     </Projectile>
   </Item>
   
@@ -1081,7 +1150,7 @@
 	aliases="HL Round"
     category="Equipment"
 	Tags="smallitem,weapon"
-	description="Custom hand-loaded Revolver ammunition. More stopping power but less damage."
+	description="Custom hand-loaded Revolver ammunition. More stopping power but less penetration."
     interactthroughwalls="true">
 	
 	<Deconstruct time="5">      
@@ -1096,7 +1165,7 @@
 
 	<Pickable slots="Any"/>
     <Projectile hitscan="true" removeonhit="true">
-      <Attack damage="20" bleedingdamage="4" stun="3.5" structuredamage="40" targetforce="50" damagetype="Blunt"/>
+      <Attack damage="20" bleedingdamage="6" stun="2.0" structuredamage="40" targetforce="400" damagetype="Blunt"/>
     </Projectile>
   </Item>
   
@@ -1143,7 +1212,7 @@
 
 	<Pickable slots="Any"/>
     <Projectile launchimpulse="25" sticktocharacters="true">
-      <Attack damage="15" bleedingdamage="2" stun="0.5" structuredamage="10" targetforce="50" damagetype="Burn"/>
+      <Attack damage="15" bleedingdamage="2" stun="0.5" structuredamage="10" targetforce="25" damagetype="Burn"/>
     </Projectile>
   </Item>
   
@@ -1241,7 +1310,7 @@
 	price="100">
 	
 	<Deconstruct time="5">      
-      <Item name="Steel Sliver" outcondition="0.5"/>
+      <Item name="Lead Sliver" outcondition="0.5"/>
 	  <Item name="Propellant Powder" mincondition="0.99" outcondition="0.75"/>
     </Deconstruct>
 
@@ -1276,7 +1345,7 @@
 
 	<Pickable slots="Any"/>
     <Projectile hitscan="true" removeonhit="true">
-      <Attack damage="15" stun="15" structuredamage="4" targetforce="800" damagetype="Blunt"/>
+      <Attack damage="10" stun="10" structuredamage="4" targetforce="800" damagetype="Blunt"/>
 	  <StatusEffect type="OnImpact" target="Character" stun="-14" disabledeltatime="true">
 		<Conditional SpeciesName="robot"/>
 	  </StatusEffect>
@@ -1314,7 +1383,7 @@
 
 	<Pickable slots="Any"/>
     <Projectile hitscan="true" removeonhit="true">
-      <Attack damage="20" stun="20" structuredamage="6" targetforce="800" damagetype="Burn"/>
+      <Attack damage="20" stun="20" structuredamage="6" targetforce="600" damagetype="Burn"/>
 	  <StatusEffect type="OnImpact" target="Character">
 		<Explosion range="50" force="5" shockwave="false" flames="false" smoke="false" camerashake="0.5"/>
 		  <Sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit1.ogg" type="OnUse" range="3000"/>
@@ -1665,7 +1734,7 @@
 	  <Fixable name="structure"/>
 	  <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Blast Door,Windowed Door,Glass Door,Hatch,Blast Hatch,Duct Block,Alien Door,Alien Hatch" Stuck="-20" Condition="-1.5"/>
       <sound file="Mods/BTE/Items/Weapons/EnergySmall.ogg" type="OnUse" range="700"/>
-	  <RequiredItems name="Vial of Aluminium Powder,Vial of Copper Powder,Vial of Bronze Powder,Vial of Iron Powder,Vial of Uranium Powder,Vial of Fulgurium Powder" type="Contained" msg="The loaded powder is depleted"/>
+	  <RequiredItems name="Vial of Aluminium Powder,Vial of Copper Powder,Vial of Bronze Powder,Vial of Iron Powder,Vial of Lead Powder,Vial of Uranium Powder,Vial of Fulgurium Powder" type="Contained" msg="The loaded powder is depleted"/>
       <RequiredSkill name="Electrical Engineering" level="50"/>
 	  <StatusEffect type="OnUse" target="This">
 	    <Explosion range="65" force="0.9" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="1"/>
@@ -1678,7 +1747,7 @@
 	<Holdable slots="RightHand,LeftHand,Any" controlpose="true"
               aimpos="75,18" handle1="-14,-3" handle2="-13,-4">
 	  <StatusEffect type="OnUse" target="This" Condition="-50" disabledeltatime="true">
-	    <RequiredItems name="Vial of Aluminium Powder,Vial of Copper Powder,Vial of Bronze Powder,Vial of Iron Powder,Vial of Uranium Powder,Vial of Fulgurium Powder" type="Contained"/>
+	    <RequiredItems name="Vial of Aluminium Powder,Vial of Copper Powder,Vial of Bronze Powder,Vial of Iron Powder,Vial of Lead Powder,Vial of Uranium Powder,Vial of Fulgurium Powder" type="Contained"/>
 	  </StatusEffect>
 	  <StatusEffect type="OnBroken" target="This" Condition="100" delay="1.5"/>
 	  <StatusEffect type="OnImpact" target="This">
@@ -1692,7 +1761,7 @@
 	aliases="Shocker"
     category="Equipment"
     Tags="bigitem,weapon"
-    description="A makeshift melee weapon that uses battery power to deliver an electric shock to the target. The shock can stun but it might be lethal too."
+    description="A makeshift melee weapon that uses energy cells to deliver an electric shock to the target. The shock can stun but it might be lethal too."
 	impacttolerance="3">
 
     <Deconstruct time="10">
@@ -1710,7 +1779,7 @@
       <Attack damage="4" stun="0.2" damagetype="Blunt" sound="Content/Items/Weapons/smack.ogg"/>
 	  <StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="4" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="4" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="4" stun="-0.2" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -1766,44 +1835,44 @@
 	    <Conditional SpeciesName="carrier"/>
         <RequiredItem name="Battery Cell" type="Contained"/>        
       </StatusEffect>
-	  <StatusEffect type="OnUse" target="Contained" Condition="-50" disabledeltatime="true">
+	  <StatusEffect type="OnUse" target="Contained" Condition="-100" disabledeltatime="true">
 	    <RequiredItem name="Battery Cell" type="Contained" msg="Loaded Battery Cell required"/>        
       </StatusEffect>
 
 	  <StatusEffect type="OnUse" target="Character" health="-4" stun="8" disabledeltatime="true">
 	    <sound file="Content/Items/Weapons/stunbaton.ogg"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained" msg="Depleted battery cell"/>        
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained" msg="Depleted power cell"/>        
         <Explosion range="300" force="0.2" damage="4" stun="6" shockwave="false" flames="false" camerashake="5.0"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="watcher"/>
-		  <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>
+		  <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>
 		  <Explosion range="400" damage="45" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
 	  </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="scorpion"/>
-		  <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>
+		  <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>
 		  <Explosion range="250" damage="45" stun="5" force="5" flames="false" smoke="false" camerashake="0.5"/>
 		  <Sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit1.ogg" type="OnUse" range="3000"/>
 	  </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character" stun="-8" health="-90" disabledeltatime="true">
 	    <Conditional SpeciesName="robot"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>        
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character" stun="-8" health="-45" disabledeltatime="true">
 	    <Conditional SpeciesName="synth"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character" stun="-8" health="-45" disabledeltatime="true">
 	    <Conditional SpeciesName="fractalguardian"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character" stun="-8" health="-45" disabledeltatime="true">
 	    <Conditional SpeciesName="carrier"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>
       </StatusEffect>
-	  <StatusEffect type="OnUse" target="Contained" Condition="-100" disabledeltatime="true">
-	    <RequiredItem name="Fulgurium Battery Cell" type="Contained" msg="Loaded Battery Cell required"/>        
+	  <StatusEffect type="OnUse" target="Contained" Condition="-50" disabledeltatime="true">
+	    <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained" msg="Loaded Power Cell required"/>        
       </StatusEffect>
 	  
 	  <StatusEffect type="OnImpact" target="This">
@@ -1812,8 +1881,7 @@
     </MeleeWeapon>
 
     <ItemContainer capacity="1" hideitems="true">
-      <Containable name="Battery Cell"/>
-      <Containable name="Fulgurium Battery Cell"/>      
+      <Containable name="loadable"/>     
     </ItemContainer>
   </Item>
 
@@ -1844,7 +1912,7 @@
       <Attack damage="3" stun="0.2" damagetype="Blunt" sound="Content/Items/Weapons/smack.ogg"/>
 	  <StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="3" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="300" damage="3" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="3" stun="-0.2" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -1895,48 +1963,48 @@
 	    <Conditional SpeciesName="carrier"/>
         <RequiredItem name="Battery Cell" type="Contained"/>        
       </StatusEffect>
-	  <StatusEffect type="OnUse" target="Contained" Condition="-20" disabledeltatime="true">
+	  <StatusEffect type="OnUse" target="Contained" Condition="-50" disabledeltatime="true">
 	    <RequiredItem name="Battery Cell" type="Contained" msg="Loaded Battery Cell required"/>        
       </StatusEffect>
 
       <StatusEffect type="OnUse" target="Character" stun="10" disabledeltatime="true">
 	    <sound file="Content/Items/Weapons/stunbaton.ogg"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained" msg="Loaded Battery Cell required"/>        
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained" msg="Loaded Power Cell required"/>        
         <Explosion range="100" force="0.1" shockwave="false" flames="false" smoke="false" camerashake="5.0"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character" stun="-10" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
-		  <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>
+		  <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>
 	  </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="watcher"/>
-		  <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>
+		  <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>
 		  <Explosion range="400" damage="50" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
 	  </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="scorpion"/>
-		  <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>
+		  <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>
 		  <Explosion range="250" damage="50" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>
 		  <Sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit3.ogg" type="OnUse" range="3000"/>
 	  </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-80" disabledeltatime="true">
 	    <Conditional SpeciesName="robot"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>        
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-40" disabledeltatime="true">
 	    <Conditional SpeciesName="synth"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>        
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-40" disabledeltatime="true">
 	    <Conditional SpeciesName="fractalguardian"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>        
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-40" disabledeltatime="true">
 	    <Conditional SpeciesName="carrier"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>        
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Contained" Condition="-20" disabledeltatime="true">
-	    <RequiredItem name="Fulgurium Battery Cell" type="Contained" msg="Loaded Battery Cell required"/>        
+	    <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained" msg="Loaded Power Cell required"/>        
       </StatusEffect>
 	  
 	  <StatusEffect type="OnImpact" target="This">
@@ -1945,8 +2013,7 @@
     </MeleeWeapon>
 
     <ItemContainer capacity="1" hideitems="true">
-      <Containable name="Battery Cell"/>
-      <Containable name="Fulgurium Battery Cell"/>      
+      <Containable name="loadable"/>     
     </ItemContainer>
   </Item>
   
@@ -1976,13 +2043,13 @@
       </StatusEffect>
       <StatusEffect type="OnUse" target="Contained" Condition="-10" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Weapons/SonarGun.ogg"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained" msg="Loaded Battery Cell required"/>        
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained" msg="Loaded Power Cell required"/>        
         <Explosion range="400" damage="3" stun="4" force="1.8" shockwave="false" sparks="false" flames="false" smoke="false" camerashake="5.0"/>
       </StatusEffect>
     </RangedWeapon>
 
     <ItemContainer capacity="1" hideitems="true">
-      <Containable name="Battery Cell, Fulgurium Battery Cell"/>
+      <Containable name="loadable"/>
     </ItemContainer>
   </Item>
   
@@ -2012,13 +2079,13 @@
       </StatusEffect>
       <StatusEffect type="OnUse" target="Contained" Condition="-24" disabledeltatime="true">
 	    <sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit3.ogg"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained" msg="Loaded Battery Cell required"/>        
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained" msg="Loaded Power Cell required"/>        
         <Explosion range="60" damage="0" stun="0.2" empstrength="10" force="0.1" sparks="false" flames="false" smoke="false" camerashake="2.5"/>
       </StatusEffect>
     </RangedWeapon>
 
     <ItemContainer capacity="1" hideitems="true">
-      <Containable name="Battery Cell, Fulgurium Battery Cell"/>
+      <Containable name="loadable"/>
     </ItemContainer>
   </Item>
   
@@ -2108,7 +2175,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="14" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="14" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="14" stun="-5.0" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -2148,7 +2215,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="24" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="24" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="24" stun="-0.6" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -2175,7 +2242,7 @@
     <Body width="86" height="16" density="40"/>
 	
 	<ItemContainer capacity="1" itempos="27,9" iteminterval="0,-4" hideitems="false">
-      <Containable name="Railgun Polycarbonate Spear,Railgun Aluminium Spear,Railgun Copper Spear,Railgun Bronze Spear,Railgun Steel Spear,Railgun Uranium Spear,Railgun Fulgurium Spear"/>
+      <Containable name="Railgun Polycarbonate Spear,Railgun Aluminium Spear,Railgun Copper Spear,Railgun Bronze Spear,Railgun Lead Spear,Railgun Steel Spear,Railgun Uranium Spear,Railgun Fulgurium Spear"/>
     </ItemContainer>
 
     <Holdable slots="RightHand+LeftHand,Any" controlpose="true"
