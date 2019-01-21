@@ -12,7 +12,7 @@
         <sprite texture="Mods/BTE/Items/Fabricators/FabricatorLights.png" sourcerect="0,0,64,128" alpha="1.0"/>
       </LightComponent>
 
-	  <Fabricator canbeselected="true" powerconsumption="250">
+	  <Fabricator canbeselected="true" powerconsumption="140">
 	  <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
       <GuiFrame rect="0,0,600,400" alignment="Center" style="ItemUI"/>
       <sound file="Content/Items/Fabricators/fabricator.ogg" type="OnActive" range="1000" loop="true"/>
@@ -29,13 +29,16 @@
 	  <fabricableitem name="Railgun Bronze Spear" requireditems="Bronze Block,Bronze Bar" requiredtime="15">
         <RequiredSkill name="Construction" level="25"/>
       </fabricableitem>
-	  <fabricableitem name="Railgun Steel Spear" requireditems="Steel Block,Steel Bar" requiredtime="16">
+	  <fabricableitem name="Railgun Lead Spear" requireditems="Lead Block,Lead Bar" requiredtime="16">
         <RequiredSkill name="Construction" level="26"/>
       </fabricableitem>
-	  <fabricableitem name="Railgun Uranium Spear" requireditems="Uranium Block,Uranium Bar" requiredtime="18">
+	  <fabricableitem name="Railgun Steel Spear" requireditems="Steel Block,Steel Bar" requiredtime="18">
         <RequiredSkill name="Construction" level="28"/>
       </fabricableitem>
-	  <fabricableitem name="Railgun Fulgurium Spear" requireditems="Fulgurium Block,Fulgurium Bar" requiredtime="20">
+	  <fabricableitem name="Railgun Uranium Spear" requireditems="Uranium Block,Uranium Bar" requiredtime="20">
+        <RequiredSkill name="Construction" level="30"/>
+      </fabricableitem>
+	  <fabricableitem name="Railgun Fulgurium Spear" requireditems="Fulgurium Block,Fulgurium Bar" requiredtime="22">
         <RequiredSkill name="Construction" level="30"/>
       </fabricableitem>
 
@@ -43,7 +46,8 @@
 	  <fabricableitem name="Aluminium Spear" requireditems="Aluminium Bar" requiredtime="8"/>
 	  <fabricableitem name="Copper Spear" requireditems="Copper Bar" requiredtime="10"/>
 	  <fabricableitem name="Bronze Spear" requireditems="Bronze Bar" requiredtime="11"/>
-      <fabricableitem name="Steel Spear" requireditems="Steel Bar" requiredtime="12"/>
+	  <fabricableitem name="Lead Spear" requireditems="Lead Bar" requiredtime="12"/>
+      <fabricableitem name="Steel Spear" requireditems="Steel Bar" requiredtime="13"/>
 	  <fabricableitem name="Uranium Spear" requireditems="Uranium Bar" requiredtime="14"/>
 	  <fabricableitem name="Fulgurium Spear" requireditems="Fulgurium Bar" requiredtime="16"/>
 	  
@@ -51,7 +55,8 @@
 	  <fabricableitem name="Aluminium Saw" requireditems="Aluminium Bar" requiredtime="10"/>
 	  <fabricableitem name="Copper Saw" requireditems="Copper Bar" requiredtime="12"/>
 	  <fabricableitem name="Bronze Saw" requireditems="Bronze Bar" requiredtime="13"/>
-	  <fabricableitem name="Steel Saw" requireditems="Steel Bar" requiredtime="14"/>
+	  <fabricableitem name="Lead Saw" requireditems="Lead Bar" requiredtime="14"/>
+	  <fabricableitem name="Steel Saw" requireditems="Steel Bar" requiredtime="15"/>
 	  <fabricableitem name="Uranium Saw" requireditems="Uranium Bar" requiredtime="16"/>
 	  <fabricableitem name="Fulgurium Saw" requireditems="Fulgurium Bar" requiredtime="18"/>
 	  
@@ -123,6 +128,9 @@
 	  <fabricableitem name="Bronze Bar" requireditems="Bronze Sliver,Bronze Sliver" requiredtime="13"/>
 	  <fabricableitem name="Bronze Block" requireditems="Aluminium Bar,Copper Bar" requiredtime="15"/>
 	  <fabricableitem name="Bronze Block" requireditems="Bronze Bar,Bronze Bar" requiredtime="15"/>
+	  <fabricableitem name="Lead Sliver" requireditems="Lead Powder,Lead Powder" requiredtime="11"/>
+	  <fabricableitem name="Lead Bar" requireditems="Lead Sliver,Lead Sliver" requiredtime="12"/>
+	  <fabricableitem name="Lead Block" requireditems="Lead Bar,Lead Bar" requiredtime="14"/>
 	  <fabricableitem name="Steel Sliver" requireditems="Iron Powder,Iron Powder" requiredtime="12"/>
 	  <fabricableitem name="Steel Bar" requireditems="Steel Sliver,Steel Sliver" requiredtime="14"/>
 	  <fabricableitem name="Steel Block" requireditems="Steel Bar,Steel Bar" requiredtime="16"/>
@@ -155,7 +163,7 @@
     
       <Sprite texture="Fabricators.png" depth="0.79" sourcerect="65,0,64,69" canflipx="false"/>
 
-	  <Fabricator canbeselected="true" powerconsumption="250">
+	  <Fabricator canbeselected="true" powerconsumption="150">
 	  <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
       <GuiFrame rect="0,0,600,400" alignment="Center" style="ItemUI"/>
       <sound file="Content/Items/Fabricators/fabricator.ogg" type="OnActive" range="1000" loop="true"/>
@@ -163,28 +171,31 @@
 	  <fabricableitem name="Railgun Shell" requireditems="Steel Block,Polycarbonate Bar" requiredtime="20">
         <RequiredSkill name="Construction" level="35"/>
       </fabricableitem>
-	  <fabricableitem name="Railgun Fusion Shell" requireditems="Railgun Shell,Uranium Bar" requiredtime="40">
-        <Item name="Blueprints - Fusion Weapons" mincondition="0.0" usecondition="true"/>
+	  <fabricableitem name="Railgun Fusion Shell" requireditems="Railgun Shell" requiredtime="40">
+        <Item name="Uranium Fuel Rod" mincondition="0.0" usecondition="false"/>
+		<Item name="Blueprints - Fusion Weapons" mincondition="0.0" usecondition="true"/>
 		<RequiredSkill name="Construction" level="60"/>
       </fabricableitem>
-	  <fabricableitem name="Railgun EMP Shell" requireditems="Railgun Shell,Fulgurium Bar,FPGA Circuit" requiredtime="40">
-	    <Item name="Blueprints - EMP Weapons" mincondition="0.0" usecondition="true"/>
+	  <fabricableitem name="Railgun EMP Shell" requireditems="Railgun Shell,FPGA Circuit" requiredtime="40">
+	    <Item name="Fulgurium Fuel Rod" mincondition="0.0" usecondition="false"/>
+		<Item name="Blueprints - EMP Weapons" mincondition="0.0" usecondition="true"/>
 		<RequiredSkill name="Electrical Engineering" level="60"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Depth Charge Shell" requireditems="Steel Block,Steel Bar" requiredtime="20">
+	  <fabricableitem name="Depth Charge Shell" requireditems="Steel Block,Lead Bar" requiredtime="20">
         <RequiredSkill name="Construction" level="30"/>
       </fabricableitem>
-	  <fabricableitem name="Depth Charge Fusion Shell" requireditems="Depth Charge Shell,Uranium Block" requiredtime="40">
-        <Item name="Blueprints - Fusion Weapons" mincondition="0.0" usecondition="true"/>
+	  <fabricableitem name="Depth Charge Fusion Shell" requireditems="Depth Charge Shell" requiredtime="40">
+        <Item name="Uranium Fuel Rod" count="2" mincondition="0.0" usecondition="false"/>
+		<Item name="Blueprints - Fusion Weapons" mincondition="0.0" usecondition="true"/>
 		<RequiredSkill name="Construction" level="55"/>
       </fabricableitem>
 	  <fabricableitem name="Depth Charge EMP Shell" requireditems="Depth Charge Shell,Fulgurium Block,FPGA Circuit" requiredtime="40">
-	    <Item name="Blueprints - EMP Weapons" mincondition="0.0" usecondition="true"/>
+		<Item name="Blueprints - EMP Weapons" mincondition="0.0" usecondition="true"/>
 		<RequiredSkill name="Electrical Engineering" level="55"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Depth Mine Shell" requireditems="Steel Block,Steel Bar" requiredtime="20">
+	  <fabricableitem name="Depth Mine Shell" requireditems="Steel Block,Polycarbonate Bar" requiredtime="20">
         <RequiredSkill name="Construction" level="30"/>
       </fabricableitem>
 	  <fabricableitem name="Buoy Mine Shell" requireditems="Aluminium Block,Polycarbonate Bar" requiredtime="20">
@@ -265,12 +276,16 @@
 	  
 	  <fabricableitem name="Battery Cell" requireditems="Aluminium Sliver,Copper Sliver" requiredtime="10">
         <Item name="Sulphuric Acid" mincondition="0.5" usecondition="true"/>
+		<RequiredSkill name="Electrical Engineering" level="30"/>
+      </fabricableitem>
+	  <fabricableitem name="Power Cell" requireditems="Lead Sliver" requiredtime="20">
+        <Item name="Battery Cell" mincondition="0.0" usecondition="false"/>
+		<Item name="Sulphuric Acid" mincondition="0.5" usecondition="true"/>
 		<RequiredSkill name="Electrical Engineering" level="40"/>
       </fabricableitem>
-	  
-	  <fabricableitem name="Fulgurium Battery Cell" requireditems="Fulgurium Sliver" requiredtime="15">
+	  <fabricableitem name="Fulgurium Battery Cell" requireditems="Fulgurium Sliver" requiredtime="30">
         <Item name="Blueprints - Fulgurium Energy" mincondition="0.0" usecondition="true"/>
-		<Item name="Battery Cell" mincondition="0.0" usecondition="false"/>
+		<Item name="Power Cell" mincondition="0.0" usecondition="false"/>
 		<Item name="Sulphuric Acid" mincondition="0.5" usecondition="true"/>
 		<RequiredSkill name="Electrical Engineering" level="50"/>
       </fabricableitem>
@@ -307,7 +322,7 @@
 		<RequiredSkill name="Electrical Engineering" level="50"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="EMP Charge" requireditems="Aluminium Sliver,Fulgurium Powder,FPGA Circuit" requiredtime="40">
+	  <fabricableitem name="EMP Charge" requireditems="Lead Sliver,Fulgurium Powder,FPGA Circuit" requiredtime="40">
 	    <Item name="Blueprints - EMP Weapons" mincondition="0.0" usecondition="true"/>
 		<RequiredSkill name="Electrical Engineering" level="55"/>
       </fabricableitem>
@@ -331,7 +346,7 @@
 		<RequiredSkill name="Construction" level="25"/>
       </fabricableitem>
 
-      <fabricableitem name="Uranium Fuel Rod" requireditems="Uranium Bar,Aluminium Bar" requiredtime="30">
+      <fabricableitem name="Uranium Fuel Rod" requireditems="Uranium Sliver,Aluminium Sliver,Lead Bar" requiredtime="30">
         <RequiredSkill name="Construction" level="40"/>
       </fabricableitem>
 	  <fabricableitem name="Thermite Fuel Rod" requireditems="Thermite Shard" requiredtime="40">
@@ -386,7 +401,7 @@
         <sprite texture="Mods/BTE/Items/Fabricators/FabricatorLights.png" sourcerect="65,129,64,128" alpha="1.0"/>
       </LightComponent>
     
-      <Fabricator canbeselected="true" powerconsumption="100">
+      <Fabricator canbeselected="true" powerconsumption="110">
 	  <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
       <GuiFrame rect="0,0,600,400" alignment="Center" style="ItemUI"/>
       <sound file="Content/Items/Fabricators/fabricator.ogg" type="OnActive" range="1000" loop="true"/>
@@ -596,6 +611,9 @@
 	  </fabricableitem>
 	  <fabricableitem name="Bronze Powder" requiredtime="10">
 	    <Item name="Bronze Sliver" mincondition="0.5" usecondition="true"/>
+	  </fabricableitem>
+	  <fabricableitem name="Lead Powder" requiredtime="10">
+	    <Item name="Lead Sliver" mincondition="0.5" usecondition="true"/>
 	  </fabricableitem>
 	  <fabricableitem name="Iron Powder" requiredtime="10">
 	    <Item name="Steel Sliver" mincondition="0.5" usecondition="true"/>

@@ -117,7 +117,7 @@
 
     <Deconstruct time="10">
       <Item name="Steel Block"/>
-	  <Item name="Steel Bar" mincondition="0.99"/>
+	  <Item name="Lead Bar" mincondition="0.99"/>
     </Deconstruct>
 
     <Sprite texture="Content/Items/Weapons/railgunetc.png" sourcerect="114,210,68,47" depth="0.55"/>
@@ -151,8 +151,10 @@
     price="275">
 
     <Deconstruct time="10">
-      <Item name="Steel Block"/>
+      <Item name="Steel Bar"/>
 	  <Item name="Steel Bar" mincondition="0.99"/>
+	  <Item name="Polycarbonate Sliver"/>
+	  <Item name="Polycarbonate Sliver" mincondition="0.99"/>
     </Deconstruct>
 
     <Sprite texture="railgunetc.png" sourcerect="66,129,52,53" depth="0.55"/>
@@ -186,10 +188,10 @@
     price="275">
 
     <Deconstruct time="10">
-      <Item name="Polycarbonate Sliver"/>
+      <Item name="Aluminium Bar"/>
+	  <Item name="Aluminium Bar" mincondition="0.99"/>
+	  <Item name="Polycarbonate Sliver"/>
 	  <Item name="Polycarbonate Sliver" mincondition="0.99"/>
-      <Item name="Steel Bar"/>
-	  <Item name="Steel Bar" mincondition="0.99"/>
     </Deconstruct>
 
     <Sprite texture="railgunetc.png" sourcerect="118,129,52,53" depth="0.55"/>
@@ -226,8 +228,9 @@
     <Deconstruct time="20">
       <Item name="Steel Bar"/>
       <Item name="Steel Bar" mincondition="0.99"/>
-      <Item name="Uranium Bar" mincondition="0.99"/>
-	  <Item name="Uranium Bar" mincondition="0.99"/>
+      <Item name="Uranium Powder"/>
+	  <Item name="Uranium Powder" mincondition="0.99"/>
+	  <Item name="Lead Bar"/>
     </Deconstruct>
 
     <Sprite texture="Content/Items/Weapons/railgunetc.png" sourcerect="187,210,68,47" depth="0.55"/>
@@ -263,6 +266,7 @@
       <Item name="Steel Bar" mincondition="0.99"/>
       <Item name="Fulgurium Block"/>
 	  <Item name="FPGA Circuit" mincondition="0.99"/>
+	  <Item name="Lead Bar"/>
     </Deconstruct>
 
     <Sprite texture="railgunetc.png" sourcerect="255,81,68,47" depth="0.55"/>

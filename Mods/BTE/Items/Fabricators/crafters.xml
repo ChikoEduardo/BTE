@@ -12,7 +12,7 @@
         <sprite texture="Mods/BTE/Items/Fabricators/FabricatorLights.png" sourcerect="65,70,65,49" alpha="1.0"/>
       </LightComponent>
 
-	  <Fabricator canbeselected="true" powerconsumption="250">
+	  <Fabricator canbeselected="true" powerconsumption="120">
 	  <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
       <GuiFrame rect="0,0,600,400" alignment="Center" style="ItemUI"/>
       <sound file="Content/Items/Fabricators/fabricator.ogg" type="OnActive" range="1000" loop="true"/>
@@ -102,7 +102,7 @@
         <sprite texture="Mods/BTE/Items/Fabricators/FabricatorLights.png" sourcerect="131,50,65,69" alpha="1.0"/>
       </LightComponent>
 
-	  <Fabricator canbeselected="true" powerconsumption="250">
+	  <Fabricator canbeselected="true" powerconsumption="200">
 	  <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
       <GuiFrame rect="0,0,600,400" alignment="Center" style="ItemUI"/>
       <sound file="Content/Items/Fabricators/fabricator.ogg" type="OnActive" range="1000" loop="true"/>
@@ -537,7 +537,7 @@
       <sprite texture="Mods/BTE/Items/Fabricators/FabricatorLights.png" sourcerect="130,129,73,95" alpha="1.0"/>
     </LightComponent>
 
-	  <Fabricator canbeselected="true" powerconsumption="200">
+	  <Fabricator canbeselected="true" powerconsumption="60">
       <GuiFrame rect="0,0,600,400" alignment="Center" style="ItemUI"/>
       <sound file="Content/Items/Fabricators/fabricator.ogg" type="OnActive" range="1000" loop="true"/>
 
@@ -635,7 +635,7 @@
       </fabricableitem>
 	  
 	  <fabricableitem name="Shotgun Slug Round" requiredtime="30">
-        <Item name="Steel Sliver" mincondition="0.5" usecondition="true"/>
+        <Item name="Lead Sliver" mincondition="0.5" usecondition="true"/>
 		<Item name="Propellant Powder" mincondition="0.75" usecondition="true"/>
 		<RequiredSkill name="Weapons" level="50"/>
       </fabricableitem>
@@ -762,8 +762,8 @@
 		<RequiredSkill name="Construction" level="40"/>
       </fabricableitem>
 	  
-	  <fabricableitem name="Fulgurium Battery Cell" requireditems="Sulphuric Acid" requiredtime="20">
-		<Item name="Fulgurium Battery Cell" mincondition="0.0" usecondition="false"/>
+	  <fabricableitem name="Fulgurium Power Cell" requireditems="Sulphuric Acid" requiredtime="20">
+		<Item name="Fulgurium Power Cell" mincondition="0.0" usecondition="false"/>
       </fabricableitem>
 	  <fabricableitem name="Fulgurium Fuel Rod" requireditems="Sulphuric Acid, Sulphuric Acid" requiredtime="20">
 		<Item name="Fulgurium Fuel Rod" mincondition="0.0" usecondition="false"/>
@@ -802,7 +802,7 @@
       <sprite texture="Mods/BTE/Items/Fabricators/FabricatorLights.png" sourcerect="0,129,64,128" alpha="1.0"/>
     </LightComponent>
 
-    <Deconstructor canbeselected="true" powerconsumption="500">
+    <Deconstructor canbeselected="true" powerconsumption="130">
       <RequiredItem name="ID Card" type="Picked" msg="UNAUTHORIZED ACCESS"/>
 	  <sound file="Content/Items/Fabricators/deconstructor.ogg" type="OnActive" range="1000" loop="true"/>
       <GuiFrame rect="0,0,300,200" alignment="Center" style="ItemUI"/>

@@ -171,6 +171,7 @@
 	  <Containable name="Railgun Aluminium Spear"/>
 	  <Containable name="Railgun Copper Spear"/>
 	  <Containable name="Railgun Bronze Spear"/>
+	  <Containable name="Railgun Lead Spear"/>
 	  <Containable name="Railgun Steel Spear"/>
 	  <Containable name="Railgun Uranium Spear"/>
 	  <Containable name="Railgun Fulgurium Spear"/>
@@ -230,10 +231,9 @@
 	
 	<Deconstruct time="10">
       <Item name="Steel Block"/>
-      <Item name="Steel Block"/>
     </Deconstruct>
 
-    <Sprite texture="dynamicContainers.png" sourcerect="0,185,65,60" depth="0.54"/>
+    <Sprite texture="dynamicContainers.png" sourcerect="249,185,65,60" depth="0.54"/>
 
     <Body width="60" height="55" density="50"/>
 
@@ -252,7 +252,6 @@
 	price="250">
 	
 	<Deconstruct time="10">
-      <Item name="Steel Block"/>
       <Item name="Steel Block"/>
     </Deconstruct>
 
@@ -575,21 +574,24 @@
   </Item>
   
   <Item
-    name="Radiation Shipping Box"
-	Tags="cntnr">
+    name="Radiation Shipping Crate"
+	aliases="Radiation Shipping Box"
+	Tags="cntnr"
+	waterproof="true"
+	fireproof="true">
 	
 	<Deconstruct time="10">
-      <Item name="Polycarbonate Bar"/>
+      <Item name="Lead Block"/>
     </Deconstruct>
 
-    <Sprite texture="dynamicContainers.png" sourcerect="0,124,60,60" depth="0.54"/>
+    <Sprite texture="dynamicContainers.png" sourcerect="0,185,65,60" depth="0.54"/>
 
-    <Body width="56" height="56" density="15" friction="0.95"/>
+    <Body width="60" height="55" density="60"/>
 
     <Holdable slots="RightHand+LeftHand" holdpos="0,-70" aimpos="15,-50" handle1="-25,14" handle2="25,14"/>
 
     <ItemContainer capacity="20" canbeselected="true" hideitems="true">
-      <Containable name="smallitem,meditem,bigitem"/>
+      <Containable name="smallitem,meditem"/>
     </ItemContainer>
   </Item>
   

@@ -372,8 +372,8 @@
 	price="500">
 	
 	<Deconstruct time="5"> 
-	  <Item name="Aluminium Sliver" maxcondition="0.0" outcondition="0.25"/>
-	  <Item name="Aluminium Sliver" mincondition="0.99"/>
+	  <Item name="Lead Sliver" maxcondition="0.0" outcondition="0.25"/>
+	  <Item name="Lead Sliver" mincondition="0.99"/>
 	  <Item name="Fulgurium Powder"/>
 	  <Item name="FPGA Circuit" mincondition="0.99"/>
     </Deconstruct>

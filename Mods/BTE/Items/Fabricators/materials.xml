@@ -277,6 +277,75 @@
   </Item>
   
   <Item
+    name="Lead Sliver"
+    category="Material"
+    Tags="smallitem"
+	description="Lead is a heavy but soft and malleable metal. Its screening properties make it a major component in radiation shielding."
+	spritecolor="0.5,0.5,0.6,1.0"
+    canbepicked="true"
+	cargocontainername="Workshop Shipping Box"
+    price="32">
+
+    <Deconstruct time="5">
+	  <Item name="Lead Sliver" mincondition="0.99"/>
+    </Deconstruct>
+
+    <Sprite texture="materials.png" sourcerect="0,38,12,12" depth="0.55"/>
+
+    <Body width="12" height="12" density="55"/>
+
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" canBeCombined="true">
+	  <StatusEffect type="OnBroken" target="This">
+        <Remove/>
+      </StatusEffect>
+	</Holdable>
+  </Item>
+  
+  <Item
+    name="Lead Bar"
+    category="Material"
+    Tags="smallitem"
+	description="Lead is a heavy but soft and malleable metal. Its screening properties make it a major component in radiation shielding."
+	spritecolor="0.5,0.5,0.6,1.0"
+    canbepicked="true"
+	cargocontainername="Workshop Shipping Box"
+    price="64">
+
+    <Deconstruct time="5">
+      <Item name="Lead Sliver"/>
+      <Item name="Lead Sliver"/>     
+    </Deconstruct>
+
+    <Sprite texture="materials.png" sourcerect="0,0,24,12" depth="0.55"/>
+
+    <Body width="24" height="12" density="55"/>
+
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+  </Item>
+  
+  <Item
+    name="Lead Block"
+    category="Material"
+    Tags="smallitem"
+	description="Lead is a heavy but soft and malleable metal. Its screening properties make it a major component in radiation shielding."
+	spritecolor="0.5,0.5,0.6,1.0"
+    canbepicked="true"
+	cargocontainername="Workshop Shipping Box"
+    price="128">
+
+    <Deconstruct time="5">
+      <Item name="Lead Bar"/>
+      <Item name="Lead Bar"/>     
+    </Deconstruct>
+
+    <Sprite texture="materials.png" sourcerect="0,13,24,24" depth="0.55"/>
+
+    <Body width="24" height="24" density="55"/>
+
+    <Holdable slots="Any,RightHand,LeftHand" handle1="0,0"/>
+  </Item>
+  
+  <Item
     name="Steel Sliver"
     category="Material"
     Tags="smallitem"

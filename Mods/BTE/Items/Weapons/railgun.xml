@@ -19,7 +19,7 @@
       showprojectileindicator="false"
       hudtint="0.4,0.6,0.7,0.05">
 
-      <LightComponent LightColor="1.0,1.0,1.0,1.0" range="2500" powerconsumption="25" IsOn="true">
+      <LightComponent LightColor="1.0,1.0,1.0,1.0" range="2500" powerconsumption="50" IsOn="true">
         <LightTexture texture="Content/Lights/lightcone.png" origin="0.0,0.5" size="2.0,1.0"/>
       </LightComponent>
     </Turret>
@@ -251,6 +251,7 @@
 	  <Containable name="Railgun Aluminium Spear"/>
 	  <Containable name="Railgun Copper Spear"/>
 	  <Containable name="Railgun Bronze Spear"/>
+	  <Containable name="Railgun Lead Spear"/>
 	  <Containable name="Railgun Steel Spear"/>
 	  <Containable name="Railgun Uranium Spear"/>
 	  <Containable name="Railgun Fulgurium Spear"/>
@@ -281,6 +282,7 @@
 	  <Containable name="Railgun Aluminium Spear"/>
 	  <Containable name="Railgun Copper Spear"/>
 	  <Containable name="Railgun Bronze Spear"/>
+	  <Containable name="Railgun Lead Spear"/>
 	  <Containable name="Railgun Steel Spear"/>
 	  <Containable name="Railgun Uranium Spear"/>
 	  <Containable name="Railgun Fulgurium Spear"/>
@@ -311,6 +313,7 @@
 	  <Containable name="Railgun Aluminium Spear"/>
 	  <Containable name="Railgun Copper Spear"/>
 	  <Containable name="Railgun Bronze Spear"/>
+	  <Containable name="Railgun Lead Spear"/>
 	  <Containable name="Railgun Steel Spear"/>
 	  <Containable name="Railgun Uranium Spear"/>
 	  <Containable name="Railgun Fulgurium Spear"/>
@@ -341,6 +344,7 @@
 	  <Containable name="Railgun Aluminium Spear"/>
 	  <Containable name="Railgun Copper Spear"/>
 	  <Containable name="Railgun Bronze Spear"/>
+	  <Containable name="Railgun Lead Spear"/>
 	  <Containable name="Railgun Steel Spear"/>
 	  <Containable name="Railgun Uranium Spear"/>
 	  <Containable name="Railgun Fulgurium Spear"/>
@@ -475,6 +479,36 @@
         <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="2"/>
       </StatusEffect>
     </Projectile>  
+  </Item>
+  
+  <Item
+    name="Railgun Lead Spear"
+    category="Equipment"
+	spritecolor="0.7,0.7,0.8,1.0"
+	description="A giant lead spear for the Railgun. It can deliver a good amount of damage to a single target."
+    >
+
+    <Deconstruct time="18">
+      <Item name="Lead Bar"/>
+      <Item name="Lead Bar" mincondition="0.5"/>
+	  <Item name="Lead Bar" mincondition="0.99"/>
+    </Deconstruct>
+
+    <Sprite texture="RailgunAmmo.png" sourcerect="0,54,87,17" depth="0.55"/>
+
+    <Body width="85" height="15" density="54"/>
+
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
+    
+    <Projectile launchimpulse="60" sticktocharacters="false">
+      <Attack damage="180" bleedingdamage="20" stun="3" damagetype="Blunt" severlimbsprobability="0.1"/>
+	  <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="2" scalemax="3"/>
+      </StatusEffect>
+	  <StatusEffect type="OnImpact" target="This">
+	    <Explosion range="200" force="5" structuredamage="240" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="5"/>
+      </StatusEffect>
+    </Projectile>
   </Item>
   
   <Item
