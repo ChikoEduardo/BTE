@@ -65,7 +65,7 @@
       </StatusEffect>
     </LightComponent>
 	
-	<Steering minvoltage="0.5" canbeselected="true" powerconsumption="10">
+	<Steering minvoltage="0.5" canbeselected="true" powerconsumption="20">
 	  <StatusEffect type="InWater" target="This" condition="-1.0"/>
       <GuiFrame rect="-30,20,0.45,0.5" alignment="CenterRight" style="ItemUI"/>
     </Steering>
@@ -118,7 +118,7 @@
       </StatusEffect>
     </LightComponent>
 
-    <Radar canbeselected="true" powerconsumption="100" range="20000" displaybordersize="0.2">
+    <Radar canbeselected="true" powerconsumption="160" range="20000" displaybordersize="0.2">
       <sound file="Mods/BTE/Items/Terminals/SonarSweep1.ogg" type="OnUse" range="5000"/>
 	  <sound file="Mods/BTE/Items/Terminals/SonarSweep2.ogg" type="OnUse" range="5000"/>
 	  <sound file="Mods/BTE/Items/Terminals/SonarSweep3.ogg" type="OnUse" range="5000"/>
@@ -160,7 +160,7 @@
       </StatusEffect>
     </LightComponent>
 
-    <MiniMap MinVoltage="0.5" PowerConsumption="100" canbeselected="true">
+    <MiniMap MinVoltage="0.5" PowerConsumption="90" canbeselected="true">
       <StatusEffect type="InWater" target="This" condition="-1.0"/>
 	  <GuiFrame rect="0,0,0.5,0.5" alignment="Center" style="ItemUI"/>
     </MiniMap>

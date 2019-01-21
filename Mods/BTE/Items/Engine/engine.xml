@@ -58,7 +58,7 @@
       </StatusEffect>
     </LightComponent>
 
-    <Engine minvoltage="0.5" powerconsumption="500.0" maxforce="300" canbeselected="true">
+    <Engine minvoltage="0.5" powerconsumption="500" maxforce="300" canbeselected="true">
       <StatusEffect type="OnFire" target="This" condition="-2.5"/>
 	  <GuiFrame rect="0,0,350,160" alignment="Center" style="ItemUI"/>
       <sound file="Content/Items/Engine/engine.ogg" type="OnActive" range="3000" volume="CurrentVolume" loop="true"/>
@@ -93,7 +93,7 @@
       </StatusEffect>
     </LightComponent>
 
-    <Engine minvoltage="0.5" powerconsumption="250.0" maxforce="150" canbeselected="false">
+    <Engine minvoltage="0.5" powerconsumption="250" maxforce="150" canbeselected="false">
       <StatusEffect type="OnFire" target="This" condition="-4.5"/>
 	  <GuiFrame rect="0,0,350,160" alignment="Center" style="ItemUI"/>
       <sound file="Content/Items/Engine/engine.ogg" type="OnActive" range="1500" volume="CurrentVolume" loop="true"/>

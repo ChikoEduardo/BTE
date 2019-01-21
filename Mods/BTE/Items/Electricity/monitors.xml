@@ -39,7 +39,7 @@
       <limbposition limb="RightHand" position="20,-32"/>
     </Controller>
   
-    <Steering minvoltage="0.0" canbeselected="true" powerconsumption="0">
+    <Steering minvoltage="0.0" canbeselected="true" powerconsumption="20">
       <GuiFrame rect="0,0,0.5,0.5" alignment="Center" style="ItemUI" color="0.0,0.0,0.0,0.0"/>
     </Steering>
 
