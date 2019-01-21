@@ -1599,9 +1599,9 @@
 	  <Item name="Ethanol"/>
     </Deconstruct>
 
-    <Sprite texture="LootStuff.png" depth="0.55" sourcerect="92,25,28,75"/>
+    <Sprite texture="LootStuff.png" depth="0.55" sourcerect="97,25,28,75"/>
 
-    <Body height="70" radius="6" density="10.2" friction="0.95"/>
+    <Body height="65" radius="6" density="10.2" friction="0.95"/>
 
 	<Throwable slots="RightHand,LeftHand,Any" throwforce="2.25" aimpos="35,-10">
 	  <StatusEffect type="OnImpact" target="This">
