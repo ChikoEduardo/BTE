@@ -44,6 +44,7 @@
   
   <Item
     name="Small Battery"
+	aliases="Small Power Module,Small Power Storage"
     category="Electrical"
 	description="Generally used to power unmanned vessels.">
 
@@ -64,7 +65,8 @@
   </Item>
 
   <Item
-    name="Battery"
+    name="Medium Battery"
+	aliases="Battery,Power Module,Power Storage"
     category="Electrical"
 	description="Generally used for storing backup power in case of a reactor failure.">
 
@@ -72,8 +74,8 @@
 
     <PowerContainer capacity="2000" maxrechargespeed="500" maxoutput="1000" canbeselected="true">
       <GuiFrame rect="0,-100,350,160" alignment="Center" style="ItemUI"/>
-      <StatusEffect type="OnActive" target="Contained" targetnames="Battery Cell" Condition="2.0"/>
-	  <StatusEffect type="OnActive" target="Contained" targetnames="Fulgurium Battery Cell" Condition="1.0"/>
+      <StatusEffect type="OnActive" target="Contained" targetnames="Battery Cell" Condition="1.6"/>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Power Cell,Fulgurium Power Cell" Condition="0.8"/>
     </PowerContainer>
 
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
@@ -93,7 +95,7 @@
   <Item
     name="Supercapacitor"
     category="Electrical"
-    description="Can deliver charge much faster than batteries.">
+    description="Can deliver charge much faster than power modules.">
 
     <Sprite texture="Content/Items/Electricity/supercapacitor.png" depth="0.8" sourcerect="0,0,77,88"/>
 
@@ -114,14 +116,14 @@
   <Item
     name="Charging Dock"
     category="Electrical"
-    description="A wall-mounted battery cell charging dock.">
+    description="A wall-mounted energy cell charging dock.">
 
     <Sprite texture="Content/Items/Electricity/battery.png" sourcerect="0,80,58,16" depth="0.8"/>
 
     <Powered powerconsumption="200" currpowerconsumption="200" isactive="true">
       <GuiFrame rect="0,-100,350,160" alignment="Center" style="ItemUI"/>
       <StatusEffect type="OnActive" target="Contained" targetnames="Battery Cell" Condition="2.0"/>
-	  <StatusEffect type="OnActive" target="Contained" targetnames="Fulgurium Battery Cell" Condition="1.0"/>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Power Cell,Fulgurium Power Cell" Condition="1.0"/>
     </Powered>
 
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
@@ -132,8 +134,45 @@
       <input name="power_in"/>
     </ConnectionPanel>
 
-    <ItemContainer capacity="4" canbeselected="true" hideitems="false" itempos="9,9" iteminterval="14,0" itemrotation="90">
+    <ItemContainer capacity="4" canbeselected="true" hideitems="false" itempos="9,8" iteminterval="13,0" itemrotation="90">
       <Containable name="loadable"/>
+    </ItemContainer>
+  </Item>
+  
+  <Item
+    name="Power Cell Generator"
+	aliases="Power Cell Bank"
+    type="Reactor"
+    category="Machine">
+    
+    <trigger/>
+
+    <Sprite texture="Mods/BTE/Items/Electricity/Battery.png" depth="0.8" sourcerect="79,0,127,64"/>
+
+    <Reactor canbeselected="false" vulnerabletoemp="true" FireTemp="10000" MeltDownTemp="10000">
+	  <GuiFrame rect="0,0,760,460" alignment="Center" color="0.0,0.0,0.0,0.6"/>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Battery Cell" Condition="-2"/>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Power Cell,Fulgurium Power Cell" Condition="-0.2"/>
+	  <StatusEffect type="OnActive" target="This" CoolingRate="-100"/>
+	  <StatusEffect type="Always" target="This" ShutDownTemp="10000" setvalue="true" AutoTemp="true"/>
+    </Reactor>
+	
+	<PowerTransfer CanBeOverloaded="false" vulnerabletoemp="false" canbeselected="true">
+      <GuiFrame rect="0,-100,350,160" alignment="Center" style="ItemUI"/>
+    </PowerTransfer>
+
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="Rewire [Screwdriver]">
+      <requireditem name="Pliers,Screwdriver" type="Equipped"/>
+      <output name="power_out"/>
+    </ConnectionPanel>
+
+    <ItemContainer capacity="10" canbeselected="true">
+      <Containable name="Battery Cell">
+        <StatusEffect type="OnContaining" target="This" Temperature="0.1"/>
+      </Containable>
+	  <Containable name="Power Cell,Fulgurium Power Cell">
+        <StatusEffect type="OnContaining" target="This" Temperature="1.0"/>
+      </Containable>
     </ItemContainer>
   </Item>
 </Items>

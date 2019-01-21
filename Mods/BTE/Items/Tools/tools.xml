@@ -30,7 +30,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="2" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="2" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="2" stun="-0.1" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -66,7 +66,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="1" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="1" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="1" stun="-0.15" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -113,7 +113,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="3" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="3" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="3" stun="-0.05" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -150,7 +150,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="16" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="16" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="16" stun="-5.0" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -187,7 +187,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="6" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="6" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="6" stun="-5.0" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -226,7 +226,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="12" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="12" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="12" stun="-5.0" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -264,7 +264,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="15" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="15" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="15" stun="-0.7" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -302,7 +302,7 @@
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="endworm"/>
-		  <Explosion range="300" damage="9" force="5" flames="false" smoke="false" sparks="false" flash="false" camerashake="0.5"/>
+		  <Explosion range="500" damage="9" force="5" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="0.5"/>
 		</StatusEffect>
 		<StatusEffect type="OnUse" target="Character" Health="9" stun="-0.7" disabledeltatime="true">
 		  <Conditional SpeciesName="endworm"/>
@@ -482,24 +482,23 @@
       <ParticleEmitterHitItem particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
       <ParticleEmitterHitCharacter particle="plasmaspark" particlespersecond="100" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800"/>
 	  <sound file="Mods/BTE/Items/Tools/SawLoop.ogg" type="OnUse" range="500" loop="true"/>
-	  <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained" msg="Battery cell depleted"/>
+	  <RequiredItems name="Battery Cell,Power Cell,Fulgurium Power Cell" type="Contained" msg="Energy cell depleted"/>
 	  <StatusEffect type="OnUse" target="This" Condition="-0.8">
 	    <Explosion range="30" force="0.1" severlimbsprobability="0.01" shockwave="false" flames="false" smoke="false" flash="false" sparks="false" camerashake="1.5"/>
 	  </StatusEffect>
-      <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-2"/>
-	  <StatusEffect type="OnUse" target="Contained" targetnames="Fulgurium Battery Cell" Condition="-1"/>
+      <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-6"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Power Cell,Fulgurium Power Cell" Condition="-2"/>
       <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Blast Door,Windowed Door,Glass Door,Hatch,Blast Hatch,Duct Block,Alien Door,Alien Hatch" Stuck="-20" Condition="-2.5"/>
       <Fixable name="structure"/>
       <RequiredSkill name="Construction" level="40"/>
-      <StatusEffect type="OnFailure" target="Contained" targetnames="Battery Cell,Fulgurium Battery Cell" Condition="-2.0"/>
+      <StatusEffect type="OnFailure" target="Contained" targetnames="Battery Cell,Power Cell,Fulgurium Power Cell" Condition="-2"/>
 	  <StatusEffect type="OnImpact" target="This">
 	    <sound file="Mods/BTE/Items/Weapons/GunHit.ogg"/>
 	  </StatusEffect>
     </RepairTool>
 
     <ItemContainer capacity="1" hideitems="true">
-      <Containable name="Battery Cell"/>
-      <Containable name="Fulgurium Battery Cell"/>
+      <Containable name="loadable"/>
     </ItemContainer>
 	
 	<Holdable slots="RightHand+LeftHand,Any" controlpose="true"
@@ -616,33 +615,65 @@
       <sprite texture="Content/Items/Electricity/lamp.png" sourcerect="0,0,0,0" alpha="1.0"/>
     </LightComponent>
     
-    <Sprite texture="Content/Items/Weapons/weapons.png" sourcerect="0,0,20,9" depth="0.8"/>
+    <Sprite texture="Mods/BTE/Items/Tools/Tools.png" sourcerect="144,56,16,6" depth="0.8"/>
 
-    <Body width="20" height="9" density="30"/>
+    <Body width="14" height="4" density="18"/>
 
-    <Pickable slots="Any,RightHand,LeftHand"/>
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,-5" throwforce="4" aimpos="35,-10"/>
   </Item>
   
   <Item
-    name="Fulgurium Battery Cell"
+    name="Power Cell"
+    category="Equipment,Electrical"
+	description="A power source more suited for military handheld devices, exosuits and emergency generators."
+    tags="smallitem,loadable"
+	cargocontainername="Electronics Shipping Box"
+    price="150">
+
+    <Deconstruct time="15">
+      <Item name="Aluminium Sliver"/>
+	  <Item name="Lead Sliver"/>
+	  <Item name="Copper Sliver"/>
+    </Deconstruct>
+	
+	<fixrequirement name="Electrical repairs">
+      <skill name="Electrical Engineering" level="55"/>
+      <item name="Screwdriver"/>
+      <item name="Pliers"/>
+    </fixrequirement>
+	
+	<LightComponent lightcolor="0.0,0.0,0.0,0.0" range="0" powerconsumption="0">
+      <sprite texture="Content/Items/Electricity/lamp.png" sourcerect="0,0,0,0" alpha="1.0"/>
+    </LightComponent>
+    
+    <Sprite texture="Content/Items/Weapons/weapons.png" sourcerect="0,0,20,9" depth="0.8"/>
+
+    <Body width="20" height="9" density="20"/>
+
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,-5" throwforce="3" aimpos="35,-10"/>
+  </Item>
+  
+  <Item
+    name="Fulgurium Power Cell"
+	aliases="Fulgurium Battery Cell"
     category="Equipment,Electrical"
     tags="smallitem,loadable"
-    description="A battery cell constructed of the rare and poorly understood compound Fulgurium."
+    description="A power cell constructed of the rare and poorly understood compound Fulgurium."
 	>
 
-    <Deconstruct time="10">
+    <Deconstruct time="20">
       <Item name="Aluminium Sliver"/>
-      <Item name="Copper Sliver"/>
+	  <Item name="Lead Sliver"/>
       <Item name="Fulgurium Sliver"/>  
     </Deconstruct>
 
     <Sprite texture="Content/Items/Weapons/weapons.png" sourcerect="0,0,20,9" depth="0.8"/>
 
-    <Body width="20" height="9" density="20"/>
+    <Body width="20" height="9" density="16"/>
 
-    <Pickable slots="Any,RightHand,LeftHand">
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,-5" throwforce="3" aimpos="35,-10">
 	  <StatusEffect type="Always" target="This" Condition="0.06"/>
-	</Pickable>
+	</Throwable>
   </Item>
 
   <Item
@@ -668,7 +699,8 @@
     </ItemComponent>
 
     <Radar range="6000" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="0.2">
-      <StatusEffect type="OnUse" target="Contained" Condition="-1.1" disabledeltatime="true"/>
+      <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-1.1" disabledeltatime="true"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Power Cell,Fulgurium Power Cell" Condition="-0.6" disabledeltatime="true"/>
 	  <sound file="Mods/BTE/Items/Tools/SonarPing1.ogg" type="OnUse" range="1000"/>
 	  <sound file="Mods/BTE/Items/Tools/SonarPing2.ogg" type="OnUse" range="1000"/>
 	  <sound file="Mods/BTE/Items/Tools/SonarPing3.ogg" type="OnUse" range="1000"/>
@@ -681,7 +713,7 @@
     </Radar>
 
     <ItemContainer capacity="1" hideitems="true">
-      <Containable name="Battery Cell,Fulgurium Battery Cell">
+      <Containable name="loadable">
         <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true"/>
       </Containable>
     </ItemContainer>
@@ -695,7 +727,7 @@
 	aliases="Torch"
     category="Equipment"
     Tags="smallitem,tool"
-	description="A portable hand-held electric light source."
+	description="A portable handheld electric light source."
 	canuseonself="true"
 	indestructible="true"
 	cargocontainername="Electronics Shipping Box"
@@ -709,7 +741,7 @@
 
     <Sprite texture="Tools.png" sourcerect="120,10,30,10" depth="0.55"/>
 
-    <Body width="27" height="8" density="10.1"/>
+    <Body width="27" height="8" density="10.2"/>
 
     <LightComponent LightColor="1.0,1.0,1.0,1.0" Flicker="0.1" range="800" powerconsumption="10" IsOn="false">
       <LightTexture texture="Content/Lights/lightcone.png" origin="0.05,0.5" size="2.0,1.0"/>
@@ -727,7 +759,7 @@
     </ItemComponent>
     
     <ItemContainer capacity="1" hideitems="true">
-      <Containable name="Battery Cell,Fulgurium Battery Cell">
+      <Containable name="loadable">
         <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" checkconditionalalways="true">
           <Conditional IsOn="true"/>
         </StatusEffect>
@@ -759,7 +791,7 @@
 
     <Sprite texture="Content/Items/Tools/tools.png" sourcerect="0,38,21,7" depth="0.55"/>
 
-    <Body width="21" height="7" density="12"/>
+    <Body width="21" height="7" density="11"/>
 	
 	<LightComponent LightColor="1.0,0.0,0.0,1.0" Flicker="0.5" range="900" IsOn="false">
       <StatusEffect type="OnActive" target="This" Condition="-1">

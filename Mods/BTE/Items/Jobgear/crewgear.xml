@@ -17,16 +17,16 @@
     <Body width="9" height="30" density="10.3"/>
 
     <WifiComponent range="60000" LinkToChat="true">
-      <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained"/>
+      <RequiredItems name="loadable" type="Contained"/>
     </WifiComponent>
 
       <ItemContainer capacity="1" hideitems="true">
-        <Containable name="Battery Cell"/>
-        <Containable name="Fulgurium Battery Cell"/>
+        <Containable name="loadable"/>
       </ItemContainer>
 	
 	<Holdable slots="Any,RightHand,LeftHand" handle1="5,-16" handle2="5,-16">
-	  <StatusEffect type="OnActive" target="Contained" Condition="-0.05"/>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Battery Cell" Condition="-0.05"/>
+	  <StatusEffect type="OnActive" target="Contained" targetnames="Power Cell,Fulgurium Power Cell" Condition="-0.025"/>
     </Holdable>
   </Item>
   
@@ -48,16 +48,16 @@
     <Body radius="8" density="10.1"/>
 
     <WifiComponent range="40000" LinkToChat="true">
-      <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained"/>      
+      <RequiredItems name="loadable" type="Contained"/>      
     </WifiComponent>
 
       <ItemContainer capacity="1" hideitems="true">
-        <Containable name="Battery Cell"/>
-        <Containable name="Fulgurium Battery Cell"/>
+        <Containable name="loadable"/>
       </ItemContainer>
     
     <Wearable limbtype="Head" slots="Any,Face">
-      <StatusEffect type="OnWearing" target="Contained" Condition="-0.1"/>
+	  <StatusEffect type="OnWearing" target="Contained" targetnames="Battery Cell" Condition="-0.1"/>
+	  <StatusEffect type="OnWearing" target="Contained" targetnames="Power Cell,Fulgurium Power Cell" Condition="-0.05"/>
       <sprite texture="securitygear.png" limb="Head" origin="0.5,0.5" sourcerect="100,112,16,16" depth="0.04" inheritlimbdepth="false"/>
     </Wearable>
   </Item>

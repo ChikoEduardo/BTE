@@ -123,7 +123,7 @@
 	  
 	  <damagemodifier damagetype="Burn" armorsector="0.0,360.0" damagemultiplier="0.6"/>
       <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true"/>
-      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true"/>
     </Wearable>
 
     <ItemContainer capacity="1" hideitems="true">
@@ -197,7 +197,7 @@
 	  
 	  <damagemodifier damagetype="Burn" armorsector="0.0,360.0" damagemultiplier="0.6"/>
       <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.9" bleedingmultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true"/>
-      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true"/>
     </Wearable>
 
     <ItemContainer capacity="1" hideitems="true">
@@ -247,9 +247,9 @@
       <sprite texture="Wetsuit.png" limb="RightFoot" sourcerect="59,59,16,25" origin="0.5,0.5" depth="0.013" inheritlimbdepth="false" hidelimb="true"/>
       <sprite texture="Wetsuit.png" limb="LeftFoot" sourcerect="59,59,16,25" origin="0.5,0.5" depth="0.013" inheritlimbdepth="false" hidelimb="true"/>
 	  
-	  <damagemodifier damagetype="Burn" armorsector="0.0,360.0" damagemultiplier="0.8"/>
-      <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.7" bleedingmultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true"/>
-      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.6" bleedingmultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360.0" damagemultiplier="0.85"/>
+      <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.75" bleedingmultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.65" bleedingmultiplier="0.65" damagesound="LimbArmor" deflectprojectiles="true"/>
 	  
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.03" disabledeltatime="true"/>
 	  <StatusEffect tags="wetsuit" type="OnWearing" target="Character" duration="1"/>
@@ -352,7 +352,10 @@
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.1" disabledeltatime="true">
         <RequiredItem type="Contained" name="Oxygenite Tank"/>
       </StatusEffect>
-	  <StatusEffect type="OnWearing" target="Contained" targetnames="Battery Cell,Fulgurium Battery Cell" Condition="-0.2">
+	  <StatusEffect type="OnWearing" target="Contained" targetnames="Battery Cell" Condition="-0.2">
+        <RequiredItem type="Contained" name="loadable"/>
+      </StatusEffect>
+	  <StatusEffect type="OnWearing" target="Contained" targetnames="Power Cell,Fulgurium Power Cell" Condition="-0.1">
         <RequiredItem type="Contained" name="loadable"/>
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100"/>
@@ -368,7 +371,7 @@
 	  <Containable name="Hydrogen Tank"/>
 	  <Containable name="Sulphurite Tank"/>
 	  <Containable name="Thermite Tank"/>
-	  <Containable name="Battery Cell, Fulgurium Battery Cell">
+	  <Containable name="loadable">
         <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true"/>
       </Containable>
     </ItemContainer>
@@ -470,7 +473,10 @@
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.1" disabledeltatime="true">
         <RequiredItem type="Contained" name="Oxygenite Tank"/>
       </StatusEffect>
-	  <StatusEffect type="OnWearing" target="Contained" targetnames="Battery Cell,Fulgurium Battery Cell" Condition="-0.3">
+	  <StatusEffect type="OnWearing" target="Contained" targetnames="Battery Cell" Condition="-0.75">
+        <RequiredItem type="Contained" name="loadable"/>
+      </StatusEffect>
+	  <StatusEffect type="OnWearing" target="Contained" targetnames="Power Cell,Fulgurium Power Cell" Condition="-0.25">
         <RequiredItem type="Contained" name="loadable"/>
       </StatusEffect>
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.4" disabledeltatime="true">
@@ -489,7 +495,7 @@
 	  <Containable name="Hydrogen Tank"/>
 	  <Containable name="Sulphurite Tank"/>
 	  <Containable name="Thermite Tank"/>
-	  <Containable name="Battery Cell,Fulgurium Battery Cell">
+	  <Containable name="loadable">
         <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true"/>
       </Containable>
     </ItemContainer>
@@ -539,8 +545,8 @@
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.7" LowPassMultiplier="0.2" disabledeltatime="true"/>
 	  
 	  <damagemodifier damagetype="Burn" armorsector="0.0,360.0" damagemultiplier="0.6"/>
-      <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.8" bleedingmultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
-      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.5" bleedingmultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.65" bleedingmultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.35" bleedingmultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true"/>
     </Wearable>
 
     <ItemContainer capacity="2" hideitems="true">
@@ -549,7 +555,7 @@
 	  <Containable name="Hydrogen Tank"/>
 	  <Containable name="Sulphurite Tank"/>
 	  <Containable name="Thermite Tank"/>
-	  <Containable name="Battery Cell, Fulgurium Battery Cell"/>
+	  <Containable name="loadable"/>
     </ItemContainer>
   </Item>
 
@@ -557,7 +563,7 @@
     name="Underwater Scooter"
     category="Equipment"
     Tags="meditem"
-	description="A battery-powered underwater propulsion device."
+	description="An energy-powered underwater propulsion device."
 	cargocontainername="Electronics Shipping Box"
     price="750">
 
@@ -576,9 +582,9 @@
     <Holdable slots="RightHand+LeftHand,Any" aimpos="100,0" handle1="4,10" handle2="6,10"/>
 
     <Propulsion force="80" usablein="water" particles="bubbles">
-      <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained" msg="Battery cell depleted"/>
-      <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-1.0"/>
-	  <StatusEffect type="OnUse" target="Contained" targetnames="Fulgurium Battery Cell" Condition="-0.5"/>
+      <RequiredItems name="Battery Cell,Power Cell,Fulgurium Power Cell" type="Contained" msg="Energy cell depleted"/>
+      <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-1.6"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Power Cell,Fulgurium Power Cell" Condition="-0.8"/>
       <sound file="Content/Items/Diving/scooter.ogg" type="OnUse" range="500" loop="true"/>
       <LightComponent LightColor="1.0,1.0,1.0,1.0" Flicker="0.2" range="800">
         <LightTexture texture="Content/Lights/lightcone.png" origin="0.05, 0.5" size="2.0,1.0"/>
@@ -586,8 +592,7 @@
     </Propulsion>
 
     <ItemContainer capacity="1" hideitems="true">
-      <Containable name="Battery Cell"/>
-      <Containable name="Fulgurium Battery Cell"/>
+      <Containable name="loadable"/>
     </ItemContainer>
   </Item>
   
@@ -612,9 +617,9 @@
     <Holdable slots="RightHand+LeftHand,Any" aimpos="100,0" handle1="4,10" handle2="6,10"/>
 
     <Propulsion force="80" usablein="water" particles="bubbles">
-      <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained" msg="Battery cell depleted"/>
-      <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-0.5"/>
-	  <StatusEffect type="OnUse" target="Contained" targetnames="Fulgurium Battery Cell" Condition="-0.25"/>
+      <RequiredItems name="Battery Cell,Power Cell,Fulgurium Power Cell" type="Contained" msg="Energy cell depleted"/>
+      <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-1.0"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Power Cell,Fulgurium Power Cell" Condition="-0.25"/>
       <sound file="Content/Items/Diving/scooter.ogg" type="OnUse" range="500" loop="true"/>
       <LightComponent LightColor="1.0,1.0,1.0,1.0" Flicker="0.2" range="800">
         <LightTexture texture="Content/Lights/lightcone.png" origin="0.05, 0.5" size="2.0,1.0"/>
@@ -622,8 +627,7 @@
     </Propulsion>
 
     <ItemContainer capacity="1" hideitems="true">
-      <Containable name="Battery Cell"/>
-      <Containable name="Fulgurium Battery Cell"/>
+      <Containable name="loadable"/>
     </ItemContainer>
   </Item>
   
@@ -649,8 +653,8 @@
 
     <Propulsion force="160" usablein="water" particles="bubbles">
       <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained" msg="Battery cell depleted"/>
-      <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-0.5"/>
-	  <StatusEffect type="OnUse" target="Contained" targetnames="Fulgurium Battery Cell" Condition="-0.25"/>
+      <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-1.0"/>
+	  <StatusEffect type="OnUse" target="Contained" targetnames="Power Cell,Fulgurium Power Cell" Condition="-0.25"/>
       <sound file="Content/Items/Diving/scooter.ogg" type="OnUse" range="500" loop="true"/>
       <LightComponent LightColor="1.0,1.0,1.0,1.0" Flicker="0.2" range="800">
         <LightTexture texture="Content/Lights/lightcone.png" origin="0.05, 0.5" size="2.0,1.0"/>
@@ -658,8 +662,7 @@
     </Propulsion>
 
     <ItemContainer capacity="1" hideitems="true">
-      <Containable name="Battery Cell"/>
-      <Containable name="Fulgurium Battery Cell"/>
+      <Containable name="loadable"/>
     </ItemContainer>
   </Item>
 </Items>
