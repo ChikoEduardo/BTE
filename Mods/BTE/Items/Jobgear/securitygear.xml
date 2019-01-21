@@ -19,8 +19,8 @@
       <sprite texture="securitygear.png" limb="Head" depth="0.038" inheritlimbdepth="false" sourcerect="39,31,29,22" origin="0.51,0.9"/>
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.09" disabledeltatime="true"/> <!-- oxygen="-0.02" /> -->
 	  
-	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.3" bleedingmultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
-      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.2" bleedingmultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true"/>
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.3" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.2" bleedingmultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
     </Wearable>
   </Item>
   
@@ -43,9 +43,9 @@
       <sprite texture="securitygear.png" limb="Head" depth="0.038" inheritlimbdepth="false" sourcerect="53,76,29,38" origin="0.51,0.5"/>
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.11" ObstructVision="true" HideFace="true" disabledeltatime="true"/> <!-- oxygen="-0.03" /> -->
 	  
-	  <damagemodifier damagetype="Burn" armorsector="0.0,360.0" damagemultiplier="0.9"/>
-	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.2" bleedingmultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
-      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.1" bleedingmultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true"/>
+	  <damagemodifier damagetype="Burn" armorsector="0.0,360.0" damagemultiplier="0.8"/>
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.25" bleedingmultiplier="0.45" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.15" bleedingmultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true"/>
     </Wearable>
   </Item>
   
@@ -75,8 +75,8 @@
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.13" disabledeltatime="true"/> <!-- oxygen="-0.06" /> -->
 	  
 	  <damagemodifier damagetype="Burn" armorsector="0.0,360.0" damagemultiplier="0.9"/>
-      <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.55" bleedingmultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
-      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.25" bleedingmultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.6" bleedingmultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.3" bleedingmultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true"/>
     </Wearable>
   </Item>
   
@@ -109,8 +109,8 @@
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.15" disabledeltatime="true"/> <!-- oxygen="-0.08" /> -->
 	  
 	  <damagemodifier damagetype="Burn" armorsector="0.0,360.0" damagemultiplier="0.8"/>
-      <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.5" bleedingmultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
-      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.2" bleedingmultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.55" bleedingmultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.25" bleedingmultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true"/>
     </Wearable>
   </Item>
   
@@ -145,8 +145,8 @@
 	  
 	  <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.12" disabledeltatime="true"/>
 	  
-	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.5" bleedingmultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true"/>
-      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.4" bleedingmultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true"/>
+	  <damagemodifier damagetype="Blunt" armorsector="0.0,360.0" damagemultiplier="0.6" bleedingmultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true"/>
+      <damagemodifier damagetype="Slash" armorsector="0.0,360.0" damagemultiplier="0.5" bleedingmultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true"/>
     </Wearable>
 
     <ItemContainer capacity="2">
@@ -195,7 +195,7 @@
       <sprite texture="securitygear.png" limb="LeftHand" sourcerect="32,62,16,16" origin="0.5,-0.5"/>
       
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="-0.14" lockhands="true" disabledeltatime="true"/>
-	  <StatusEffect type="OnWearing" target="This" Condition="-0.35"/>
+	  <StatusEffect type="OnWearing" target="This" Condition="-0.4"/>
 	  <StatusEffect type="OnBroken" target="This" Condition="100" delay="15" setvalue="true"/>
     </Wearable>
   </Item>
@@ -224,7 +224,7 @@
 	  <sprite texture="securitygear.png" limb="RightFoot" sourcerect="38,85,5,14" origin="0.1,1.0"/>
       <sprite texture="securitygear.png" limb="LeftFoot" sourcerect="38,85,5,14" origin="0.1,1.0"/>
       
-      <StatusEffect type="OnWearing" target="Character" Stun="1" lockhands="true" ObstructVision="true" HideFace="true" setvalue="true"/>
+      <StatusEffect type="OnWearing" target="Character" Stun="1" lockhands="true" ObstructVision="true" HideFace="true"/>
     </Wearable>
   </Item>
   

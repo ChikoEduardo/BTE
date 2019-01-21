@@ -223,7 +223,7 @@
 	  <sprite texture="bodyBag.png" limb="RightFoot" sourcerect="97,23,16,25" origin="0.5,0.5" hidelimb="true"/>
       <sprite texture="bodyBag.png" limb="LeftFoot" sourcerect="97,23,16,25" origin="0.5,0.5" hidelimb="true"/>
 	  
-	  <StatusEffect type="OnWearing" target="Character" Stun="1" OxygenAvailable="-70" lockhands="true" ObstructVision="true" HideFace="true" setvalue="true"/>
+	  <StatusEffect type="OnWearing" target="Character" Stun="1" OxygenAvailable="-70" lockhands="true" ObstructVision="true" HideFace="true"/>
     </Wearable>
   </Item>
 </Items>

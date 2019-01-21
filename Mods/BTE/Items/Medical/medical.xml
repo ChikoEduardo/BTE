@@ -71,39 +71,39 @@
 	  
 	  <StatusEffect type="OnUse" target="Character" stun="10" disabledeltatime="true">
 		<sound file="Content/Items/Weapons/stunbaton.ogg"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>        
         <Explosion range="100" force="8" shockwave="false" sparks="false" flames="false" smoke="false" camerashake="5.0"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="watcher"/>
-		  <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>
+		  <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>
 		  <Explosion range="400" damage="75" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>
 		  <Sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit3.ogg" type="OnUse" range="3000"/>
 	  </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="scorpion"/>
-		  <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>
+		  <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>
 		  <Explosion range="250" damage="50" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>
 		  <Sound file="Mods/BTE/Sounds/Characters/Teleglitch/TeleHit2.ogg" type="OnUse" range="3000"/>
 	  </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-15" disabledeltatime="true">
 	    <Conditional SpeciesName="synth"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>        
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-15" disabledeltatime="true">
 	    <Conditional SpeciesName="fractalguardian"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>        
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-15" disabledeltatime="true">
 	    <Conditional SpeciesName="walker"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>        
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character" stun="-10" health="-15" disabledeltatime="true">
 	    <Conditional SpeciesName="carrier"/>
-        <RequiredItem name="Fulgurium Battery Cell" type="Contained"/>        
+        <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>        
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Contained" Condition="-20" disabledeltatime="true">
-	    <RequiredItem name="Fulgurium Battery Cell" type="Contained" msg="Loaded Battery Cell required"/>        
+	    <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained" msg="Loaded Battery Cell required"/>        
       </StatusEffect>
 	  
 	  <StatusEffect type="OnImpact" target="This">
@@ -285,9 +285,6 @@
 	  <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true">
 	    <sound file="Content/Items/Medical/bandage.ogg"/>
 	  </StatusEffect>
-	  <StatusEffect type="OnBroken" target="This">
-        <Remove/>
-      </StatusEffect>
     </MeleeWeapon>
   </Item>
   
