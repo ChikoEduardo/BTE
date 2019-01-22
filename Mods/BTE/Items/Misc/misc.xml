@@ -1478,7 +1478,7 @@
 
 	<Holdable slots="RightHand+LeftHand" holdpos="30,-15" handle1="0,10" handle2="0,-10" aimpos="35,-10"/>
 	
-	<Throwable slots="RightHand+LeftHand,Any" holdpos="30,-15" handle1="0,10" handle2="0,-10" throwforce="1" aimpos="35,-10">
+	<Throwable slots="RightHand+LeftHand" holdpos="30,-15" handle1="0,10" handle2="0,-10" throwforce="1" aimpos="35,-10">
 	  <StatusEffect type="OnImpact" target="This">
 	    <sound file="Mods/BTE/Items/Tools/RockHit.ogg"/>
 		<Explosion range="70" damage="2" stun="3.4" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false"/>
