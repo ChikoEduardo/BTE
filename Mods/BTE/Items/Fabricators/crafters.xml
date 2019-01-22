@@ -762,6 +762,17 @@
 		<RequiredSkill name="Construction" level="40"/>
       </fabricableitem>
 	  
+	  <fabricableitem name="Sulphurite Coolant Can" requiredtime="30">
+		<Item name="Sulphurite Coolant Can" mincondition="0.0" usecondition="false"/>
+		<Item name="Sulphuric Acid" count="3" usecondition="true"/>
+		<RequiredSkill name="Construction" level="40"/>
+      </fabricableitem>
+	  <fabricableitem name="Oxygenite Coolant Can" requiredtime="60">
+		<Item name="Oxygenite Coolant Can" mincondition="0.0" usecondition="false"/>
+		<Item name="Liquid Oxygenite" count="3" usecondition="true"/>
+		<RequiredSkill name="Construction" level="50"/>
+      </fabricableitem>
+	  
 	  <fabricableitem name="Fulgurium Power Cell" requireditems="Sulphuric Acid" requiredtime="20">
 		<Item name="Fulgurium Power Cell" mincondition="0.0" usecondition="false"/>
       </fabricableitem>
