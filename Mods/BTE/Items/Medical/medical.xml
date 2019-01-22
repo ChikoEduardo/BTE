@@ -218,7 +218,9 @@
       </StatusEffect>
     </Projectile>
 	
-	<Pickable slots="Any"/>
+	<Holdable slots="RightHand,LeftHand,Any" controlpose="true" aimpos="30,18" handle1="-1,0" handle2="-1,0"/>
+			  
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="4" aimpos="35,-10"/>
 	
 	<ItemContainer capacity="1" hideitems="true">
       <Containable name="chem"/>

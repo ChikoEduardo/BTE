@@ -26,14 +26,14 @@
       <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
 	  <StatusEffect type="OnFire" target="This" Condition="-25"/>
       <StatusEffect type="OnBroken" target="This">
 	    <sound file="Content/Items/Weapons/stungrenade.ogg"/>
         <Explosion range="450" damage="5" stun="50" force="0.1" flames="false" smoke="false" camerashake="2.5"/>
 		<Remove/>
       </StatusEffect>
-    </Pickable>
+    </Holdable>
   </Item>
   
   <Item
@@ -60,14 +60,14 @@
       <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
 	  <StatusEffect type="OnFire" target="This" Condition="-25"/>
       <StatusEffect type="OnBroken" target="This">
 	    <sound file="Content/Items/Weapons/stungrenade.ogg"/>
         <Explosion range="500" structuredamage="25" damage="50" stun="25" force="20" flames="false" smoke="false" sparks="false" camerashake="3.0"/>
 		<Remove/>
       </StatusEffect>
-    </Pickable>
+    </Holdable>
   </Item>
   
   <Item
@@ -93,14 +93,14 @@
       <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
 	  <StatusEffect type="OnFire" target="This" Condition="-25"/>
       <StatusEffect type="OnBroken" target="This">
 	    <sound file="Mods/BTE/Items/Weapons/BlastExplosionSmall.ogg"/>
         <Explosion range="450" structuredamage="70" damage="240" bleedingdamage="1.0" stun="8" force="14" camerashake="4.0" decal="explosion" decalsize="0.5"/>
 		<Remove/>
       </StatusEffect>
-    </Pickable>
+    </Holdable>
   </Item>
   
   <Item
@@ -127,14 +127,14 @@
       <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
 	  <StatusEffect type="OnFire" target="This" Condition="-25.0"/>
       <StatusEffect type="OnBroken" target="This">
 	    <sound file="Mods/BTE/Items/Weapons/BlastExplosionSmall.ogg"/>
         <Explosion range="525" structuredamage="200" damage="200" bleedingdamage="2.0" stun="6" force="16" severlimbsprobability="0.1" camerashake="5.0" decal="explosion" decalsize="0.5"/>
 		<Remove/>
       </StatusEffect>
-    </Pickable>
+    </Holdable>
   </Item>
   
   <Item
@@ -163,7 +163,7 @@
       <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
 	  <StatusEffect type="OnFire" target="This" Condition="-18"/>
 	  <StatusEffect type="OnImpact" target="This" Condition="-25" setvalue="true"/>
       <StatusEffect type="OnBroken" target="This">
@@ -171,7 +171,7 @@
         <Explosion range="550" structuredamage="400" damage="275" bleedingdamage="4.0" stun="8" force="18" severlimbsprobability="0.6" camerashake="6.0" decal="explosion" decalsize="0.5"/>
 		<Remove/>
       </StatusEffect>
-    </Pickable>
+    </Holdable>
   </Item>
   
   <Item
@@ -201,7 +201,7 @@
       <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
 	  <StatusEffect type="OnFire" target="This" Condition="-25"/>
 	  <StatusEffect type="OnImpact" target="This" Condition="-50" setvalue="true"/>
       <StatusEffect type="OnBroken" target="This">
@@ -209,7 +209,7 @@
         <Explosion range="650" structuredamage="600" damage="250" bleedingdamage="3.0" stun="10" force="20" severlimbsprobability="0.4" camerashake="7.0" decal="explosion" decalsize="0.6"/>
 		<Remove/>
       </StatusEffect>
-    </Pickable>
+    </Holdable>
   </Item>
   
   <Item
@@ -238,7 +238,7 @@
       <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
 	  <StatusEffect type="OnFire" target="This" Condition="-20"/>
 	  <StatusEffect type="OnImpact" target="This" Condition="-50" setvalue="true"/>
       <StatusEffect type="OnBroken" target="This">
@@ -246,7 +246,7 @@
         <Explosion range="150" structuredamage="1500" damage="250" bleedingdamage="3.0" stun="10" force="20" camerashake="7.0" decal="explosion" decalsize="0.1"/>
 		<Remove/>
       </StatusEffect>
-    </Pickable>
+    </Holdable>
   </Item>
   
   <Item
@@ -273,7 +273,7 @@
       <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
 	  <StatusEffect type="OnFire" target="This" Condition="-25"/>
       <StatusEffect type="OnBroken" target="This">
 	    <sound file="Mods/BTE/Items/Weapons/BlastExplosionSmall.ogg"/>
@@ -281,7 +281,7 @@
 		<ParticleEmitter particle="weldspark" particlespersecond="100" velocitymin="600" velocitymax="800" anglemax="360"/>
 		<Remove/>
       </StatusEffect>
-    </Pickable>
+    </Holdable>
   </Item>
   
   <Item
@@ -310,7 +310,7 @@
       <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
 	  <StatusEffect type="OnFire" target="This" Condition="-25"/>
       <StatusEffect type="OnBroken" target="This">
 	    <sound file="Mods/BTE/Items/Weapons/BlastExplosionSmall.ogg"/>
@@ -318,7 +318,7 @@
 		<ParticleEmitter particle="weldspark" particlespersecond="200" velocitymin="600" velocitymax="800" anglemax="360"/>
 		<Remove/>
       </StatusEffect>
-    </Pickable>
+    </Holdable>
   </Item>
   
   <Item
@@ -358,9 +358,9 @@
       </StatusEffect>
     </ItemComponent>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
 	  <StatusEffect type="OnFire" target="This" Condition="-25"/>
-    </Pickable>
+    </Holdable>
   </Item>
   
   <Item
@@ -389,9 +389,9 @@
       </StatusEffect>
     </ItemComponent>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
 	  <StatusEffect type="OnFire" target="This" Condition="-25"/>
-    </Pickable>
+    </Holdable>
   </Item>
   
   <Item
@@ -430,10 +430,10 @@
 	  <Blip texture="Content/Items/Engine/radarBlip.png" origin="0.5,0.5"/>
     </Radar>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
 	  <StatusEffect type="OnFire" target="This" Condition="-25"/>
 	  <StatusEffect type="Always" target="This" Voltage="1.0"/>
-    </Pickable>
+    </Holdable>
   </Item>
   
   <Item
@@ -459,7 +459,7 @@
       <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
 	  <StatusEffect type="OnFire" target="This" Condition="-15"/>
 	  <StatusEffect type="InWater" target="This" Condition="-100"/>
       <StatusEffect type="OnBroken" target="This">
@@ -467,7 +467,7 @@
         <Explosion range="500.0" structuredamage="180" damage="240" bleedingdamage="2.5" stun="8" force="17" severlimbsprobability="0.2" camerashake="5.0" decal="explosion" decalsize="0.5"/>
 		<Remove/>
       </StatusEffect>
-    </Pickable>
+    </Holdable>
   </Item>
 
   <Item
@@ -493,7 +493,7 @@
       <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true"/>
     </ItemComponent>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
       <StatusEffect type="OnFire" target="This" Condition="-50.0"/>
 	  <StatusEffect type="OnImpact" target="This" Condition="-40" setvalue="true"/>
       <StatusEffect type="OnBroken" target="This">
@@ -502,7 +502,7 @@
         <Fire size="500"/>
 		<Remove/>
       </StatusEffect>
-    </Pickable>
+    </Holdable>
   </Item>
   
   <Item
@@ -537,9 +537,9 @@
       </StatusEffect>
     </LightComponent>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
 	  <StatusEffect type="OnFire" target="This" IsOn="true" Condition="-5"/>
-    </Pickable>
+    </Holdable>
   </Item>
   
   <Item
@@ -577,9 +577,9 @@
       </StatusEffect>
     </LightComponent>
 
-    <Pickable slots="Any">
+    <Holdable slots="Any,RightHand,LeftHand">
 	  <StatusEffect type="OnFire" target="This" IsOn="true" Condition="-5"/>
-    </Pickable>
+    </Holdable>
   </Item>
 
   <Item

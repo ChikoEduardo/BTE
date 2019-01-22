@@ -584,7 +584,9 @@
 
     <Body width="16" height="16" density="10.1"/>
 
-    <Pickable slots="Any"/>
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
   </Item>
   
   <Item
@@ -603,7 +605,9 @@
 
     <Body width="16" height="16" density="10.1"/>
 
-    <Pickable slots="Any"/>
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
   </Item>
   
   <Item
@@ -622,7 +626,9 @@
 
     <Body width="16" height="16" density="10.1"/>
 
-    <Pickable slots="Any"/>
+    <Holdable slots="RightHand,LeftHand,Any" controlpose="true" holdpos="50,0" aimpos="50,0" handle1="-5,0"/>
+	
+	<Throwable slots="RightHand,LeftHand,Any" holdpos="50,0" handle1="-5,0" throwforce="1" aimpos="35,-10"/>
   </Item>
   
   <Item
