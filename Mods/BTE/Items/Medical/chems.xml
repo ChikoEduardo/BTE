@@ -385,10 +385,12 @@
     
     <Throwable characterusable="true" canBeCombined="true" slots="Any,RightHand,LeftHand" throwforce="3.0" aimpos="35,-10">
       <StatusEffect tags="chloromydride,medical" type="OnUse" target="Character" health="1.0" bleeding="-0.2" Oxygen="0.6" duration="30" stackable="false" checkconditionalalways="true">
-        <!-- Rapidly removes bleeding and stabilizes oxygen intake while also counteracting crit damage so they won't die. Doesn't prevent poisons.
-            EXTREMELY useful to follow up with CPR, especially if they were bleeding before. -->
         <Conditional Health="lt 0.1"/>
         <RequiredItem name="Medical Syringe" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.15" oxygen="-0.64" OxygenAvailable="-1000" duration="60" disabledeltatime="true" checkconditionalalways="true">
+        <RequiredItem name="Medical Syringe" type="Container"/>
+		<Conditional hasstatustag="hyperzine"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true">
         <RequiredItem name="Medical Syringe" type="Container"/>
@@ -398,12 +400,20 @@
         <Conditional Health="lt 0.1"/>
         <RequiredItem name="Medical Dart" type="Container"/>
       </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.45" oxygen="-0.7" OxygenAvailable="-1000" duration="60" disabledeltatime="true" checkconditionalalways="true">
+        <RequiredItem name="Medical Dart" type="Container"/>
+		<Conditional hasstatustag="hyperzine"/>
+      </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-100" setvalue="true">
         <RequiredItem name="Medical Dart" type="Container"/>
       </StatusEffect>
 	  
 	  <StatusEffect tags="chloromydride,medical" type="OnUse" target="Character" duration="20">
         <RequiredItem name="Medical Inhaler" type="Container"/>
+      </StatusEffect>
+	  <StatusEffect type="OnUse" target="Character" SpeedMultiplier="-0.004" oxygen="-0.004" OxygenAvailable="-1000" duration="30" disabledeltatime="true" checkconditionalalways="true">
+        <RequiredItem name="Medical Inhaler" type="Container"/>
+		<Conditional hasstatustag="hyperzine"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This" Condition="-15">
         <RequiredItem name="Medical Inhaler" type="Container"/>

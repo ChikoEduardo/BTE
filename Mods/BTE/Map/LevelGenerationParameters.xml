@@ -178,4 +178,47 @@
     MountainHeightMin="1000"
     MountainHeightMax="5000"
     />
+	
+	<Husks
+    biomes="Cold Caverns"
+    width="100000"
+    height="70000"
+    VoronoiSiteInterval="1500,1500"
+    VoronoiSiteVariance="700,700"
+    MainPathNodeIntervalRange="20000,50000"
+    BackgroundColor="12,5,5"
+    SmallTunnelCount="15"
+    SmallTunnelLengthRange="5000,50000"
+    RuinCount="3"
+    BottomHoleProbability="0.4"
+    BackgroundSpriteAmount="1000"
+    MountainCountMin="2"
+    MountainCountMax="4"
+    SeaFloorDepth="-300000.0"
+    SeaFloorVariance="20000"
+    MountainHeightMin="10000"
+    MountainHeightMax="20000" 
+    />
+	
+	<Guardians
+    biomes="Hydrothermal Wastes"
+    width="100000"
+    height="50000"
+    VoronoiSiteInterval="1500,1500"
+    VoronoiSiteVariance="700,700"
+    MainPathNodeIntervalRange="6000,10000"
+    WallColor="100,150,150"
+    BackgroundColor="5,7,8"
+    SmallTunnelCount="5"
+    SmallTunnelLengthRange="5000,50000"
+    RuinCount="6"
+    BottomHoleProbability="0.7"
+    BackgroundSpriteAmount="1000"
+    MountainCountMin="2"
+    MountainCountMax="3"
+    SeaFloorDepth="-50000.0"
+    SeaFloorVariance="2000"
+    MountainHeightMin="40000"
+    MountainHeightMax="50000" 
+    />
 </LevelGenerationParameters>

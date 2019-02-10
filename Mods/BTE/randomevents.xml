@@ -8,6 +8,8 @@
     musictype="monster">
 	<OverrideEventCount leveltype="Ridge" min="3" max="5"/>
     <OverrideEventCount leveltype="Open" min="-5" max="1"/>
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
   
   <MonsterEvent name="Under attack" description=""
@@ -16,6 +18,8 @@
     minamount="4" maxamount="6"
     spawntype="cave"
     musictype="monster">
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
   
   <MonsterEvent name="Under attack" description=""
@@ -24,6 +28,8 @@
     minamount="4" maxamount="6"
     spawntype="cave"
     musictype="monster">
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
   
   <MonsterEvent name="Under attack" description=""
@@ -35,6 +41,8 @@
     musictype="monster">
 	<OverrideEventCount leveltype="Ridge" min="2" max="4"/>
     <OverrideEventCount leveltype="Open" min="4" max="5"/>
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
   
   <MonsterEvent name="Under attack" description=""
@@ -43,6 +51,8 @@
     minamount="2" maxamount="3"
 	spawntype="cave"
     musictype="monster">
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
   
   <MonsterEvent name="Under attack" description=""
@@ -51,6 +61,8 @@
     minamount="3" maxamount="6"
 	spawntype="cave"
     musictype="monster">
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
 	
   <MonsterEvent name="Under attack" description=""  
@@ -58,7 +70,10 @@
     mineventcount="1" maxeventcount="2"
     minamount="6" maxamount="8"
     spawntype="mainpath,cave"
-    musictype="monster"/>
+    musictype="monster">
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
+  </MonsterEvent>
 	
   <MonsterEvent name="Under attack" description=""
     characterfile="Mods/BTE/Characters/Tigersmall/tigersmall.xml"
@@ -67,6 +82,8 @@
     spawntype="mainpath"
     musictype="monster">
     <OverrideEventCount leveltype="Open" min="-5" max="1"/>
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
 
   <MonsterEvent name="Under attack" description=""
@@ -75,6 +92,8 @@
     spawntype="mainpath"
     musictype="monster">
     <OverrideEventCount leveltype="Open" min="-5" max="1"/>
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
   
   <MonsterEvent name="Under attack" description=""
@@ -84,6 +103,8 @@
     musictype="monster">
     <OverrideEventCount leveltype="Ridge" min="-5" max="1"/>
     <OverrideEventCount leveltype="Open" min="1" max="2"/>
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
 
   <MonsterEvent name="Under attack" description=""
@@ -93,6 +114,8 @@
     musictype="monster">
     <OverrideEventCount leveltype="Ridge" min="-5" max="1"/>
     <OverrideEventCount leveltype="Open" min="1" max="4"/>
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
 
   <MonsterEvent name="Under attack" description=""
@@ -103,6 +126,8 @@
     musictype="monster">
     <OverrideEventCount leveltype="Ridge" min="3" max="5"/>
     <OverrideEventCount leveltype="Open" min="-5" max="1"/>
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
 	
   <MonsterEvent name="Under attack" description=""
@@ -113,6 +138,8 @@
     musictype="monster">
     <OverrideEventCount leveltype="Ridge" min="4" max="5"/>
     <OverrideEventCount leveltype="Open" min="-5" max="1"/>
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
 
   <MonsterEvent name="Under attack" description=""
@@ -121,6 +148,8 @@
 	spawndeep="true"
     spawntype="mainpath"
     musictype="monster">
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
 
   <MonsterEvent name="Under attack" description=""
@@ -131,6 +160,8 @@
     spawntype="deep"
     musictype="monster">
     <OverrideEventCount leveltype="Ridge" max="0"/>
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
   
   <MonsterEvent name="Under attack" description=""
@@ -139,6 +170,8 @@
     spawntype="deep"
     musictype="monster">
     <OverrideEventCount leveltype="Open" min="0" max="3"/>
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
   
   <MonsterEvent name="Under attack" description=""
@@ -148,6 +181,8 @@
     spawntype="mainpath"
     musictype="deep">
     <OverrideEventCount leveltype="Ridge" max="0"/>
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
   
   <MonsterEvent name="Under attack" description=""
@@ -156,6 +191,8 @@
     spawntype="mainpath"
     musictype="deep">
     <OverrideEventCount leveltype="Open" min="-1" max="2"/>
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent> 
 
   <MonsterEvent name="Under attack" description=""
@@ -164,7 +201,9 @@
     spawntype="mainpath,cave"
     minamount="1" maxamount="1">
     <OverrideEventCount leveltype="Ridge" max="0"/>
-    <OverrideEventCount leveltype="Wastes" max="0"/>    
+    <OverrideEventCount leveltype="Wastes" max="0"/>
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
 
   <MonsterEvent name="Under attack" description=""
@@ -175,6 +214,8 @@
     spawntype="mainpath"
     musictype="monster">
     <OverrideEventCount leveltype="Wastes" min="1" max="3"/>
+	<OverrideEventCount leveltype="Husks" min="4" max="6"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
   
   <MonsterEvent name="Under attack" description=""
@@ -183,6 +224,8 @@
     minamount="2" maxamount="6"
     spawntype="cave"
     musictype="monster">
+	<OverrideEventCount leveltype="Husks" min="4" max="12"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
   
   <MonsterEvent name="Under attack" description=""
@@ -193,6 +236,8 @@
     spawntype="mainpath"
     musictype="monster">
     <OverrideEventCount leveltype="Wastes" min="1" max="3"/>
+	<OverrideEventCount leveltype="Husks" min="4" max="6"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
   
   <MonsterEvent name="Under attack" description=""
@@ -201,6 +246,8 @@
     minamount="3" maxamount="6"
     spawntype="cave"
     musictype="monster">
+	<OverrideEventCount leveltype="Husks" min="6" max="12"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
   
   <MonsterEvent name="Under attack" description=""
@@ -210,6 +257,8 @@
     spawntype="mainpath,cave"
     musictype="monster">
 	<OverrideEventCount leveltype="Wastes" min="1" max="3"/>
+	<OverrideEventCount leveltype="Husks" min="4" max="6"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
 
   <MonsterEvent name="Under attack" description=""
@@ -219,6 +268,8 @@
     spawntype="mainpath,deep"
     musictype="monster">
 	<OverrideEventCount leveltype="Wastes" min="1" max="1"/>
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
   
   <MonsterEvent name="Under attack" description=""
@@ -230,6 +281,8 @@
     musictype="monster">
 	<OverrideEventCount leveltype="Wastes" max="2"/>
 	<OverrideEventCount leveltype="Ridge" max="2"/>
+	<OverrideEventCount leveltype="Husks" min="-10" max="-10"/>
+	<OverrideEventCount leveltype="Guardians" min="-10" max="-10"/>
   </MonsterEvent>
 
   <MonsterEvent name="Under attack" description=""
@@ -238,6 +291,16 @@
     minamount="1" maxamount="1"
     spawntype="ruin"
     musictype="monster">
+  </MonsterEvent>
+  
+  <MonsterEvent name="Under attack" description=""
+    characterfile="Mods/BTE/Characters/Fractalguardian/fractalguardian.xml"
+    mineventcount="0" maxeventcount="0"
+    minamount="1" maxamount="2"
+	repeat="true"
+    spawntype="mainpath,cave"
+    musictype="monster">
+	<OverrideEventCount leveltype="Guardians" min="2" max="4"/>
   </MonsterEvent>
 
   <MonsterEvent name="Under attack" description=""
@@ -249,11 +312,40 @@
   </MonsterEvent>
   
   <MonsterEvent name="Under attack" description=""
+    characterfile="Mods/BTE/Characters/Fractalguardian2/fractalguardian2.xml"
+    mineventcount="0" maxeventcount="0"
+    minamount="1" maxamount="2"
+	repeat="true"
+    spawntype="mainpath,cave"
+    musictype="monster">
+	<OverrideEventCount leveltype="Guardians" min="2" max="4"/>
+  </MonsterEvent>
+  
+  <MonsterEvent name="Under attack" description=""
     characterfile="Mods/BTE/Characters/FractalWalker/fractalwalker.xml"
     mineventcount="1" maxeventcount="1"
     minamount="1" maxamount="1"
     spawntype="ruin"
     musictype="monster">
+  </MonsterEvent>
+  
+  <MonsterEvent name="Under attack" description=""
+    characterfile="Mods/BTE/Characters/FractalWalker/fractalwalker.xml"
+    mineventcount="0" maxeventcount="0"
+    minamount="2" maxamount="4"
+	repeat="true"
+    spawntype="mainpath,cave"
+    musictype="monster">
+	<OverrideEventCount leveltype="Guardians" min="3" max="6"/>
+  </MonsterEvent>
+  
+  <MonsterEvent name="Under attack" description=""
+    characterfile="Mods/BTE/Characters/Carrier/Carrier.xml"
+    mineventcount="0" maxeventcount="0"
+    minamount="1" maxamount="2"
+    spawntype="mainpath"
+    musictype="monster">
+	<OverrideEventCount leveltype="Guardians" min="1" max="1"/>
   </MonsterEvent>
 
   <ArtifactEvent name="Artifact" description=""

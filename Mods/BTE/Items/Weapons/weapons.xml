@@ -28,7 +28,7 @@
 
     <MeleeWeapon slots="RightHand,LeftHand,Any"
           aimpos="50,0" handle1="-12,3" handle2="-9,4" holdangle="-80" reload="0.9">
-      <Attack damage="8" bleedingdamage="2" stun="0.2" targetforce="10" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
+      <Attack damage="8" bleedingdamage="1.4" stun="0.2" targetforce="10" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
 	  <StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="watcher"/>
 		  <Explosion range="300" damage="25" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>
@@ -65,11 +65,11 @@
     <Body width="50" height="8" density="20"/>
 	
 	<ItemComponent>
-	  <StatusEffect type="OnUse" target="Character" Health="-3.8" bleeding="2.8">
+	  <StatusEffect type="OnUse" target="Character" Health="-3.8" bleeding="2.2">
 	    <sound file="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
 		<Use/>
 	  </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" Health="-2.4" bleeding="4.2">
+	  <StatusEffect type="OnUse" target="Character" Health="-2.4" bleeding="3.6">
         <RequiredItem name="loadable" type="Contained"/>        
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character">
@@ -81,7 +81,7 @@
 	
 	<MeleeWeapon slots="RightHand,LeftHand,Any"
           aimpos="50,0" handle1="-12,3" handle2="-9,4" holdangle="-80" reload="1.2">
-      <Attack damage="6" bleedingdamage="1.5" stun="0.2" targetforce="10" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
+      <Attack damage="6" bleedingdamage="0.9" stun="0.2" targetforce="10" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
 	  <StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="watcher"/>
 		  <Explosion range="300" damage="25" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>
@@ -98,7 +98,7 @@
 		  <Conditional SpeciesName="endworm"/>
 		</StatusEffect>
 
-	  <StatusEffect type="OnUse" target="Character" Health="-4" bleeding="1.5" stun="0.1" disabledeltatime="true">
+	  <StatusEffect type="OnUse" target="Character" Health="-4" bleeding="0.9" stun="0.1" disabledeltatime="true">
         <RequiredItem name="Battery Cell" type="Contained"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This">
@@ -110,7 +110,7 @@
 	    <RequiredItem name="Battery Cell" type="Contained"/>        
       </StatusEffect>
 
-      <StatusEffect type="OnUse" target="Character" Health="-8" bleeding="1.5" stun="0.2" disabledeltatime="true">
+      <StatusEffect type="OnUse" target="Character" Health="-8" bleeding="0.9" stun="0.2" disabledeltatime="true">
         <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="This">
@@ -158,10 +158,10 @@
 	    <sound file="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
 		<Use/>
 	  </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" bleeding="3.2">
+	  <StatusEffect type="OnUse" target="Character" bleeding="2.6">
 		<Use/>
 	  </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" bleeding="-3.3">
+	  <StatusEffect type="OnUse" target="Character" bleeding="-2.7">
         <RequiredItem name="loadable" type="Contained"/>        
       </StatusEffect>
 	  <StatusEffect type="OnUse" target="Character">
@@ -173,7 +173,7 @@
 	
 	<MeleeWeapon slots="RightHand,LeftHand,Any"
           aimpos="50,0" handle1="-12,3" handle2="-9,4" holdangle="-80" reload="1.1">
-      <Attack damage="8" bleedingdamage="2" stun="0.2" targetforce="10" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
+      <Attack damage="8" bleedingdamage="1.4" stun="0.2" targetforce="10" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
 	  <StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="watcher"/>
 		  <Explosion range="300" damage="25" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>
@@ -190,7 +190,7 @@
 		  <Conditional SpeciesName="endworm"/>
 		</StatusEffect>
 
-	  <StatusEffect type="OnUse" target="Character" Health="-12" bleeding="-2.1" stun="0.1" disabledeltatime="true">
+	  <StatusEffect type="OnUse" target="Character" Health="-12" bleeding="-1.5" stun="0.1" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Weapons/Burn.ogg"/>
         <RequiredItem name="Battery Cell" type="Contained"/>        
         <Explosion range="10" force="0.25" shockwave="false" sparks="false" flames="false" camerashake="5.0"/>
@@ -199,7 +199,7 @@
 	    <RequiredItem name="Battery Cell" type="Contained"/>        
       </StatusEffect>
 
-      <StatusEffect type="OnUse" target="Character" Health="-18" bleeding="-2.1" stun="0.2" disabledeltatime="true">
+      <StatusEffect type="OnUse" target="Character" Health="-18" bleeding="-1.5" stun="0.2" disabledeltatime="true">
 	    <sound file="Mods/BTE/Items/Weapons/Burn.ogg"/>
         <RequiredItem name="Power Cell,Fulgurium Power Cell" type="Contained"/>        
         <Explosion range="10" force="0.5" shockwave="false" sparks="false" flames="false" camerashake="5.0"/>
@@ -239,14 +239,14 @@
 	    <sound file="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
 		<Use/>
 	  </StatusEffect>
-	  <StatusEffect type="OnUse" target="Character" bleeding="2.8">
+	  <StatusEffect type="OnUse" target="Character" bleeding="2.2">
 		<Use/>
 	  </StatusEffect>
     </ItemComponent>
 
     <MeleeWeapon slots="RightHand,LeftHand,Any"
           aimpos="50,0" handle1="-12,3" handle2="-9,4" holdangle="-80" reload="0.8">
-      <Attack damage="4.5" bleedingdamage="1.4" stun="0.15" targetforce="10" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
+      <Attack damage="4.5" bleedingdamage="0.8" stun="0.15" targetforce="10" damagetype="Slash" sound="Mods/BTE/Items/Weapons/Stabbing.ogg"/>
 	  <StatusEffect type="OnUse" target="Character">
 		  <Conditional SpeciesName="watcher"/>
 		  <Explosion range="300" damage="25" stun="5.0" force="5" flames="false" smoke="false" camerashake="0.5"/>
@@ -285,6 +285,18 @@
 
     <Projectile launchimpulse="16">
       <Attack damage="3" stun="3" targetforce="16" damagetype="Blunt"/>
+	  <StatusEffect type="OnImpact" target="Character" stun="-5" disabledeltatime="true">
+		<Conditional SpeciesName="robot"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnImpact" target="Character" stun="-5" disabledeltatime="true">
+		<Conditional SpeciesName="carrier"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnImpact" target="Character" stun="-5" disabledeltatime="true">
+		<Conditional SpeciesName="fractalguardian"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnImpact" target="Character" stun="-5" disabledeltatime="true">
+		<Conditional SpeciesName="endworm"/>
+	  </StatusEffect>
     </Projectile>
 	
 	<MeleeWeapon slots="RightHand+LeftHand,Any"
@@ -519,7 +531,7 @@
     name="Uranium Spear"
     category="Equipment"
 	tags="bigitem,weapon,spearammo"
-	description="An uranium spear for Harpoon Guns or Spear Guns. They are heavier but still useful as ammo or melee weapons."
+	description="A uranium spear for Harpoon Guns or Spear Guns. They are heavier but still useful as ammo or melee weapons."
     interactthroughwalls="true">
 
     <Deconstruct time="10">
@@ -608,6 +620,18 @@
 	  <StatusEffect type="OnImpact" target="Contained">
 	    <RequiredItem name="explosive" type="Contained"/>
 		<Use/>
+	  </StatusEffect>
+	  <StatusEffect type="OnImpact" target="Character" stun="-3" disabledeltatime="true">
+		<Conditional SpeciesName="robot"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnImpact" target="Character" stun="-3" disabledeltatime="true">
+		<Conditional SpeciesName="carrier"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnImpact" target="Character" stun="-3" disabledeltatime="true">
+		<Conditional SpeciesName="fractalguardian"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnImpact" target="Character" stun="-5" disabledeltatime="true">
+		<Conditional SpeciesName="endworm"/>
 	  </StatusEffect>
     </Projectile>
 	
@@ -722,6 +746,18 @@
 	  <StatusEffect type="OnImpact" target="This">
 	  <Explosion range="15" damage="6" stun="3" force="10" flash="false" shockwave="false" flames="false" smoke="false" sparks="false" camerashake="0.5"/>
       </StatusEffect>
+	  <StatusEffect type="OnImpact" target="Character" stun="-5" disabledeltatime="true">
+		<Conditional SpeciesName="robot"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnImpact" target="Character" stun="-5" disabledeltatime="true">
+		<Conditional SpeciesName="carrier"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnImpact" target="Character" stun="-5" disabledeltatime="true">
+		<Conditional SpeciesName="fractalguardian"/>
+	  </StatusEffect>
+	  <StatusEffect type="OnImpact" target="Character" stun="-5" disabledeltatime="true">
+		<Conditional SpeciesName="endworm"/>
+	  </StatusEffect>
     </Projectile>
 	
 	<Pickable slots="Any"/>
@@ -809,7 +845,7 @@
     category="Equipment"
 	spritecolor="0.7,0.7,0.8,1.0"
 	tags="bigitem,weapon,sawammo"
-	description="A Lead Saw. This is a custom made blade."
+	description="A lead saw. This is a custom made blade."
     interactthroughwalls="true">
 
     <Deconstruct time="10">
@@ -834,7 +870,7 @@
     name="Steel Saw"
     category="Equipment"
 	tags="bigitem,weapon,sawammo"
-	description="A standard issue Steel Saw used mostly to craft or repair Saw Cutters."
+	description="A standard issue steel blade used mostly to craft or repair Saw Cutters."
     interactthroughwalls="true"
 	cargocontainername="Workshop Shipping Box"
     price="100">
@@ -861,7 +897,7 @@
     name="Uranium Saw"
     category="Equipment"
 	tags="bigitem,weapon,sawammo"
-	description="An Uranium Saw. This is a custom made blade."
+	description="A uranium saw. This is a custom made blade."
     interactthroughwalls="true">
 
     <Deconstruct time="10">
@@ -1345,13 +1381,13 @@
 	<Holdable slots="RightHand,LeftHand,Any"/>
     <Projectile hitscan="true" removeonhit="true">
       <Attack damage="10" stun="10" structuredamage="4" targetforce="800" damagetype="Blunt"/>
-	  <StatusEffect type="OnImpact" target="Character" stun="-14" disabledeltatime="true">
+	  <StatusEffect type="OnImpact" target="Character" stun="-5" disabledeltatime="true">
 		<Conditional SpeciesName="robot"/>
 	  </StatusEffect>
-	  <StatusEffect type="OnImpact" target="Character" stun="-14" disabledeltatime="true">
+	  <StatusEffect type="OnImpact" target="Character" stun="-5" disabledeltatime="true">
 		<Conditional SpeciesName="carrier"/>
 	  </StatusEffect>
-	  <StatusEffect type="OnImpact" target="Character" stun="-14" disabledeltatime="true">
+	  <StatusEffect type="OnImpact" target="Character" stun="-5" disabledeltatime="true">
 		<Conditional SpeciesName="fractalguardian"/>
 	  </StatusEffect>
 	  <StatusEffect type="OnImpact" target="Character" stun="-14" disabledeltatime="true">
@@ -1511,7 +1547,7 @@
       <ParticleEmitterHitItem particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
       <ParticleEmitterHitCharacter particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
 	  <Fixable name="structure"/>
-	  <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Blast Door,Windowed Door,Glass Door,Hatch,Blast Hatch,Duct Block,Alien Door,Alien Hatch" Stuck="-20" Condition="-1.5"/>
+	  <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Small Door,Blast Door,Windowed Door,Glass Door,Hatch,Blast Hatch,Duct Block,Alien Door,Alien Hatch" Stuck="-20" Condition="-1.5"/>
       <sound file="Mods/BTE/Items/Weapons/EnergySmall.ogg" type="OnUse" range="700"/>
 	  <RequiredItems name="Gauss Pistol Magazine" type="Contained" msg="The loaded magazine is depleted"/>
       <RequiredSkill name="Weapons" level="20"/>
@@ -1591,7 +1627,7 @@
       <ParticleEmitterHitItem particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
       <ParticleEmitterHitCharacter particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
 	  <Fixable name="structure"/>
-	  <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Blast Door,Windowed Door,Glass Door,Hatch,Blast Hatch,Duct Block,Alien Door,Alien Hatch" Stuck="-20" Condition="-1.5"/>
+	  <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Small Door,Blast Door,Windowed Door,Glass Door,Hatch,Blast Hatch,Duct Block,Alien Door,Alien Hatch" Stuck="-20" Condition="-1.5"/>
       <sound file="Mods/BTE/Items/Weapons/EnergyLoop.ogg" type="OnUse" range="800" loop="true"/>
 	  <RequiredItems name="Gauss Carbine Magazine" type="Contained" msg="The loaded magazine is depleted"/>
       <RequiredSkill name="Weapons" level="40"/>
@@ -1674,7 +1710,7 @@
       <ParticleEmitterHitItem particle="plasmasmoke" particlespersecond="9" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
       <ParticleEmitterHitCharacter particle="plasmasmoke" particlespersecond="9" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
 	  <Fixable name="structure"/>
-	  <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Blast Door,Windowed Door,Glass Door,Hatch,Blast Hatch,Duct Block,Alien Door,Alien Hatch" Stuck="-20" Condition="-2.5"/>
+	  <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Small Door,Blast Door,Windowed Door,Glass Door,Hatch,Blast Hatch,Duct Block,Alien Door,Alien Hatch" Stuck="-20" Condition="-2.5"/>
       <sound file="Mods/BTE/Items/Weapons/EnergyBig.ogg" type="OnUse" range="900"/>
 	  <RequiredItems name="Gauss Rifle Magazine" type="Contained" msg="The loaded bar is depleted"/>
       <RequiredSkill name="Weapons" level="50"/>
@@ -1731,7 +1767,7 @@
       <ParticleEmitterHitItem particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
       <ParticleEmitterHitCharacter particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
 	  <Fixable name="structure"/>
-	  <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Blast Door,Windowed Door,Glass Door,Hatch,Blast Hatch,Duct Block,Alien Door,Alien Hatch" Stuck="-20" Condition="-1.5"/>
+	  <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Small Door,Blast Door,Windowed Door,Glass Door,Hatch,Blast Hatch,Duct Block,Alien Door,Alien Hatch" Stuck="-20" Condition="-1.5"/>
       <sound file="Mods/BTE/Items/Weapons/EnergySmall.ogg" type="OnUse" range="700"/>
 	  <RequiredItems name="Vial of Aluminium Powder,Vial of Copper Powder,Vial of Bronze Powder,Vial of Iron Powder,Vial of Lead Powder,Vial of Uranium Powder,Vial of Fulgurium Powder" type="Contained" msg="The loaded powder is depleted"/>
       <RequiredSkill name="Electrical Engineering" level="50"/>
@@ -2107,7 +2143,7 @@
 
     <Body width="76" height="16" density="40"/>
 
-    <RepairTool structurefixamount="-0.1" limbfixamount="-2.1" range="350" barrelpos="17,8" particles="largeplasma">
+    <RepairTool structurefixamount="-0.1" limbfixamount="-1.8" range="350" barrelpos="17,8" particles="largeplasma">
       <ParticleEmitter particle="largeplasma" particlespersecond="50"/>
       <ParticleEmitterHitStructure particle="plasmasmoke" particlespersecond="25" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
       <ParticleEmitterHitItem particle="plasmasmoke" particlespersecond="25" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
@@ -2118,7 +2154,7 @@
 	  <StatusEffect type="OnUse" target="Contained" targetnames="Hydrogen Tank" Condition="-1.0"/>
 	  <StatusEffect type="OnUse" target="Contained,Hull" targetnames="Sulphurite Tank" Condition="-6" oxygen="-3750"/>
 	  <StatusEffect type="OnUse" target="Contained" targetnames="Thermite Tank" Condition="-8"/>
-      <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Blast Door,Windowed Door,Glass Door,Hatch,Blast Hatch,Duct Block,Alien Door,Alien Hatch" Stuck="-20" Condition="-1.5"/>
+      <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Small Door,Blast Door,Windowed Door,Glass Door,Hatch,Blast Hatch,Duct Block,Alien Door,Alien Hatch" Stuck="-20" Condition="-1.5"/>
       <sound file="Mods/BTE/Items/Weapons/PlasmaTorcher.ogg" type="OnUse" range="650" loop="true"/>
       <Fixable name="structure"/>
       <RequiredSkill name="Construction" level="50"/>
