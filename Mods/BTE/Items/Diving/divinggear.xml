@@ -652,7 +652,7 @@
     <Holdable slots="RightHand+LeftHand,Any" aimpos="100,0" handle1="4,10" handle2="6,10"/>
 
     <Propulsion force="160" usablein="water" particles="bubbles">
-      <RequiredItems name="Battery Cell,Fulgurium Battery Cell" type="Contained" msg="Battery cell depleted"/>
+      <RequiredItems name="Battery Cell,Power Cell,Fulgurium Power Cell" type="Contained" msg="Energy cell depleted"/>
       <StatusEffect type="OnUse" target="Contained" targetnames="Battery Cell" Condition="-1.0"/>
 	  <StatusEffect type="OnUse" target="Contained" targetnames="Power Cell,Fulgurium Power Cell" Condition="-0.25"/>
       <sound file="Content/Items/Diving/scooter.ogg" type="OnUse" range="500" loop="true"/>
