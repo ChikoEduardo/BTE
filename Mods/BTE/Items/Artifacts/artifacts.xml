@@ -188,6 +188,7 @@
 	  <Item name="Liquid Oxygenite"/>
 	  <Item name="Liquid Oxygenite"/>
 	  <Item name="Liquid Oxygenite"/>
+	  <Item name="Liquid Oxygenite"/>
     </Deconstruct>
 
     <Sprite texture="Content/Items/Artifacts/artifact.png" depth="0.7" sourcerect="119,0,9,32"/>
@@ -219,6 +220,7 @@
       <Item name="Sulphuric Acid"/>
       <Item name="Sulphuric Acid"/>
 	  <Item name="Sulphuric Acid"/>
+	  <Item name="Sulphuric Acid"/>
     </Deconstruct>
 
     <Sprite texture="Content/Items/Artifacts/artifact.png" depth="0.7" sourcerect="119,0,9,32"/>
@@ -247,6 +249,7 @@
       <Item name="Steel Bar"/>
       <Item name="Uranium Powder"/>
       <Item name="Uranium Powder"/>
+	  <Item name="Uranium Powder"/>
 	  <Item name="Uranium Powder"/>
     </Deconstruct>
 
@@ -277,6 +280,7 @@
       <Item name="Thermite Powder"/>
       <Item name="Thermite Powder"/>
 	  <Item name="Thermite Powder"/>
+	  <Item name="Thermite Powder"/>
     </Deconstruct>
 
     <Sprite texture="Content/Items/Artifacts/artifact.png" depth="0.7" sourcerect="119,0,9,32"/>
@@ -306,22 +310,22 @@
       <Item name="Fulgurium Bar"/>
     </Deconstruct>
 
-    <Sprite texture="Content/Items/Artifacts/alientools.png" depth="0.55" sourcerect="0,0,95,50" origin="0.5,0.4"/>
+    <Sprite texture="Mods/BTE/Items/Artifacts/alientools.png" depth="0.55" sourcerect="0,0,95,50" origin="0.5,0.4"/>
 
-    <Body width="85" height="40" density="10.1"/>
+    <Body width="90" height="45" density="10.1"/>
 
-    <Holdable slots="Any,RightHand+LeftHand" aimpos="100,0" handle1="0,11" handle2="2,11"/>
+    <Holdable slots="Any,RightHand+LeftHand" holdpos="50,-10" aimpos="100,0" handle1="0,11" handle2="2,11"/>
 
-    <RepairTool structurefixamount="-5.0" limbfixamount="-2.0" range="600" barrelpos="30,15" particles="largeplasma">
+    <RepairTool structurefixamount="-5.0" limbfixamount="-2.0" range="600" barrelpos="30,1" particles="largeplasma">
       <ParticleEmitter particle="largeplasma" particlespersecond="50"/>
 	  <ParticleEmitterHitStructure particle="plasmaspark" particlespersecond="100" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800"/>
       <ParticleEmitterHitItem particle="plasmaspark" particlespersecond="100" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800"/>
       <ParticleEmitterHitStructure particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20"/>
       <ParticleEmitterHitItem particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
       <ParticleEmitterHitCharacter particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100"/>
-	  <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Windowed Door,Glass Door,Hatch,Duct Block" Stuck="-20.0" Condition="-6.0"/>
+	  <StatusEffect type="OnUse" target="UseTarget" targetnames="Door,Small Door,Blast Door,Windowed Door,Glass Door,Hatch,Blast Hatch,Duct Block,Alien Door,Alien Hatch" Stuck="-20" Condition="-6.0"/>
 	  <Fixable name="structure"/>
-      <sound file="Content/Items/Artifacts/alienweapon.ogg" type="OnUse" range="800.0" loop="true"/>
+      <sound file="Content/Items/Artifacts/alienweapon.ogg" type="OnUse" range="800" loop="true"/>
 	  <RequiredItems name="Oxygenite Shard,Sulphurite Shard,Uraninite Shard,Thermite Shard" type="Contained" msg="The shard inside is depleted"/>
       <RequiredSkill name="Weapons" level="30"/>
 	  <StatusEffect type="OnFailure" target="Contained" targetnames="Oxygenite Shard,Sulphurite Shard,Thermite Shard" Condition="-2.0"/>
@@ -334,7 +338,9 @@
       </LightComponent>
     </RepairTool>
     
-    <Propulsion force="-20" usablein="both"/>
+    <Propulsion force="-20" usablein="both">
+	  <RequiredItems name="Oxygenite Shard,Sulphurite Shard,Uraninite Shard,Thermite Shard" type="Contained"/>
+	</Propulsion>
 
     <ItemContainer capacity="1" hideitems="true" itempos="9,-15">
       <Containable name="Oxygenite Shard"/>
