@@ -206,7 +206,7 @@
 	  <fabricableitem name="Blueprints - Gauss Weapons" requiredtime="70">
 	    <RequiredSkill name="Construction" level="15"/>
 		<RequiredSkill name="Weapons" level="10"/>
-		<RequiredSkill name="Science" level="60"/>
+		<RequiredSkill name="Science" level="55"/>
 		<Item name="Blueprints - Fulgurium Energy" mincondition="0.0" usecondition="true"/>
 		<Item name="Polycarbonate Sliver" mincondition="0.75" usecondition="true"/>
 		<Item name="FPGA Circuit" mincondition="0.0" usecondition="true"/>
