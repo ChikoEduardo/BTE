@@ -6,6 +6,11 @@
 
   <sound file="Content/Characters/Carrier/carrier2.ogg" state="None" range="3000"/>
   <sound file="Content/Characters/Carrier/carrier3.ogg" state="None" range="4000"/>
+  <sound file="Mods/BTE/Items/Terminals/SonarPing1.ogg" state="None" range="4000"/>
+  <sound file="Mods/BTE/Items/Terminals/SonarPing2.ogg" state="None" range="4000"/>
+  <sound file="Mods/BTE/Items/Terminals/SonarPing3.ogg" state="None" range="4000"/>
+  <sound file="Mods/BTE/Items/Terminals/SonarPing4.ogg" state="None" range="4000"/>
+  <sound file="Mods/BTE/Items/Terminals/SonarPing5.ogg" state="None" range="4000"/>
 
   <sound file="Content/Characters/Carrier/ping.ogg" state="Die" range="3000"/>
 
